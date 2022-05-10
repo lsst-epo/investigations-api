@@ -1,0 +1,43 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "carlcs/craft-assetmetadata": "^3.0",
+    "craftcms/cms": "3.7.17.1",
+    "craftcms/redactor": "2.8.5",
+    "rosas/universal-dam-integrator": "dev-main",
+    "sebastianlenz/linkfield": "2.0.*@dev",
+    "spicyweb/craft-neo": "2.8.15.1",
+    "verbb/super-table": "2.7.1",
+    "vlucas/phpdotenv": "^3.4.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lsst-epo/craft3-universal-dam-integrator.git"
+    }
+  ],
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4.24"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}

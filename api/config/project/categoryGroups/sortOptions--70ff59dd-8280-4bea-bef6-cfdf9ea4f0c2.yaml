@@ -1,0 +1,45 @@
+defaultPlacement: end
+fieldLayouts:
+  90bed1d1-9225-4f28-ba44-a9c3c65d1b28:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: 'User-friendly name'
+            label: Label
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: sortOptions
+name: 'Sort Options'
+siteSettings:
+  2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: # ES
+    hasUrls: true
+    template: null
+    uriFormat: 'sort-options/{slug}'
+  547128fa-4529-4483-9968-66425996b69f: # EN
+    hasUrls: true
+    template: null
+    uriFormat: 'sort-options/{slug}'
+structure:
+  maxLevels: null
+  uid: d4c428f8-5094-4d5c-a6b5-5f3a58a35787

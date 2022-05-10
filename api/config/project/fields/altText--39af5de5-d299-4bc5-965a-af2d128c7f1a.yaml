@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 9940892d-32f4-4399-acac-ab559ce1c82b # Common
+handle: altText
+instructions: 'Required description of the image for non-sighted users (https://webaim.org/techniques/alttext/).'
+name: 'Alternative Text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

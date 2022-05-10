@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: cee5c2f8-2801-42c2-a56c-4fe40c85b6f3 # Site Information
+handle: siteTitle
+instructions: ''
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

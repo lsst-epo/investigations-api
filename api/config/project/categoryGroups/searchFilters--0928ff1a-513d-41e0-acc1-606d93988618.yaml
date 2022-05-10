@@ -1,0 +1,45 @@
+defaultPlacement: end
+fieldLayouts:
+  f8bd46cf-4a8b-49dc-8ef0-6c7840257051:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: Label
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: searchFilters
+name: 'Search Filters'
+siteSettings:
+  2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: # ES
+    hasUrls: false
+    template: null
+    uriFormat: null
+  547128fa-4529-4483-9968-66425996b69f: # EN
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 6499aa74-c14b-4510-b512-8c1eedf7a594

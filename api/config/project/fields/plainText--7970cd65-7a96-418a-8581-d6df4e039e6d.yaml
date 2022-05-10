@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 9940892d-32f4-4399-acac-ab559ce1c82b # Common
+handle: plainText
+instructions: ''
+name: 'Plain Text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: Text
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

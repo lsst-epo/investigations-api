@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 9940892d-32f4-4399-acac-ab559ce1c82b # Common
+handle: pageEntry
+instructions: ''
+name: 'Entry - Page'
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add a Page'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:f1b8c943-bc12-4001-9e2a-d531379f1aaf' # Pages
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
