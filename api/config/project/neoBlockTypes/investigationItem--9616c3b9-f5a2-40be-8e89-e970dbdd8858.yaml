@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 4c6c84cf-d5a1-4d83-a3fa-e1d0276c9ae4 # Content Blocks
+fieldLayouts:
+  ddaa99f5-3dc6-43d4-8e51-5601ba8482d1:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6f9ee780-700e-489c-baa6-663f3c4d4ef5 # Investigation
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: investigationItem
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Investigation Item'
+sortOrder: 3
+topLevel: false
