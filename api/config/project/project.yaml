@@ -1,4 +1,4 @@
-dateModified: 1650213806
+dateModified: 1653340932
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -22,12 +22,14 @@ meta:
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     3df02181-c6a1-4e72-98fb-f91def384206: Entry # Entry
     3e10dcca-4dd1-4578-8add-708cd9740881: Homepage # Homepage
+    4b0b6d89-4b41-4de4-ae81-236eb0199d9d: 'Investigations List' # Investigations List
     4b94ba3d-060c-4a09-b2dc-c519a4c83709: 'Cell Content' # Cell Content
     4c6c84cf-d5a1-4d83-a3fa-e1d0276c9ae4: 'Content Blocks' # Content Blocks
     4c977b75-9ee1-4cdb-9d2a-203639f4af84: Links # Links
     4fe339ec-7579-46f4-a362-df6ee8de4b3c: 'Public Schema' # Public Schema
     5ca18cb3-5a7b-4764-9e18-fc24b4cecc14: Flag # Flag
     5f0325e0-cdba-4181-a634-bd8ebf451723: 'Entry - Page' # Entry - Page
+    6f9ee780-700e-489c-baa6-663f3c4d4ef5: Investigation # Investigation
     7db205b7-a548-42f1-8c26-416ec51cf3fa: Text # Text
     8ccd6c1c-8e9b-44e8-93a9-f62589fb4819: 'Site Information' # Site Information
     8fff3c50-28ba-4af7-8166-e3d82a23ae26: Title # Title
@@ -43,6 +45,7 @@ meta:
     522bc2d7-fcc3-4817-a986-5c860e53351c: 'Internal Entry' # Internal Entry
     641bcbaa-093a-41bc-a403-6696f52ce6a9: 'Page Type' # Page Type
     0928ff1a-513d-41e0-acc1-606d93988618: 'Search Filters' # Search Filters
+    959d98a5-bd20-4904-aa4c-6efb343b66e7: Investigations # Investigations
     966a6b65-ca53-48a8-89dc-74983cd624ef: Title # Title
     991c5031-3b97-45d8-8829-c8e0c79537a9: 'Row Title' # Row Title
     2755abe1-7dd5-428c-a6bb-30d2bd59a362: Link # Link
@@ -52,6 +55,8 @@ meta:
     7754bae8-c6eb-4fbe-882b-236621e35f2d: 'Canto DAM' # Canto DAM
     7970cd65-7a96-418a-8581-d6df4e039e6d: 'Plain Text' # Plain Text
     8145b1c9-cb8f-4c86-91ba-34fe5ded34e6: Homepage # Homepage
+    9616c3b9-f5a2-40be-8e89-e970dbdd8858: 'Investigation Item' # Investigation Item
+    41225ace-a2e6-4d68-af56-d994a7d2cd20: 'Investigation Page' # Investigation Page
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     9940892d-32f4-4399-acac-ab559ce1c82b: Common # Common
     74319755-d24f-4991-a84a-0c1c031cb21e: 'Asset Link' # Asset Link
@@ -72,6 +77,7 @@ meta:
     d889713c-632a-4323-bb10-4b2bc53545ad: Asset # Asset
     ddf8dce2-4fa1-43d1-b306-b34d9d97a91b: Content # Content
     dff2a767-333e-4c9d-880c-143e1ca2aaa3: 'Row Content' # Row Content
+    e33b8bef-1ca0-4feb-b124-663668b8b3e8: Investigations # Investigations
     e217cce2-4f3d-44f9-90c5-42149175876a: Text # Text
     e338eebb-6488-4f58-a07e-db43f28ff56b: Image # Image
     e24265aa-f05d-42eb-8d44-1ead0005aec1: Link # Link

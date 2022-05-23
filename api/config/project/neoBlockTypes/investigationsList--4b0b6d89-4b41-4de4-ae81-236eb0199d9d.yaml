@@ -1,0 +1,10 @@
+childBlocks:
+  - investigationItem
+field: 4c6c84cf-d5a1-4d83-a3fa-e1d0276c9ae4 # Content Blocks
+handle: investigationsList
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Investigations List'
+sortOrder: 2
+topLevel: true
