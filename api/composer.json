@@ -2,12 +2,11 @@
   "minimum-stability": "dev",
   "require": {
     "carlcs/craft-assetmetadata": "^3.0",
-    "craftcms/cms": "3.7.17.1",
-    "craftcms/redactor": "2.8.5",
-    "rosas/universal-dam-integrator": "dev-main",
+    "craftcms/cms": "3.7.52",
+    "craftcms/redactor": "2.10.10",
     "sebastianlenz/linkfield": "2.0.*@dev",
-    "spicyweb/craft-neo": "2.8.15.1",
-    "verbb/super-table": "2.7.1",
+    "spicyweb/craft-neo": "2.13.5",
+    "verbb/super-table": "2.7.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "repositories": [
