@@ -1,42 +1,43 @@
 {
-  "minimum-stability": "dev",
-  "require": {
-    "carlcs/craft-assetmetadata": "^3.0",
-    "craftcms/cms": "3.7.52",
-    "craftcms/redactor": "2.10.10",
-    "sebastianlenz/linkfield": "2.0.*@dev",
-    "spicyweb/craft-neo": "2.13.5",
-    "verbb/super-table": "2.7.2",
-    "vlucas/phpdotenv": "^3.4.0"
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/lsst-epo/craft3-universal-dam-integrator.git"
-    }
-  ],
-  "require-dev": {
-    "yiisoft/yii2-shell": "^2.0.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "modules\\": "modules/"
-    }
-  },
-  "config": {
-    "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "7.4.24"
+    "require": {
+        "castiron/next-builds": "^1.0",
+        "craftcms/cms": "4.4.5",
+        "craftcms/google-cloud": "^2.0.0",
+        "craftcms/redactor": "3.0.4",
+        "sebastianlenz/linkfield": "^2.1.4",
+        "spicyweb/craft-neo": "3.7.3",
+        "vlucas/phpdotenv": "^3.4.0"
     },
-    "allow-plugins": {
-      "yiisoft/yii2-composer": true,
-      "craftcms/plugin-installer": true
-    }
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ]
-  }
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lsst-epo/craft3-universal-dam-integrator.git"
+        },
+        {
+            "type": "path",
+            "url": "plugins/nextbuilds"
+        }
+    ],
+    "require-dev": {
+        "yiisoft/yii2-shell": "^2.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\": "modules/",
+            "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1.10"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

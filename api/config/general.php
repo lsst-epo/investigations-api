@@ -10,7 +10,7 @@
 
 use craft\helpers\App;
 
-$dev = App::env('ENVIRONMENT') === 'dev';
+$gcsBucketPathFormat = 'https://storage.googleapis.com/%s/';
 
 return [
     // Global settings
@@ -27,13 +27,14 @@ return [
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => App::env('SECURITY_KEY'),
 
-        // Whether to save the project config out to config/project.yaml
-        // (see https://docs.craftcms.com/v3/project-config.html)
-        'useProjectConfigFile' => true,
-
         'aliases' => [
+            '@webroot' => dirname(__DIR__) . '/web',
+            '@webBaseUrl' => App::env('WEB_BASE_URL'),
             '@previewUrlFormat' => App::env('ALIAS_PREVIEW_URL_FORMAT'),
-            '@webBaseUrl' => App::env('WEB_BASE_URL')
+            '@assetsGeneralBaseURL' => sprintf(
+                $gcsBucketPathFormat,
+                App::env('GCS_GENERAL_BUCKET')
+            ),
         ],
 
         'allowedGraphqlOrigins' => false,
@@ -42,14 +43,12 @@ return [
 
         // Disable CSRF protection for contact form - unnecessary until we implement certs
         //'enableCsrfProtection' => $_SERVER['REQUEST_URI'] !== '/actions/contact-form/send',
-
-
     ],
 
     // Dev environment settings
     'dev' => [
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-        'devMode' => App::env('ENVIRONMENT') === 'dev',
+        'devMode' => true,
     ],
 
     // Staging environment settings

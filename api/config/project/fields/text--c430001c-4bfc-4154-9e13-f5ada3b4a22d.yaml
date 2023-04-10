@@ -1,0 +1,27 @@
+columnSuffix: shxbyxan
+contentColumnType: text
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: text
+instructions: null
+name: Text
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: TextContentBlock.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

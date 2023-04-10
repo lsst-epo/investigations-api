@@ -1,0 +1,11 @@
+/**
+ * User Registration module for Craft CMS
+ *
+ * User Registration JS
+ *
+ * @author    Cast Iron Coding
+ * @copyright Copyright (c) 2022 Cast Iron Coding
+ * @link      https://castironcoding.com/
+ * @package   UserRegistrationModule
+ * @since     1.0.0
+ */

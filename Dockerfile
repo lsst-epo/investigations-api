@@ -3,7 +3,7 @@ ARG BASE_TAG=latest
 FROM composer:2 as vendor
 COPY api/composer.json composer.json
 COPY api/composer.lock composer.lock
-# COPY custom-plugins/ ../custom-plugins/
+COPY api/plugins ./plugins
 RUN composer install --ignore-platform-reqs --no-interaction --prefer-dist
 
 FROM us-central1-docker.pkg.dev/skyviewer/public-images/craft-base-image:$BASE_TAG
