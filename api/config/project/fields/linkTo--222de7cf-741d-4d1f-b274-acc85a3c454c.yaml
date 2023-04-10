@@ -1,0 +1,62 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: linkTo
+instructions: null
+name: 'Link To'
+searchable: false
+settings:
+  allowCustomText: false
+  allowTarget: false
+  autoNoReferrer: false
+  customTextMaxLength: 0
+  customTextRequired: false
+  defaultLinkName: entry
+  defaultText: ''
+  enableAllLinkTypes: false
+  enableAriaLabel: false
+  enableElementCache: false
+  enableTitle: false
+  typeSettings:
+    asset:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    category:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    custom:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    email:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    entry:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: true
+      sources: '*'
+    site:
+      enabled: false
+      sites: '*'
+    tel:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    url:
+      allowAliases: false
+      disableValidation: false
+      enabled: true
+    user:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+translationKeyFormat: null
+translationMethod: site
+type: lenz\linkfield\fields\LinkField

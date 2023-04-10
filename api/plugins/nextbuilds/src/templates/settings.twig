@@ -1,0 +1,54 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Next Builds plugin for Craft CMS 3.x
+ *
+ * Next Builds Settings.twig
+ *
+ * @author    Cast Iron Coding
+ * @copyright Copyright (c) 2022 Cast Iron Coding
+ * @link      https://castironcoding.com/
+ * @package   NextBuilds
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("castiron\\nextbuilds\\assetbundles\\nextbuilds\\NextBuildsAsset") %}
+
+{{ forms.autosuggestField({
+    first: true,
+    label: "Next.js API Base URL",
+    name: 'nextApiBaseUrl',
+    value: settings.nextApiBaseUrl,
+    suggestEnvVars: true
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Next.js API Secret Token",
+    name: 'nextSecretToken',
+    value: settings.nextSecretToken,
+    suggestEnvVars: true
+}) }}
+
+<div class="field">
+    <div class="heading">
+        <label>Enabled Sections</label>
+
+        <div class="instructions">
+            <p>Choose which sections should have incremental page builds.</p>
+        </div>
+    </div>
+    {% for section in craft.app.sections.allSections %}
+        <div>
+            {{ forms.checkbox({
+                label: section.name,
+                name: 'activeSections[' ~ section.handle ~ ']',
+                value: true,
+                checked: settings.activeSections[section.handle] ?? false,
+            }) }}
+        </div>
+    {% endfor %}
+</div>
+

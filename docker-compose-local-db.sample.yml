@@ -12,7 +12,7 @@ services:
       - ./api:/var/www/html
     environment:
       CRAFT_ENVIRONMENT: dev
-      SECURITY_KEY: 6SkOBU85-5lFdRleCkckUCqquBq6mBIS
+      SECURITY_KEY: biff
       DB_DSN: pgsql:host=postgres;dbname=craft
       DB_SERVER: postgres
       DB_NAME: craft

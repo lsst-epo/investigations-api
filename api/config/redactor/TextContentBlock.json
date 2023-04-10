@@ -1,0 +1,9 @@
+
+{
+  "buttons": ["html", "format", "bold", "italic", "deleted", "lists", "image", "file", "link"],
+  "plugins": ["textcolor", "fullscreen"],
+  "enforceButtonOrder": ["html", "format", "fontcolor", "bold", "italic", "deleted", "lists", "image", "file", "link", "fullscreen"],
+  "fontcolors": ["#2B8000", "#A85A00", "#1C55E6"],
+  "linkNewTab": true,
+  "toolbarFixed": true
+}

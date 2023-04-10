@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '@previewUrlFormat'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: # ES
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+  547128fa-4529-4483-9968-66425996b69f: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 5b7458fb-60ad-473e-83f1-ecb060883cc4
+type: structure

@@ -5,3 +5,5 @@ log/error.log
 .env
 app.yaml
 *.sql
+docker-compose-local-db.yml
+google-app-credentials.json

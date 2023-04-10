@@ -1,0 +1,44 @@
+{
+    "name": "castiron/next-builds",
+    "description": "Start Next.js page builds from Craft.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "next builds"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cast Iron Coding",
+            "homepage": "https://castironcoding.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "castiron\\nextbuilds\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Next Builds",
+        "handle": "next-builds",
+        "developer": "Cast Iron Coding",
+        "developerUrl": "https://castironcoding.com/",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "components": {
+            "request": "castiron\\nextbuilds\\services\\Request"
+        },
+        "class": "castiron\\nextbuilds\\NextBuilds"
+    }
+}
