@@ -42,7 +42,7 @@ jobs:
       run: docker build . 
 
   build-push-deploy:
-    name: 'Build Image ~ Optional: Deploy Preview Version'
+    name: 'Build Image and Deploy Preview Version'
     runs-on: ubuntu-latest
     if: ${{ (github.event.action != 'closed') && (startsWith(github.head_ref, 'preview') == true) }}
 
