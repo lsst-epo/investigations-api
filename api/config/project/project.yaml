@@ -1,4 +1,4 @@
-dateModified: 1680128830
+dateModified: 1686868833
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -41,6 +41,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
+  graphql-authentication:
+    edition: standard
+    enabled: true
+    licenseKey: V03B0EOX1DTIGDSM1GHZAHE9
+    schemaVersion: 1.3.0
   neo:
     edition: standard
     enabled: true
