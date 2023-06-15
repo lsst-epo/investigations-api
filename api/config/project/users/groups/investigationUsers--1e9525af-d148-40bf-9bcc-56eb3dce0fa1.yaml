@@ -1,0 +1,6 @@
+description: ''
+handle: investigationUsers
+name: 'Investigation Users'
+permissions:
+  - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
+  - 'viewentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
