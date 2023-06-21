@@ -11,15 +11,12 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/lsst-epo/craft3-universal-dam-integrator.git"
-        },
-        {
             "type": "path",
             "url": "plugins/nextbuilds"
         }
     ],
     "require-dev": {
+        "craftcms/generator": "^1.4",
         "yiisoft/yii2-shell": "^2.0.5"
     },
     "autoload": {
