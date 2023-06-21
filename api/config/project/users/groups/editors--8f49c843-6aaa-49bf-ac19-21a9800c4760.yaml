@@ -3,16 +3,13 @@ handle: editors
 name: Editors
 permissions:
   - accesscp
-  - accesssitewhensystemisoff
   - 'createentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deleteentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
-  - 'deletepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'editglobalset:aee57b4f-2623-44fc-af2b-c670f6e1babe' # Site information
   - 'editsite:2c2e1c6a-eb4d-44f1-9a43-8d79b326f354' # ES
   - 'editsite:547128fa-4529-4483-9968-66425996b69f' # EN
   - 'saveentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'saveentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
-  - 'savepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewpeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
