@@ -1,0 +1,11 @@
+isPublic: false
+name: 'Educator Schema'
+scope:
+  - 'sites.547128fa-4529-4483-9968-66425996b69f:read' # EN
+  - 'sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read' # ES
+  - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
+  - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
+  - 'sections.8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d:read' # Pages
+  - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
+  - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
+  - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
