@@ -31,13 +31,15 @@ services:
       PORT: 8080
       NEXT_API_BASE_URL: gateway.docker.internal:3000/api
       NEXT_REVALIDATE_SECRET_TOKEN: super-secret-token
+    env_file:
+      - .env
     ports:
       - "8080:8080"
     depends_on:
       postgres:
         condition: service_healthy
   postgres:
-    build: ./db 
+    build: ./db
     environment:
       POSTGRES_ROOT_PASSWORD: root
       POSTGRES_USER: craft
