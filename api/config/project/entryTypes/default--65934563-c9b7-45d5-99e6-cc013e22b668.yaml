@@ -1,0 +1,43 @@
+fieldLayouts:
+  48c2be3f-4055-4fca-af4d-4af4e6a6bde8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fbe101d7-65bd-4634-8dc2-0a7625bd0ba3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b2e3d5d6-dfb0-43ec-a79a-6ed9ab053f98
+        userCondition: null
+handle: default
+hasTitleField: true
+name: 'Investigation Step (Child Entry)'
+section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47 # Investigations
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

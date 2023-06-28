@@ -14,6 +14,7 @@ email:
 meta:
   __names__:
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
+    1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
@@ -33,8 +34,10 @@ meta:
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
+    65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
     aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
+    bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
