@@ -1,0 +1,43 @@
+fieldLayouts:
+  4a700090-db2f-4939-bba5-25774f989aca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d0fcdb2a-17db-4d73-85a3-7f234d9b21e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0ed72b51-65ac-4bd9-964e-939ccf54eeff
+        userCondition: null
+handle: investigationParent
+hasTitleField: true
+name: 'Investigation (Parent Entry)'
+section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47 # Investigations
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
