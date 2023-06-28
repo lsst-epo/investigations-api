@@ -6,8 +6,6 @@ services:
     image: memcached
   craft:
     build: ./
-    depends_on:
-      - postgres
     volumes:
       - ./api:/var/www/html
     environment:
