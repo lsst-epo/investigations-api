@@ -1,0 +1,20 @@
+columnSuffix: wndpmrys
+contentColumnType: 'decimal(12,2)'
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: yAxisMin
+instructions: null
+name: 'Y-axis Minimum'
+searchable: false
+settings:
+  decimals: 2
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
