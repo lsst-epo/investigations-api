@@ -1,0 +1,112 @@
+field: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
+fieldLayouts:
+  7eb67b7d-05c3-45c6-a4c8-c9bc5c5ac9e6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 43cffcf1-c54b-45c3-b157-9bdefaa3ce36 # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe7e2a17-9e01-478a-aab0-de033a96d74b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa # X-value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bafa6d84-d190-4e9a-898f-f7f8814aff61
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5bfc1518-54f5-4b2a-86e8-02a16537b8cf # Y-value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2fb43fe5-24da-4ddc-ac71-d784ed67b945
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 39efd691-217c-4c1c-8d55-9b4769efe837
+        userCondition: null
+fields:
+  5bfc1518-54f5-4b2a-86e8-02a16537b8cf: # Y-value
+    columnSuffix: pfelvklk
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: yValue
+    instructions: null
+    name: Y-value
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  43cffcf1-c54b-45c3-b157-9bdefaa3ce36: # Label
+    columnSuffix: ydhymbpu
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemLabel
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: # X-value
+    columnSuffix: wevueczn
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: xValue
+    instructions: null
+    name: X-value
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: item
+name: Item
+sortOrder: 1
