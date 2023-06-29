@@ -31,8 +31,8 @@ services:
       PORT: 8080
       NEXT_API_BASE_URL: gateway.docker.internal:3000/api
       NEXT_REVALIDATE_SECRET_TOKEN: super-secret-token
-      VERIFY_EMAIL_PATH:
-      SET_PASSWORD_PATH:
+      VERIFY_EMAIL_PATH: http://localhost:3000/?activate=true
+      SET_PASSWORD_PATH: http://localhost:3000/?set_password=true
     env_file:
       - .env
     ports:
