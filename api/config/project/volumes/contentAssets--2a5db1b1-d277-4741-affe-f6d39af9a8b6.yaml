@@ -30,8 +30,61 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 178c9ccb-1493-42bf-9b96-0f881a19c9b5
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: f14b4192-0978-4735-994f-5a03e34dc25c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e5142c27-2288-47b7-bfad-14cd6b3a6653 # Display Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61dd62c3-178b-4f2e-9b65-62f3a2b108d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cccddcb9-181f-4575-b6cd-62031c3d6d94 # Available Filters
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5660daf7-cb71-4d92-a130-b4e2b88ec57b
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Widget Features'
+        uid: 1aa41bc6-f042-4171-9a92-773d1a236179
         userCondition: null
 fs: contentFilesystem
 handle: contentAssets
