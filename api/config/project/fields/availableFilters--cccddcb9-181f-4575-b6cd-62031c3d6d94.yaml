@@ -1,0 +1,45 @@
+columnSuffix: aqxrdojz
+contentColumnType: text
+fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
+handle: availableFilters
+instructions: null
+name: 'Available Filters'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - All
+        -
+          - value
+          - all
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Placeholder One'
+        -
+          - value
+          - placeholderOne
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Placeholder Two'
+        -
+          - value
+          - placeholderTwo
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

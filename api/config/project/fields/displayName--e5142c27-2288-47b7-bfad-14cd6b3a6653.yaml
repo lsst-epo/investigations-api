@@ -1,0 +1,19 @@
+columnSuffix: nspcwsfq
+contentColumnType: text
+fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
+handle: displayName
+instructions: null
+name: 'Display Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
