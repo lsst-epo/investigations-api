@@ -1,0 +1,100 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  7c3028af-718d-4e37-a4b8-c5eb916234cb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            instructions: null
+            label: Title
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81e59c2b-c254-4f3e-92eb-fc9af8322ded
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1be540e4-1ce4-4b40-b180-0d6f478f9890
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be53ec5f-9f60-48e4-ad5b-c8f2da5c8c0b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bd1c124-b417-410d-8b8c-daece8328288
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49f1cdda-1578-4399-b23f-f3cba90afae1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2842a95-4796-413c-8981-29ff8c64db44
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 219e2e73-d637-4b92-ab2c-c557a23ddd7f
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: scatterplotTool
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Scatterplot Tool'
+sortOrder: 9
+topLevel: true

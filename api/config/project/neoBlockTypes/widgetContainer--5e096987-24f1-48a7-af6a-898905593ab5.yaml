@@ -1,4 +1,6 @@
-childBlocks: null
+childBlocks:
+  - barGraphTool
+  - scatterplotTool
 conditions: null
 description: 'Use this to group several instances of some types of widgets.'
 enabled: true
