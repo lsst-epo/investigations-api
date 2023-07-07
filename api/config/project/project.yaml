@@ -29,6 +29,7 @@ meta:
     2ec1a258-188f-43da-936b-78e95f910601: 'Color Tool' # Color Tool
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
+    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
     5e096987-24f1-48a7-af6a-898905593ab5: 'Widget Container' # Widget Container
@@ -39,8 +40,10 @@ meta:
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
+    9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
     17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
+    23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
@@ -52,6 +55,7 @@ meta:
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
     5599d188-862e-4717-b206-6aadd975c937: Common # Common
@@ -61,18 +65,22 @@ meta:
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
+    9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
+    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
     aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
+    be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     c6109150-a89c-4f0b-aa79-8c1ca78be0ec: Template # Template
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
+    d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema

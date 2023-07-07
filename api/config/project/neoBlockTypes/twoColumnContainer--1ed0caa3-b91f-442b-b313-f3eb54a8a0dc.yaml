@@ -1,5 +1,10 @@
 childBlocks:
   - text
+  - widgetContainer
+  - barGraphTool
+  - colorTool
+  - filterTool
+  - scatterplotTool
 conditions: null
 description: ''
 enabled: true
