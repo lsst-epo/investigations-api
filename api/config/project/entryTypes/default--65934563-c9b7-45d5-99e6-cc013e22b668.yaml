@@ -29,6 +29,30 @@ fieldLayouts:
             uid: fbe101d7-65bd-4634-8dc2-0a7625bd0ba3
             userCondition: null
             warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: 25eb3834-cb4a-46d7-823a-a135a16b9677 # Save Point
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5352fe6b-119f-45f6-8e5b-fa3abc91754f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d4057f6-85d6-4002-aa4d-f677025adfe8
+            userCondition: null
+            warning: null
             width: 100
         name: Content
         uid: b2e3d5d6-dfb0-43ec-a79a-6ed9ab053f98
