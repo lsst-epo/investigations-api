@@ -1,4 +1,4 @@
-dateModified: 1689271546
+dateModified: 1689273080
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -355,6 +355,9 @@ plugins:
         __assoc__:
           -
             - homepage
+            - '1'
+          -
+            - investigations
             - '1'
           -
             - pages
