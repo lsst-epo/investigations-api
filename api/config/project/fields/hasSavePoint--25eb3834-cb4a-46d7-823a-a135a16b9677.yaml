@@ -1,0 +1,14 @@
+columnSuffix: zjynfpiw
+contentColumnType: boolean
+fieldGroup: 5dc7dc5c-2390-4eb4-9714-818aa35f5772 # Investigations
+handle: hasSavePoint
+instructions: 'Users can save their progress on this page.'
+name: 'Save Point'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
