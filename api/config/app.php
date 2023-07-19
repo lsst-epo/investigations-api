@@ -18,11 +18,12 @@
  */
 
 use craft\helpers\App;
+use modules\investigations\Module;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
-        'my-module' => \modules\Module::class,
+        'my-module' => \modules\Module::class, 'investigations' => Module::class,
     ],
     'components' => [
         'cache' => [
@@ -43,5 +44,6 @@ return [
             'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
         ],
     ],
+    'bootstrap' => ['investigations'],
     //'bootstrap' => ['my-module'],
 ];
