@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dateModified: 1694466538
 elementSources:
   craft\elements\Entry:
@@ -47,6 +48,9 @@ elementSources:
         - author
         - link
       type: native
+=======
+dateModified: 1691444739
+>>>>>>> e8443e7 ([C] Update public schema)
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
