@@ -1,0 +1,78 @@
+field: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+fieldLayouts:
+  a03af526-1b06-49aa-b71f-04b2386be2ca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34ce437a-0ab5-47b3-8894-ff749aee20e9 # Option Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43220c27-dd17-458d-bb19-4039551c908f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: ff6964ee-dc07-4a6c-a911-14f43c581d0f # Option Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 830fcfe3-c13d-4ee3-a4b5-4f28ea754712
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: d60d0827-df92-496a-b1a2-7f1e536027b2
+        userCondition: null
+fields:
+  34ce437a-0ab5-47b3-8894-ff749aee20e9: # Option Value
+    columnSuffix: hraegjlj
+    contentColumnType: text
+    fieldGroup: null
+    handle: optionValue
+    instructions: null
+    name: 'Option Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  ff6964ee-dc07-4a6c-a911-14f43c581d0f: # Option Label
+    columnSuffix: zkreover
+    contentColumnType: text
+    fieldGroup: null
+    handle: optionLabel
+    instructions: null
+    name: 'Option Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: option
+name: Option
+sortOrder: 1

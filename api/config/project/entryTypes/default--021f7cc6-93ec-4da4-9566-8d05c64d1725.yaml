@@ -1,0 +1,90 @@
+fieldLayouts:
+  90215545-5383-4346-a313-278b4d6d52cc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: 'For backend reference.'
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ceea3c75-7352-4c94-a085-f6dd38c10db3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8146cf33-eb0d-46b8-b073-4c100fd3297f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d27bc2b3-c7ee-4320-8a17-51f542cde29d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: 27fde6ff-d310-4888-950e-41348fd1bcf1
+                  values:
+                    - select
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd338ce4-5ddc-4368-a5a4-b8de82ae2467
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 38c902fa-7739-496e-a506-0b98d6d480d0
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 9068dd8e-ad92-4925-ba1d-1fe180598462 # Questions
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
