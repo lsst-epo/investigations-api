@@ -1,0 +1,45 @@
+columnSuffix: msqfxejh
+contentColumnType: string
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
+handle: answerType
+instructions: null
+name: 'Answer Type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Text
+        -
+          - value
+          - text
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Select
+        -
+          - value
+          - select
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Fill in the Blank'
+        -
+          - value
+          - fillInTheBlank
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
