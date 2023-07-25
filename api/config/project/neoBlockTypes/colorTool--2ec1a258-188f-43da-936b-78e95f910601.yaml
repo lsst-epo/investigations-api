@@ -95,5 +95,9 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Color Tool'
+<<<<<<< HEAD
 sortOrder: 10
+=======
+sortOrder: 8
+>>>>>>> f24d8f5 ([F] Add question block)
 topLevel: true
