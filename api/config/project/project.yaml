@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 dateModified: 1694466538
 elementSources:
   craft\elements\Entry:
@@ -51,6 +52,9 @@ elementSources:
 =======
 dateModified: 1691444739
 >>>>>>> e8443e7 ([C] Update public schema)
+=======
+dateModified: 1691444884
+>>>>>>> f24d8f5 ([F] Add question block)
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -124,7 +128,11 @@ meta:
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
+<<<<<<< HEAD
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
+=======
+    0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
+>>>>>>> f24d8f5 ([F] Add question block)
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)

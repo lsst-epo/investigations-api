@@ -4,29 +4,29 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  a93487b5-2ef3-45c3-aedc-ded481b860a9:
+  ace218fb-2b69-447d-ae82-ae73542df077:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            fieldUid: 9b29c2f8-e229-419f-b6fa-48f5307ebf34 # Question Entries
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ccba26ac-5eec-40a9-b6c2-ac8902ea0dd7
+            uid: 5379f2fb-f51c-4948-a604-2a4714a954b2
             userCondition: null
             warning: null
             width: 100
-        name: 'Tab 1'
-        uid: 86e5c25c-9fa9-41f6-83d7-60cedf48abab
+        name: Content
+        uid: 22ec9496-a089-4732-bace-b53ebdfe3fe9
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: text
+handle: questionBlock
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Text
-sortOrder: 2
+name: 'Question Block'
+sortOrder: 1
 topLevel: true

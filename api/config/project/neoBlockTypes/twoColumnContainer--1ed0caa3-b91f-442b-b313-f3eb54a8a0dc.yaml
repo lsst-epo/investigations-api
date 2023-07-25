@@ -1,6 +1,16 @@
 childBlocks:
+<<<<<<< HEAD
   - colLeft
   - colRight
+=======
+  - questionBlock
+  - text
+  - widgetContainer
+  - barGraphTool
+  - colorTool
+  - filterTool
+  - scatterplotTool
+>>>>>>> f24d8f5 ([F] Add question block)
 conditions: null
 description: ''
 enabled: true
