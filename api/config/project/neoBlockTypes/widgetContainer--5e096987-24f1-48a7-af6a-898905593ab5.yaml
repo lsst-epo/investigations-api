@@ -17,9 +17,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Widget Container'
-<<<<<<< HEAD
 sortOrder: 7
-=======
-sortOrder: 5
->>>>>>> f24d8f5 ([F] Add question block)
 topLevel: true

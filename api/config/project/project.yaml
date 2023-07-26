@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 dateModified: 1694466538
 elementSources:
   craft\elements\Entry:
@@ -59,6 +60,9 @@ dateModified: 1691444884
 =======
 dateModified: 1691444917
 >>>>>>> 43e28e2 ([C] Update public schema)
+=======
+dateModified: 1691527576
+>>>>>>> 313126f ([F] Add GQL support for Answer element)
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME

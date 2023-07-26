@@ -96,9 +96,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Bar Graph Tool'
-<<<<<<< HEAD
 sortOrder: 9
-=======
-sortOrder: 7
->>>>>>> f24d8f5 ([F] Add question block)
 topLevel: true

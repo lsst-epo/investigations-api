@@ -18,11 +18,11 @@ class m230719_230939_create_answers_table extends Migration
         // Create the Answers table:
         $this->createTable('investigation_answers', [
             'id' => $this->primaryKey(),
-            'question' => $this->integer()->notNull(),
-            'user' => $this->integer()->notNull(),
-            'data' => $this->string(),
-            'dateCreated' => $this->dateTime()->notNull(),
-            'dateUpdated' => $this->dateTime()->notNull(),
+            'questionId' => $this->integer()->notNull(),
+            'userId' => $this->integer()->notNull(),
+            'data' => $this->text(),
+            'dateCreated' => $this->dateTime(),
+            'dateUpdated' => $this->dateTime(),
             'uid' => $this->uid()
         ]);
 
@@ -45,7 +45,7 @@ class m230719_230939_create_answers_table extends Migration
      */
     public function safeDown(): bool
     {
-        echo "m230719_230939_create_answers_table cannot be reverted.\n";
-        return false;
+        $this->dropTable('investigation_answers');
+        return true;
     }
 }

@@ -26,8 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "modules\\": "modules/",
-            "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/"
+            "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/",
+            "modules\\investigations\\":  "modules/investigations/"
         }
     },
     "config": {
