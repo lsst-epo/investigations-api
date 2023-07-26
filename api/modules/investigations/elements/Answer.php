@@ -19,8 +19,8 @@ use yii\web\Response;
  */
 class Answer extends Element
 {
-    public int $question;
-    public int $user;
+    public int $questionId;
+    public int $userId;
     public string $data;
 
     public static function displayName(): string
@@ -78,7 +78,12 @@ class Answer extends Element
         return true;
     }
 
-    public static function find(): ElementQueryInterface
+    public static function gqlTypeNameByContext(mixed $context): string
+    {
+        return 'Answer';
+    }
+
+    public static function find(): AnswerQuery
     {
         return Craft::createObject(AnswerQuery::class, [static::class]);
     }
@@ -267,8 +272,8 @@ class Answer extends Element
             Db::upsert('investigation_answers', [
                 'id' => $this->id,
             ], [
-                'question' => $this->question,
-                'user' => $this->user
+                'questionId' => $this->questionId,
+                'userId' => $this->userId
             ]);
         }
 

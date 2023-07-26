@@ -96,9 +96,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Scatterplot Tool'
-<<<<<<< HEAD
 sortOrder: 12
-=======
-sortOrder: 10
->>>>>>> f24d8f5 ([F] Add question block)
 topLevel: true

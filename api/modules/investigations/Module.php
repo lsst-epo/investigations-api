@@ -4,8 +4,14 @@ namespace modules\investigations;
 
 use Craft;
 use craft\events\RegisterComponentTypesEvent;
+use craft\events\RegisterGqlQueriesEvent;
+use craft\events\RegisterGqlSchemaComponentsEvent;
+use craft\events\RegisterGqlTypesEvent;
 use craft\events\RegisterUrlRulesEvent;
 use craft\services\Elements;
+use craft\services\Gql;
+use modules\investigations\gql\queries\Answer as AnswerGqlQuery;
+use modules\investigations\gql\interfaces\elements\Answer as AnswerInterface;
 use craft\web\UrlManager;
 use modules\investigations\elements\Answer;
 use yii\base\Event;
@@ -34,7 +40,6 @@ class Module extends BaseModule
         // Defer most setup tasks until Craft is fully initialized
         Craft::$app->onInit(function() {
             $this->attachEventHandlers();
-            // ...
         });
     }
 
@@ -49,5 +54,20 @@ class Module extends BaseModule
             $event->rules['answers'] = ['template' => 'investigations/answers/_index.twig'];
             $event->rules['answers/<elementId:\\d+>'] = 'elements/edit';
         });
+
+        // Register GQL query, type
+        Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_TYPES, function(RegisterGqlTypesEvent $event) {
+                $event->types[] = AnswerInterface::class;
+            }
+        );
+
+        Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_QUERIES, function(RegisterGqlQueriesEvent $event) {
+                $event->queries = array_merge(
+                    $event->queries,
+                    // No need to restrict this to specific schemas at this point.
+                    AnswerGqlQuery::getQueries(false)
+                );
+            }
+        );
     }
 }

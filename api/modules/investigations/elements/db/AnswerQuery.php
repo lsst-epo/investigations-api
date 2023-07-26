@@ -4,25 +4,26 @@ namespace modules\investigations\elements\db;
 
 use Craft;
 use craft\elements\db\ElementQuery;
+use craft\helpers\Db;
 
 /**
  * Answer query
  */
 class AnswerQuery extends ElementQuery
 {
-    public $user;
-    public $question;
+    public $userId;
+    public $questionId;
     public $data;
 
-    public function user($value): self
+    public function userId($value): self
     {
-        $this->user = $value;
+        $this->userId = $value;
         return $this;
     }
 
-    public function question($value): self
+    public function questionId($value): self
     {
-        $this->question = $value;
+        $this->questionId = $value;
         return $this;
     }
 
@@ -34,26 +35,26 @@ class AnswerQuery extends ElementQuery
 
     protected function beforePrepare(): bool
     {
-        // JOIN our 'answers' table
-        $this->joinElementTable('answers');
+        // JOIN our 'investigation_answers' table
+        $this->joinElementTable('investigation_answers');
 
-        // SELECT the `user` and `question` columns:
+        // SELECT content columns:
         $this->query->select([
-            'answers.user',
-            'answers.question',
-            'answers.data'
+            'investigation_answers.userId',
+            'investigation_answers.questionId',
+            'investigation_answers.data'
         ]);
 
-        if ($this->user) {
-            $this->subQuery->andWhere(Db::parseParam('answers.user', $this->user));
+        if ($this->userId) {
+            $this->subQuery->andWhere(Db::parseParam('investigation_answers.userId', $this->userId));
         }
 
-        if ($this->question) {
-            $this->subQuery->andWhere(Db::parseParam('answers.question', $this->question));
+        if ($this->questionId) {
+            $this->subQuery->andWhere(Db::parseParam('investigation_answers.questionId', $this->questionId));
         }
 
         if ($this->data) {
-            $this->subQuery->andWhere(Db::parseParam('answers.data', $this->data));
+            $this->subQuery->andWhere(Db::parseParam('investigation_answers.data', $this->data));
         }
 
         return parent::beforePrepare();
