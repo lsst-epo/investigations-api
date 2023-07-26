@@ -13,6 +13,7 @@ scope:
   - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
   - 'sections.9068dd8e-ad92-4925-ba1d-1fe180598462:read' # Questions
   - 'entrytypes.021f7cc6-93ec-4da4-9566-8d05c64d1725:read' # Default
+  - 'volumes.2a5db1b1-d277-4741-affe-f6d39af9a8b6:read' # Content Assets
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'usergroups.everyone:read'
   - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
