@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 dateModified: 1694466538
 elementSources:
   craft\elements\Entry:
@@ -55,6 +56,9 @@ dateModified: 1691444739
 =======
 dateModified: 1691444884
 >>>>>>> f24d8f5 ([F] Add question block)
+=======
+dateModified: 1691444917
+>>>>>>> 43e28e2 ([C] Update public schema)
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
