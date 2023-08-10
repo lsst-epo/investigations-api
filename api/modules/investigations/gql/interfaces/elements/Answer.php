@@ -47,6 +47,11 @@ class Answer extends Element
                     'type' => Type::int(),
                     'description' => 'ID of the question being answered'
                 ],
+                'investigationId' => [
+                    'name' => 'investigationId',
+                    'type' => Type::int(),
+                    'description' => 'ID of the Investigation parent'
+                ],
                 'data' => [
                     'name' => 'data',
                     'type' => Type::string(),

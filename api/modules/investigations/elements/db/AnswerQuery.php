@@ -14,6 +14,7 @@ class AnswerQuery extends ElementQuery
     public $userId;
     public $questionId;
     public $data;
+    public $investigationId;
 
     public function userId($value): self
     {
@@ -24,6 +25,12 @@ class AnswerQuery extends ElementQuery
     public function questionId($value): self
     {
         $this->questionId = $value;
+        return $this;
+    }
+
+    public function investigationId($value): self
+    {
+        $this->investigationId = $value;
         return $this;
     }
 
@@ -42,6 +49,7 @@ class AnswerQuery extends ElementQuery
         $this->query->select([
             'investigation_answers.userId',
             'investigation_answers.questionId',
+            'investigation_answers.investigationId',
             'investigation_answers.data'
         ]);
 
@@ -51,6 +59,10 @@ class AnswerQuery extends ElementQuery
 
         if ($this->questionId) {
             $this->subQuery->andWhere(Db::parseParam('investigation_answers.questionId', $this->questionId));
+        }
+
+        if ($this->investigationId) {
+            $this->subQuery->andWhere(Db::parseParam('investigation_answers.investigationId', $this->investigationId));
         }
 
         if ($this->data) {
