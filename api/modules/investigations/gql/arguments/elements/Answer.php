@@ -15,7 +15,7 @@ class Answer extends ElementArguments
                 'type' => Type::id(),
                 'description' => 'Narrows query results based on the authenticated user.'
             ],
-            'investigationID' => [
+            'investigationId' => [
                 'name' => 'investigationId',
                 'type' => Type::id(),
                 'description' => 'Narrows query results based on the Investigation.'

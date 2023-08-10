@@ -21,6 +21,7 @@ class Answer extends Element
 {
     public int $questionId;
     public int $userId;
+    public int $investigationId;
     public string $data;
 
     public static function displayName(): string
@@ -273,7 +274,9 @@ class Answer extends Element
                 'id' => $this->id,
             ], [
                 'questionId' => $this->questionId,
-                'userId' => $this->userId
+                'userId' => $this->userId,
+                'investigationId' => $this->investigationId,
+                'data' => $this->data
             ]);
         }
 
