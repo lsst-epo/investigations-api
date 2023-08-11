@@ -4,14 +4,15 @@ namespace modules\investigations;
 
 use Craft;
 use craft\events\RegisterComponentTypesEvent;
+use craft\events\RegisterGqlMutationsEvent;
 use craft\events\RegisterGqlQueriesEvent;
-use craft\events\RegisterGqlSchemaComponentsEvent;
 use craft\events\RegisterGqlTypesEvent;
 use craft\events\RegisterUrlRulesEvent;
 use craft\services\Elements;
 use craft\services\Gql;
 use modules\investigations\gql\queries\Answer as AnswerGqlQuery;
 use modules\investigations\gql\interfaces\elements\Answer as AnswerInterface;
+use modules\investigations\gql\mutations\Answer as AnswerMutations;
 use craft\web\UrlManager;
 use modules\investigations\elements\Answer;
 use yii\base\Event;
@@ -66,6 +67,13 @@ class Module extends BaseModule
                     $event->queries,
                     // No need to restrict this to specific schemas at this point.
                     AnswerGqlQuery::getQueries(false)
+                );
+            }
+        );
+
+        Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_MUTATIONS, function(RegisterGqlMutationsEvent $event) {
+                $event->mutations = array_merge(
+                    $event->mutations, AnswerMutations::getMutations(),
                 );
             }
         );

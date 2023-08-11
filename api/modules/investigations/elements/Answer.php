@@ -19,10 +19,10 @@ use yii\web\Response;
  */
 class Answer extends Element
 {
-    public int $questionId;
-    public int $userId;
-    public int $investigationId;
-    public string $data;
+    public ?int $questionId = null;
+    public ?int $userId = null;
+    public ?int $investigationId = null;
+    public ?string $data = null;
 
     public static function displayName(): string
     {
@@ -56,17 +56,17 @@ class Answer extends Element
 
     public static function hasContent(): bool
     {
-        return true;
+        return false;
     }
 
     public static function hasTitles(): bool
     {
-        return true;
+        return false;
     }
 
     public static function hasUris(): bool
     {
-        return true;
+        return false;
     }
 
     public static function isLocalized(): bool
@@ -76,7 +76,7 @@ class Answer extends Element
 
     public static function hasStatuses(): bool
     {
-        return true;
+        return false;
     }
 
     public static function gqlTypeNameByContext(mixed $context): string
@@ -117,52 +117,17 @@ class Answer extends Element
 
     protected static function defineSortOptions(): array
     {
-        return [
-            'title' => Craft::t('app', 'Title'),
-            'slug' => Craft::t('app', 'Slug'),
-            'uri' => Craft::t('app', 'URI'),
-            [
-                'label' => Craft::t('app', 'Date Created'),
-                'orderBy' => 'elements.dateCreated',
-                'attribute' => 'dateCreated',
-                'defaultDir' => 'desc',
-            ],
-            [
-                'label' => Craft::t('app', 'Date Updated'),
-                'orderBy' => 'elements.dateUpdated',
-                'attribute' => 'dateUpdated',
-                'defaultDir' => 'desc',
-            ],
-            [
-                'label' => Craft::t('app', 'ID'),
-                'orderBy' => 'elements.id',
-                'attribute' => 'id',
-            ],
-            // ...
-        ];
+        return [];
     }
 
     protected static function defineTableAttributes(): array
     {
-        return [
-            'slug' => ['label' => Craft::t('app', 'Slug')],
-            'uri' => ['label' => Craft::t('app', 'URI')],
-            'link' => ['label' => Craft::t('app', 'Link'), 'icon' => 'world'],
-            'id' => ['label' => Craft::t('app', 'ID')],
-            'uid' => ['label' => Craft::t('app', 'UID')],
-            'dateCreated' => ['label' => Craft::t('app', 'Date Created')],
-            'dateUpdated' => ['label' => Craft::t('app', 'Date Updated')],
-            // ...
-        ];
+        return [];
     }
 
     protected static function defineDefaultTableAttributes(string $source): array
     {
-        return [
-            'link',
-            'dateCreated',
-            // ...
-        ];
+        return [];
     }
 
     protected function defineRules(): array
@@ -272,10 +237,11 @@ class Answer extends Element
         if (!$this->propagating) {
             Db::upsert('investigation_answers', [
                 'id' => $this->id,
-            ], [
                 'questionId' => $this->questionId,
                 'userId' => $this->userId,
                 'investigationId' => $this->investigationId,
+                'data' => $this->data
+            ], [
                 'data' => $this->data
             ]);
         }
