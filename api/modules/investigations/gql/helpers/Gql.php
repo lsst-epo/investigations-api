@@ -9,4 +9,10 @@ class Gql extends \craft\helpers\Gql
         $allowedEntities = self::extractAllowedEntitiesFromSchema();
         return isset($allowedEntities['answers']);
     }
+
+    public static function canMutateAnswers(): bool
+    {
+        $allowedEntities = self::extractAllowedEntitiesFromSchema();
+        return isset($allowedEntities['answers']);
+    }
 }

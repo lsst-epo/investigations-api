@@ -4,6 +4,7 @@ namespace modules\investigations\gql\mutations;
 
 use craft\gql\base\Mutation;
 use GraphQL\Type\Definition\Type;
+use modules\investigations\gql\helpers\Gql as GqlHelper;
 use modules\investigations\gql\resolvers\mutations\Answer as AnswerMutationResolver;
 use modules\investigations\gql\interfaces\elements\Answer as AnswerInterface;
 
@@ -11,6 +12,10 @@ class Answer extends Mutation
 {
     public static function getMutations(): array
     {
+        if(!GqlHelper::canMutateAnswers()) {
+            return [];
+        }
+
         $mutations = [];
 
         $resolver = \Craft::createObject(AnswerMutationResolver::class);

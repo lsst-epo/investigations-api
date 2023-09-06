@@ -6,6 +6,7 @@ use Craft;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterGqlMutationsEvent;
 use craft\events\RegisterGqlQueriesEvent;
+use craft\events\RegisterGqlSchemaComponentsEvent;
 use craft\events\RegisterGqlTypesEvent;
 use craft\events\RegisterUrlRulesEvent;
 use craft\services\Elements;
@@ -65,8 +66,7 @@ class Module extends BaseModule
         Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_QUERIES, function(RegisterGqlQueriesEvent $event) {
                 $event->queries = array_merge(
                     $event->queries,
-                    // No need to restrict this to specific schemas at this point.
-                    AnswerGqlQuery::getQueries(false)
+                    AnswerGqlQuery::getQueries()
                 );
             }
         );
@@ -77,5 +77,20 @@ class Module extends BaseModule
                 );
             }
         );
+
+        Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_SCHEMA_COMPONENTS, function(RegisterGqlSchemaComponentsEvent $event) {
+            $event->queries = array_merge($event->queries, [
+                'Answers' => [
+                    'answers:read' => ['label' => 'View "Answer" elements']
+                ]
+            ]);
+
+            $event->mutations = array_merge($event->mutations, [
+                'Answers' => [
+                    'answers:edit' => ['label' => 'Make edits to "Answer" elements'],
+                    'answers:save' => ['label' => 'Save "Answer" elements']
+                ]
+            ]);
+        });
     }
 }
