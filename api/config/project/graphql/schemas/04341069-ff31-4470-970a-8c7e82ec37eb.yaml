@@ -9,3 +9,6 @@ scope:
   - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
   - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
+  - 'answers:read'
+  - 'answers:edit'
+  - 'answers:save'

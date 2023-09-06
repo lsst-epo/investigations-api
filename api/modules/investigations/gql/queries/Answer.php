@@ -13,7 +13,7 @@ class Answer extends Query
 {
     public static function getQueries(bool $checkToken = true): array
     {
-        if($checkToken && !GqlHelper::canQueryAnswers()) {
+        if(!GqlHelper::canQueryAnswers()) {
             return [];
         }
 
