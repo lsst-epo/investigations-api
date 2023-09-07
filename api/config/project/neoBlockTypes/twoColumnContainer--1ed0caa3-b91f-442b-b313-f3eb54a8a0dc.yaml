@@ -1,16 +1,12 @@
 childBlocks:
-  - text
-  - widgetContainer
-  - barGraphTool
-  - colorTool
-  - filterTool
-  - scatterplotTool
+  - colLeft
+  - colRight
 conditions: null
 description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
-groupChildBlockTypes: true
+groupChildBlockTypes: false
 handle: twoColumnContainer
 icon: null
 ignorePermissions: true
@@ -21,5 +17,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Two Column Container'
-sortOrder: 3
+sortOrder: 4
 topLevel: true

@@ -1,13 +1,18 @@
 childBlocks:
+  - text
+  - twoColumnContainer
+  - widgetContainer
   - barGraphTool
+  - colorTool
+  - filterTool
   - scatterplotTool
 conditions: null
-description: 'Use this to group several instances of some types of widgets.'
+description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
 groupChildBlockTypes: true
-handle: widgetContainer
+handle: group
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -16,6 +21,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Widget Container'
-sortOrder: 7
+name: 'Interaction Group'
+sortOrder: 3
 topLevel: true

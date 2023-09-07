@@ -2,20 +2,20 @@ childBlocks:
   - barGraphTool
   - scatterplotTool
 conditions: null
-description: 'Use this to group several instances of some types of widgets.'
+description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
 groupChildBlockTypes: true
-handle: widgetContainer
+handle: colRight
 icon: null
 ignorePermissions: true
-maxBlocks: 0
+maxBlocks: 1
 maxChildBlocks: 0
-maxSiblingBlocks: 0
+maxSiblingBlocks: 1
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Widget Container'
-sortOrder: 7
-topLevel: true
+name: 'Right Column'
+sortOrder: 6
+topLevel: false

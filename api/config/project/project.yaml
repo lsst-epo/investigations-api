@@ -1,4 +1,4 @@
-dateModified: 1691436696
+dateModified: 1694107603
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -67,6 +67,7 @@ meta:
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
+    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
@@ -76,6 +77,7 @@ meta:
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
     aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
+    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
@@ -89,6 +91,7 @@ meta:
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
+    efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
 plugins:
   google-cloud:
@@ -134,6 +137,9 @@ plugins:
             -
               __assoc__:
                 -
+                  - availableFilters
+                  - queryMutate
+                -
                   - contentBlocks
                   - queryMutate
                 -
@@ -143,7 +149,19 @@ plugins:
                   - siteDescription
                   - queryMutate
                 -
+                  - displayName
+                  - queryMutate
+                -
+                  - graphBars
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - image
+                  - queryMutate
+                -
+                  - images
                   - queryMutate
                 -
                   - linkTo
@@ -152,16 +170,52 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - preSelectedColor
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - hasSavePoint
+                  - queryMutate
+                -
+                  - scatterplotItems
+                  - queryMutate
+                -
+                  - colorToolTemplate
+                  - queryMutate
+                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - xAxisLabel
+                  - queryMutate
+                -
+                  - xAxisMax
+                  - queryMutate
+                -
+                  - xAxisMin
+                  - queryMutate
+                -
+                  - yAxisLabel
+                  - queryMutate
+                -
+                  - yAxisMax
+                  - queryMutate
+                -
+                  - yAxisMin
                   - queryMutate
           -
             - 'schema-Educator Schema'
             -
               __assoc__:
                 -
+                  - availableFilters
+                  - queryMutate
+                -
                   - contentBlocks
                   - queryMutate
                 -
@@ -171,7 +225,19 @@ plugins:
                   - siteDescription
                   - queryMutate
                 -
+                  - displayName
+                  - queryMutate
+                -
+                  - graphBars
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - image
+                  - queryMutate
+                -
+                  - images
                   - queryMutate
                 -
                   - linkTo
@@ -180,16 +246,52 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - preSelectedColor
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - hasSavePoint
+                  - queryMutate
+                -
+                  - scatterplotItems
+                  - queryMutate
+                -
+                  - colorToolTemplate
+                  - queryMutate
+                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - xAxisLabel
+                  - queryMutate
+                -
+                  - xAxisMax
+                  - queryMutate
+                -
+                  - xAxisMin
+                  - queryMutate
+                -
+                  - yAxisLabel
+                  - queryMutate
+                -
+                  - yAxisMax
+                  - queryMutate
+                -
+                  - yAxisMin
                   - queryMutate
           -
             - 'schema-Public Schema'
             -
               __assoc__:
                 -
+                  - availableFilters
+                  - queryMutate
+                -
                   - contentBlocks
                   - queryMutate
                 -
@@ -199,7 +301,19 @@ plugins:
                   - siteDescription
                   - queryMutate
                 -
+                  - displayName
+                  - queryMutate
+                -
+                  - graphBars
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - image
+                  - queryMutate
+                -
+                  - images
                   - queryMutate
                 -
                   - linkTo
@@ -208,16 +322,52 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - preSelectedColor
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - hasSavePoint
+                  - queryMutate
+                -
+                  - scatterplotItems
+                  - queryMutate
+                -
+                  - colorToolTemplate
+                  - queryMutate
+                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - xAxisLabel
+                  - queryMutate
+                -
+                  - xAxisMax
+                  - queryMutate
+                -
+                  - xAxisMin
+                  - queryMutate
+                -
+                  - yAxisLabel
+                  - queryMutate
+                -
+                  - yAxisMax
+                  - queryMutate
+                -
+                  - yAxisMin
                   - queryMutate
           -
             - 'schema-Student Schema'
             -
               __assoc__:
                 -
+                  - availableFilters
+                  - queryMutate
+                -
                   - contentBlocks
                   - queryMutate
                 -
@@ -227,7 +377,19 @@ plugins:
                   - siteDescription
                   - queryMutate
                 -
+                  - displayName
+                  - queryMutate
+                -
+                  - graphBars
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - image
+                  - queryMutate
+                -
+                  - images
                   - queryMutate
                 -
                   - linkTo
@@ -236,10 +398,43 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - preSelectedColor
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - hasSavePoint
+                  - queryMutate
+                -
+                  - scatterplotItems
+                  - queryMutate
+                -
+                  - colorToolTemplate
+                  - queryMutate
+                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - xAxisLabel
+                  - queryMutate
+                -
+                  - xAxisMax
+                  - queryMutate
+                -
+                  - xAxisMin
+                  - queryMutate
+                -
+                  - yAxisLabel
+                  - queryMutate
+                -
+                  - yAxisMax
+                  - queryMutate
+                -
+                  - yAxisMin
                   - queryMutate
       forbiddenField: 'User doesn''t have permission to access requested field(s)'
       forbiddenMutation: 'User doesn''t have permission to perform this mutation'
@@ -249,7 +444,7 @@ plugins:
       granularSchemas:
         __assoc__:
           -
-            - group-3
+            - group-1
             -
               __assoc__:
                 -
@@ -262,7 +457,7 @@ plugins:
                   - siteId
                   - ''
           -
-            - group-4
+            - group-2
             -
               __assoc__:
                 -
@@ -274,15 +469,8 @@ plugins:
                 -
                   - siteId
                   - ''
-                -
-                  - entryQueries
-                  -
-                    __assoc__:
-                      -
-                        - pages
-                        - ''
           -
-            - group-5
+            - group-3
             -
               __assoc__:
                 -
@@ -294,13 +482,6 @@ plugins:
                 -
                   - siteId
                   - ''
-                -
-                  - entryQueries
-                  -
-                    __assoc__:
-                      -
-                        - pages
-                        - ''
       invalidEmailAddress: 'Invalid email address'
       invalidHeader: 'Invalid Authorization Header'
       invalidJwtSecretKey: 'Invalid JWT Secret Key'
