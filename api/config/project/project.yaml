@@ -1,4 +1,4 @@
-dateModified: 1694107603
+dateModified: 1694109746
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -444,7 +444,7 @@ plugins:
       granularSchemas:
         __assoc__:
           -
-            - group-1
+            - group-29
             -
               __assoc__:
                 -
@@ -457,7 +457,7 @@ plugins:
                   - siteId
                   - ''
           -
-            - group-2
+            - group-30
             -
               __assoc__:
                 -
@@ -465,12 +465,12 @@ plugins:
                   - 'Educator Schema'
                 -
                   - allowRegistration
-                  - '1'
+                  - ''
                 -
                   - siteId
                   - ''
           -
-            - group-3
+            - group-31
             -
               __assoc__:
                 -
@@ -478,7 +478,7 @@ plugins:
                   - 'Student Schema'
                 -
                   - allowRegistration
-                  - '1'
+                  - ''
                 -
                   - siteId
                   - ''
