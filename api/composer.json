@@ -5,11 +5,16 @@
         "craftcms/google-cloud": "^2.0.0",
         "craftcms/redactor": "3.0.4",
         "jamesedmonston/graphql-authentication": "2.4.0",
+        "lsst-epo/canto-dam-assets": "^4.0",
         "sebastianlenz/linkfield": "^2.1.4",
         "spicyweb/craft-neo": "3.7.3",
         "vlucas/phpdotenv": "^3.4.0"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lsst-epo/canto-dam-assets.git"
+        },
         {
             "type": "path",
             "url": "plugins/nextbuilds"

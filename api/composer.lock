@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07276eb3fff482460bff4550dc82f4ab",
+    "content-hash": "028c098f7cf5718b3e30ad687b7aeb0a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2521,6 +2521,70 @@
             "time": "2022-02-24T18:45:07+00:00"
         },
         {
+            "name": "lsst-epo/canto-dam-assets",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lsst-epo/canto-dam-assets.git",
+                "reference": "b8cb1b9bb59eac97cd1c2d6ab1bc043e8447d6f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/b8cb1b9bb59eac97cd1c2d6ab1bc043e8447d6f3",
+                "reference": "b8cb1b9bb59eac97cd1c2d6ab1bc043e8447d6f3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.4.0",
+                "nystudio107/craft-plugin-vite": "^4.0.0",
+                "php": ">=8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "_canto-dam-assets",
+                "name": "Canto DAM Assets",
+                "developer": "nystudio107",
+                "documentationUrl": "https://github.com/lsst-epo/canto-dam-assets/blob/develop-v4/README.md",
+                "class": "lsst\\cantodamassets\\CantoDamAssets"
+            },
+            "autoload": {
+                "psr-4": {
+                    "lsst\\cantodamassets\\": "src/"
+                }
+            },
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "This Craft CMS plugin adds a Field Type with GraphQL support for the Canto Digital Asset Management (DAM) web system",
+            "support": {
+                "docs": "https://github.com/lsst-epo/canto-dam-assets/blob/develop-v4/README.md",
+                "issues": "https://github.com/lsst-epo/canto-dam-assets/issues",
+                "source": "https://github.com/lsst-epo/canto-dam-assets/"
+            },
+            "time": "2023-09-11T16:58:42+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.7.0",
             "dist": {
@@ -2674,6 +2738,58 @@
                 "psr-3"
             ],
             "time": "2023-02-06T13:44:46+00:00"
+        },
+        {
+            "name": "nystudio107/craft-plugin-vite",
+            "version": "4.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-plugin-vite.git",
+                "reference": "eb05b1cc7dc9eeecbdfe8cd3cd3d119e83c62619"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/eb05b1cc7dc9eeecbdfe8cd3cd3d119e83c62619",
+                "reference": "eb05b1cc7dc9eeecbdfe8cd3cd3d119e83c62619",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\pluginvite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Plugin Vite is the conduit between Craft CMS plugins and Vite, with manifest.json & HMR support",
+            "keywords": [
+                "craftcms",
+                "plugin",
+                "vite"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/4.0.8"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-01-25T21:09:10+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -6605,5 +6721,5 @@
     "platform-overrides": {
         "php": "8.1.10"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -1,48 +1,16 @@
-columnSuffix: null
-contentColumnType: string
+columnSuffix: nuzumixp
+contentColumnType:
+  - 'cantoId:string'
+  - 'cantoAlbumId:string'
+  - 'cantoAssetData:text'
+  - 'cantoAlbumData:string'
 fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
 handle: image
 instructions: null
 name: Image
 searchable: false
 settings:
-  allowSelfRelations: false
-  allowSubfolders: false
-  allowUploads: true
-  allowedKinds: null
-  branchLimit: null
-  defaultUploadLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
-  defaultUploadLocationSubpath: null
-  localizeRelations: false
-  maintainHierarchy: false
-  maxRelations: 1
-  minRelations: null
-  previewMode: full
-  restrictFiles: false
-  restrictLocation: false
-  restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
-  restrictedLocationSubpath: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
-  selectionLabel: null
-  showSiteMenu: false
-  showUnpermittedFiles: false
-  showUnpermittedVolumes: false
-  sources:
-    - 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
-  targetSiteId: null
-  validateRelatedElements: false
-  viewMode: list
+  cantoAssetPickerType: singleImagePicker
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Assets
+translationMethod: none
+type: lsst\cantodamassets\fields\CantoDamAsset

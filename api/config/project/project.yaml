@@ -1,4 +1,52 @@
-dateModified: 1694109746
+dateModified: 1694466538
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: true
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -94,6 +142,15 @@ meta:
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
 plugins:
+  _canto-dam-assets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      appId: $CANTO_APP_ID
+      authEndpoint: $CANTO_AUTH_ENDPOINT
+      retrieveAssetMetadataEndpoint: $CANTO_ASSET_ENDPOINT
+      secretKey: $CANTO_SECRET_KEY
   google-cloud:
     edition: standard
     enabled: true
@@ -465,10 +522,17 @@ plugins:
                   - 'Educator Schema'
                 -
                   - allowRegistration
-                  - ''
+                  - '1'
                 -
                   - siteId
                   - ''
+                -
+                  - entryQueries
+                  -
+                    __assoc__:
+                      -
+                        - pages
+                        - ''
           -
             - group-31
             -
@@ -478,10 +542,17 @@ plugins:
                   - 'Student Schema'
                 -
                   - allowRegistration
-                  - ''
+                  - '1'
                 -
                   - siteId
                   - ''
+                -
+                  - entryQueries
+                  -
+                    __assoc__:
+                      -
+                        - pages
+                        - ''
       invalidEmailAddress: 'Invalid email address'
       invalidHeader: 'Invalid Authorization Header'
       invalidJwtSecretKey: 'Invalid JWT Secret Key'
