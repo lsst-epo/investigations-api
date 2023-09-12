@@ -4,41 +4,41 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  ffba8a00-b52c-4309-9a23-99475cbcc3b4:
+  27dac77a-8279-4e5d-80ca-d7be8e2ad0a8:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color
+            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f72c938-d70c-4466-b9ce-7508327496ac
+            uid: 5274b8d7-2ddc-4951-93c4-a3ba13ff5204
             userCondition: null
             warning: null
-            width: 75
+            width: 100
           -
             elementCondition: null
-            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
+            fieldUid: dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7 # Caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c0f7d268-66af-41ff-bf16-5ef40896345b
+            uid: 532503d1-b81c-459e-9455-fc30d2f25cf5
             userCondition: null
             warning: null
-            width: 25
-        name: Content
-        uid: 9b6809bf-ed9f-43c6-b8a4-f93cdde5a5f5
+            width: 100
+        name: 'Tab 1'
+        uid: af932c0e-cb2a-4cf8-8975-29f6875fb4c5
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: null
 groupChildBlockTypes: true
-handle: filterTool
+handle: image
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -47,6 +47,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Filter Tool'
-sortOrder: 12
+name: Image
+sortOrder: 2
 topLevel: true

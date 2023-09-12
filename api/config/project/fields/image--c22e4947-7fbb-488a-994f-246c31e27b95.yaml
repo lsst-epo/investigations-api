@@ -12,5 +12,5 @@ searchable: false
 settings:
   cantoAssetPickerType: singleImagePicker
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: lsst\cantodamassets\fields\CantoDamAsset

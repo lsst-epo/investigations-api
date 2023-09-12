@@ -22,5 +22,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Interaction Group'
-sortOrder: 3
+sortOrder: 4
 topLevel: true
