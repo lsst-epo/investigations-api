@@ -57,7 +57,7 @@ class Module extends BaseModule
             $event->rules['answers/<elementId:\\d+>'] = 'elements/edit';
         });
 
-        // Register GQL query, type
+        // Register GQL types, queries, mutations and schema components:
         Event::on(Gql::class, Gql::EVENT_REGISTER_GQL_TYPES, function(RegisterGqlTypesEvent $event) {
                 $event->types[] = AnswerInterface::class;
             }

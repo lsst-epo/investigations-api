@@ -29,17 +29,6 @@ settings:
         -
           - default
           - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Fill in the Blank'
-        -
-          - value
-          - fillInTheBlank
-        -
-          - default
-          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown
