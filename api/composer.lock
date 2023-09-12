@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "028c098f7cf5718b3e30ad687b7aeb0a",
+    "content-hash": "7da986f498d91482d3e6afd9ee9491ea",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -922,11 +922,11 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a099ba05adf6424298aa5177ca17084e616a5690",
-                "reference": "a099ba05adf6424298aa5177ca17084e616a5690",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/445c8eccde570ede09dc96c39fc1357a5296520f",
+                "reference": "445c8eccde570ede09dc96c39fc1357a5296520f",
                 "shasum": ""
             },
             "type": "library",
@@ -946,7 +946,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2023-05-26T20:43:59+00:00"
+            "time": "2023-09-09T18:23:58+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1321,11 +1321,11 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.7.0",
+            "version": "v6.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/71278f20b0a623389beefe87a641d03948a38870",
-                "reference": "71278f20b0a623389beefe87a641d03948a38870",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5dbc8959427416b8ee09a100d7a8588c00fb2e26",
+                "reference": "5dbc8959427416b8ee09a100d7a8588c00fb2e26",
                 "shasum": ""
             },
             "require": {
@@ -1362,7 +1362,7 @@
                 "jwt",
                 "php"
             ],
-            "time": "2023-06-14T15:29:26+00:00"
+            "time": "2023-07-14T18:33:00+00:00"
         },
         {
             "name": "google/apiclient",
@@ -1415,15 +1415,23 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.304.0",
+            "version": "v0.315.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-api-php-client-services.git",
+                "reference": "9fe675be642888cded64be861891901f092ab72d"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/6731fd0d3e2f1ff2794f36108b55c0a3480edf3d",
-                "reference": "6731fd0d3e2f1ff2794f36108b55c0a3480edf3d",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/9fe675be642888cded64be861891901f092ab72d",
+                "reference": "9fe675be642888cded64be861891901f092ab72d",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4||^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7||^8.5.13"
             },
             "type": "library",
             "autoload": {
@@ -1434,6 +1442,7 @@
                     "Google\\Service\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1442,7 +1451,11 @@
             "keywords": [
                 "google"
             ],
-            "time": "2023-06-07T02:11:36+00:00"
+            "support": {
+                "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.315.0"
+            },
+            "time": "2023-09-10T01:10:37+00:00"
         },
         {
             "name": "google/auth",
@@ -2030,11 +2043,11 @@
         },
         {
             "name": "jamesedmonston/graphql-authentication",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamesedmonston/graphql-authentication/zipball/63de88704b21831ecb6a6d17d511eb6e29dbf822",
-                "reference": "63de88704b21831ecb6a6d17d511eb6e29dbf822",
+                "url": "https://api.github.com/repos/jamesedmonston/graphql-authentication/zipball/ec3e6335896173c6bddf13e9047ce727b2136319",
+                "reference": "ec3e6335896173c6bddf13e9047ce727b2136319",
                 "shasum": ""
             },
             "require": {
@@ -2084,7 +2097,7 @@
                 "docs": "https://github.com/jamesedmonston/graphql-authentication/blob/master/README.md",
                 "issues": "https://github.com/jamesedmonston/graphql-authentication/issues"
             },
-            "time": "2023-03-04T10:42:07+00:00"
+            "time": "2023-07-01T15:00:48+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3079,11 +3092,11 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.20",
+            "version": "3.0.21",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
-                "reference": "543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/4580645d3fc05c189024eb3b834c6c1e4f0f30a1",
+                "reference": "4580645d3fc05c189024eb3b834c6c1e4f0f30a1",
                 "shasum": ""
             },
             "require": {
@@ -3158,15 +3171,15 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2023-06-13T06:30:34+00:00"
+            "time": "2023-07-09T15:24:48+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.23.1",
+            "version": "1.24.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
-                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/3510b0a6274cc42f7219367cb3abfc123ffa09d6",
+                "reference": "3510b0a6274cc42f7219367cb3abfc123ffa09d6",
                 "shasum": ""
             },
             "require": {
@@ -3184,7 +3197,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-08-03T16:32:59+00:00"
+            "time": "2023-09-07T20:46:32+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -5340,11 +5353,11 @@
         },
         {
             "name": "thenetworg/oauth2-azure",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheNetworg/oauth2-azure/zipball/06fb2d620fb6e6c934f632c7ec7c5ea2e978a844",
-                "reference": "06fb2d620fb6e6c934f632c7ec7c5ea2e978a844",
+                "url": "https://api.github.com/repos/TheNetworg/oauth2-azure/zipball/9231c7b2b0b5db68254f304501ba1053640a3dc9",
+                "reference": "9231c7b2b0b5db68254f304501ba1053640a3dc9",
                 "shasum": ""
             },
             "require": {
@@ -5383,7 +5396,7 @@
                 "oauth2",
                 "windows azure"
             ],
-            "time": "2022-06-23T10:35:36+00:00"
+            "time": "2023-06-16T08:50:16+00:00"
         },
         {
             "name": "twig/twig",
@@ -6721,5 +6734,5 @@
     "platform-overrides": {
         "php": "8.1.10"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
