@@ -6,7 +6,6 @@ use Craft;
 use craft\base\Element;
 use craft\elements\User;
 use craft\elements\conditions\ElementConditionInterface;
-use craft\elements\db\ElementQueryInterface;
 use craft\helpers\Db;
 use craft\helpers\UrlHelper;
 use craft\web\CpScreenResponseBehavior;
