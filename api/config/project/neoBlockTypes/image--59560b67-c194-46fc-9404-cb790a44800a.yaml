@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  27dac77a-8279-4e5d-80ca-d7be8e2ad0a8:
+  6264e8e3-cea0-4be5-8ed9-21f7e5676cb1:
     tabs:
       -
         elementCondition: null
@@ -17,7 +17,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5274b8d7-2ddc-4951-93c4-a3ba13ff5204
+            uid: daf6ca48-a51c-408b-a898-381be6c31f30
             userCondition: null
             warning: null
             width: 100
