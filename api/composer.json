@@ -18,6 +18,11 @@
         {
             "type": "path",
             "url": "plugins/nextbuilds"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
         }
     ],
     "require-dev": {
@@ -27,7 +32,7 @@
     "autoload": {
         "psr-4": {
             "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/",
-            "modules\\investigations\\":  "modules/investigations/"
+            "modules\\investigations\\": "modules/investigations/"
         }
     },
     "config": {
