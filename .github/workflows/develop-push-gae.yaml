@@ -30,11 +30,12 @@ jobs:
     - name: Format version name
       id: version_name
       run: echo "version_name=$(echo \"${{ github.head_ref }}\" | sed 's/[_.,\/]/-/g' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-
+        
     - name: Deploy to App Engine
       env:
         BRANCH_NAME: ${{ env.version_name }}
       run: |
         gcloud app deploy app.yaml \
           --promote
+
           
