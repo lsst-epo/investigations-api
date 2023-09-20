@@ -62,20 +62,7 @@ jobs:
         reactions: '+1'
         edit-mode: replace
 
-    
-    # - name: Get secret to create .env
-    #   run: gcloud secrets versions access latest --secret=investigations-api-env > ./api/.env
-
-    # - name: Setup docker build
-    #   uses: docker/setup-buildx-action@v2
-    #   id: buildx
-    #   with:
-    #     install: true
-
-    # - name: Build client, but don't deploy
-    #   run: docker build . 
-
-  build-push-deploy:
+  build-push-deploy-with-preview:
     name: 'Build Image and Deploy Preview Version'
     runs-on: ubuntu-latest
     if: ${{ (github.event.action != 'closed') && (startsWith(github.head_ref, 'preview') == true) }}
