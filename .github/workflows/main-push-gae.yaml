@@ -1,4 +1,4 @@
-name: 'Push to Development after PR Merge'
+name: 'Push to Integration upon force push'
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-push-deploy:
-    name: 'Deploy Development Version'
+    name: 'Deploy Integration Version'
     runs-on: ubuntu-latest
     if: ${{ github.event.action != 'closed'}}
 
