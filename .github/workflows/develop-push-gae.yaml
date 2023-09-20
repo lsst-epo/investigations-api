@@ -37,4 +37,12 @@ jobs:
       run: |
         gcloud app deploy app.yaml \
           --promote
+    
+    - name: Create or update a comment with reminder for secrets update
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        body: |
+          :orangutan: IMPORTANT! If this PR requires updated secrets, please ensure they are updated in the dev environment in GCP! :orangutan:
+        reactions: '+1'
+        edit-mode: replace
           
