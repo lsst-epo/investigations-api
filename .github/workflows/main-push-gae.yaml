@@ -30,14 +30,6 @@ jobs:
       - name: Format version name
         id: version_name
         run: echo "version_name=$(echo \"${{ github.head_ref }}\" | sed 's/[_.,\/]/-/g' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-    
-      - name: Create or update a comment with reminder for secrets update
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-          body: |
-            :orangutan: IMPORTANT! If this PR requires updated secrets, please ensure they are updated in the `int` environment in GCP! :orangutan:
-          reactions: '+1'
-          edit-mode: replace
 
       - name: Deploy to App Engine
         env:
