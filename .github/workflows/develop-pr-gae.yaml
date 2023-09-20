@@ -35,25 +35,6 @@ jobs:
       id: version_name
       run: echo "version_name=$(echo \"${{ github.head_ref }}\" | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]' | tr -d 'preview')" >> $GITHUB_ENV
 
-    # Create or update a comment with the secrets reminder
-    - name: Find Comment
-      uses: peter-evans/find-comment@v1
-      id: fc
-      with:
-        issue-number: ${{ github.event.pull_request.number }}
-        comment-author: 'github-actions[bot]'
-        body-includes: IMPORTANT! If this PR requires updated secrets
-
-    - name: Create or update a comment with reminder for secrets update
-      uses: peter-evans/create-or-update-comment@v1
-      with:
-        comment-id: ${{ steps.fc.outputs.comment-id }}
-        issue-number: ${{ github.event.pull_request.number }}
-        body: |
-          :orangutan: IMPORTANT! If this PR requires updated secrets, please ensure they are updated in the `dev` environment in GCP! :orangutan:
-        reactions: '+1'
-        edit-mode: replace
-
     - name: Deploy to App Engine
       env:
         BRANCH_NAME: ${{ env.version_name }}
