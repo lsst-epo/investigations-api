@@ -10,11 +10,7 @@
 
 use craft\helpers\App;
 
-<<<<<<< HEAD
 $gcsBucketPathFormat = 'https://storage.googleapis.com/%s/';
-=======
-$dev = App::env('ENVIRONMENT') === 'dev';
->>>>>>> main
 
 return [
     // Global settings
@@ -35,14 +31,10 @@ return [
             '@webroot' => dirname(__DIR__) . '/web',
             '@webBaseUrl' => App::env('WEB_BASE_URL'),
             '@previewUrlFormat' => App::env('ALIAS_PREVIEW_URL_FORMAT'),
-<<<<<<< HEAD
             '@assetsGeneralBaseURL' => sprintf(
                 $gcsBucketPathFormat,
                 App::env('GCS_GENERAL_BUCKET')
             ),
-=======
-            '@webBaseUrl' => App::env('WEB_BASE_URL')
->>>>>>> main
         ],
 
         'allowedGraphqlOrigins' => false,
