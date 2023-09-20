@@ -31,13 +31,6 @@ jobs:
       id: version_name
       run: echo "version_name=$(echo \"${{ github.head_ref }}\" | sed 's/[_.,\/]/-/g' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
-    - name: Deploy to App Engine
-      env:
-        BRANCH_NAME: ${{ env.version_name }}
-      run: |
-        gcloud app deploy app.yaml \
-          --promote
-
     - name: Find Comment
       uses: peter-evans/find-comment@v1
       id: fc
@@ -52,7 +45,15 @@ jobs:
         comment-id: ${{ steps.fc.outputs.comment-id }}
         issue-number: ${{ github.event.pull_request.number }}
         body: |
-          :orangutan: IMPORTANT! If this PR requires updated secrets, please ensure they are updated in the dev environment in GCP! :orangutan:
+          :orangutan: IMPORTANT! If this PR requires updated secrets, please ensure they are updated in the `dev` environment in GCP! :orangutan:
         reactions: '+1'
         edit-mode: replace
+        
+    - name: Deploy to App Engine
+      env:
+        BRANCH_NAME: ${{ env.version_name }}
+      run: |
+        gcloud app deploy app.yaml \
+          --promote
+
           
