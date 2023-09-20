@@ -1,4 +1,4 @@
-name: 'Build Image on PR Creation to Int ~ Optional: Deploy Preview Instances'
+name: 'PR Preview to Int'
 
 on:
   pull_request:
