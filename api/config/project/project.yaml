@@ -1,4 +1,4 @@
-dateModified: 1694813381
+dateModified: 1695321504
 elementSources:
   craft\elements\Entry:
     -
@@ -97,6 +97,7 @@ meta:
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
+    27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
@@ -121,8 +122,8 @@ meta:
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
-    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
+    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
@@ -133,8 +134,8 @@ meta:
     a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
     aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
-    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
+    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
@@ -147,8 +148,8 @@ meta:
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
-    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: Caption # Caption
+    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
@@ -180,6 +181,7 @@ plugins:
       activationEmailSent: 'You will receive an email if it matches an account in our system'
       allowMagicAuthentication: null
       allowRegistration: '1'
+      allowTwoFactorAuthentication: false
       allowedFacebookDomains: null
       allowedGoogleDomains: null
       allowedMicrosoftDomains: null
@@ -207,7 +209,16 @@ plugins:
             -
               __assoc__:
                 -
+                  - answerOptions
+                  - queryMutate
+                -
+                  - answerType
+                  - queryMutate
+                -
                   - availableFilters
+                  - queryMutate
+                -
+                  - captionRichText
                   - queryMutate
                 -
                   - contentBlocks
@@ -241,6 +252,12 @@ plugins:
                   - queryMutate
                 -
                   - preSelectedColor
+                  - queryMutate
+                -
+                  - questionEntries
+                  - queryMutate
+                -
+                  - questionText
                   - queryMutate
                 -
                   - readOnly
@@ -283,7 +300,16 @@ plugins:
             -
               __assoc__:
                 -
+                  - answerOptions
+                  - queryMutate
+                -
+                  - answerType
+                  - queryMutate
+                -
                   - availableFilters
+                  - queryMutate
+                -
+                  - captionRichText
                   - queryMutate
                 -
                   - contentBlocks
@@ -317,6 +343,12 @@ plugins:
                   - queryMutate
                 -
                   - preSelectedColor
+                  - queryMutate
+                -
+                  - questionEntries
+                  - queryMutate
+                -
+                  - questionText
                   - queryMutate
                 -
                   - readOnly
@@ -359,7 +391,16 @@ plugins:
             -
               __assoc__:
                 -
+                  - answerOptions
+                  - queryMutate
+                -
+                  - answerType
+                  - queryMutate
+                -
                   - availableFilters
+                  - queryMutate
+                -
+                  - captionRichText
                   - queryMutate
                 -
                   - contentBlocks
@@ -393,6 +434,12 @@ plugins:
                   - queryMutate
                 -
                   - preSelectedColor
+                  - queryMutate
+                -
+                  - questionEntries
+                  - queryMutate
+                -
+                  - questionText
                   - queryMutate
                 -
                   - readOnly
@@ -435,7 +482,16 @@ plugins:
             -
               __assoc__:
                 -
+                  - answerOptions
+                  - queryMutate
+                -
+                  - answerType
+                  - queryMutate
+                -
                   - availableFilters
+                  - queryMutate
+                -
+                  - captionRichText
                   - queryMutate
                 -
                   - contentBlocks
@@ -469,6 +525,12 @@ plugins:
                   - queryMutate
                 -
                   - preSelectedColor
+                  - queryMutate
+                -
+                  - questionEntries
+                  - queryMutate
+                -
+                  - questionText
                   - queryMutate
                 -
                   - readOnly
@@ -514,7 +576,7 @@ plugins:
       granularSchemas:
         __assoc__:
           -
-            - group-29
+            - group-33
             -
               __assoc__:
                 -
@@ -527,7 +589,7 @@ plugins:
                   - siteId
                   - ''
           -
-            - group-30
+            - group-35
             -
               __assoc__:
                 -
@@ -544,10 +606,23 @@ plugins:
                   -
                     __assoc__:
                       -
+                        - investigations
+                        - ''
+                      -
                         - pages
                         - ''
+                      -
+                        - questions
+                        - ''
+                -
+                  - assetQueries
+                  -
+                    __assoc__:
+                      -
+                        - contentAssets
+                        - ''
           -
-            - group-31
+            - group-34
             -
               __assoc__:
                 -
@@ -564,7 +639,20 @@ plugins:
                   -
                     __assoc__:
                       -
+                        - investigations
+                        - ''
+                      -
                         - pages
+                        - ''
+                      -
+                        - questions
+                        - ''
+                -
+                  - assetQueries
+                  -
+                    __assoc__:
+                      -
+                        - contentAssets
                         - ''
       invalidEmailAddress: 'Invalid email address'
       invalidHeader: 'Invalid Authorization Header'
@@ -595,7 +683,7 @@ plugins:
       schemaId: null
       schemaName: 'Public Schema'
       siteId: null
-      skipActivatedCheck: ''
+      skipActivatedCheck: null
       skipSocialActivation: null
       tokenNotFound: 'We couldn''t find any matching tokens'
       twitterApiKey: null
