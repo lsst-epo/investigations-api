@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  6264e8e3-cea0-4be5-8ed9-21f7e5676cb1:
+  2d0517df-2cae-47f5-bddc-d7c6823fda34:
     tabs:
       -
         elementCondition: null
@@ -33,6 +33,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 27af84b2-9ccb-416c-ae38-872fdca1f5c0 # Layout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e979c28-bafa-4fef-8d5a-91a8c15d8e0e
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Tab 1'
         uid: af932c0e-cb2a-4cf8-8975-29f6875fb4c5
         userCondition: null
@@ -48,5 +60,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Image
-sortOrder: 2
+sortOrder: 3
 topLevel: true
