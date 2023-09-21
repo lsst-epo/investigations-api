@@ -1,0 +1,35 @@
+columnSuffix: lmmmqrjp
+contentColumnType: string(10)
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: layout
+instructions: null
+name: Layout
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Vertical
+        -
+          - value
+          - vertical
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Horizontal
+        -
+          - value
+          - horizontal
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons
