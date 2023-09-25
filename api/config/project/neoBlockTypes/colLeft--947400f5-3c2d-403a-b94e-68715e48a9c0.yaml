@@ -1,6 +1,12 @@
 childBlocks:
-  - colLeft
-  - colRight
+  - questionBlock
+  - text
+  - image
+  - group
+  - barGraphTool
+  - colorTool
+  - filterTool
+  - scatterplotTool
 conditions: null
 description: ''
 enabled: true

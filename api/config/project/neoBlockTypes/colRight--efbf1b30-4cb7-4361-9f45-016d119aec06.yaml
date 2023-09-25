@@ -1,5 +1,12 @@
 childBlocks:
+  - questionBlock
+  - text
+  - image
+  - group
+  - widgetContainer
   - barGraphTool
+  - colorTool
+  - filterTool
   - scatterplotTool
 conditions: null
 description: ''
