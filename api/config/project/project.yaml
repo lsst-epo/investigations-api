@@ -1,4 +1,4 @@
-dateModified: 1695321504
+dateModified: 1695323179
 elementSources:
   craft\elements\Entry:
     -
@@ -136,6 +136,7 @@ meta:
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
+    bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
@@ -148,7 +149,7 @@ meta:
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
-    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: Caption # Caption
+    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
