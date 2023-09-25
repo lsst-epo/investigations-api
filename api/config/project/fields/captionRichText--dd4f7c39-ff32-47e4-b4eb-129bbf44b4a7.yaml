@@ -3,7 +3,7 @@ contentColumnType: text
 fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
 handle: captionRichText
 instructions: null
-name: Caption
+name: 'RTE Caption'
 searchable: false
 settings:
   availableTransforms: ''
