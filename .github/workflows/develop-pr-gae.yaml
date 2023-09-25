@@ -11,10 +11,40 @@ on:
       - 'develop'
 
 jobs:
+  build-image-no-deploy:
+    name: 'Build Image Without Deploy - No Preview'
+    runs-on: ubuntu-latest
+    if: ${{ (github.event.action != 'closed') && (startsWith(github.head_ref, 'preview') == false) }}
+
+    # Checkout the repository to the GitHub Actions runner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # gcloud CLI setup
+      - name: Login to GCP
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          service_account_key: ${{ secrets.DEV_SA_KEY }}
+          project_id: skyviewer
+          export_default_credentials: true
+
+      - name: Get secret to create .env
+        run: gcloud secrets versions access latest --secret=investigations-api-env > ./api/.env
+
+      - name: Setup docker build
+        uses: docker/setup-buildx-action@v2
+        id: buildx
+        with:
+          install: true
+
+      - name: Build client, but don't deploy
+        run: docker build .
+
   build-push-deploy:
     name: 'Build and Deploy PR Preview to Development'
     runs-on: ubuntu-latest
-    if: ${{ (github.event.action != 'closed') && (startsWith(github.head_ref, 'preview') == false) }}
+    if: ${{ (github.event.action != 'closed') && (startsWith(github.head_ref, 'preview') == true) }}
 
     # Checkout the repository to the GitHub Actions runner
     steps:
