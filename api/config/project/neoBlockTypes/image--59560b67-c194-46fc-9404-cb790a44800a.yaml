@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  2d0517df-2cae-47f5-bddc-d7c6823fda34:
+  88bba6ce-bfef-4bdd-8dde-3dc67771effa:
     tabs:
       -
         elementCondition: null
@@ -14,7 +14,7 @@ fieldLayouts:
             fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: daf6ca48-a51c-408b-a898-381be6c31f30
@@ -23,25 +23,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7 # Caption
+            fieldUid: 27af84b2-9ccb-416c-ae38-872fdca1f5c0 # Layout
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 532503d1-b81c-459e-9455-fc30d2f25cf5
+            uid: 2e979c28-bafa-4fef-8d5a-91a8c15d8e0e
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 27af84b2-9ccb-416c-ae38-872fdca1f5c0 # Layout
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2e979c28-bafa-4fef-8d5a-91a8c15d8e0e
+            uid: 3f5474a8-83ec-4ca4-b431-33fe672203ae
             userCondition: null
             warning: null
             width: 100
