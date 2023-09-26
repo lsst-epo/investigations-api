@@ -4,8 +4,8 @@ childBlocks:
 conditions: null
 description: 'Use this to group several instances of some types of widgets.'
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
-group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
+field: a46e7379-7773-4ce4-9c59-434567870f0c
+group: 7ebe493b-5e03-48c8-8375-c9f9582da77e
 groupChildBlockTypes: true
 handle: widgetContainer
 icon: null

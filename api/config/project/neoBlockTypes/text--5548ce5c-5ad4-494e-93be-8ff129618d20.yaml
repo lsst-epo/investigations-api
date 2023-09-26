@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+field: a46e7379-7773-4ce4-9c59-434567870f0c
 fieldLayouts:
   a93487b5-2ef3-45c3-aedc-ded481b860a9:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d
             instructions: null
             label: null
             required: false

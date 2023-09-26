@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6 # Description
+            fieldUid: 05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c
             instructions: null
             label: null
             required: false
@@ -56,7 +56,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 0481b024-bc6f-4104-bc1c-802615313aaa # Page Type
+            fieldUid: 0481b024-bc6f-4104-bc1c-802615313aaa
             instructions: null
             label: null
             required: false
@@ -72,7 +72,10 @@ fieldLayouts:
 handle: homepage
 hasTitleField: true
 name: Homepage
-section: 075467b0-0dee-453c-9df0-0de6d2443cf8 # Homepage
+section: 075467b0-0dee-453c-9df0-0de6d2443cf8
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

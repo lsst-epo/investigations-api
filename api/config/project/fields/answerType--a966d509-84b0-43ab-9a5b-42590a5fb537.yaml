@@ -1,11 +1,12 @@
 columnSuffix: msqfxejh
 contentColumnType: string
-fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8
 handle: answerType
 instructions: null
 name: 'Answer Type'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

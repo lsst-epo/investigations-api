@@ -4,7 +4,7 @@ contentColumnType:
   - 'cantoAlbumId:string'
   - 'cantoAssetData:text'
   - 'cantoAlbumData:string'
-fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937
 handle: image
 instructions: null
 name: Image

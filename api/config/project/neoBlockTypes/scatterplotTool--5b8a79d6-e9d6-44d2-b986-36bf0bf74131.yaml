@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+field: a46e7379-7773-4ce4-9c59-434567870f0c
 fieldLayouts:
   7c3028af-718d-4e37-a4b8-c5eb916234cb:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d
             instructions: null
             label: Title
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
+            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
+            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e
             instructions: null
             label: null
             required: false
@@ -47,7 +47,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
+            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b
             instructions: null
             label: null
             required: false
@@ -59,7 +59,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
+            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44
             instructions: null
             label: null
             required: false
@@ -71,7 +71,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
+            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06
             instructions: null
             label: null
             required: false
@@ -84,7 +84,7 @@ fieldLayouts:
         name: Content
         uid: 219e2e73-d637-4b92-ab2c-c557a23ddd7f
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: 513634e9-3389-4e41-b769-9433ac34e35e
 groupChildBlockTypes: true
 handle: scatterplotTool
 icon: null
