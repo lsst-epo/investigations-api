@@ -16,12 +16,12 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:
+  2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: # ES
     enabledByDefault: true
     hasUrls: false
     template: null
     uriFormat: null
-  547128fa-4529-4483-9968-66425996b69f:
+  547128fa-4529-4483-9968-66425996b69f: # EN
     enabledByDefault: true
     hasUrls: false
     template: null

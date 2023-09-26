@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
   80dff751-12ba-4018-80c0-a031642798c1:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
             instructions: null
             label: Title
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3
+            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e
+            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
             instructions: null
             label: null
             required: false
@@ -47,7 +47,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7
+            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
             instructions: null
             label: null
             required: false
@@ -59,7 +59,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44
+            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
             instructions: null
             label: null
             required: false
@@ -71,7 +71,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3
+            fieldUid: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3 # Graph Bars
             instructions: null
             label: null
             required: false
@@ -84,7 +84,7 @@ fieldLayouts:
         name: Content
         uid: 6eb93f0e-4432-4dec-89a8-ea1f20480881
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
 handle: barGraphTool
 icon: null

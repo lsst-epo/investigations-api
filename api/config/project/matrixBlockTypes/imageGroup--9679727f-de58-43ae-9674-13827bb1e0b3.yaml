@@ -1,4 +1,4 @@
-field: 9fc49630-8ca5-4f95-be3e-cf1adc06e008
+field: 9fc49630-8ca5-4f95-be3e-cf1adc06e008 # Images
 fieldLayouts:
   a391c030-cb9b-4ffb-a78e-29b827be9272:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8
+            fieldUid: be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8 # Group Name
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 23ca3082-ab51-4658-9872-cf7f31a9bd56
+            fieldUid: 23ca3082-ab51-4658-9872-cf7f31a9bd56 # Images
             instructions: null
             label: null
             required: false
@@ -33,7 +33,7 @@ fieldLayouts:
         uid: 6d1e650f-e838-451a-9325-0e8bd4017a6f
         userCondition: null
 fields:
-  23ca3082-ab51-4658-9872-cf7f31a9bd56:
+  23ca3082-ab51-4658-9872-cf7f31a9bd56: # Images
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -47,7 +47,7 @@ fields:
       allowUploads: true
       allowedKinds: null
       branchLimit: null
-      defaultUploadLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6'
+      defaultUploadLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
       defaultUploadLocationSubpath: null
       localizeRelations: false
       maintainHierarchy: false
@@ -57,7 +57,7 @@ fields:
       restrictFiles: false
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6'
+      restrictedLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
       restrictedLocationSubpath: null
       selectionCondition:
         __assoc__:
@@ -81,7 +81,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8:
+  be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: # Group Name
     columnSuffix: xrmeempt
     contentColumnType: text
     fieldGroup: null

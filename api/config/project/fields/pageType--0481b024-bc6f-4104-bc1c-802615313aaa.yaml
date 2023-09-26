@@ -1,6 +1,6 @@
 columnSuffix: lmrzoxas
 contentColumnType: string
-fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
 handle: pageType
 instructions: 'Defines the type of page: `Standard` for content pages, `Dynamic` for fully API-driven, `Single` for pages defined as the entry type single, `External` for external pages.'
 name: 'Page Type'

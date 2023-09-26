@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95
+            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
             instructions: null
             label: null
             required: false
@@ -48,7 +48,7 @@ fieldLayouts:
 handle: investigationParent
 hasTitleField: true
 name: 'Investigation (Parent Entry)'
-section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47
+section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47 # Investigations
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

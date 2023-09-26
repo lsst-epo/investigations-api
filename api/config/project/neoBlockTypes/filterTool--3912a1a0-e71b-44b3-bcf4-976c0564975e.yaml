@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
   ffba8a00-b52c-4309-9a23-99475cbcc3b4:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636
+            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 75
           -
             elementCondition: null
-            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287
+            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
         name: Content
         uid: 9b6809bf-ed9f-43c6-b8a4-f93cdde5a5f5
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
 handle: filterTool
 icon: null
