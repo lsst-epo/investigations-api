@@ -1,4 +1,4 @@
-dateModified: 1695685940
+dateModified: 1695756119
 elementSources:
   craft\elements\Entry:
     -
@@ -6,7 +6,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47'
+      key: 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
       tableAttributes:
         - postDate
         - expiryDate
@@ -27,7 +27,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d'
+      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
       tableAttributes:
         - postDate
         - expiryDate
@@ -69,93 +69,93 @@ fs:
     url: '@web/assets/content'
 meta:
   __names__:
-    1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach'
-    1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations
-    1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container'
-    2a5db1b1-d277-4741-affe-f6d39af9a8b6: 'Content Assets'
-    2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES
-    2ec1a258-188f-43da-936b-78e95f910601: 'Color Tool'
-    4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value
-    4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label
-    4e1884f2-7cc9-40d8-8426-f66da625d8cc: Assets
-    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool'
-    05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description
-    5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value
-    5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations
-    5e096987-24f1-48a7-af6a-898905593ab5: 'Widget Container'
-    6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage
-    7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page'
-    7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers
-    8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum'
-    8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages
-    8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar
-    8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors
-    9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries'
-    9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images
-    10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum'
-    17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars'
-    021f7cc6-93ec-4da4-9566-8d05c64d1725: Default
-    23ca3082-ab51-4658-9872-cf7f31a9bd56: Images
-    25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point'
-    27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout
-    34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value'
-    43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label
-    61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum'
-    074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages
-    77f02908-0342-4917-9d14-38f769d15c39: Pages
-    90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options'
-    131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only'
-    222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To'
-    461e1254-37f7-4aeb-81a1-3f08d2463d06: Students
-    0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type'
-    852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label'
-    919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text'
-    1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information'
-    3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool'
-    4994da56-0831-400d-b1d1-ade611fd5da1: Title
-    5548ce5c-5ad4-494e-93be-8ff129618d20: Text
-    5599d188-862e-4717-b206-6aadd975c937: Common
-    9068dd8e-ad92-4925-ba1d-1fe180598462: Questions
-    31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum'
-    59560b67-c194-46fc-9404-cb790a44800a: Image
-    069834df-b9cb-47d6-9ff4-756fde01e084: Item
-    075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage
-    513634e9-3389-4e41-b769-9433ac34e35e: Widgets
-    547128fa-4529-4483-9968-66425996b69f: EN
-    0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block'
-    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column'
-    04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema'
-    9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group'
-    65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)'
-    a21a42b0-7211-4d77-9071-47a06960fef4: Widgets
-    a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks'
-    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool'
-    a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items'
-    a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type'
-    aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information'
-    b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value
-    b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions
-    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group'
-    bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption
-    be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name'
-    bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)'
-    c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description
-    c22e4947-7fbb-488a-994f-246c31e27b95: Image
-    c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text
-    c6109150-a89c-4f0b-aa79-8c1ca78be0ec: Template
-    cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters'
-    cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema'
-    d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color'
-    d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators
-    d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label'
-    dd3a1151-8de9-46f6-995f-c721fa29a07b: Option
-    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption'
-    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options'
-    e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema'
-    e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name'
-    efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column'
-    f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title'
-    ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label'
+    1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
+    1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
+    1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
+    2a5db1b1-d277-4741-affe-f6d39af9a8b6: 'Content Assets' # Content Assets
+    2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
+    2ec1a258-188f-43da-936b-78e95f910601: 'Color Tool' # Color Tool
+    4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
+    4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
+    4e1884f2-7cc9-40d8-8426-f66da625d8cc: Assets # Assets
+    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
+    05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
+    5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
+    5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
+    5e096987-24f1-48a7-af6a-898905593ab5: 'Widget Container' # Widget Container
+    6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
+    7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
+    7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
+    8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
+    8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
+    8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
+    8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
+    9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
+    9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
+    10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
+    17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
+    021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
+    23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
+    25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
+    27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
+    34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
+    43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
+    61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
+    074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
+    77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
+    90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options' # Sort Options
+    131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only' # Read Only
+    222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
+    461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
+    0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
+    852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
+    919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
+    1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
+    4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
+    5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
+    5599d188-862e-4717-b206-6aadd975c937: Common # Common
+    9068dd8e-ad92-4925-ba1d-1fe180598462: Questions # Questions
+    31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
+    59560b67-c194-46fc-9404-cb790a44800a: Image # Image
+    069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
+    075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
+    513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
+    547128fa-4529-4483-9968-66425996b69f: EN # EN
+    0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
+    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
+    04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
+    9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
+    65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
+    a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
+    a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
+    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
+    a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
+    a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
+    aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
+    b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
+    b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
+    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
+    bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
+    be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
+    bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
+    c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
+    c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
+    c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
+    c6109150-a89c-4f0b-aa79-8c1ca78be0ec: Template # Template
+    cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
+    cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
+    d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
+    d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
+    d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
+    dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
+    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
+    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
+    e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
+    e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
+    efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
+    f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:
   _canto-dam-assets:
     edition: standard

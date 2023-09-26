@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: f8a590d0-db30-4e06-9d6d-6cfd7613147e
+            fieldUid: f8a590d0-db30-4e06-9d6d-6cfd7613147e # Hide Title
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 222de7cf-741d-4d1f-b274-acc85a3c454c
+            fieldUid: 222de7cf-741d-4d1f-b274-acc85a3c454c # Link To
             instructions: null
             label: null
             required: false
@@ -60,7 +60,7 @@ fieldLayouts:
 handle: redirectPage
 hasTitleField: true
 name: 'Redirect Page'
-section: 8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d
+section: 8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d # Pages
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,4 +1,4 @@
-field: a72ca793-6ee2-4a6f-b47e-06a35cf61e06
+field: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
 fieldLayouts:
   7eb67b7d-05c3-45c6-a4c8-c9bc5c5ac9e6:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 43cffcf1-c54b-45c3-b157-9bdefaa3ce36
+            fieldUid: 43cffcf1-c54b-45c3-b157-9bdefaa3ce36 # Label
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa
+            fieldUid: b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa # X-value
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 5bfc1518-54f5-4b2a-86e8-02a16537b8cf
+            fieldUid: 5bfc1518-54f5-4b2a-86e8-02a16537b8cf # Y-value
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
         uid: 39efd691-217c-4c1c-8d55-9b4769efe837
         userCondition: null
 fields:
-  5bfc1518-54f5-4b2a-86e8-02a16537b8cf:
+  5bfc1518-54f5-4b2a-86e8-02a16537b8cf: # Y-value
     columnSuffix: pfelvklk
     contentColumnType: 'decimal(12,2)'
     fieldGroup: null
@@ -66,7 +66,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
-  43cffcf1-c54b-45c3-b157-9bdefaa3ce36:
+  43cffcf1-c54b-45c3-b157-9bdefaa3ce36: # Label
     columnSuffix: ydhymbpu
     contentColumnType: text
     fieldGroup: null
@@ -86,7 +86,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa:
+  b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: # X-value
     columnSuffix: wevueczn
     contentColumnType: 'decimal(12,2)'
     fieldGroup: null
