@@ -32,7 +32,7 @@ fieldLayouts:
             width: 75
           -
             elementCondition: null
-            fieldUid: 25eb3834-cb4a-46d7-823a-a135a16b9677 # Save Point
+            fieldUid: 25eb3834-cb4a-46d7-823a-a135a16b9677
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 25
           -
             elementCondition: null
-            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c
             instructions: null
             label: null
             required: false
@@ -60,7 +60,10 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: 'Investigation Step (Child Entry)'
-section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47 # Investigations
+section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,11 +1,12 @@
 columnSuffix: letxbuph
 contentColumnType: string
-fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4
 handle: preSelectedColor
 instructions: null
 name: 'Pre-selected Color'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

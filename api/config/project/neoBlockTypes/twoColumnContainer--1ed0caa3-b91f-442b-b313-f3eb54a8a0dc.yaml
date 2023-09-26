@@ -1,11 +1,18 @@
 childBlocks:
   - colLeft
   - colRight
+  - questionBlock
+  - text
+  - widgetContainer
+  - barGraphTool
+  - colorTool
+  - filterTool
+  - scatterplotTool
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
-group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
+field: a46e7379-7773-4ce4-9c59-434567870f0c
+group: 7ebe493b-5e03-48c8-8375-c9f9582da77e
 groupChildBlockTypes: false
 handle: twoColumnContainer
 icon: null

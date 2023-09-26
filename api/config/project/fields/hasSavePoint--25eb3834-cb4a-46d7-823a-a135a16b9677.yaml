@@ -1,6 +1,6 @@
 columnSuffix: zjynfpiw
 contentColumnType: boolean
-fieldGroup: 5dc7dc5c-2390-4eb4-9714-818aa35f5772 # Investigations
+fieldGroup: 5dc7dc5c-2390-4eb4-9714-818aa35f5772
 handle: hasSavePoint
 instructions: 'Users can save their progress on this page.'
 name: 'Save Point'

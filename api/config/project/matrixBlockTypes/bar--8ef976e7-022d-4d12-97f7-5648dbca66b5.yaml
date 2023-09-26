@@ -1,4 +1,4 @@
-field: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3 # Graph Bars
+field: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3
 fieldLayouts:
   8a95b17e-7545-4c01-9134-3976d2087dd0:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 4e2a01a5-ed3f-4652-9d31-4c064ff91cc1 # Label
+            fieldUid: 4e2a01a5-ed3f-4652-9d31-4c064ff91cc1
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 4d4bea1a-66b1-4042-b30d-b5525fa9481d # Y-value
+            fieldUid: 4d4bea1a-66b1-4042-b30d-b5525fa9481d
             instructions: null
             label: null
             required: false
@@ -33,7 +33,7 @@ fieldLayouts:
         uid: 2482d99f-61cc-4d08-8df8-96297ca5a297
         userCondition: null
 fields:
-  4d4bea1a-66b1-4042-b30d-b5525fa9481d: # Y-value
+  4d4bea1a-66b1-4042-b30d-b5525fa9481d:
     columnSuffix: jjbpkmpr
     contentColumnType: text
     fieldGroup: null
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: # Label
+  4e2a01a5-ed3f-4652-9d31-4c064ff91cc1:
     columnSuffix: fsbtlope
     contentColumnType: text
     fieldGroup: null

@@ -32,7 +32,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+            fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
+            fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f
             instructions: null
             label: null
             required: false
@@ -60,14 +60,14 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537
                   operator: in
                   uid: 27fde6ff-d310-4888-950e-41348fd1bcf1
                   values:
                     - select
               elementType: craft\elements\Entry
               fieldContext: global
-            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1
             instructions: null
             label: null
             required: false
@@ -83,7 +83,10 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 9068dd8e-ad92-4925-ba1d-1fe180598462 # Questions
+section: 9068dd8e-ad92-4925-ba1d-1fe180598462
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

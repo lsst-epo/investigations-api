@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+field: a46e7379-7773-4ce4-9c59-434567870f0c
 fieldLayouts:
   dc576cae-30e9-4029-b574-433c7403cf1d:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+            fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 75
           -
             elementCondition: null
-            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
+            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287
             instructions: null
             label: null
             required: false
@@ -39,7 +39,7 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
                   operator: in
                   uid: c0f19587-32fa-4c3e-969f-09c42cf85cd8
                   values:
@@ -47,7 +47,7 @@ fieldLayouts:
                     - displayOnly
               elementType: benf\neo\elements\Block
               fieldContext: global
-            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
+            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95
             instructions: null
             label: null
             required: false
@@ -63,14 +63,14 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
                   operator: in
                   uid: 4a741494-eae5-4407-b1ec-715379e26d0a
                   values:
                     - multipleImages
               elementType: benf\neo\elements\Block
               fieldContext: global
-            fieldUid: 9fc49630-8ca5-4f95-be3e-cf1adc06e008 # Images
+            fieldUid: 9fc49630-8ca5-4f95-be3e-cf1adc06e008
             instructions: null
             label: null
             required: false
@@ -83,7 +83,7 @@ fieldLayouts:
         name: Content
         uid: 7c9a9947-5bf7-4b38-9e3f-104ac356feca
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: 513634e9-3389-4e41-b769-9433ac34e35e
 groupChildBlockTypes: true
 handle: colorTool
 icon: null

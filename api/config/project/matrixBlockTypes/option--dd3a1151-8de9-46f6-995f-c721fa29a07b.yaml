@@ -1,4 +1,4 @@
-field: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+field: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1
 fieldLayouts:
   a03af526-1b06-49aa-b71f-04b2386be2ca:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 34ce437a-0ab5-47b3-8894-ff749aee20e9 # Option Value
+            fieldUid: 34ce437a-0ab5-47b3-8894-ff749aee20e9
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: ff6964ee-dc07-4a6c-a911-14f43c581d0f # Option Label
+            fieldUid: ff6964ee-dc07-4a6c-a911-14f43c581d0f
             instructions: null
             label: null
             required: false
@@ -33,7 +33,7 @@ fieldLayouts:
         uid: d60d0827-df92-496a-b1a2-7f1e536027b2
         userCondition: null
 fields:
-  34ce437a-0ab5-47b3-8894-ff749aee20e9: # Option Value
+  34ce437a-0ab5-47b3-8894-ff749aee20e9:
     columnSuffix: hraegjlj
     contentColumnType: text
     fieldGroup: null
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  ff6964ee-dc07-4a6c-a911-14f43c581d0f: # Option Label
+  ff6964ee-dc07-4a6c-a911-14f43c581d0f:
     columnSuffix: zkreover
     contentColumnType: text
     fieldGroup: null
