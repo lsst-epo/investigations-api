@@ -15,6 +15,9 @@ $gcsBucketPathFormat = 'https://storage.googleapis.com/%s/';
 return [
     // Global settings
     '*' => [
+        // Disable automatic running of queue jobs upon page loads in CP, which causes queue jobs to fail
+        // Supervisord now handles running queue jobs
+        'runQueueAutomatically' => false,
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 1,
 
