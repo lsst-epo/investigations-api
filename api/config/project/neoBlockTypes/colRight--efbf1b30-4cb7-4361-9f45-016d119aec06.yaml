@@ -1,18 +1,25 @@
 childBlocks:
+  - questionBlock
+  - text
+  - image
+  - group
+  - widgetContainer
   - barGraphTool
+  - colorTool
+  - filterTool
   - scatterplotTool
 conditions: null
 description: ''
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c
-group: 7ebe493b-5e03-48c8-8375-c9f9582da77e
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
 groupChildBlockTypes: true
 handle: colRight
 icon: null
 ignorePermissions: true
-maxBlocks: 1
+maxBlocks: 0
 maxChildBlocks: 0
-maxSiblingBlocks: 1
+maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
