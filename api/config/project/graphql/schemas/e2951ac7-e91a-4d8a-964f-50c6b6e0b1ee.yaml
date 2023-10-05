@@ -6,8 +6,9 @@ scope:
   - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
   - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
   - 'sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read' # Investigations
-  - 'entrytypes.bfaa63c2-dd2c-42c8-b68e-79d0180d5146:read' # Investigation (Parent Entry)
   - 'entrytypes.65934563-c9b7-45d5-99e6-cc013e22b668:read' # Investigation Step (Child Entry)
+  - 'entrytypes.bfaa63c2-dd2c-42c8-b68e-79d0180d5146:read' # Investigation (Parent Entry)
+  - 'entrytypes.1a365d49-310d-41cf-afd2-3acd4cff3660:read' # Investigation Section Break (Child Entry)
   - 'sections.8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d:read' # Pages
   - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
   - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
