@@ -1,6 +1,7 @@
 childBlocks:
+  - questionBlock
   - text
-  - twoColumnContainer
+  - image
   - widgetContainer
   - barGraphTool
   - colorTool
