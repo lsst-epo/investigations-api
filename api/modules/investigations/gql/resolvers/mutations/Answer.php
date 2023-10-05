@@ -2,6 +2,7 @@
 
 namespace modules\investigations\gql\resolvers\mutations;
 
+use Craft;
 use craft\gql\base\ElementMutationResolver;
 use GraphQL\Error\UserError;
 use GraphQL\Type\Definition\ResolveInfo;
@@ -35,5 +36,20 @@ class Answer extends ElementMutationResolver
         }
 
         return $elementService->getElementById($answer->id, AnswerElement::class);
+    }
+
+    public function saveAnswersFromSet($source, array $arguments, $context, ResolveInfo $resolveInfo)
+    {
+        $elements = [];
+        foreach($arguments['answerSet'] as $answer) {
+            $resolverArgs = ['userId' => $arguments['userId'], 'investigationId' => $arguments['investigationId']];
+            foreach($answer as $key => $attribute) {
+                $resolverArgs[$key] = $attribute;
+            }
+
+            $elements[] = $this->saveAnswer($source, $resolverArgs, $context, $resolveInfo);
+        }
+
+        return $elements;
     }
 }
