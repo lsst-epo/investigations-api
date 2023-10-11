@@ -39,17 +39,17 @@ class Answer extends Element
             [
                 'userId' => [
                     'name' => 'userId',
-                    'type' => Type::int(),
+                    'type' => Type::id(),
                     'description' => 'ID of the user answering the question'
                 ],
                 'questionId' => [
                     'name' => 'questionId',
-                    'type' => Type::int(),
+                    'type' => Type::id(),
                     'description' => 'ID of the question being answered'
                 ],
                 'investigationId' => [
                     'name' => 'investigationId',
-                    'type' => Type::int(),
+                    'type' => Type::id(),
                     'description' => 'ID of the Investigation parent'
                 ],
                 'data' => [

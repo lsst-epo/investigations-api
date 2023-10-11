@@ -24,9 +24,9 @@ class Answer extends Mutation
         $mutations['createAnswer'] = [
             'name' => 'createAnswer',
             'args' => [
-                'userId' => Type::nonNull(Type::int()),
-                'questionId' => Type::nonNull(Type::int()),
-                'investigationId' => Type::nonNull(Type::int()),
+                'userId' => Type::nonNull(Type::id()),
+                'questionId' => Type::nonNull(Type::id()),
+                'investigationId' => Type::nonNull(Type::id()),
                 'data' => Type::string()
             ],
             'resolve' => [$resolver, 'saveAnswer'],
@@ -37,7 +37,7 @@ class Answer extends Mutation
         $mutations['saveAnswer'] = [
             'name' => 'saveAnswer',
             'args' => [
-                'id' => Type::nonNull(Type::int()),
+                'id' => Type::nonNull(Type::id()),
                 'data' => Type::string()
             ],
             'resolve' => [$resolver, 'saveAnswer'],
@@ -48,8 +48,8 @@ class Answer extends Mutation
         $mutations['saveAnswersFromSet'] = [
             'name' => 'saveAnswersFromSet',
             'args' => [
-                'userId' => Type::nonNull(Type::int()),
-                'investigationId' => Type::nonNull(Type::int()),
+                'userId' => Type::nonNull(Type::id()),
+                'investigationId' => Type::nonNull(Type::id()),
                 'answerSet' => Type::listOf(AnswerInput::getType())
             ],
             'resolve' => [$resolver, 'saveAnswersFromSet'],

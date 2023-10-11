@@ -20,12 +20,12 @@ class Answer extends InputObjectType
             'fields' => [
                 'id' => [
                     'name' => 'id',
-                    'type' => Type::int(),
+                    'type' => Type::id(),
                     'description' => 'The ID of the Answer element, if it exists.',
                 ],
                 'questionId' => [
                     'name' => 'questionId',
-                    'type' => Type::int(),
+                    'type' => Type::id(),
                     'description' => 'The ID of the associated Question entry.',
                 ],
                 'data' => [
