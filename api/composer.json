@@ -5,7 +5,7 @@
         "craftcms/google-cloud": "^2.0.0",
         "craftcms/redactor": "3.0.4",
         "jamesedmonston/graphql-authentication": "2.5.0",
-        "lsst-epo/canto-dam-assets": "4.0.4",
+        "lsst-epo/canto-dam-assets": "4.0.5",
         "sebastianlenz/linkfield": "^2.1.4",
         "spicyweb/craft-neo": "3.8.6",
         "vlucas/phpdotenv": "^3.4.0"
