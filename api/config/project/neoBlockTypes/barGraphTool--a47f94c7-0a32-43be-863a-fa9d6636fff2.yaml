@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  80dff751-12ba-4018-80c0-a031642798c1:
+  f4219774-003f-4c0c-8bec-f2f1aef160e1:
     tabs:
       -
         elementCondition: null
@@ -96,5 +96,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Bar Graph Tool'
-sortOrder: 11
+sortOrder: 10
 topLevel: true

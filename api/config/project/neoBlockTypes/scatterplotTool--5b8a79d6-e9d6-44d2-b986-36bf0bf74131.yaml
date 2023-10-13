@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  7c3028af-718d-4e37-a4b8-c5eb916234cb:
+  d7754bfd-0a9d-40f0-8905-1f81146fe74b:
     tabs:
       -
         elementCondition: null
@@ -96,5 +96,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Scatterplot Tool'
-sortOrder: 14
+sortOrder: 13
 topLevel: true

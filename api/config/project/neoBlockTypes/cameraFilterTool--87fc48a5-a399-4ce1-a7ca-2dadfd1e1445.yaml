@@ -1,13 +1,11 @@
-childBlocks:
-  - barGraphTool
-  - scatterplotTool
+childBlocks: null
 conditions: null
-description: 'Use this to group several instances of some types of widgets.'
+description: 'Interactive tool for displaying the range of each filter in the Rubin Observatory LSST camera'
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
-group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
-handle: widgetContainer
+handle: cameraFilterTool
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -16,6 +14,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Widget Container'
-sortOrder: 9
+name: 'Camera Filter Tool'
+sortOrder: 14
 topLevel: true

@@ -3,11 +3,11 @@ childBlocks:
   - text
   - image
   - group
-  - widgetContainer
   - barGraphTool
   - colorTool
   - filterTool
   - scatterplotTool
+  - cameraFilterTool
 conditions: null
 description: ''
 enabled: true

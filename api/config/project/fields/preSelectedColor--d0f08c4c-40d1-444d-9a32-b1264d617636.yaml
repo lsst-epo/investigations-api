@@ -19,6 +19,72 @@ settings:
         -
           - default
           - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Violet
+        -
+          - value
+          - violet
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Blue
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Green
+        -
+          - value
+          - green
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Yellow
+        -
+          - value
+          - yellow
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - orange
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Red
+        -
+          - value
+          - red
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Dropdown
