@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  dc576cae-30e9-4029-b574-433c7403cf1d:
+  39acdbd3-1bbb-4113-8958-10a9d08fbb81:
     tabs:
       -
         elementCondition: null
@@ -95,5 +95,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Color Tool'
-sortOrder: 12
+sortOrder: 11
 topLevel: true

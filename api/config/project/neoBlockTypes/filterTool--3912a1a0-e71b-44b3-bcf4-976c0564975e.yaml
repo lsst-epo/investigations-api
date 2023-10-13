@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  ffba8a00-b52c-4309-9a23-99475cbcc3b4:
+  0cb3dfd9-78c6-4481-932b-129f7d027bf2:
     tabs:
       -
         elementCondition: null
@@ -48,5 +48,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Filter Tool'
-sortOrder: 13
+sortOrder: 12
 topLevel: true

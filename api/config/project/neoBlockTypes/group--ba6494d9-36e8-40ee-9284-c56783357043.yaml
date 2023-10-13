@@ -2,11 +2,11 @@ childBlocks:
   - questionBlock
   - text
   - image
-  - widgetContainer
   - barGraphTool
   - colorTool
   - filterTool
   - scatterplotTool
+  - cameraFilterTool
 conditions: null
 description: ''
 enabled: true
