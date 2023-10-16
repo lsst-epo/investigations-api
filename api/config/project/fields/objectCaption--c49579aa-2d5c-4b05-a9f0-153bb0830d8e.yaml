@@ -1,0 +1,19 @@
+columnSuffix: ujeopdyo
+contentColumnType: text
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: objectCaption
+instructions: null
+name: 'Object Caption'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText
