@@ -1,0 +1,89 @@
+columnSuffix: dzgaghzd
+contentColumnType: text
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: filterColorOptions
+instructions: null
+name: 'Filter Color Options'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Violet
+        -
+          - value
+          - '#ee82ee'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Blue
+        -
+          - value
+          - '#0019FF'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Green
+        -
+          - value
+          - '#6BD853'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Yellow
+        -
+          - value
+          - '#FFDD15'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - '#F18922'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Red
+        -
+          - value
+          - '#EC1C24'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - none
+        -
+          - value
+          - transparent
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect
