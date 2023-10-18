@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: objects
+instructions: null
+name: Objects
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_objects}}'
+  maxBlocks: 0
+  minBlocks: 0
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,4 +1,4 @@
-dateModified: 1697498051
+dateModified: 1697584430
 elementSources:
   craft\elements\Entry:
     -
@@ -69,9 +69,12 @@ fs:
     url: '@web/assets/content'
 meta:
   __names__:
+    0d06751e-ecf9-4281-a754-8c818fb9353b: Widget # Widget
+    0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
     1a365d49-310d-41cf-afd2-3acd4cff3660: 'Investigation Section Break (Child Entry)' # Investigation Section Break (Child Entry)
+    1ec99d28-14f6-45ec-a158-e01bed027ce7: Filter # Filter
     1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
     2a5db1b1-d277-4741-affe-f6d39af9a8b6: 'Content Assets' # Content Assets
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
@@ -82,6 +85,7 @@ meta:
     5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
+    5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: 'Default Value' # Default Value
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
@@ -101,6 +105,8 @@ meta:
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
+    42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
+    42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
@@ -118,8 +124,10 @@ meta:
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
     5599d188-862e-4717-b206-6aadd975c937: Common # Common
+    7543dced-6f4a-4963-80fe-ad215807e7ec: Objects # Objects
     9068dd8e-ad92-4925-ba1d-1fe180598462: Questions # Questions
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
+    54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
@@ -129,8 +137,10 @@ meta:
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
+    28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
+    a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
     a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
@@ -143,6 +153,7 @@ meta:
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
+    c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
@@ -152,6 +163,8 @@ meta:
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
+    d2e48b83-d161-48b9-b0a9-5c21914b5931: 'Color Filter Tool' # Color Filter Tool
+    d7a365f9-7f5d-46db-bc94-818f821cb447: Image # Image
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
@@ -159,10 +172,12 @@ meta:
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
+    e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
     ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:
   _canto-dam-assets:
@@ -752,6 +767,9 @@ plugins:
             - '1'
           -
             - questions
+            - '1'
+          -
+            - widgets
             - '1'
       nextApiBaseUrl: $NEXT_API_BASE_URL
       nextSecretToken: $NEXT_REVALIDATE_SECRET_TOKEN

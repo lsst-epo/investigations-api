@@ -1,0 +1,180 @@
+field: 7543dced-6f4a-4963-80fe-ad215807e7ec # Objects
+fieldLayouts:
+  3f1b0f63-8a82-4cc9-bd5c-51955c0570eb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42a4cddb-b253-4aeb-b097-2073b5707677 # Object Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 403e14cb-506e-4ad1-a218-cbd81108ca4e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 42e7cc8d-a889-4715-a93e-d6d897644070 # Object Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71b2791b-72c1-4ba6-b890-23673fb499c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0d8d46b3-e717-4fd2-8c61-01c0b966f630 # Filter Color Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04b9b138-af1b-4d0f-bc66-2281064cfb22
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ddf87230-44ca-44f0-93cd-5eae98267c8c
+        userCondition: null
+fields:
+  0d8d46b3-e717-4fd2-8c61-01c0b966f630: # Filter Color Options
+    columnSuffix: qwnosnht
+    contentColumnType: text
+    fieldGroup: null
+    handle: filterColorOptions
+    instructions: null
+    name: 'Filter Color Options'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Violet
+            -
+              - value
+              - '#ee82ee'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - '#0019FF'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - '#6BD853'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - '#FFDD15'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - '#F18922'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - '#EC1C24'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - none
+            -
+              - value
+              - transparent
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MultiSelect
+  42a4cddb-b253-4aeb-b097-2073b5707677: # Object Name
+    columnSuffix: hfcblfmq
+    contentColumnType: text
+    fieldGroup: null
+    handle: objectName
+    instructions: null
+    name: 'Object Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  42e7cc8d-a889-4715-a93e-d6d897644070: # Object Caption
+    columnSuffix: sdughcsp
+    contentColumnType: text
+    fieldGroup: null
+    handle: objectCaption
+    instructions: null
+    name: 'Object Caption'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: object
+name: Object
+sortOrder: 1
