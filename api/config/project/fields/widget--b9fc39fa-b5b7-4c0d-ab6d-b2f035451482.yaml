@@ -26,7 +26,7 @@ settings:
   selectionLabel: null
   showSiteMenu: false
   sources:
-    - 'section:2cc0b41d-0b54-4495-b336-2924053b10bc'
+    - 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

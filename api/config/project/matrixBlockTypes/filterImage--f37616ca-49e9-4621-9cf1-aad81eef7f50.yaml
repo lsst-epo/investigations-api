@@ -1,0 +1,277 @@
+field: e607ac8b-6df3-4e80-bffa-b59ee9728445 # FiltersImages
+fieldLayouts:
+  02b1265a-f109-4eb2-be81-8f91093de256:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7a365f9-7f5d-46db-bc94-818f821cb447 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41e47373-2363-4890-9cfa-1e98c766f7d5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1ec99d28-14f6-45ec-a158-e01bed027ce7 # Filter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 10037053-50d3-4714-9c44-ae601fca3327
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5 # Default Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29bae2e1-c928-4ba6-a7fb-e080ad311791
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c1d3dd5f-2677-4a76-8db8-9a2b4db13536 # Min
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 002f9596-cd8d-46a0-8996-422c0b9d4d7d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54900b2d-b4ca-460f-a8e2-84db0ce759ac # Max
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4822dd4-d212-4f64-a5b9-de574517167f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6a24cf3f-5706-44ed-aa17-5a7237fffaa9
+        userCondition: null
+fields:
+  1ec99d28-14f6-45ec-a158-e01bed027ce7: # Filter
+    columnSuffix: ywmmjljl
+    contentColumnType: char
+    fieldGroup: null
+    handle: filter
+    instructions: null
+    name: Filter
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - optgroup
+              - ugrizy
+        -
+          __assoc__:
+            -
+              - label
+              - u
+            -
+              - value
+              - u
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - g
+            -
+              - value
+              - g
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - r
+            -
+              - value
+              - r
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - i
+            -
+              - value
+              - i
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - z
+            -
+              - value
+              - z
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'y'
+            -
+              - value
+              - 'y'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - optgroup
+              - RGB
+        -
+          __assoc__:
+            -
+              - label
+              - R
+            -
+              - value
+              - R
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - G
+            -
+              - value
+              - G
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - B
+            -
+              - value
+              - B
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: # Default Value
+    columnSuffix: ydwecfkz
+    contentColumnType: 'decimal(11,1)'
+    fieldGroup: null
+    handle: defaultValue
+    instructions: null
+    name: 'Default Value'
+    searchable: false
+    settings:
+      decimals: 1
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  54900b2d-b4ca-460f-a8e2-84db0ce759ac: # Max
+    columnSuffix: nrpxxwms
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: max
+    instructions: null
+    name: Max
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  c1d3dd5f-2677-4a76-8db8-9a2b4db13536: # Min
+    columnSuffix: ffuvhfvx
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: min
+    instructions: null
+    name: Min
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  d7a365f9-7f5d-46db-bc94-818f821cb447: # Image
+    columnSuffix: pshetzuy
+    contentColumnType:
+      - 'cantoId:string'
+      - 'cantoAlbumId:string'
+      - 'cantoAssetData:text'
+      - 'cantoAlbumData:string'
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      cantoAssetPickerType: singleImagePicker
+    translationKeyFormat: null
+    translationMethod: none
+    type: lsst\cantodamassets\fields\CantoDamAsset
+handle: filterImage
+name: FilterImage
+sortOrder: 1
