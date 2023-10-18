@@ -1,4 +1,4 @@
-name: 'Push to Integration upon force push'
+name: 'Deploy to Integration'
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-push-deploy:
-    name: 'Deploy Integration Version'
+    name: 'Build and Deploy to Integration'
     runs-on: ubuntu-latest
     if: ${{ github.event.action != 'closed'}}
 
