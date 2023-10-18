@@ -1,4 +1,4 @@
-name: '🦧 Deploy to Production 🦧'
+name: 'Deploy to Production'
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-push-deploy:
-    name: '🦧 Build and Deploy to Production 🦧'
+    name: 'Build and Deploy to Production'
     runs-on: ubuntu-latest
     if: ${{ github.event.action != 'closed'}}
 
