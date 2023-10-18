@@ -1,51 +1,52 @@
 {
-    "require": {
-        "castiron/next-builds": "^1.0",
-        "craftcms/cms": "4.5.6.1",
-        "craftcms/google-cloud": "^2.0.0",
-        "craftcms/redactor": "3.0.4",
-        "jamesedmonston/graphql-authentication": "2.5.0",
-        "lsst-epo/canto-dam-assets": "4.0.5",
-        "sebastianlenz/linkfield": "^2.1.4",
-        "spicyweb/craft-neo": "3.9.5",
-        "vlucas/phpdotenv": "^3.4.0"
+  "require": {
+    "castiron/next-builds": "^1.0",
+    "craftcms/cms": "4.5.6.1",
+    "craftcms/google-cloud": "^2.0.0",
+    "craftcms/redactor": "3.0.4",
+    "jamesedmonston/graphql-authentication": "2.5.0",
+    "lsst-epo/canto-dam-assets": "4.0.5",
+    "sebastianlenz/linkfield": "^2.1.4",
+    "spicyweb/craft-neo": "3.9.5",
+    "verbb/super-table": "^3.0",
+    "vlucas/phpdotenv": "^3.4.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lsst-epo/canto-dam-assets.git"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/lsst-epo/canto-dam-assets.git"
-        },
-        {
-            "type": "path",
-            "url": "plugins/nextbuilds"
-        },
-        {
-            "type": "composer",
-            "url": "https://composer.craftcms.com",
-            "canonical": false
-        }
-    ],
-    "require-dev": {
-        "craftcms/generator": "^1.4",
-        "yiisoft/yii2-shell": "^2.0.5"
+    {
+      "type": "path",
+      "url": "plugins/nextbuilds"
     },
-    "autoload": {
-        "psr-4": {
-            "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/",
-            "modules\\investigations\\": "modules/investigations/"
-        }
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ],
+  "require-dev": {
+    "craftcms/generator": "^1.4",
+    "yiisoft/yii2-shell": "^2.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\userregistrationmodule\\": "modules/userregistrationmodule/src/",
+      "modules\\investigations\\": "modules/investigations/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.1.10"
     },
-    "config": {
-        "sort-packages": true,
-        "optimize-autoloader": true,
-        "platform": {
-            "php": "8.1.10"
-        },
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "craftcms/plugin-installer": true
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
