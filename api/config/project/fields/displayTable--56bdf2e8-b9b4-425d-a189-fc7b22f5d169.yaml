@@ -1,0 +1,30 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: displayTable
+instructions: 'Tables that contain static content for reference'
+name: 'Display Table'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 1112726131
+  columns:
+    __assoc__:
+      -
+        - 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_displaytable_1}}'
+  fieldLayout: table
+  maxRows: null
+  minRows: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

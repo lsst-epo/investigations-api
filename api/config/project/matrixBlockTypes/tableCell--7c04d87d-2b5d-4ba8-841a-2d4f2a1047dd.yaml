@@ -1,0 +1,73 @@
+field: 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
+fieldLayouts:
+  6d9a76d1-1454-4990-8380-446c742eb0f1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Cell Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cd5d24d-8896-4163-9f37-bd22f73b6fd1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 48bc5283-dac6-4340-931a-6c01fa00bfb8 # Row Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f1a9210-9c30-440d-a1a9-73ed43ac5915
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1da41301-55e3-4b0e-8ea4-1640d39c0e1f
+        userCondition: null
+fields:
+  48bc5283-dac6-4340-931a-6c01fa00bfb8: # Row Header
+    columnSuffix: hpuakkch
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: rowHeader
+    instructions: 'Enable if this cell labels is a header for it''s horizontal table row. Only applies to first cell in a row.'
+    name: 'Row Header'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Cell Content
+    columnSuffix: qmgrhddl
+    contentColumnType: text
+    fieldGroup: null
+    handle: cellContent
+    instructions: null
+    name: 'Cell Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: tableCell
+name: 'Table Cell'
+sortOrder: 1

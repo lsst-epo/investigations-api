@@ -4,20 +4,44 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  121174ff-1469-41e0-8458-7e3461b11123:
+  85c627c3-ec95-4185-8f72-d27810ab5173:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: fdde6af5-dd6a-4587-8182-a1dea7793f95
+            fieldUid: 0d335b99-111b-4f79-ab51-e890179b337c # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ef35e0dc-330d-4e4e-ab35-9e0432f4c31c
+            uid: e2ddb288-e688-4fcb-95f9-d85c0f3df82e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0e24702-30cb-4032-8f6f-aebcb1b700de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1f29a6e-5d2d-4cfb-834b-e2e45d7500a3
             userCondition: null
             warning: null
             width: 100

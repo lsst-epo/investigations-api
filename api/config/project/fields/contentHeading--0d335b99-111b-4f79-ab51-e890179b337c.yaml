@@ -1,9 +1,9 @@
-columnSuffix: trpsyotq
+columnSuffix: ewiquqkm
 contentColumnType: text
 fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
-handle: caption
-instructions: 'Text describing a table or figure'
-name: Caption
+handle: contentHeading
+instructions: 'Optional heading to describe this content block'
+name: Heading
 searchable: false
 settings:
   byteLimit: null
