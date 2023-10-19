@@ -4,29 +4,29 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  2b38d0e1-ff09-442a-9c59-f159bec3af7f:
+  38b55090-91bb-4ecd-898b-184411568fb3:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Widget
+            fieldUid: 241a63ec-3137-4b6a-be7d-27714391c346 # Camera Filter Tool
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 488cc422-a2e7-4019-b15b-118ed0b1bd77
+            uid: d2ef506d-36c1-442a-b5f4-4f8b21b43e53
             userCondition: null
             warning: null
             width: 100
         name: '1'
-        uid: 6db6e65b-cc3b-4c0d-9e26-7885db2976cb
+        uid: 1cf0d7a8-0c4d-4599-8e06-42c0e7528b8a
         userCondition: null
 group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
-handle: widget
+handle: cameraFilterToolBlock
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Widget
+name: 'Camera Filter Tool Block'
 sortOrder: 15
 topLevel: true

@@ -1,21 +1,26 @@
-columnSuffix: letxbuph
-contentColumnType: string
+columnSuffix: laxydvij
+contentColumnType: char
 fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
-handle: preSelectedColor
+handle: filter
 instructions: null
-name: 'Pre-selected Color'
+name: Filter
 searchable: false
 settings:
-  columnType: string
+  columnType: null
   options:
     -
       __assoc__:
         -
+          - optgroup
+          - ugrizy
+    -
+      __assoc__:
+        -
           - label
-          - Violet
+          - u
         -
           - value
-          - '#ee82ee'
+          - u
         -
           - default
           - ''
@@ -23,10 +28,10 @@ settings:
       __assoc__:
         -
           - label
-          - Blue
+          - g
         -
           - value
-          - '#0019FF'
+          - g
         -
           - default
           - ''
@@ -34,10 +39,10 @@ settings:
       __assoc__:
         -
           - label
-          - Green
+          - r
         -
           - value
-          - '#6BD853'
+          - r
         -
           - default
           - ''
@@ -45,10 +50,10 @@ settings:
       __assoc__:
         -
           - label
-          - Yellow
+          - i
         -
           - value
-          - '#FFDD15'
+          - i
         -
           - default
           - ''
@@ -56,10 +61,10 @@ settings:
       __assoc__:
         -
           - label
-          - Orange
+          - z
         -
           - value
-          - '#F18922'
+          - z
         -
           - default
           - ''
@@ -67,10 +72,26 @@ settings:
       __assoc__:
         -
           - label
-          - Red
+          - 'y'
         -
           - value
-          - '#EC1C24'
+          - 'y'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - optgroup
+          - RGB
+    -
+      __assoc__:
+        -
+          - label
+          - R
+        -
+          - value
+          - R
         -
           - default
           - ''
@@ -78,13 +99,24 @@ settings:
       __assoc__:
         -
           - label
-          - none
+          - G
         -
           - value
-          - transparent
+          - G
         -
           - default
-          - '1'
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - B
+        -
+          - value
+          - B
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown

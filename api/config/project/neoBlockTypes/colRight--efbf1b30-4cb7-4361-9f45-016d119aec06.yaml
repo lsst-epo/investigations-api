@@ -4,10 +4,12 @@ childBlocks:
   - image
   - group
   - barGraphTool
-  - colorTool
   - filterTool
   - scatterplotTool
   - cameraFilterTool
+  - colorFilterToolBlock
+  - cameraFilterToolBlock
+  - colorTool
 conditions: null
 description: ''
 enabled: true

@@ -1,0 +1,53 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: cameraFilterTool
+instructions: null
+name: 'Camera Filter Tool'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - ebeda67f-cc37-4231-9322-165bc0f04f3b
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 0e4edcac-f39e-4825-946b-7174494adb63 # Camera Filter Tool
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

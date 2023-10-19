@@ -1,10 +1,11 @@
-childBlocks: null
+childBlocks:
+  - object
 conditions: null
 description: ''
 enabled: true
 field: dfab6165-acc6-4a81-9d4a-50c69d1c1045 # Color Filter Tool Objects
 fieldLayouts:
-  eb4a89d0-2cd8-4d3d-93e9-f6a0e69d7e30:
+  1b6f6db3-a430-407d-90a8-a17036aa55c2:
     tabs:
       -
         elementCondition: null
@@ -20,19 +21,7 @@ fieldLayouts:
             uid: d617d42e-d90d-4cb3-8632-86dd3419f9ea
             userCondition: null
             warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 7543dced-6f4a-4963-80fe-ad215807e7ec # Objects
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8c520087-3d35-4f8d-83ca-bb0753ab0f48
-            userCondition: null
-            warning: null
-            width: 100
+            width: 50
         name: '1'
         uid: fe1998cf-edee-441a-8727-f67b2778a857
         userCondition: null
@@ -47,6 +36,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Objects Group'
+name: Group
 sortOrder: 1
 topLevel: true
