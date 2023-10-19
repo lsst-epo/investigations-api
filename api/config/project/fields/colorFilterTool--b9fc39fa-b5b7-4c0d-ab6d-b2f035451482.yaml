@@ -1,16 +1,16 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
-handle: widget
+handle: colorFilterTool
 instructions: null
-name: Widget
+name: 'Color Filter Tool'
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
   selectionCondition:
     __assoc__:
@@ -23,6 +23,24 @@ settings:
       -
         - class
         - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 9891719e-7f51-49b2-8e3c-ced246d3d975
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - d2e48b83-d161-48b9-b0a9-5c21914b5931 # Color Filter Tool
   selectionLabel: null
   showSiteMenu: false
   sources:

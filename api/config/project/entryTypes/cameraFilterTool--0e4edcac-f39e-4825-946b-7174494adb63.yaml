@@ -1,0 +1,46 @@
+fieldLayouts:
+  0586394b-f8e5-46a8-bd2e-23feaca1a16f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eb9701e1-9d3f-4d7a-84e7-675a011619cc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2f0f0f49-c45e-40cd-b4e6-0e80e2e9050c
+        userCondition: null
+handle: cameraFilterTool
+hasTitleField: true
+name: 'Camera Filter Tool'
+section: 28704998-935a-423b-a405-d4ad8b38efa2 # Widgets
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -3,10 +3,12 @@ childBlocks:
   - text
   - image
   - barGraphTool
-  - colorTool
   - filterTool
   - scatterplotTool
   - cameraFilterTool
+  - colorFilterToolBlock
+  - cameraFilterToolBlock
+  - colorTool
 conditions: null
 description: ''
 enabled: true

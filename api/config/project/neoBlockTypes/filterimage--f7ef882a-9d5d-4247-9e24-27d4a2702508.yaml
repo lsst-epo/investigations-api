@@ -1,0 +1,136 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: dfab6165-acc6-4a81-9d4a-50c69d1c1045 # Color Filter Tool Objects
+fieldLayouts:
+  d1c4c815-9344-4bee-bba4-3801a788ed91:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80d6717f-ac94-4525-af5e-91d37201eb2b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3c999a34-b334-4792-bd8f-2c8cfb4100af # Filter
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08cb6caf-ecc8-48c8-a1d9-242266887099
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Image & Filter'
+        uid: 6ba899e5-44cb-4090-8261-33feb479a4d9
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5 # Min
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 670d4882-a3e8-4b54-9462-bffa6a4b877c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 12542ae5-ac65-4cd8-bed8-12acd3c76abb # Max
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca691670-7e19-483d-9872-619254c35ecf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: adeb2ea1-9022-44c5-9f71-3d06d06c24c8 # Default Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2da07747-a818-4af0-a59f-3b63be7e219d
+            userCondition: null
+            warning: null
+            width: 25
+        name: Slider
+        uid: 602aeeeb-d3a9-4cc1-957a-2f7f48f6d5fe
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ad6237ea-0d14-4e5b-880e-767316434bcd # isEnabled
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed9e2721-9332-46bc-a919-ddcbc481cbea
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 986be506-1a98-4a56-9a16-1e2270071a95 # isActive
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0515f557-d302-4e51-aa84-7433c5d97737
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e02d376d-f5a9-486e-9a69-2011cf07460a
+            userCondition: null
+            warning: null
+            width: 25
+        name: Interactability
+        uid: 3ab22644-143d-4bb9-b6fc-cad9c705ebf0
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: filterimage
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: FilterImage
+sortOrder: 3
+topLevel: false

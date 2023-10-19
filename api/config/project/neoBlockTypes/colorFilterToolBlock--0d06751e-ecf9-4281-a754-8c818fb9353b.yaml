@@ -4,41 +4,29 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  0cb3dfd9-78c6-4481-932b-129f7d027bf2:
+  b7bf14ff-1d04-4e04-8c32-252d19957dab:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color
+            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f72c938-d70c-4466-b9ce-7508327496ac
+            uid: 488cc422-a2e7-4019-b15b-118ed0b1bd77
             userCondition: null
             warning: null
-            width: 75
-          -
-            elementCondition: null
-            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c0f7d268-66af-41ff-bf16-5ef40896345b
-            userCondition: null
-            warning: null
-            width: 25
-        name: Content
-        uid: 9b6809bf-ed9f-43c6-b8a4-f93cdde5a5f5
+            width: 100
+        name: '1'
+        uid: 6db6e65b-cc3b-4c0d-9e26-7885db2976cb
         userCondition: null
 group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
-handle: filterTool
+handle: colorFilterToolBlock
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -47,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Filter Tool'
-sortOrder: 11
+name: 'Color Filter Tool Block'
+sortOrder: 14
 topLevel: true
