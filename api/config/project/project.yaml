@@ -86,7 +86,9 @@ meta:
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: "Filter Color Options" # Filter Color Options
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
+    7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
     7bd60210-4767-46b3-b735-61a1499b90b7: "Redirect Page" # Redirect Page
+    7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: "Table Cell" # Table Cell
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
     8af07cbd-3ce8-4e4d-818f-261515be5ac7: "Y-axis Minimum" # Y-axis Minimum
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
@@ -105,6 +107,8 @@ meta:
     42a4cddb-b253-4aeb-b097-2073b5707677: "Object Name" # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: "Object Caption" # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
+    48bc5283-dac6-4340-931a-6c01fa00bfb8: "Row Header" # Row Header
+    56bdf2e8-b9b4-425d-a189-fc7b22f5d169: "Display Table" # Display Table
     61e0fe59-d439-429c-b783-2d71fe4c5d44: "Y-axis Maximum" # Y-axis Maximum
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
@@ -614,6 +618,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
   typedlinkfield:
     edition: standard
     enabled: true

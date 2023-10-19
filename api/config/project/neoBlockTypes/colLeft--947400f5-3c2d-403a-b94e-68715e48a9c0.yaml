@@ -1,6 +1,7 @@
 childBlocks:
   - questionBlock
   - text
+  - table
   - image
   - group
   - barGraphTool
@@ -26,5 +27,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Left Column'
-sortOrder: 7
+sortOrder: 8
 topLevel: false

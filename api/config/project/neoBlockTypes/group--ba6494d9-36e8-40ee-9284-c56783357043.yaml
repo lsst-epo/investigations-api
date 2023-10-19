@@ -1,6 +1,7 @@
 childBlocks:
   - questionBlock
   - text
+  - table
   - image
   - barGraphTool
   - filterTool
@@ -25,5 +26,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Interaction Group'
-sortOrder: 5
+sortOrder: 6
 topLevel: true
