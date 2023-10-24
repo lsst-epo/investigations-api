@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+            fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
             instructions: null
             label: null
             required: false
@@ -39,7 +39,7 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
                   operator: in
                   uid: c0f19587-32fa-4c3e-969f-09c42cf85cd8
                   values:
@@ -63,7 +63,7 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec # Template
+                  fieldUid: c6109150-a89c-4f0b-aa79-8c1ca78be0ec
                   operator: in
                   uid: 4a741494-eae5-4407-b1ec-715379e26d0a
                   values:
