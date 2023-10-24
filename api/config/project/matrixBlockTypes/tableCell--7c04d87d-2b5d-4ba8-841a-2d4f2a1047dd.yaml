@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Cell Content
+            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a
             instructions: null
             label: null
             required: false
@@ -48,7 +48,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Cell Content
+  3173102a-6f80-4a4f-954b-1d3e151fb21a:
     columnSuffix: qmgrhddl
     contentColumnType: text
     fieldGroup: null

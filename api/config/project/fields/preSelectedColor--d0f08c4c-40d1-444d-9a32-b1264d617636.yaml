@@ -15,7 +15,7 @@ settings:
           - Violet
         -
           - value
-          - '#ee82ee'
+          - violet
         -
           - default
           - ''
@@ -26,7 +26,7 @@ settings:
           - Blue
         -
           - value
-          - '#0019FF'
+          - blue
         -
           - default
           - ''
@@ -37,7 +37,7 @@ settings:
           - Green
         -
           - value
-          - '#6BD853'
+          - green
         -
           - default
           - ''
@@ -48,7 +48,7 @@ settings:
           - Yellow
         -
           - value
-          - '#FFDD15'
+          - yellow
         -
           - default
           - ''
@@ -59,7 +59,7 @@ settings:
           - Orange
         -
           - value
-          - '#F18922'
+          - orange
         -
           - default
           - ''
@@ -70,7 +70,7 @@ settings:
           - Red
         -
           - value
-          - '#EC1C24'
+          - red
         -
           - default
           - ''
@@ -81,7 +81,7 @@ settings:
           - none
         -
           - value
-          - transparent
+          - none
         -
           - default
           - '1'

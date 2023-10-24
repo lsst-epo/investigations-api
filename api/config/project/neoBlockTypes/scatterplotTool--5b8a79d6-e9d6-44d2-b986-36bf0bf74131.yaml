@@ -1,14 +1,16 @@
 childBlocks: null
 conditions: null
-description: ""
+description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
   d7754bfd-0a9d-40f0-8905-1f81146fe74b:
     tabs:
-      - elementCondition: null
+      -
+        elementCondition: null
         elements:
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
             instructions: null
             label: Title
@@ -19,7 +21,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
             instructions: null
             label: null
@@ -30,7 +33,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
             instructions: null
             label: null
@@ -41,7 +45,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
             instructions: null
             label: null
@@ -52,7 +57,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
             instructions: null
             label: null
@@ -63,7 +69,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          - elementCondition: null
+          -
+            elementCondition: null
             fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
             instructions: null
             label: null
@@ -88,6 +95,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: "Scatterplot Tool"
+name: 'Scatterplot Tool'
 sortOrder: 12
 topLevel: true
