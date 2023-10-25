@@ -30,6 +30,17 @@ settings:
         -
           - default
           - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Widget
+        -
+          - value
+          - widget
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown

@@ -1,4 +1,4 @@
-dateModified: 1698098551
+dateModified: 1698255615
 elementSources:
   craft\elements\Entry:
     -
@@ -89,6 +89,7 @@ meta:
     5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: 'Default Value' # Default Value
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
+    6efbdc96-00f5-4e37-953b-d36344f6e1fb: 'Configured Widgets' # Configured Widgets
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
     7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
@@ -120,14 +121,15 @@ meta:
     90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options' # Sort Options
     131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only' # Read Only
     222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
-    241a63ec-3137-4b6a-be7d-27714391c346: 'Camera Filter Tool' # Camera Filter Tool
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
+    721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
     919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
     3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
@@ -148,7 +150,6 @@ meta:
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
-    a0483265-358f-464b-9d74-85372836e012: 'Camera Filter Tool Block' # Camera Filter Tool Block
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
@@ -172,7 +173,6 @@ meta:
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
-    cdc8cda9-463a-4f2f-a48f-e0325c8bedd8: Whatever # Whatever
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name

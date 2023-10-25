@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  b7bf14ff-1d04-4e04-8c32-252d19957dab:
+  dd59f53a-abc9-4009-a2b4-7fde9dc34269:
     tabs:
       -
         elementCondition: null
@@ -36,5 +36,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Color Filter Tool Block'
-sortOrder: 14
+sortOrder: 15
 topLevel: true
