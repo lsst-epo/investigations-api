@@ -1,32 +1,32 @@
 childBlocks: null
 conditions: null
-description: ''
+description: 'Configurable widget that lets users colorize grayscale images with a chose color filter and brightness controls.'
 enabled: true
-field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+field: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
 fieldLayouts:
-  38b55090-91bb-4ecd-898b-184411568fb3:
+  8a25b6a9-786c-42f3-87db-2d954a821e7a:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 241a63ec-3137-4b6a-be7d-27714391c346 # Camera Filter Tool
+            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d2ef506d-36c1-442a-b5f4-4f8b21b43e53
+            uid: 291f8bfa-50c4-4f89-bfc9-0a44f33d40fe
             userCondition: null
             warning: null
             width: 100
-        name: '1'
-        uid: 1cf0d7a8-0c4d-4599-8e06-42c0e7528b8a
+        name: Widget
+        uid: 865da031-ec5a-46c6-8455-18f2fd8e52d6
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: 6efbdc96-00f5-4e37-953b-d36344f6e1fb # Configured Widgets
 groupChildBlockTypes: true
-handle: cameraFilterToolBlock
+handle: colorFilterToolBlock
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Camera Filter Tool Block'
-sortOrder: 15
+name: 'Color Filter Tool Block'
+sortOrder: 2
 topLevel: true
