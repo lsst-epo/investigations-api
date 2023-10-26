@@ -48,3 +48,34 @@ docker-compose -f docker-compose-local-db.yml up
 If you completed the above steps you may have noticed some SQL commands in the log output.
 
 This is because by default the DB snapshot bundled with this repo in /db will execute upon bringing up the docker-compose file.
+
+#### How to create a dump of your local DB
+
+1. Containers need to be running, we're going to ssh into the postgres one:
+  * `docker container ls`
+  * `docker exec -it <POSTGRES_CONTAINER_ID> /bin/sh`
+2. Create the dump file within the container:
+  * `pg_dump -U craft <CRAFT_DATABASE_NAME> >> whatever_name_you_want.sql`
+3. Retrieve & save the dump file to your local:
+  * Open a new terminal window
+  * `docker cp <POSTGRES_CONTAINER_ID>:/path/to/whatever_name_you_want.sql /local/path/to/whatever_name_you_want.sql`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
