@@ -6,22 +6,14 @@ instructions: null
 name: 'Question Text'
 searchable: false
 settings:
-  availableTransforms: ''
-  availableVolumes: '*'
-  columnType: text
-  configSelectionMode: manual
-  defaultTransform: ''
-  manualConfig: "{  \r\n\"buttons\": [\"bold\", \"italic\", \"lists\", \"link\"],\r\n  \"toolbarFixed\": true\r\n}"
-  purifierConfig: null
-  purifyHtml: true
-  redactorConfig: Standard.json
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showHtmlButtonForNonAdmins: false
-  showUnpermittedFiles: false
-  showUnpermittedVolumes: false
-  uiMode: enlarged
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
-translationMethod: none
-type: craft\redactor\Field
+translationMethod: site
+type: craft\fields\PlainText

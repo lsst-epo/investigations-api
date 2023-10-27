@@ -43,7 +43,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: ni
+                  uid: fd072f0a-d8c6-4f97-85b8-ad9a61c6958b
+                  values:
+                    - widget
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
             instructions: null
             label: null
@@ -51,6 +62,29 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d27bc2b3-c7ee-4320-8a17-51f542cde29d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: feed97bc-9021-4a34-8d76-dc97dc5d50cf
+                  values:
+                    - widget
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 0fd14cd3-7b23-4230-adce-9cfa16050740 # Widget Instructions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a3037aa-8b7b-4926-8c49-a8932efa7329
             userCondition: null
             warning: null
             width: 100

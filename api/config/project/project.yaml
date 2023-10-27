@@ -1,4 +1,4 @@
-dateModified: 1698255615
+dateModified: 1698361980
 elementSources:
   craft\elements\Entry:
     -
@@ -72,6 +72,7 @@ meta:
     0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0e4edcac-f39e-4825-946b-7174494adb63: 'Camera Filter Tool' # Camera Filter Tool
+    0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
     1a365d49-310d-41cf-afd2-3acd4cff3660: 'Investigation Section Break (Child Entry)' # Investigation Section Break (Child Entry)
