@@ -1,0 +1,27 @@
+columnSuffix: ivmtpsqw
+contentColumnType: text
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
+handle: widgetInstructions
+instructions: 'Instructions on how to complete the associated widget'
+name: 'Widget Instructions'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: manual
+  defaultTransform: ''
+  manualConfig: "{  \r\n\"buttons\": [\"bold\", \"italic\",\"underline\",\"link\", \"lists\", \"sub\", \"sup\"],\r\n  \"toolbarFixed\": true\r\n}"
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field
