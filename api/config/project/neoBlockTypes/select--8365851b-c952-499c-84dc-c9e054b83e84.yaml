@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: 'Single select dropdown'
+enabled: true
+field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+fieldLayouts:
+  263c8727-86da-4ea4-a3e6-4938d3032eea:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 574f12f8-e22d-4110-bf8b-cee9062e3819
+            userCondition: null
+            warning: null
+            width: 100
+        name: Input
+        uid: c2a73393-f2fa-4368-9533-8b37f28ae573
+        userCondition: null
+group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
+groupChildBlockTypes: true
+handle: select
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Select
+sortOrder: 5
+topLevel: true

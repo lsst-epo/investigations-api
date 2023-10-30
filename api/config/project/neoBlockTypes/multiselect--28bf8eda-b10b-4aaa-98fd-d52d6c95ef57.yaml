@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: 'Multiselect dropdown'
+enabled: true
+field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+fieldLayouts:
+  251407ad-0188-497f-8227-d9ac67485017:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82134741-8604-46bd-a14b-8f6cfbfb83e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Input
+        uid: 749597f3-db7c-4e53-80b0-7e74be1e53c4
+        userCondition: null
+group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
+groupChildBlockTypes: true
+handle: multiselect
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Multiselect
+sortOrder: 3
+topLevel: true

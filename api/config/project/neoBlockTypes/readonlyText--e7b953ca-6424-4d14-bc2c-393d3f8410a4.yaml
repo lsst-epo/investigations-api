@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: 'Readonly text that makes up the question'
+enabled: true
+field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+fieldLayouts:
+  5ef4ec4d-1770-4531-b198-d0739b8e02dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c72eea43-0bef-46c9-b49d-6d6cb56f4fc8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Input
+        uid: 6e78ea22-3417-48f1-90b4-caea7187da19
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: readonlyText
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Text
+sortOrder: 1
+topLevel: true

@@ -53,6 +53,7 @@ fieldLayouts:
                   uid: fd072f0a-d8c6-4f97-85b8-ad9a61c6958b
                   values:
                     - widget
+                    - multiPart
               elementType: craft\elements\Entry
               fieldContext: global
             fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
@@ -131,6 +132,29 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c39f85db-094e-4dcc-901b-227b1dc62550
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: 07e3f34c-8d8c-4e83-bbb2-639db3a48f90
+                  values:
+                    - multiPart
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0828ed0b-6a98-49fe-acef-63e71708625a
             userCondition: null
             warning: null
             width: 100
