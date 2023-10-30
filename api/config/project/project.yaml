@@ -1,4 +1,4 @@
-dateModified: 1698361980
+dateModified: 1698439629
 elementSources:
   craft\elements\Entry:
     -
@@ -109,6 +109,8 @@ meta:
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
+    28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
+    29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
@@ -143,11 +145,13 @@ meta:
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
+    220292c8-0330-4dd4-aa84-f0eeec38fa4e: 'Text Input' # Text Input
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
+    8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
@@ -187,12 +191,14 @@ meta:
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
+    e7b953ca-6424-4d14-bc2c-393d3f8410a4: Text # Text
     e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
     ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:

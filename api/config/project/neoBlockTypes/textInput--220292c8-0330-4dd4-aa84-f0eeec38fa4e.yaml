@@ -1,0 +1,19 @@
+childBlocks: null
+conditions: null
+description: 'Text input field'
+enabled: true
+field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
+groupChildBlockTypes: true
+handle: textInput
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Text Input'
+sortOrder: 4
+topLevel: true
