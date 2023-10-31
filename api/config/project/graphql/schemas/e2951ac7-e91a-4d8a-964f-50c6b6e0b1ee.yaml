@@ -1,22 +1,26 @@
 isPublic: false
-name: 'Educator Schema'
+name: "Educator Schema"
 scope:
-  - 'sites.547128fa-4529-4483-9968-66425996b69f:read' # EN
-  - 'sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read' # ES
-  - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
-  - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
-  - 'sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read' # Investigations
-  - 'entrytypes.65934563-c9b7-45d5-99e6-cc013e22b668:read' # Investigation Step (Child Entry)
-  - 'entrytypes.bfaa63c2-dd2c-42c8-b68e-79d0180d5146:read' # Investigation (Parent Entry)
-  - 'entrytypes.1a365d49-310d-41cf-afd2-3acd4cff3660:read' # Investigation Section Break (Child Entry)
-  - 'sections.8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d:read' # Pages
-  - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
-  - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
-  - 'sections.9068dd8e-ad92-4925-ba1d-1fe180598462:read' # Questions
-  - 'entrytypes.021f7cc6-93ec-4da4-9566-8d05c64d1725:read' # Default
-  - 'volumes.2a5db1b1-d277-4741-affe-f6d39af9a8b6:read'
-  - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
-  - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
-  - 'answers:read'
-  - 'answers:edit'
-  - 'answers:save'
+  - "sites.547128fa-4529-4483-9968-66425996b69f:read" # EN
+  - "sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read" # ES
+  - "sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read" # Homepage
+  - "entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read" # Homepage
+  - "sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read" # Investigations
+  - "entrytypes.65934563-c9b7-45d5-99e6-cc013e22b668:read" # Investigation Step (Child Entry)
+  - "entrytypes.bfaa63c2-dd2c-42c8-b68e-79d0180d5146:read" # Investigation (Parent Entry)
+  - "entrytypes.1a365d49-310d-41cf-afd2-3acd4cff3660:read" # Investigation Section Break (Child Entry)
+  - "sections.8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d:read" # Pages
+  - "entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read" # Redirect Page
+  - "entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read" # Pages
+  - "sections.9068dd8e-ad92-4925-ba1d-1fe180598462:read" # Questions
+  - "entrytypes.021f7cc6-93ec-4da4-9566-8d05c64d1725:read" # Default
+  - "sections.c2356ed1-1e49-4056-83c7-ed615a2694b1:read" # Reference Modals
+  - "entrytypes.4f04d6b0-64ef-454b-b343-66181c08dda9:read" # Default
+  - "sections.28704998-935a-423b-a405-d4ad8b38efa2:read" # Widgets
+  - "entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read" # Color Filter Tool
+  - "volumes.2a5db1b1-d277-4741-affe-f6d39af9a8b6:read" # Content Assets
+  - "globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read" # Site information
+  - "categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read" # Sort Options
+  - "answers:read"
+  - "answers:edit"
+  - "answers:save"
