@@ -1,32 +1,28 @@
 childBlocks: null
 conditions: null
-description: 'Multiselect dropdown'
+description: 'Text input field'
 enabled: true
 field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
 fieldLayouts:
-  a3497979-965f-4a98-8d73-be30257b7393:
+  d91a3fc5-64f8-4138-ae9a-e14b64909f7b:
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dismissible: false
             elementCondition: null
-            fieldUid: dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1 # Answer Options
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 82134741-8604-46bd-a14b-8f6cfbfb83e7
+            style: tip
+            tip: 'This block adds an empty text input, to add a string of text to the question use the "Question Text" block.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 3f93308b-3faa-48d1-8be4-ecb5a3ed580b
             userCondition: null
-            warning: null
-            width: 100
         name: Input
-        uid: 749597f3-db7c-4e53-80b0-7e74be1e53c4
+        uid: a72fa7dc-2e06-42e7-b403-99b7bf20c0fa
         userCondition: null
 group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
 groupChildBlockTypes: true
-handle: multiselect
+handle: text
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +31,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Multiselect
-sortOrder: 3
+name: Text
+sortOrder: 4
 topLevel: true

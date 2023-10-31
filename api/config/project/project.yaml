@@ -1,4 +1,4 @@
-dateModified: 1698439629
+dateModified: 1698787428
 elementSources:
   craft\elements\Entry:
     -
@@ -145,7 +145,7 @@ meta:
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
-    220292c8-0330-4dd4-aa84-f0eeec38fa4e: 'Text Input' # Text Input
+    220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
@@ -191,7 +191,7 @@ meta:
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
-    e7b953ca-6424-4d14-bc2c-393d3f8410a4: Text # Text
+    e7b953ca-6424-4d14-bc2c-393d3f8410a4: 'Question Text' # Question Text
     e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name

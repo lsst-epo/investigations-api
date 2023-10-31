@@ -4,7 +4,7 @@ description: 'Single select dropdown'
 enabled: true
 field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
 fieldLayouts:
-  263c8727-86da-4ea4-a3e6-4938d3032eea:
+  3c3cdb27-f34b-4e41-80e2-1e2f8e1f7687:
     tabs:
       -
         elementCondition: null

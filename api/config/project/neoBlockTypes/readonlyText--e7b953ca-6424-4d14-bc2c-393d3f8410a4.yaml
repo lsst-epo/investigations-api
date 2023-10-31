@@ -4,11 +4,19 @@ description: 'Readonly text that makes up the question'
 enabled: true
 field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
 fieldLayouts:
-  5ef4ec4d-1770-4531-b198-d0739b8e02dc:
+  a8d8e75e-0128-43f4-9f1e-48b8e0d92e2c:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dismissible: true
+            elementCondition: null
+            style: tip
+            tip: 'This block adds question text to a question, to add a text input field use the "Text" block grouped under "Question Parts"'
+            type: craft\fieldlayoutelements\Tip
+            uid: 37d8336e-0631-44ed-8f63-f0524cabc57e
+            userCondition: null
           -
             elementCondition: null
             fieldUid: 919ed98f-d33e-4fae-adc0-2253a155246f # Question Text
@@ -35,6 +43,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Text
+name: 'Question Text'
 sortOrder: 1
 topLevel: true
