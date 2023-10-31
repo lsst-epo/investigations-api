@@ -1,4 +1,4 @@
-dateModified: 1698787428
+dateModified: 1698788299
 elementSources:
   craft\elements\Entry:
     -
@@ -71,6 +71,7 @@ meta:
   __names__:
     0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
+    0d335b99-111b-4f79-ab51-e890179b337c: Heading
     0e4edcac-f39e-4825-946b-7174494adb63: 'Camera Filter Tool' # Camera Filter Tool
     0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
@@ -150,6 +151,7 @@ meta:
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
+    3173102a-6f80-4a4f-954b-1d3e151fb21a: 'Cell Content'
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
