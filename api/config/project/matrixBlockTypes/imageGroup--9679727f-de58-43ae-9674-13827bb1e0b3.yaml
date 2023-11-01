@@ -47,7 +47,7 @@ fields:
       allowUploads: true
       allowedKinds: null
       branchLimit: null
-      defaultUploadLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
+      defaultUploadLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6'
       defaultUploadLocationSubpath: null
       localizeRelations: false
       maintainHierarchy: false
@@ -57,7 +57,7 @@ fields:
       restrictFiles: false
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6' # Content Assets
+      restrictedLocationSource: 'volume:2a5db1b1-d277-4741-affe-f6d39af9a8b6'
       restrictedLocationSubpath: null
       selectionCondition:
         __assoc__:
