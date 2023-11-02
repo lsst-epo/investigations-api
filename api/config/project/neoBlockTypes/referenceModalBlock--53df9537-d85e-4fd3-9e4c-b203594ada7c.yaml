@@ -4,29 +4,29 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  dd59f53a-abc9-4009-a2b4-7fde9dc34269:
+  e8605e05-76ee-4126-bc61-ef95e772815f:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
+            fieldUid: 55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91 # Reference Modal Entries
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 488cc422-a2e7-4019-b15b-118ed0b1bd77
+            uid: 8b0db4fa-ce93-4bc6-b859-faab823894d0
             userCondition: null
             warning: null
             width: 100
-        name: '1'
-        uid: 6db6e65b-cc3b-4c0d-9e26-7885db2976cb
+        name: 'Tab 1'
+        uid: 206af2d5-6e44-4a8f-a6be-2e25fb61e8e7
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: null
 groupChildBlockTypes: true
-handle: colorFilterToolBlock
+handle: referenceModalBlock
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Color Filter Tool Block'
-sortOrder: 16
+name: 'Reference Modal Block'
+sortOrder: 5
 topLevel: true
