@@ -3,14 +3,13 @@ childBlocks:
   - text
   - table
   - image
+  - referenceModalBlock
   - group
-  - barGraphTool
   - filterTool
+  - barGraphTool
   - scatterplotTool
   - cameraFilterTool
   - colorFilterToolBlock
-  - cameraFilterToolBlock
-  - colorTool
 conditions: null
 description: ''
 enabled: true
