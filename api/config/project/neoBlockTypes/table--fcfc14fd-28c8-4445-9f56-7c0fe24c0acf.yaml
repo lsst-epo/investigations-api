@@ -1,0 +1,64 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: cd658691-87e7-43c3-a378-6078f21b9f6c # Reference Content Blocks
+fieldLayouts:
+  2815cb6a-91e5-4e9b-8cc3-d8a97bc9f333:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0d335b99-111b-4f79-ab51-e890179b337c # Heading
+            instructions: 'Optional heading to describe this content block'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bece8123-db42-43ad-9f9c-1ac1d9a597fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b415af71-493c-4de5-9b0e-3ac9f15f864a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c8e12df-36de-403c-a78b-f95263e7adda
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        uid: 88cfa296-1d2a-4532-8d32-baa84e64e9b6
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: table
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Table
+sortOrder: 2
+topLevel: true

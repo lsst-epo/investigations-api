@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: false
+field: cd658691-87e7-43c3-a378-6078f21b9f6c # Reference Content Blocks
+fieldLayouts:
+  1824d87f-5799-426d-86c2-097cdc5dc029:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e315cda3-92d2-40a0-874d-cbdf0c3f07e5
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        uid: 997ac9c2-b281-4d6c-bf6c-246148c587b6
+        userCondition: null
+group: 67592534-b8cb-4b2f-9826-d7c9300d9a2b # Widgets
+groupChildBlockTypes: true
+handle: cameraFilterTool
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Camera Filter Tool'
+sortOrder: 6
+topLevel: true
