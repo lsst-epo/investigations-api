@@ -1,0 +1,19 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: false
+field: cd658691-87e7-43c3-a378-6078f21b9f6c # Reference Content Blocks
+group: 67592534-b8cb-4b2f-9826-d7c9300d9a2b # Widgets
+groupChildBlockTypes: true
+handle: colorFilterToolBlock
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Color Filter Tool Block'
+sortOrder: 7
+topLevel: true

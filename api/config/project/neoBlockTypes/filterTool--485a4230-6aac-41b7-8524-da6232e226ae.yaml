@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: false
+field: cd658691-87e7-43c3-a378-6078f21b9f6c # Reference Content Blocks
+fieldLayouts:
+  1022e810-1b28-4870-aa77-43ff1a0f1934:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b355fdd5-ea65-4e3b-b9e4-77ab97792321
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b484ecda-1fdc-421d-a646-7bb44e3c6dd7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        uid: 8fd5a148-3e93-4319-95f8-1fde30b1ce75
+        userCondition: null
+group: 67592534-b8cb-4b2f-9826-d7c9300d9a2b # Widgets
+groupChildBlockTypes: true
+handle: filterTool
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Filter Tool'
+sortOrder: 5
+topLevel: true
