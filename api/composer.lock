@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f680842e0e9dfd2e5acc25f5c077e331",
+    "content-hash": "c8ddb2af56e897747b068baba339cded",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2044,16 +2044,16 @@
         },
         {
             "name": "lsst-epo/canto-dam-assets",
-            "version": "4.0.5",
+            "version": "dev-develop-v4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lsst-epo/canto-dam-assets.git",
-                "reference": "7dda579ea1d6902d4c1aee5bdede9e679713179f"
+                "reference": "3673d0dffad674293618eb579d15ee006c63cb80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/7dda579ea1d6902d4c1aee5bdede9e679713179f",
-                "reference": "7dda579ea1d6902d4c1aee5bdede9e679713179f",
+                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/3673d0dffad674293618eb579d15ee006c63cb80",
+                "reference": "3673d0dffad674293618eb579d15ee006c63cb80",
                 "shasum": ""
             },
             "require": {
@@ -2065,6 +2065,7 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "_canto-dam-assets",
@@ -2104,7 +2105,7 @@
                 "issues": "https://github.com/lsst-epo/canto-dam-assets/issues",
                 "source": "https://github.com/lsst-epo/canto-dam-assets/"
             },
-            "time": "2023-10-10T03:01:45+00:00"
+            "time": "2023-11-07T18:46:00+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -6226,7 +6227,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lsst-epo/canto-dam-assets": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
