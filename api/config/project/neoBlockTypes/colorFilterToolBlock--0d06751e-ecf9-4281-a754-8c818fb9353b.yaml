@@ -4,11 +4,19 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  dd59f53a-abc9-4009-a2b4-7fde9dc34269:
+  2c8dc7de-186c-402c-8845-c71debe3d42f:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'This is for read-only displays that will show users their previously created colorized image. To add an editable Color Filter Tool, add an entry to a question. '
+            type: craft\fieldlayoutelements\Tip
+            uid: 05711b2f-b42a-4a01-ac94-021324a67be4
+            userCondition: null
           -
             elementCondition: null
             fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
