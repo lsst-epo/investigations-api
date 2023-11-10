@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8ddb2af56e897747b068baba339cded",
+    "content-hash": "a8660b40de1a44376ed726ed93b4c199",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -868,6 +868,46 @@
                 "yii2"
             ],
             "time": "2015-01-27T10:53:51+00:00"
+        },
+        {
+            "name": "daccess1/yii2-json-query-helper",
+            "version": "v1.0.0-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daccess1/yii2-json-query-helper.git",
+                "reference": "d0308456a019ffb2b56258b70c83325e35414a88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daccess1/yii2-json-query-helper/zipball/d0308456a019ffb2b56258b70c83325e35414a88",
+                "reference": "d0308456a019ffb2b56258b70c83325e35414a88",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "daccess1\\JSONQueryHelper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "b.kruchinkin",
+                    "email": "b.kruchinkin@yandex.ru"
+                }
+            ],
+            "description": "Yii2 helper class, used to generate query expressions for JSON columns.",
+            "support": {
+                "issues": "https://github.com/daccess1/yii2-json-query-helper/issues",
+                "source": "https://github.com/daccess1/yii2-json-query-helper/tree/v1.0.0-stable"
+            },
+            "time": "2020-12-21T20:21:29+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -2044,20 +2084,21 @@
         },
         {
             "name": "lsst-epo/canto-dam-assets",
-            "version": "dev-develop-v4",
+            "version": "4.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lsst-epo/canto-dam-assets.git",
-                "reference": "3673d0dffad674293618eb579d15ee006c63cb80"
+                "reference": "13f2077e41ab679c21dee0d850a92101a55bb5a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/3673d0dffad674293618eb579d15ee006c63cb80",
-                "reference": "3673d0dffad674293618eb579d15ee006c63cb80",
+                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/13f2077e41ab679c21dee0d850a92101a55bb5a3",
+                "reference": "13f2077e41ab679c21dee0d850a92101a55bb5a3",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.4.0",
+                "daccess1/yii2-json-query-helper": "^1.0.0",
                 "nystudio107/craft-plugin-vite": "^4.0.0",
                 "php": ">=8.0.2"
             },
@@ -2065,7 +2106,6 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
-            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "_canto-dam-assets",
@@ -2105,7 +2145,7 @@
                 "issues": "https://github.com/lsst-epo/canto-dam-assets/issues",
                 "source": "https://github.com/lsst-epo/canto-dam-assets/"
             },
-            "time": "2023-11-07T18:46:00+00:00"
+            "time": "2023-11-10T18:28:24+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -6227,9 +6267,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lsst-epo/canto-dam-assets": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
