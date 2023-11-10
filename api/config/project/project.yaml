@@ -1,4 +1,4 @@
-dateModified: 1699391947
+dateModified: 1699650174
 elementSources:
   craft\elements\Entry:
     -
@@ -139,6 +139,7 @@ meta:
     9068dd8e-ad92-4925-ba1d-1fe180598462: Questions # Questions
     9748bbea-73ac-46cc-90b1-e6b8a6da31cd: Image # Image
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
+    24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
@@ -210,7 +211,7 @@ plugins:
   _canto-dam-assets:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 1.0.1
     settings:
       appId: $CANTO_APP_ID
       authEndpoint: $CANTO_AUTH_ENDPOINT
