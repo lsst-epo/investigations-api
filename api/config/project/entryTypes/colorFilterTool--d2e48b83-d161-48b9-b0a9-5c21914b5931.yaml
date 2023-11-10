@@ -32,13 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 131ceffb-300f-415d-8cd5-a932d7529287 # Read Only
+            fieldUid: 24907dba-daa7-4266-a917-8e6a8b7ad726 # Filter Tool Actions
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6b0bd076-9062-450b-9357-f1743ab4e476
+            uid: f262ee0a-c001-490c-b441-c97eadffcc02
             userCondition: null
             warning: null
             width: 100
