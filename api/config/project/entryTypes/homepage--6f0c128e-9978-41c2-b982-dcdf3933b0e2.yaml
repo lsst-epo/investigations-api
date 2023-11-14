@@ -32,37 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6 # Description
+            fieldUid: 40c867bb-c75a-4d5f-8d69-e7facae1c15b # Homepage Content Blocks
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 411d7d0b-d424-40b5-b031-7949638d70ee
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4a8022c6-09ae-4ebe-ba0f-a49f9f716b82
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 0481b024-bc6f-4104-bc1c-802615313aaa # Page Type
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1da205b0-a3ca-4d53-b3e1-cf887c9ca02d
+            uid: 16ea4ab9-1a4a-4a64-8b32-8cdd5f5fe8ea
             userCondition: null
             warning: null
             width: 100
