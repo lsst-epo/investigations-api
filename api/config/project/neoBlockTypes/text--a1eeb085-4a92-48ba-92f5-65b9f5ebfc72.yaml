@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 40c867bb-c75a-4d5f-8d69-e7facae1c15b # Homepage Content Blocks
+fieldLayouts:
+  ce1c356a-c3f7-4743-8991-bae03f374840:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cec8dab7-e421-4275-b19d-628830748ab7
+            userCondition: null
+            warning: null
+            width: 100
+        name: '1'
+        uid: 16de33f2-6a4a-4588-acd0-a1ad6d3c4761
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: text
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Text
+sortOrder: 1
+topLevel: true

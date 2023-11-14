@@ -1,0 +1,53 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: investigationEntries
+instructions: null
+name: 'Investigation Entries'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 3b827782-24f3-4579-91a5-5a04be78fec4
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - bfaa63c2-dd2c-42c8-b68e-79d0180d5146 # Investigation (Parent Entry)
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

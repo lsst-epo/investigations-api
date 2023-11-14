@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 40c867bb-c75a-4d5f-8d69-e7facae1c15b # Homepage Content Blocks
+fieldLayouts:
+  0ab9c9ae-bf7d-4038-8260-5b63d2f931a3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0d335b99-111b-4f79-ab51-e890179b337c # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60e49857-994f-4950-963c-5e9d08aff7be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 048379b3-5d56-46a2-bfe2-9690b4b57151 # Investigation Entries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 641e6032-ca00-43f6-8401-94ab8feccbf2
+            userCondition: null
+            warning: null
+            width: 100
+        name: '1'
+        uid: 55c807cc-836a-4332-9ba4-c95a6aac43af
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: investigationGrid
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Investigation Grid'
+sortOrder: 3
+topLevel: true
