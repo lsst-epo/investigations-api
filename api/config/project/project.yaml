@@ -1,4 +1,4 @@
-dateModified: 1699920202
+dateModified: 1701291316
 elementSources:
   craft\elements\Entry:
     -
@@ -65,6 +65,7 @@ meta:
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0d335b99-111b-4f79-ab51-e890179b337c: Heading # Heading
     0e4edcac-f39e-4825-946b-7174494adb63: 'Camera Filter Tool' # Camera Filter Tool
+    0edce3a2-c596-4238-9dde-212c83d5a65f: 'Menu Content' # Menu Content
     0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
@@ -179,6 +180,7 @@ meta:
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
+    c1c8acb5-0649-4dca-a7c8-1d03e98097cf: 'Help URL' # Help URL
     c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image

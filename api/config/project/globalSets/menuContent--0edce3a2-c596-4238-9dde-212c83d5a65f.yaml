@@ -1,0 +1,24 @@
+fieldLayouts:
+  5f7a2410-39f0-4a8d-90ab-cc8c65441331:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c1c8acb5-0649-4dca-a7c8-1d03e98097cf # Help URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fa8b345-2e6d-4c8c-954f-763e42fc91ed
+            userCondition: null
+            warning: null
+            width: 100
+        name: Help
+        uid: 7d27c0f5-be39-4674-8395-87a6ee0ce3ad
+        userCondition: null
+handle: menuContent
+name: 'Menu Content'
+sortOrder: 2
