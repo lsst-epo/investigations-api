@@ -1,9 +1,9 @@
-baseUrl: '@webBaseUrl/es'
+baseUrl: '@webBaseUrl/fr'
 enabled: '1'
-handle: es
+handle: fr
 hasUrls: true
-language: es
-name: ES
+language: fr
+name: FR
 primary: false
 siteGroup: 1a35bfab-6a39-4c03-b273-2d5e3151c335 # Rubin Telescope Education and Public Outreach
-sortOrder: 2
+sortOrder: 3
