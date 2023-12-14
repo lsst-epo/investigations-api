@@ -30,6 +30,11 @@ docker-compose -f docker-compose-local-db.yml up
 8. Go to <http://localhost:8080/admin> to administer the site
 9. Default admin username and password, as included in the db.sql file, is `example / password`
 
+These and other most used docker commands for bringing containers up/down are aliased in a Makefile:
+ * `make start` is equivalent to `docker-compose -f docker-compose-local-db.yml up --build`
+ * `make clean` is equivalent to `docker system prune -f && docker volume prune -f`
+ * `make clean-images` is equivalent to `docker images prune`
+
 #### Useful docker commands for local development
 
 1. Cleaning house: `docker volume prune` `docker system prune`
