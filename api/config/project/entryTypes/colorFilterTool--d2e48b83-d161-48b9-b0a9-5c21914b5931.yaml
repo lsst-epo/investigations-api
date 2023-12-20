@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: null
-            label: null
+            instructions: 'Title for reference in Craft'
+            label: 'Entry Title'
             max: null
             min: null
             name: null
@@ -29,7 +29,19 @@ fieldLayouts:
             uid: 475c3e84-06d8-4a5c-afca-012233f16273
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e5142c27-2288-47b7-bfad-14cd6b3a6653 # Display Name
+            instructions: 'Title that will display in the client, if set. Should be different from the entry Title.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a9de9ed-a21c-47ed-9a78-4e330831e2df
+            userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
             fieldUid: 24907dba-daa7-4266-a917-8e6a8b7ad726 # Filter Tool Actions
@@ -75,8 +87,8 @@ name: 'Color Filter Tool'
 section: 28704998-935a-423b-a405-d4ad8b38efa2 # Widgets
 showStatusField: true
 slugTranslationKeyFormat: null
-slugTranslationMethod: site
+slugTranslationMethod: none
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
