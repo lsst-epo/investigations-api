@@ -167,8 +167,8 @@ name: Default
 section: 9068dd8e-ad92-4925-ba1d-1fe180598462 # Questions
 showStatusField: true
 slugTranslationKeyFormat: null
-slugTranslationMethod: site
+slugTranslationMethod: none
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none

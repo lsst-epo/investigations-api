@@ -51,8 +51,8 @@ name: Default
 section: c2356ed1-1e49-4056-83c7-ed615a2694b1 # Reference Modals
 showStatusField: true
 slugTranslationKeyFormat: null
-slugTranslationMethod: site
+slugTranslationMethod: none
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
