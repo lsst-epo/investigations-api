@@ -2,18 +2,6 @@ defaultPlacement: end
 enableVersioning: true
 handle: widgets
 name: Widgets
-previewTargets:
-  -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
 propagationMethod: all
 siteSettings:
   2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: # ES
