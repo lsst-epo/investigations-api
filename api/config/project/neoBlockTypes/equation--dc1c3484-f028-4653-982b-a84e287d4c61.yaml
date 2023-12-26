@@ -1,32 +1,32 @@
 childBlocks: null
 conditions: null
-description: ''
+description: 'Mathematical equation'
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  99d26e6b-6e25-4045-8bda-933cc4e4ee2c:
+  4317e51b-a554-4107-8929-70f27dbad4f6:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
-            instructions: null
+            fieldUid: bf080076-0029-4fb7-9562-4da97d31c0b4 # LaTeX
+            instructions: 'LaTeX format input, reference the Temml documentation for help formatting: https://temml.org/docs/en/supported'
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ccba26ac-5eec-40a9-b6c2-ac8902ea0dd7
+            uid: 4533dacc-7e3b-4879-95aa-3cb13c875278
             userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        uid: 86e5c25c-9fa9-41f6-83d7-60cedf48abab
+        uid: 66641481-a919-4ae4-9632-e146c1530f72
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: text
+handle: equation
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Text
-sortOrder: 2
+name: Equation
+sortOrder: 3
 topLevel: true

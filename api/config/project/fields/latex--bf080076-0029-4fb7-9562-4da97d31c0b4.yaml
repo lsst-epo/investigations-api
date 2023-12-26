@@ -1,0 +1,19 @@
+columnSuffix: jpgoyubw
+contentColumnType: text
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: latex
+instructions: 'LaTeX format input'
+name: LaTeX
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
