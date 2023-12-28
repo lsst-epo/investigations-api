@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8660b40de1a44376ed726ed93b4c199",
+    "content-hash": "0cf5767a105c9252966639d46c10b013",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2084,16 +2084,16 @@
         },
         {
             "name": "lsst-epo/canto-dam-assets",
-            "version": "4.0.7",
+            "version": "4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lsst-epo/canto-dam-assets.git",
-                "reference": "13f2077e41ab679c21dee0d850a92101a55bb5a3"
+                "reference": "5563c90ed07dde5406797fda158a0bf25e93f875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/13f2077e41ab679c21dee0d850a92101a55bb5a3",
-                "reference": "13f2077e41ab679c21dee0d850a92101a55bb5a3",
+                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/5563c90ed07dde5406797fda158a0bf25e93f875",
+                "reference": "5563c90ed07dde5406797fda158a0bf25e93f875",
                 "shasum": ""
             },
             "require": {
@@ -2145,7 +2145,7 @@
                 "issues": "https://github.com/lsst-epo/canto-dam-assets/issues",
                 "source": "https://github.com/lsst-epo/canto-dam-assets/"
             },
-            "time": "2023-11-10T18:28:24+00:00"
+            "time": "2023-11-25T21:35:24+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",

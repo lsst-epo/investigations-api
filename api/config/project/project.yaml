@@ -9,9 +9,9 @@ elementSources:
       key: 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
       tableAttributes:
         - postDate
-        - expiryDate
         - author
         - link
+        - parent
       type: native
     -
       defaultSort:
@@ -20,18 +20,6 @@ elementSources:
       disabled: false
       key: singles
       tableAttributes:
-        - link
-      type: native
-    -
-      defaultSort:
-        - structure
-        - asc
-      disabled: false
-      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - author
         - link
       type: native
     -
@@ -46,6 +34,30 @@ elementSources:
         - expiryDate
         - author
         - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: true
+      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      key: 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+      type: native
+    -
+      key: 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+      type: native
+    -
+      key: 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
       type: native
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
@@ -809,7 +821,7 @@ plugins:
             - widgets
             - '1'
       nextApiBaseUrl: $NEXT_API_BASE_URL
-      nextSecretToken: $NEXT_REVALIDATE_SECRET_TOKEN
+      nextSecretToken: $NEXT_SECRET_TOKEN
   redactor:
     edition: standard
     enabled: true
