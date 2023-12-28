@@ -10,7 +10,7 @@ previewTargets:
         - 'Primary entry page'
       -
         - urlFormat
-        - '{url}'
+        - '@previewUrlFormat'
       -
         - refresh
         - '1'

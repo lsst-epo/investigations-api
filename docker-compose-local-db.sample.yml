@@ -30,7 +30,7 @@ services:
       MEMCACHED_PORT: 11211
       PORT: 8080
       NEXT_API_BASE_URL: gateway.docker.internal:3000/api
-      NEXT_REVALIDATE_SECRET_TOKEN: super-secret-token
+      NEXT_SECRET_TOKEN: super-secret-token
     ports:
       - "8080:8080"
     depends_on:
