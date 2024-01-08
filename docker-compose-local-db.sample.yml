@@ -24,7 +24,7 @@ services:
       DB_PORT: 5432
       PRIMARY_SITE_URL: http://localhost:8080
       WEB_BASE_URL: http://localhost:3000
-      ALIAS_PREVIEW_URL_FORMAT: http://localhost:3000/api/preview?site={site}&entryUid={sourceUid}
+      ALIAS_PREVIEW_URL_FORMAT: http://localhost:3000/api/preview?site={site}&uri={uri}
       ENABLE_MEMCACHED: "true"
       MEMCACHED_IP: cache
       MEMCACHED_PORT: 11211
