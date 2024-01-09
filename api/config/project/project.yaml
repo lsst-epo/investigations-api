@@ -1,4 +1,4 @@
-dateModified: 1704746367
+dateModified: 1704834070
 elementSources:
   craft\elements\Entry:
     -
@@ -291,7 +291,16 @@ plugins:
                   - caption
                   - queryMutate
                 -
+                  - colorFilterTool
+                  - queryMutate
+                -
+                  - colorFilterToolObjects
+                  - queryMutate
+                -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - colorToolDefaultValue
                   - queryMutate
                 -
                   - description
@@ -303,10 +312,37 @@ plugins:
                   - displayName
                   - queryMutate
                 -
+                  - displayTable
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - filterColorOptions
+                  - queryMutate
+                -
+                  - filterToolActions
+                  - queryMutate
+                -
+                  - filtersImages
+                  - queryMutate
+                -
                   - graphBars
                   - queryMutate
                 -
+                  - groupName
+                  - queryMutate
+                -
+                  - contentHeading
+                  - queryMutate
+                -
+                  - helpUrl
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - homepageContentBlocks
                   - queryMutate
                 -
                   - image
@@ -315,10 +351,34 @@ plugins:
                   - images
                   - queryMutate
                 -
+                  - investigationEntries
+                  - queryMutate
+                -
+                  - latex
+                  - queryMutate
+                -
                   - layout
                   - queryMutate
                 -
                   - linkTo
+                  - queryMutate
+                -
+                  - colorToolMax
+                  - queryMutate
+                -
+                  - colorToolMin
+                  - queryMutate
+                -
+                  - multiPartBlocks
+                  - queryMutate
+                -
+                  - objectCaption
+                  - queryMutate
+                -
+                  - objectName
+                  - queryMutate
+                -
+                  - objects
                   - queryMutate
                 -
                   - pageType
@@ -333,10 +393,19 @@ plugins:
                   - questionText
                   - queryMutate
                 -
-                  - readOnly
+                  - questionWidgetsBlock
                   - queryMutate
                 -
                   - captionRichText
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - referenceContentBlocks
+                  - queryMutate
+                -
+                  - referenceModalEntries
                   - queryMutate
                 -
                   - hasSavePoint
@@ -345,13 +414,13 @@ plugins:
                   - scatterplotItems
                   - queryMutate
                 -
-                  - colorToolTemplate
-                  - queryMutate
-                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - widgetInstructions
                   - queryMutate
                 -
                   - xAxisLabel
@@ -370,6 +439,12 @@ plugins:
                   - queryMutate
                 -
                   - yAxisMin
+                  - queryMutate
+                -
+                  - isActive
+                  - queryMutate
+                -
+                  - isEnabled
                   - queryMutate
           -
             - 'schema-Educator Schema'
@@ -388,7 +463,16 @@ plugins:
                   - caption
                   - queryMutate
                 -
+                  - colorFilterTool
+                  - queryMutate
+                -
+                  - colorFilterToolObjects
+                  - queryMutate
+                -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - colorToolDefaultValue
                   - queryMutate
                 -
                   - description
@@ -400,10 +484,37 @@ plugins:
                   - displayName
                   - queryMutate
                 -
+                  - displayTable
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - filterColorOptions
+                  - queryMutate
+                -
+                  - filterToolActions
+                  - queryMutate
+                -
+                  - filtersImages
+                  - queryMutate
+                -
                   - graphBars
                   - queryMutate
                 -
+                  - groupName
+                  - queryMutate
+                -
+                  - contentHeading
+                  - queryMutate
+                -
+                  - helpUrl
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - homepageContentBlocks
                   - queryMutate
                 -
                   - image
@@ -412,10 +523,34 @@ plugins:
                   - images
                   - queryMutate
                 -
+                  - investigationEntries
+                  - queryMutate
+                -
+                  - latex
+                  - queryMutate
+                -
                   - layout
                   - queryMutate
                 -
                   - linkTo
+                  - queryMutate
+                -
+                  - colorToolMax
+                  - queryMutate
+                -
+                  - colorToolMin
+                  - queryMutate
+                -
+                  - multiPartBlocks
+                  - queryMutate
+                -
+                  - objectCaption
+                  - queryMutate
+                -
+                  - objectName
+                  - queryMutate
+                -
+                  - objects
                   - queryMutate
                 -
                   - pageType
@@ -430,10 +565,19 @@ plugins:
                   - questionText
                   - queryMutate
                 -
-                  - readOnly
+                  - questionWidgetsBlock
                   - queryMutate
                 -
                   - captionRichText
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - referenceContentBlocks
+                  - queryMutate
+                -
+                  - referenceModalEntries
                   - queryMutate
                 -
                   - hasSavePoint
@@ -442,13 +586,13 @@ plugins:
                   - scatterplotItems
                   - queryMutate
                 -
-                  - colorToolTemplate
-                  - queryMutate
-                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - widgetInstructions
                   - queryMutate
                 -
                   - xAxisLabel
@@ -467,6 +611,12 @@ plugins:
                   - queryMutate
                 -
                   - yAxisMin
+                  - queryMutate
+                -
+                  - isActive
+                  - queryMutate
+                -
+                  - isEnabled
                   - queryMutate
           -
             - 'schema-Public Schema'
@@ -485,7 +635,16 @@ plugins:
                   - caption
                   - queryMutate
                 -
+                  - colorFilterTool
+                  - queryMutate
+                -
+                  - colorFilterToolObjects
+                  - queryMutate
+                -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - colorToolDefaultValue
                   - queryMutate
                 -
                   - description
@@ -497,10 +656,37 @@ plugins:
                   - displayName
                   - queryMutate
                 -
+                  - displayTable
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - filterColorOptions
+                  - queryMutate
+                -
+                  - filterToolActions
+                  - queryMutate
+                -
+                  - filtersImages
+                  - queryMutate
+                -
                   - graphBars
                   - queryMutate
                 -
+                  - groupName
+                  - queryMutate
+                -
+                  - contentHeading
+                  - queryMutate
+                -
+                  - helpUrl
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - homepageContentBlocks
                   - queryMutate
                 -
                   - image
@@ -509,10 +695,34 @@ plugins:
                   - images
                   - queryMutate
                 -
+                  - investigationEntries
+                  - queryMutate
+                -
+                  - latex
+                  - queryMutate
+                -
                   - layout
                   - queryMutate
                 -
                   - linkTo
+                  - queryMutate
+                -
+                  - colorToolMax
+                  - queryMutate
+                -
+                  - colorToolMin
+                  - queryMutate
+                -
+                  - multiPartBlocks
+                  - queryMutate
+                -
+                  - objectCaption
+                  - queryMutate
+                -
+                  - objectName
+                  - queryMutate
+                -
+                  - objects
                   - queryMutate
                 -
                   - pageType
@@ -527,10 +737,19 @@ plugins:
                   - questionText
                   - queryMutate
                 -
-                  - readOnly
+                  - questionWidgetsBlock
                   - queryMutate
                 -
                   - captionRichText
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - referenceContentBlocks
+                  - queryMutate
+                -
+                  - referenceModalEntries
                   - queryMutate
                 -
                   - hasSavePoint
@@ -539,13 +758,13 @@ plugins:
                   - scatterplotItems
                   - queryMutate
                 -
-                  - colorToolTemplate
-                  - queryMutate
-                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - widgetInstructions
                   - queryMutate
                 -
                   - xAxisLabel
@@ -564,6 +783,12 @@ plugins:
                   - queryMutate
                 -
                   - yAxisMin
+                  - queryMutate
+                -
+                  - isActive
+                  - queryMutate
+                -
+                  - isEnabled
                   - queryMutate
           -
             - 'schema-Student Schema'
@@ -582,7 +807,16 @@ plugins:
                   - caption
                   - queryMutate
                 -
+                  - colorFilterTool
+                  - queryMutate
+                -
+                  - colorFilterToolObjects
+                  - queryMutate
+                -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - colorToolDefaultValue
                   - queryMutate
                 -
                   - description
@@ -594,10 +828,37 @@ plugins:
                   - displayName
                   - queryMutate
                 -
+                  - displayTable
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - filterColorOptions
+                  - queryMutate
+                -
+                  - filterToolActions
+                  - queryMutate
+                -
+                  - filtersImages
+                  - queryMutate
+                -
                   - graphBars
                   - queryMutate
                 -
+                  - groupName
+                  - queryMutate
+                -
+                  - contentHeading
+                  - queryMutate
+                -
+                  - helpUrl
+                  - queryMutate
+                -
                   - hideTitle
+                  - queryMutate
+                -
+                  - homepageContentBlocks
                   - queryMutate
                 -
                   - image
@@ -606,10 +867,34 @@ plugins:
                   - images
                   - queryMutate
                 -
+                  - investigationEntries
+                  - queryMutate
+                -
+                  - latex
+                  - queryMutate
+                -
                   - layout
                   - queryMutate
                 -
                   - linkTo
+                  - queryMutate
+                -
+                  - colorToolMax
+                  - queryMutate
+                -
+                  - colorToolMin
+                  - queryMutate
+                -
+                  - multiPartBlocks
+                  - queryMutate
+                -
+                  - objectCaption
+                  - queryMutate
+                -
+                  - objectName
+                  - queryMutate
+                -
+                  - objects
                   - queryMutate
                 -
                   - pageType
@@ -624,10 +909,19 @@ plugins:
                   - questionText
                   - queryMutate
                 -
-                  - readOnly
+                  - questionWidgetsBlock
                   - queryMutate
                 -
                   - captionRichText
+                  - queryMutate
+                -
+                  - readOnly
+                  - queryMutate
+                -
+                  - referenceContentBlocks
+                  - queryMutate
+                -
+                  - referenceModalEntries
                   - queryMutate
                 -
                   - hasSavePoint
@@ -636,13 +930,13 @@ plugins:
                   - scatterplotItems
                   - queryMutate
                 -
-                  - colorToolTemplate
-                  - queryMutate
-                -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - widgetInstructions
                   - queryMutate
                 -
                   - xAxisLabel
@@ -661,6 +955,12 @@ plugins:
                   - queryMutate
                 -
                   - yAxisMin
+                  - queryMutate
+                -
+                  - isActive
+                  - queryMutate
+                -
+                  - isEnabled
                   - queryMutate
       forbiddenField: 'User doesn''t have permission to access requested field(s)'
       forbiddenMutation: 'User doesn''t have permission to perform this mutation'
@@ -708,12 +1008,11 @@ plugins:
                       -
                         - questions
                         - ''
-                -
-                  - assetQueries
-                  -
-                    __assoc__:
                       -
-                        - contentAssets
+                        - referenceModals
+                        - ''
+                      -
+                        - widgets
                         - ''
           -
             - group-37
@@ -741,12 +1040,11 @@ plugins:
                       -
                         - questions
                         - ''
-                -
-                  - assetQueries
-                  -
-                    __assoc__:
                       -
-                        - contentAssets
+                        - referenceModals
+                        - ''
+                      -
+                        - widgets
                         - ''
       invalidEmailAddress: 'Invalid email address'
       invalidHeader: 'Invalid Authorization Header'
@@ -778,7 +1076,7 @@ plugins:
       schemaName: 'Public Schema'
       siteId: null
       skipActivatedCheck: null
-      skipSocialActivation: null
+      skipSocialActivation: '1'
       tokenNotFound: 'We couldn''t find any matching tokens'
       twitterApiKey: null
       twitterApiKeySecret: null
