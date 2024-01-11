@@ -51,7 +51,6 @@ return [
         // requests (eg, the contact form), so we went with this 
         // approach.
         'allowedGraphqlOrigins' => false,
-        'enableGraphqlCaching' => false,
     ],
 
     // Dev environment settings
