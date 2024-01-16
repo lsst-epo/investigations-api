@@ -4,53 +4,41 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  cc49b4bd-9177-4095-8408-f93c719e3db7:
+  84881e5b-481f-4739-bc8e-635abbde5d80:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
+            fieldUid: 118a3e01-4188-4f83-be5b-f4ce24d7513e # Video
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: daf6ca48-a51c-408b-a898-381be6c31f30
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 27af84b2-9ccb-416c-ae38-872fdca1f5c0 # Layout
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2e979c28-bafa-4fef-8d5a-91a8c15d8e0e
+            uid: 15384192-7122-41b6-b22f-ede33ad5be64
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
             fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
-            instructions: null
+            instructions: 'Caption that will override any text fields in Canto'
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3f5474a8-83ec-4ca4-b431-33fe672203ae
+            uid: c620d1af-c204-470d-bcf3-5164242224fb
             userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        uid: af932c0e-cb2a-4cf8-8975-29f6875fb4c5
+        uid: 320531a7-9075-4282-91b3-c245e887568a
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: image
+handle: video
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -59,6 +47,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Image
-sortOrder: 5
+name: Video
+sortOrder: 7
 topLevel: true
