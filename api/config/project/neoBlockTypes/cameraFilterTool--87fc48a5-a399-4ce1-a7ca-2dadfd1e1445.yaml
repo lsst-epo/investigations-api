@@ -15,5 +15,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Camera Filter Tool'
-sortOrder: 16
+sortOrder: 17
 topLevel: true
