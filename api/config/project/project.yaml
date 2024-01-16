@@ -1,4 +1,4 @@
-dateModified: 1704834070
+dateModified: 1705437865
 elementSources:
   craft\elements\Entry:
     -
@@ -133,6 +133,7 @@ meta:
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
     87fc48a5-a399-4ce1-a7ca-2dadfd1e1445: 'Camera Filter Tool' # Camera Filter Tool
     90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options' # Sort Options
+    118a3e01-4188-4f83-be5b-f4ce24d7513e: Video # Video
     131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only' # Read Only
     222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
@@ -211,6 +212,7 @@ meta:
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5: Min # Min
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
+    d27f27b6-dfb4-4c6a-9196-ab3c81785d87: Video # Video
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
@@ -237,8 +239,9 @@ plugins:
     settings:
       appId: $CANTO_APP_ID
       authEndpoint: $CANTO_AUTH_ENDPOINT
-      retrieveAssetMetadataEndpoint: $CANTO_ASSET_ENDPOINT
       secretKey: $CANTO_SECRET_KEY
+      tenantHostName: rubin.canto.com
+      webhookSecureToken: ''
   graphql-authentication:
     edition: standard
     enabled: true
