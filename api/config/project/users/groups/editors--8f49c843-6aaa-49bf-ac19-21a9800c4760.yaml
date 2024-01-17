@@ -44,6 +44,8 @@ permissions:
   - 'neo-createblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
   - 'neo-createblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-createblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
+  - 'neo-createblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video
+  - 'neo-createblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-createblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-createblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
   - 'neo-createblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
@@ -75,6 +77,8 @@ permissions:
   - 'neo-deleteblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
   - 'neo-deleteblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-deleteblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
+  - 'neo-deleteblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video
+  - 'neo-deleteblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-deleteblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-deleteblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
   - 'neo-deleteblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
@@ -106,6 +110,8 @@ permissions:
   - 'neo-editblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
   - 'neo-editblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-editblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
+  - 'neo-editblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video
+  - 'neo-editblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-editblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-editblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
   - 'neo-editblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
