@@ -1,14 +1,14 @@
-columnSuffix: nspcwsfq
+columnSuffix: hempumxf
 contentColumnType: text
-fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
-handle: displayName
-instructions: null
-name: 'Display Name'
+fieldGroup: 75965c47-b816-42c0-8e07-d1fdcd44fba5 # Data
+handle: uniqueId
+instructions: 'A unique data identifier'
+name: 'Unique ID'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: false
+  code: true
   columnType: null
   initialRows: 4
   multiline: false
