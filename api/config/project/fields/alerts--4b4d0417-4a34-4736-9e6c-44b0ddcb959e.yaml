@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 75965c47-b816-42c0-8e07-d1fdcd44fba5 # Data
+handle: alerts
+instructions: 'A set of alerts, should match the number and order of the alert images album'
+name: Alerts
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_alerts}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,146 @@
+field: 4b4d0417-4a34-4736-9e6c-44b0ddcb959e # Alerts
+fieldLayouts:
+  21e0ecbc-cdd3-4e07-b799-7101cb6ff706:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ff03a34c-19f8-4e54-a694-b6cc617791e9 # Observation ID
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1242505-b6ab-419b-9b5b-c36462bf796c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 7fc5b20d-4453-4b4f-9bf2-1ad71a7df4fb # Modified Julian Date (MJD)
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2e1b620-e231-4b9d-9f5b-6e5c25ea064d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3fde86eb-6a7d-4b9b-9b4b-4c142a1a2cc0 # Apparent Magnitude
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5a81cac-e463-488e-8738-5be4091c1df8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 21c24446-ba0c-40e6-9059-2fa425535118 # Magnitude Error
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8f961a6-eb37-4f83-84f2-b0f78349b752
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 41bc31b1-ac09-418d-b552-e4a5eb5e24ec
+        userCondition: null
+fields:
+  3fde86eb-6a7d-4b9b-9b4b-4c142a1a2cc0: # Apparent Magnitude
+    columnSuffix: zjzlmads
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: magnitude
+    instructions: 'Source apparent magnitude'
+    name: 'Apparent Magnitude'
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  7fc5b20d-4453-4b4f-9bf2-1ad71a7df4fb: # Modified Julian Date (MJD)
+    columnSuffix: ogxkxapg
+    contentColumnType: 'decimal(15,5)'
+    fieldGroup: null
+    handle: modifiedJulianDate
+    instructions: null
+    name: 'Modified Julian Date (MJD)'
+    searchable: false
+    settings:
+      decimals: 5
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  21c24446-ba0c-40e6-9059-2fa425535118: # Magnitude Error
+    columnSuffix: aloinkdo
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: errorMagnitude
+    instructions: 'Measurement uncertainty of source apparent magnitude'
+    name: 'Magnitude Error'
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: 0
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  ff03a34c-19f8-4e54-a694-b6cc617791e9: # Observation ID
+    columnSuffix: axuxqitl
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: observationId
+    instructions: 'Unique ID associated with this observation'
+    name: 'Observation ID'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: alert
+name: Alert
+sortOrder: 1

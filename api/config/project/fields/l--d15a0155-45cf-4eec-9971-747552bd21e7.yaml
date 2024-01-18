@@ -1,0 +1,20 @@
+columnSuffix: hodmezbx
+contentColumnType: 'decimal(10,8)'
+fieldGroup: 75965c47-b816-42c0-8e07-d1fdcd44fba5 # Data
+handle: l
+instructions: 'Galactic latitude, in degrees'
+name: 'Galatic Latitude'
+searchable: false
+settings:
+  decimals: 8
+  defaultValue: null
+  max: 90
+  min: -90
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

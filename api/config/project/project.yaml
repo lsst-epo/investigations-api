@@ -1,4 +1,4 @@
-dateModified: 1706050317
+dateModified: 1706050318
 elementSources:
   craft\elements\Entry:
     -
@@ -77,6 +77,7 @@ meta:
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0d335b99-111b-4f79-ab51-e890179b337c: Heading # Heading
     0e4edcac-f39e-4825-946b-7174494adb63: 'Camera Filter Tool' # Camera Filter Tool
+    0e9051be-b451-4b7e-ac51-57078cf73ec5: 'Image Album' # Image Album
     0edce3a2-c596-4238-9dde-212c83d5a65f: 'Menu Content' # Menu Content
     0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
@@ -86,6 +87,8 @@ meta:
     1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Filter # Filter
+    3fde86eb-6a7d-4b9b-9b4b-4c142a1a2cc0: 'Apparent Magnitude' # Apparent Magnitude
+    4b4d0417-4a34-4736-9e6c-44b0ddcb959e: Alerts # Alerts
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
     4e9ea915-78e8-4b28-b44e-fe2af60c77f8: Image # Image
@@ -103,16 +106,21 @@ meta:
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
+    7fc5b20d-4453-4b4f-9bf2-1ad71a7df4fb: 'Modified Julian Date (MJD)' # Modified Julian Date (MJD)
     8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
+    8bf7b9a2-465c-46e6-a5bf-9451b24ada88: 'Source Type' # Source Type
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
     9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
+    9d55ab75-8b96-461e-9983-552756049297: 'Alert Sources' # Alert Sources
+    9fc55b7f-d00a-49e4-b282-4d350938f452: X # X
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
     010dc3f6-c369-4937-adc7-1948204aaf97: Group # Group
     11f12958-c08d-4f26-9466-1a8ba7011b34: 'Camera Filter Tool' # Camera Filter Tool
     17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
+    21c24446-ba0c-40e6-9059-2fa425535118: 'Magnitude Error' # Magnitude Error
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
@@ -120,6 +128,7 @@ meta:
     28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
     29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
+    36c477dc-74b3-46e2-b191-81dfa2afb299: Alert # Alert
     40c867bb-c75a-4d5f-8d69-e7facae1c15b: 'Homepage Content Blocks' # Homepage Content Blocks
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
@@ -129,6 +138,8 @@ meta:
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Modal Entries' # Reference Modal Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
     56e28243-1126-458f-b20a-41078120d186: Translators # Translators
+    57c35cd3-97bc-4940-b7ac-f081e26f92f1: 'Galactic longitude' # Galactic longitude
+    59e9594e-67d4-4852-91f9-944646afaf38: Declination # Declination
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
@@ -139,12 +150,14 @@ meta:
     222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
     367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: 'Color Filter Tool Block' # Color Filter Tool Block
+    446bfdd2-9323-4af2-9316-c5a99193aa5e: 'Right Ascension' # Right Ascension
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
     721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
+    0867f2df-ac4f-4178-8f78-fed2dedda051: Color # Color
     919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
@@ -158,12 +171,14 @@ meta:
     9748bbea-73ac-46cc-90b1-e6b8a6da31cd: Image # Image
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
     24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
+    25434ce3-3fc3-454d-95dc-6f99cd823dc3: Radius # Radius
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
+    75965c47-b816-42c0-8e07-d1fdcd44fba5: Data # Data
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
@@ -176,13 +191,16 @@ meta:
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     67592534-b8cb-4b2f-9826-d7c9300d9a2b: Widgets # Widgets
+    76401484-3e66-4200-b542-6ec3fbcf6d67: 'Y' # Y
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
+    a8e99ac1-1309-4981-b592-02862caf69ae: 'Unique ID' # Unique ID
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
     a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
+    a188e985-295f-4ce4-b912-7233ec2743bc: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
     a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
     ad6237ea-0d14-4e5b-880e-767316434bcd: isEnabled # isEnabled
     adeb2ea1-9022-44c5-9f71-3d06d06c24c8: 'Default Value' # Default Value
@@ -190,6 +208,7 @@ meta:
     af9748aa-9a7c-49c2-bf48-d1417664104b: Text # Text
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
+    b6bedab1-d1fd-462d-a295-16eb5dc19568: Source # Source
     b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: 'Color Filter Tool' # Color Filter Tool
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
@@ -213,7 +232,9 @@ meta:
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5: Min # Min
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
+    d15a0155-45cf-4eec-9971-747552bd21e7: 'Galatic Latitude' # Galatic Latitude
     d27f27b6-dfb4-4c6a-9196-ab3c81785d87: Video # Video
+    da092caf-a4cd-4445-9217-07cf912ecdc4: Distance # Distance
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
@@ -226,11 +247,13 @@ meta:
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32: 'Investigation Grid' # Investigation Grid
+    f7b53b4a-8e10-4bda-9c4a-2155c499f214: Datasets # Datasets
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
     f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
     fcfc14fd-28c8-4445-9f56-7c0fe24c0acf: Table # Table
+    ff03a34c-19f8-4e54-a694-b6cc617791e9: 'Observation ID' # Observation ID
     ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:
   _canto-dam-assets:
@@ -1104,6 +1127,9 @@ plugins:
     settings:
       activeSections:
         __assoc__:
+          -
+            - datasets
+            - '1'
           -
             - homepage
             - '1'

@@ -1,0 +1,160 @@
+fieldLayouts:
+  1ca4f70c-5fba-475a-93bc-a67d0a6f012e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2e85e49d-80da-44b2-8025-b7b76a1a586c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a8e99ac1-1309-4981-b592-02862caf69ae # Unique ID
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aef3c16-6e38-46eb-a500-b681f31eeb64
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3c999a34-b334-4792-bd8f-2c8cfb4100af # Filter
+            instructions: null
+            label: Band
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bbef3a3e-f363-4bef-a7e7-bf20fed6965d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 59e9594e-67d4-4852-91f9-944646afaf38 # Declination
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d46a4d5e-99ed-4d6c-97ce-832c1b4e8ef0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 446bfdd2-9323-4af2-9316-c5a99193aa5e # Right Ascension
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a1107d0-c2e9-4e3d-874d-37aaa5fecd15
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 57c35cd3-97bc-4940-b7ac-f081e26f92f1 # Galactic longitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8032021-8dac-49bd-a293-f852d0c6b785
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d15a0155-45cf-4eec-9971-747552bd21e7 # Galatic Latitude
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44db13b8-86e8-4299-987d-9372877e340b
+            userCondition: null
+            warning: null
+            width: 25
+        name: Properties
+        uid: b017f20a-9fc0-4536-8333-0e103ce60962
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4b4d0417-4a34-4736-9e6c-44b0ddcb959e # Alerts
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a06b4fed-e797-49e6-86de-fe202471584f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9d55ab75-8b96-461e-9983-552756049297 # Alert Sources
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b1e75a2-d09e-42ff-95bc-dd0cf53326bc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 0e9051be-b451-4b7e-ac51-57078cf73ec5 # Image Album
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28c960ab-8caa-4788-ae16-a199416361bc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Alerts
+        uid: 6c79d749-143f-4a16-bdee-e542d92cfdea
+        userCondition: null
+handle: supernovaGalaxyObservations
+hasTitleField: true
+name: 'Supernova & Galaxy Observations'
+section: f7b53b4a-8e10-4bda-9c4a-2155c499f214 # Datasets
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
