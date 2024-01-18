@@ -1,0 +1,20 @@
+columnSuffix: ehbukitx
+contentColumnType: 'decimal(12,2)'
+fieldGroup: 75965c47-b816-42c0-8e07-d1fdcd44fba5 # Data
+handle: distance
+instructions: 'Distance, in kiloparsecs (kpc)'
+name: Distance
+searchable: false
+settings:
+  decimals: 2
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

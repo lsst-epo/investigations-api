@@ -1,0 +1,20 @@
+columnSuffix: qqhjrnej
+contentColumnType: 'decimal(11,8)'
+fieldGroup: 75965c47-b816-42c0-8e07-d1fdcd44fba5 # Data
+handle: b
+instructions: 'Galactic longitude, in degrees'
+name: 'Galactic longitude'
+searchable: false
+settings:
+  decimals: 8
+  defaultValue: null
+  max: 360
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
