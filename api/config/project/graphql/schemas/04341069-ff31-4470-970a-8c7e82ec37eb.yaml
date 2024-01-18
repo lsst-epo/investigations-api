@@ -4,6 +4,8 @@ scope:
   - 'sites.547128fa-4529-4483-9968-66425996b69f:read' # EN
   - 'sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read' # ES
   - 'sites.356c97b0-54e5-44bb-901e-9d92a314134f:read' # FR
+  - 'sections.f7b53b4a-8e10-4bda-9c4a-2155c499f214:read' # Datasets
+  - 'entrytypes.a188e985-295f-4ce4-b912-7233ec2743bc:read' # Supernova & Galaxy Observations
   - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
   - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
   - 'sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read' # Investigations

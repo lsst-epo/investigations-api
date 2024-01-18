@@ -11,6 +11,7 @@ permissions:
   - 'createentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'createentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'createentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'createentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'deleteentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'deleteentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'deleteentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
@@ -27,6 +28,7 @@ permissions:
   - 'deletepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deletepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'deletepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'deleteentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'editglobalset:0edce3a2-c596-4238-9dde-212c83d5a65f' # Menu Content
   - 'editglobalset:aee57b4f-2623-44fc-af2b-c670f6e1babe' # Site information
   - 'editsite:2c2e1c6a-eb4d-44f1-9a43-8d79b326f354' # ES
@@ -150,20 +152,26 @@ permissions:
   - 'savepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'savepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'savepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'saveentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
+  - 'savepeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
+  - 'savepeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewpeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewpeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewpeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewpeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewpeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewpeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewpeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewpeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewpeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewpeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewpeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewpeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewpeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets

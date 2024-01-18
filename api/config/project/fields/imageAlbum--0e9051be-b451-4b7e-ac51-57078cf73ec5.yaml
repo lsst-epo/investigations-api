@@ -1,16 +1,16 @@
-columnSuffix: nuzumixp
+columnSuffix: ywrotzto
 contentColumnType:
   - 'cantoId:string'
   - 'cantoAlbumId:string'
   - 'cantoAssetData:json'
   - 'cantoAlbumData:json'
 fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
-handle: image
-instructions: null
-name: Image
+handle: imageAlbum
+instructions: 'Select contents of an entire Canto album.'
+name: 'Image Album'
 searchable: false
 settings:
-  cantoAssetPickerType: singleImagePicker
+  cantoAssetPickerType: wholeAlbumPicker
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: lsst\cantodamassets\fields\CantoDamAsset
