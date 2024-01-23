@@ -125,7 +125,7 @@ fieldLayouts:
                     - widget
               elementType: craft\elements\Entry
               fieldContext: global
-            fieldUid: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
+            fieldUid: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets
             instructions: null
             label: null
             required: false

@@ -16,7 +16,19 @@ fieldLayouts:
             uid: 51bb7324-7b2d-46f3-b21b-a8058e58aeaa
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 152116e9-11f2-4913-ad09-6b099eae15c2 # Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8da6bb2-86cd-46a4-951a-0eee80940e57
+            userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
             fieldUid: 9fc55b7f-d00a-49e4-b282-4d350938f452 # X
@@ -110,7 +122,7 @@ fields:
     contentColumnType: integer(10)
     fieldGroup: null
     handle: xCoord
-    instructions: 'X position, in pixels, of this source on it''s alert image'
+    instructions: 'X position, in pixels, of this source on it''s alert image measured from the upper left corner'
     name: X
     searchable: false
     settings:
@@ -160,12 +172,32 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
+  152116e9-11f2-4913-ad09-6b099eae15c2: # Name
+    columnSuffix: hewqayhl
+    contentColumnType: text
+    fieldGroup: null
+    handle: sourceName
+    instructions: null
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   76401484-3e66-4200-b542-6ec3fbcf6d67: # Y
     columnSuffix: ifpkuuaz
     contentColumnType: integer(10)
     fieldGroup: null
     handle: yCoord
-    instructions: 'Y position, in pixels, of this source on it''s alert image'
+    instructions: 'Y position, in pixels, of this source on it''s alert image measured from the upper left corner'
     name: 'Y'
     searchable: false
     settings:

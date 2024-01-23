@@ -22,6 +22,7 @@ scope:
   - 'sections.28704998-935a-423b-a405-d4ad8b38efa2:read' # Widgets
   - 'entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read' # Color Filter Tool
   - 'entrytypes.0e4edcac-f39e-4825-946b-7174494adb63:read' # Camera Filter Tool
+  - 'entrytypes.60a13351-56ef-4a61-8583-8878fb798483:read' # Source Selector
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content
   - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
