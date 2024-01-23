@@ -50,7 +50,7 @@ permissions:
   - 'neo-createblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-createblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
   - 'neo-createblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
-  - 'neo-createblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool Block
+  - 'neo-createblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-createblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-createblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
   - 'neo-createblocks:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool
@@ -83,7 +83,7 @@ permissions:
   - 'neo-deleteblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-deleteblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
   - 'neo-deleteblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
-  - 'neo-deleteblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool Block
+  - 'neo-deleteblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-deleteblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-deleteblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
   - 'neo-deleteblocks:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool
@@ -116,7 +116,7 @@ permissions:
   - 'neo-editblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-editblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
   - 'neo-editblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
-  - 'neo-editblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool Block
+  - 'neo-editblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-editblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-editblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
   - 'neo-editblocks:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool

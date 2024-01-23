@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
 handle: questionWidgetsBlock
 instructions: null
-name: 'Question Widgets Block'
+name: 'Question Widgets'
 searchable: false
 settings:
   maxBlocks: 1
