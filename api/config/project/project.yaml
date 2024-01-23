@@ -114,6 +114,7 @@ meta:
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
     9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
     9d55ab75-8b96-461e-9983-552756049297: 'Alert Sources' # Alert Sources
+    9e1f3893-2665-42ca-a0d1-09dace40421a: Dataset # Dataset
     9fc55b7f-d00a-49e4-b282-4d350938f452: X # X
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
@@ -140,6 +141,7 @@ meta:
     56e28243-1126-458f-b20a-41078120d186: Translators # Translators
     57c35cd3-97bc-4940-b7ac-f081e26f92f1: 'Galactic longitude' # Galactic longitude
     59e9594e-67d4-4852-91f9-944646afaf38: Declination # Declination
+    60a13351-56ef-4a61-8583-8878fb798483: 'Source Selector' # Source Selector
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
@@ -154,14 +156,14 @@ meta:
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
-    721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
+    721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool' # Color Filter Tool
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
     0867f2df-ac4f-4178-8f78-fed2dedda051: Color # Color
     919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
-    2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
+    2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets' # Question Widgets
     3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
@@ -179,6 +181,7 @@ meta:
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     75965c47-b816-42c0-8e07-d1fdcd44fba5: Data # Data
+    152116e9-11f2-4913-ad09-6b099eae15c2: Name # Name
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
@@ -194,7 +197,6 @@ meta:
     76401484-3e66-4200-b542-6ec3fbcf6d67: 'Y' # Y
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
-    a8e99ac1-1309-4981-b592-02862caf69ae: 'Unique ID' # Unique ID
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
@@ -219,6 +221,7 @@ meta:
     c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
+    c904bb15-8e4e-4dfb-964a-841837c4e8ef: 'Source Selector' # Source Selector
     c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Modals' # Reference Modals
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
@@ -252,6 +255,7 @@ meta:
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
     f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
+    f434501e-30b4-470a-b275-e57e55cadf17: 'Source Selector' # Source Selector
     fcfc14fd-28c8-4445-9f56-7c0fe24c0acf: Table # Table
     ff03a34c-19f8-4e54-a694-b6cc617791e9: 'Observation ID' # Observation ID
     ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
