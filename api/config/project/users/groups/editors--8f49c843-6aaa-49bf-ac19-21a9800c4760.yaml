@@ -1,9 +1,11 @@
-description: ''
+description: 'Rubin content creators'
 handle: editors
 name: Editors
 permissions:
   - accesscp
   - accessplugin-_canto-dam-assets
+  - 'assignusergroup:461e1254-37f7-4aeb-81a1-3f08d2463d06' # Students
+  - 'assignusergroup:d8be03ce-7aeb-4141-b40e-ec39ec1c796f' # Educators
   - 'createentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'createentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'createentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
@@ -14,10 +16,23 @@ permissions:
   - 'deleteentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deleteentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'deleteentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'deletepeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+  - 'deletepeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  - 'deletepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+  - 'deletepeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+  - 'deletepeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'deletepeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
+  - 'deletepeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+  - 'deletepeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  - 'deletepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+  - 'deletepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+  - 'deletepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
   - 'editglobalset:0edce3a2-c596-4238-9dde-212c83d5a65f' # Menu Content
   - 'editglobalset:aee57b4f-2623-44fc-af2b-c670f6e1babe' # Site information
   - 'editsite:2c2e1c6a-eb4d-44f1-9a43-8d79b326f354' # ES
+  - 'editsite:356c97b0-54e5-44bb-901e-9d92a314134f' # FR
   - 'editsite:547128fa-4529-4483-9968-66425996b69f' # EN
+  - editusers
   - 'neo-createblocks:010dc3f6-c369-4937-adc7-1948204aaf97' # Group
   - 'neo-createblocks:0601483c-a943-42a3-b1a5-e003b05618dc' # Question Block
   - 'neo-createblocks:0d06751e-ecf9-4281-a754-8c818fb9353b' # Color Filter Tool Block
@@ -117,12 +132,24 @@ permissions:
   - 'neo-editblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
   - 'neo-editblocks:f7ef882a-9d5d-4247-9e24-27d4a2702508' # FilterImage
   - 'neo-editblocks:fcfc14fd-28c8-4445-9f56-7c0fe24c0acf' # Table
+  - registerusers
   - 'saveentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'saveentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'saveentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'saveentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'saveentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'saveentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'savepeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+  - 'savepeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  - 'savepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+  - 'savepeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+  - 'savepeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'savepeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
+  - 'savepeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
+  - 'savepeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  - 'savepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
+  - 'savepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+  - 'savepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
   - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
