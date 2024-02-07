@@ -12,7 +12,7 @@ services:
       - ./api:/var/www/html
     environment:
       CRAFT_ENVIRONMENT: dev
-      SECURITY_KEY: biff
+      SECURITY_KEY: <SECURITY_KEY>
       DB_DSN: pgsql:host=postgres;dbname=craft
       DB_SERVER: postgres
       DB_NAME: craft
@@ -30,7 +30,30 @@ services:
       MEMCACHED_PORT: 11211
       PORT: 8080
       NEXT_API_BASE_URL: gateway.docker.internal:3000/api
-      NEXT_SECRET_TOKEN: super-secret-token
+      NEXT_SECRET_TOKEN: <NEXT_SECRET_TOKEN>
+      CANTO_APP_ID: <CANTO_APP_ID>
+      CANTO_SECRET_KEY: <CANTO_SECRET_KEY>
+      CANTO_AUTH_ENDPOINT: https://oauth.canto.com/oauth/api/oauth2/token?app_id={appId}&app_secret={secretKey}&grant_type=client_credentials&refresh_token=
+      CANTO_ASSET_ENDPOINT: https://rubin.canto.com/api/v1/image/
+      CANTO_ASSET_BASEURL: https://rubin.canto.com/direct/
+      GCP_PROJECT_ID: <GCP_PROJECT_ID>
+      GCS_BUCKET: <GCS_BUCKET>
+      VERIFY_EMAIL_PATH: http://localhost:3000/?activate=true
+      SET_PASSWORD_PATH: http://localhost:3000/?set_password=true
+      FACEBOOK_APP_ID: <FACEBOOK_APP_ID>
+      FACEBOOK_APP_SECRET: <FACEBOOK_APP_SECRET>
+      FACEBOOK_APP_REDIRECT_URL: http://localhost:3000/sso-redirect?sso=true&facebook=true
+      GOOGLE_APPLICATION_CREDENTIALS: <PATH_TO_GOOGLE_APPLICATION_CREDENTIALS>
+      GOOGLE_APP_ID: <GOOGLE_APP_ID>
+      EMAIL_FROM_ADDRESS: <EMAIL_FROM_ADDRESS>
+      EMAIL_REPLY_TO_ADDRESS: <EMAIL_REPLY_TO_ADDRESS>
+      EMAIL_SENDER_NAME: "Rubin Observatory Education and Public Outreach"
+      EMAIL_HTML_EMAIL_TEMPLATE: ""
+      EMAIL_SMTP_HOST_NAME: <EMAIL_SMTP_HOST_NAME>
+      EMAIL_SMTP_PORT: <EMAIL_SMTP_PORT>
+      EMAIL_SMTP_USERNAME: <EMAIL_SMTP_USERNAME>
+      EMAIL_SMTP_PASSWORD: <EMAIL_SMTP_PASSWORD>
+      CONTACT_FORM_NOTIFY_EMAIL: <CONTACT_FORM_NOTIFY_EMAIL>
     ports:
       - "8080:8080"
     depends_on:
