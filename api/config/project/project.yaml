@@ -1,4 +1,4 @@
-dateModified: 1707325478
+dateModified: 1707331752
 elementSources:
   craft\elements\Entry:
     -
@@ -1123,7 +1123,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: P86UE2U77O4G56FE7414SOQB
-    schemaVersion: 3.6.2
+    schemaVersion: 4.0.0
   next-builds:
     edition: standard
     enabled: true
