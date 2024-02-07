@@ -716,7 +716,6 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
             "time": "2024-01-29T18:59:43+00:00"
-<<<<<<< HEAD
         },
         {
             "name": "craftcms/flysystem",
@@ -815,8 +814,104 @@
                 "rss": "https://github.com/craftcms/google-cloud/commits/master.atom"
             },
             "time": "2022-05-03T21:50:12+00:00"
-=======
->>>>>>> 0767f9f ([C] Upgrades craft to 4.7.1 and neo to 4.0.3)
+        },
+        {
+            "name": "craftcms/flysystem",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/flysystem/zipball/2cb782bf4dc8164886c84973bccad5609c4fa212",
+                "reference": "2cb782bf4dc8164886c84973bccad5609c4fa212",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-alpha.1",
+                "league/flysystem": "^3.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "craft\\flysystem\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Base Flysystem implementation for Craft CMS",
+            "keywords": [
+                "craftcms",
+                "flysystem",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/flysystem/issues?state=open",
+                "source": "https://github.com/craftcms/flysystem",
+                "docs": "https://github.com/craftcms/flysystem",
+                "rss": "https://github.com/craftcms/flysystem/commits/master.atom"
+            },
+            "time": "2024-01-17T17:12:23+00:00"
+        },
+        {
+            "name": "craftcms/google-cloud",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/google-cloud/zipball/bb553ff10622902cb87ec2d72d44bc7e986016a3",
+                "reference": "bb553ff10622902cb87ec2d72d44bc7e986016a3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-alpha.1",
+                "craftcms/flysystem": "^1.0.0-beta.2",
+                "league/flysystem-google-cloud-storage": "^3.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Google Cloud Storage",
+                "handle": "google-cloud",
+                "documentationUrl": "https://github.com/craftcms/google-cloud/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\googlecloud\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Google Cloud Storage integration for Craft CMS",
+            "keywords": [
+                "cloud",
+                "cms",
+                "craftcms",
+                "flysystem",
+                "google",
+                "storage",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/google-cloud/issues?state=open",
+                "source": "https://github.com/craftcms/google-cloud",
+                "docs": "https://github.com/craftcms/google-cloud/blob/master/README.md",
+                "rss": "https://github.com/craftcms/google-cloud/commits/master.atom"
+            },
+            "time": "2022-05-03T21:50:12+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -3759,6 +3854,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0c1ace2 ([F] Installs GCS plugin)
             "name": "ramsey/collection",
             "version": "2.0.0",
             "dist": {
@@ -3916,6 +4014,9 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0c1ace2 ([F] Installs GCS plugin)
             "name": "rize/uri-template",
             "version": "0.3.5",
             "dist": {
