@@ -18,7 +18,7 @@ permissions:
   - 'neo-editblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-editblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
   - 'neo-editblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
-  - 'neo-editblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool Block
+  - 'neo-editblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-editblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-editblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
   - 'neo-editblocks:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool
@@ -33,6 +33,7 @@ permissions:
   - 'neo-editblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-editblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-editblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
+  - 'neo-editblocks:f434501e-30b4-470a-b275-e57e55cadf17' # Source Selector
   - 'neo-editblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
   - 'neo-editblocks:f7ef882a-9d5d-4247-9e24-27d4a2702508' # FilterImage
   - 'neo-editblocks:fcfc14fd-28c8-4445-9f56-7c0fe24c0acf' # Table
@@ -42,30 +43,36 @@ permissions:
   - 'saveentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'saveentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'saveentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'saveentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'savepeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'savepeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'savepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'savepeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'savepeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'savepeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'savepeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'savepeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'savepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'savepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'savepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'savepeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewpeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewpeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewpeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewpeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewpeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewpeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewpeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewpeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'viewpeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'viewpeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'viewpeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'viewpeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'viewpeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets

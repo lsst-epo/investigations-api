@@ -17,18 +17,20 @@ permissions:
   - 'deleteentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deleteentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'deleteentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'deleteentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'deletepeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'deletepeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'deletepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deletepeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'deletepeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'deletepeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'deletepeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'deletepeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'deletepeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'deletepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'deletepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'deletepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
-  - 'deleteentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
+  - 'deletepeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'editglobalset:0edce3a2-c596-4238-9dde-212c83d5a65f' # Menu Content
   - 'editglobalset:aee57b4f-2623-44fc-af2b-c670f6e1babe' # Site information
   - 'editsite:2c2e1c6a-eb4d-44f1-9a43-8d79b326f354' # ES
@@ -65,6 +67,7 @@ permissions:
   - 'neo-createblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-createblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-createblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
+  - 'neo-createblocks:f434501e-30b4-470a-b275-e57e55cadf17' # Source Selector
   - 'neo-createblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
   - 'neo-createblocks:f7ef882a-9d5d-4247-9e24-27d4a2702508' # FilterImage
   - 'neo-createblocks:fcfc14fd-28c8-4445-9f56-7c0fe24c0acf' # Table
@@ -98,6 +101,7 @@ permissions:
   - 'neo-deleteblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-deleteblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-deleteblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
+  - 'neo-deleteblocks:f434501e-30b4-470a-b275-e57e55cadf17' # Source Selector
   - 'neo-deleteblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
   - 'neo-deleteblocks:f7ef882a-9d5d-4247-9e24-27d4a2702508' # FilterImage
   - 'neo-deleteblocks:fcfc14fd-28c8-4445-9f56-7c0fe24c0acf' # Table
@@ -131,6 +135,7 @@ permissions:
   - 'neo-editblocks:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
   - 'neo-editblocks:e7b953ca-6424-4d14-bc2c-393d3f8410a4' # Question Text
   - 'neo-editblocks:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
+  - 'neo-editblocks:f434501e-30b4-470a-b275-e57e55cadf17' # Source Selector
   - 'neo-editblocks:f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32' # Investigation Grid
   - 'neo-editblocks:f7ef882a-9d5d-4247-9e24-27d4a2702508' # FilterImage
   - 'neo-editblocks:fcfc14fd-28c8-4445-9f56-7c0fe24c0acf' # Table
@@ -141,19 +146,19 @@ permissions:
   - 'saveentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'saveentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'saveentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'saveentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'savepeerentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'savepeerentries:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'savepeerentries:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'savepeerentries:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'savepeerentries:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+  - 'savepeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'savepeerentrydrafts:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'savepeerentrydrafts:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
   - 'savepeerentrydrafts:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
   - 'savepeerentrydrafts:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
   - 'savepeerentrydrafts:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
   - 'savepeerentrydrafts:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
-  - 'saveentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
-  - 'savepeerentries:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'savepeerentrydrafts:f7b53b4a-8e10-4bda-9c4a-2155c499f214' # Datasets
   - 'viewentries:075467b0-0dee-453c-9df0-0de6d2443cf8' # Homepage
   - 'viewentries:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
