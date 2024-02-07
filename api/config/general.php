@@ -34,9 +34,9 @@ return [
             '@webroot' => dirname(__DIR__) . '/web',
             '@webBaseUrl' => App::env('WEB_BASE_URL'),
             '@previewUrlFormat' => App::env('ALIAS_PREVIEW_URL_FORMAT') . '&secret=' . App::env('NEXT_SECRET_TOKEN'),
-            '@assetsGeneralBaseURL' => sprintf(
+            '@gcsBucketBaseURL' => sprintf(
                 $gcsBucketPathFormat,
-                App::env('GCS_GENERAL_BUCKET')
+                App::env('GCS_BUCKET')
             ),
         ],
 
