@@ -239,6 +239,12 @@ plugins:
       authEndpoint: $CANTO_AUTH_ENDPOINT
       retrieveAssetMetadataEndpoint: $CANTO_ASSET_ENDPOINT
       secretKey: $CANTO_SECRET_KEY
+      tenantHostName: rubin.canto.com
+      webhookSecureToken: ''
+  google-cloud:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
   graphql-authentication:
     edition: standard
     enabled: true
