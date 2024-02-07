@@ -71,6 +71,19 @@ email:
     useAuthentication: '1'
     username: $EMAIL_SMTP_USERNAME
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  gcs:
+    hasUrls: true
+    name: GCS
+    settings:
+      bucket: $GCS_BUCKET
+      bucketSelectionMode: manual
+      expires: ''
+      keyFileContents: ''
+      projectId: $GCP_PROJECT_ID
+      subfolder: ''
+    type: craft\googlecloud\Fs
+    url: '@gcsBucketBaseURL'
 meta:
   __names__:
     0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
@@ -102,6 +115,7 @@ meta:
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
     6efbdc96-00f5-4e37-953b-d36344f6e1fb: 'Configured Widgets' # Configured Widgets
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
+    7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e: Datasets # Datasets
     7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
