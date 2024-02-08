@@ -4,11 +4,23 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  598fada8-a9b9-4f53-b446-ce1981afaf7e:
+  bb7c2fe4-dfca-43d3-9ae8-a4a0989b5b98:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            elementCondition: null
+            fieldUid: 0fd14cd3-7b23-4230-adce-9cfa16050740 # Widget Instructions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c026f7b1-6367-4d10-9874-f2b73334785f
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: d0f08c4c-40d1-444d-9a32-b1264d617636 # Pre-selected Color

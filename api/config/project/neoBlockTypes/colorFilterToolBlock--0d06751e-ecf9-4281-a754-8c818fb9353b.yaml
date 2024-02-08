@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  2c8dc7de-186c-402c-8845-c71debe3d42f:
+  2ee13455-cb58-447e-8292-e473ef0b551c:
     tabs:
       -
         elementCondition: null
