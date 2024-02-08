@@ -3,6 +3,27 @@ conditions: null
 description: 'Interactive tool for displaying the range of each filter in the Rubin Observatory LSST camera'
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  d003e41e-ef09-4211-a6ce-e6ed1ebf3600:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0fd14cd3-7b23-4230-adce-9cfa16050740 # Widget Instructions
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cdd5f39a-30be-4ea8-80fa-314f11981333
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7ea8e170-def9-4c26-8fdc-69c0a523213e
+        userCondition: null
 group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
 handle: cameraFilterTool
