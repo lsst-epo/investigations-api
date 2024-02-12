@@ -51,7 +51,7 @@ permissions:
   - 'neo-createblocks:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Modal Block
   - 'neo-createblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-createblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
-  - 'neo-createblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
+  - 'neo-createblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131'
   - 'neo-createblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-createblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-createblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
@@ -60,7 +60,7 @@ permissions:
   - 'neo-createblocks:9748bbea-73ac-46cc-90b1-e6b8a6da31cd' # Image
   - 'neo-createblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-createblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-createblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-createblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2'
   - 'neo-createblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-createblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-createblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video
@@ -85,7 +85,7 @@ permissions:
   - 'neo-deleteblocks:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Modal Block
   - 'neo-deleteblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-deleteblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
-  - 'neo-deleteblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
+  - 'neo-deleteblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131'
   - 'neo-deleteblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-deleteblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-deleteblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
@@ -94,7 +94,7 @@ permissions:
   - 'neo-deleteblocks:9748bbea-73ac-46cc-90b1-e6b8a6da31cd' # Image
   - 'neo-deleteblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-deleteblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-deleteblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-deleteblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2'
   - 'neo-deleteblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-deleteblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-deleteblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video
@@ -119,7 +119,7 @@ permissions:
   - 'neo-editblocks:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Modal Block
   - 'neo-editblocks:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
   - 'neo-editblocks:59560b67-c194-46fc-9404-cb790a44800a' # Image
-  - 'neo-editblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
+  - 'neo-editblocks:5b8a79d6-e9d6-44d2-b986-36bf0bf74131'
   - 'neo-editblocks:721d7a12-d399-4504-bbeb-0fa6d88d72b7' # Color Filter Tool
   - 'neo-editblocks:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
   - 'neo-editblocks:8365851b-c952-499c-84dc-c9e054b83e84' # Select
@@ -128,7 +128,7 @@ permissions:
   - 'neo-editblocks:9748bbea-73ac-46cc-90b1-e6b8a6da31cd' # Image
   - 'neo-editblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-editblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-editblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-editblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2'
   - 'neo-editblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-editblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-editblocks:d27f27b6-dfb4-4c6a-9196-ab3c81785d87' # Video

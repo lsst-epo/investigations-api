@@ -4,90 +4,79 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  30a59f65-26de-4670-941f-bac7681a7be5:
+  55ca28cd-8e26-4b12-938b-9256209bdb9f:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            fieldUid: 0fd14cd3-7b23-4230-adce-9cfa16050740 # Widget Instructions
             instructions: null
-            label: Title
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 81e59c2b-c254-4f3e-92eb-fc9af8322ded
+            uid: a93f7dd4-641a-46e3-a513-426cb413a698
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 4a4c9cae-254c-4307-ba31-9b3a6b19b404 # JSON
+            instructions: 'Count of supernovae in each bin'
+            label: Bins
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1be540e4-1ce4-4b40-b180-0d6f478f9890
+            uid: 7931a6de-3d69-4fe1-83ad-a243eebfb6c8
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 1af829d6-64f9-4d22-8ac5-87c7888242a2 # Step
+            instructions: 'Size of each bin'
+            label: 'Bin size'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: be53ec5f-9f60-48e4-ad5b-c8f2da5c8c0b
+            uid: ac0cf41b-c938-403b-8619-949346762c38
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
+            fieldUid: 0e9051be-b451-4b7e-ac51-57078cf73ec5 # Image Album
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1bd1c124-b417-410d-8b8c-daece8328288
+            uid: 4e5ec570-3a87-4b5a-954c-05ff73108293
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
-            instructions: null
-            label: null
+            fieldUid: 9e1f3893-2665-42ca-a0d1-09dace40421a # Dataset
+            instructions: 'Supernovae referenced from other areas of the investigation'
+            label: 'User datapoints'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 49f1cdda-1578-4399-b23f-f3cba90afae1
+            uid: daf02dc6-3670-427f-bdc1-6b9288d86c8f
             userCondition: null
             warning: null
             width: 50
-          -
-            elementCondition: null
-            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f2842a95-4796-413c-8981-29ff8c64db44
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: 219e2e73-d637-4b92-ab2c-c557a23ddd7f
+        name: Data
+        uid: fd0f5017-4780-4693-8f0d-5b51ff274f09
         userCondition: null
 group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
-handle: scatterplotTool
+handle: supernovaThreeVector
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
@@ -95,5 +84,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Scatterplot Tool'
+name: 'Supernova Three Vector'
 topLevel: true

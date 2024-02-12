@@ -1,4 +1,4 @@
-dateModified: 1707415737
+dateModified: 1707762251
 elementSources:
   craft\elements\Entry:
     - defaultSort:
@@ -88,18 +88,19 @@ meta:
     1a35bfab-6a39-4c03-b273-2d5e3151c335: "Rubin Telescope Education and Public Outreach" # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
     1a365d49-310d-41cf-afd2-3acd4cff3660: "Investigation Section Break (Child Entry)" # Investigation Section Break (Child Entry)
+    1af829d6-64f9-4d22-8ac5-87c7888242a2: Step # Step
     1ec99d28-14f6-45ec-a158-e01bed027ce7: Filter # Filter
     1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: "Two Column Container" # Two Column Container
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Filter # Filter
     3fde86eb-6a7d-4b9b-9b4b-4c142a1a2cc0: "Apparent Magnitude" # Apparent Magnitude
+    4a4c9cae-254c-4307-ba31-9b3a6b19b404: JSON # JSON
     4b4d0417-4a34-4736-9e6c-44b0ddcb959e: Alerts # Alerts
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
     4e9ea915-78e8-4b28-b44e-fe2af60c77f8: Image # Image
     4e1884f2-7cc9-40d8-8426-f66da625d8cc: Assets # Assets
     4f04d6b0-64ef-454b-b343-66181c08dda9: Default # Default
-    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: "Scatterplot Tool" # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
     5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: "Default Value" # Default Value
@@ -119,6 +120,7 @@ meta:
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
     9b29c2f8-e229-419f-b6fa-48f5307ebf34: "Question Entries" # Question Entries
+    9ba4603a-8a39-46d3-beb8-51a45e900be6: "Supernova Three Vector" # Supernova Three Vector
     9d55ab75-8b96-461e-9983-552756049297: "Alert Sources" # Alert Sources
     9e1f3893-2665-42ca-a0d1-09dace40421a: Dataset # Dataset
     9fc55b7f-d00a-49e4-b282-4d350938f452: X # X
@@ -206,7 +208,6 @@ meta:
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: "Content Blocks" # Content Blocks
-    a47f94c7-0a32-43be-863a-fa9d6636fff2: "Bar Graph Tool" # Bar Graph Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: "Scatterplot Items" # Scatterplot Items
     a188e985-295f-4ce4-b912-7233ec2743bc: "Supernova & Galaxy Observations" # Supernova & Galaxy Observations
     a966d509-84b0-43ab-9a5b-42590a5fb537: "Answer Type" # Answer Type

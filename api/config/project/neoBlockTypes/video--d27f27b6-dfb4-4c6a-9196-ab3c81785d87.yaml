@@ -40,6 +40,7 @@ group: null
 groupChildBlockTypes: true
 handle: video
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

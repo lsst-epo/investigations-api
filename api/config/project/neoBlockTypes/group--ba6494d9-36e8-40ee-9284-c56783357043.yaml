@@ -6,10 +6,9 @@ childBlocks:
   - image
   - referenceModalBlock
   - filterTool
-  - barGraphTool
-  - scatterplotTool
   - cameraFilterTool
   - colorFilterToolBlock
+  - supernovaThreeVector
 conditions: null
 description: ''
 enabled: true
@@ -18,6 +17,7 @@ group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
 groupChildBlockTypes: true
 handle: group
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

@@ -12,7 +12,7 @@
 - 'blockType:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
 - 'blockTypeGroup:513634e9-3389-4e41-b769-9433ac34e35e' # Widgets
 - 'blockType:3912a1a0-e71b-44b3-bcf4-976c0564975e' # Filter Tool
-- 'blockType:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
-- 'blockType:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
 - 'blockType:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool
+- 'blockType:0d06751e-ecf9-4281-a754-8c818fb9353b' # Color Filter Tool Block
+- 'blockType:9ba4603a-8a39-46d3-beb8-51a45e900be6' # Supernova Three Vector
 - 'blockType:0d06751e-ecf9-4281-a754-8c818fb9353b' # Color Filter Tool Block
