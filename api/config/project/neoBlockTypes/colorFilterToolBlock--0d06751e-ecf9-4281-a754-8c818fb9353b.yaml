@@ -44,5 +44,4 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Color Filter Tool Block'
-sortOrder: 17
 topLevel: true

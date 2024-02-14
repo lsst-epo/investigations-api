@@ -1,12 +1,12 @@
 {
   "require": {
     "castiron/next-builds": "^1.0",
-    "craftcms/cms": "4.5.6.1",
+    "craftcms/cms": "4.7.2.1",
     "craftcms/redactor": "3.0.4",
     "jamesedmonston/graphql-authentication": "2.5.0",
     "lsst-epo/canto-dam-assets": "4.0.11",
     "sebastianlenz/linkfield": "^2.1.4",
-    "spicyweb/craft-neo": "3.9.5",
+    "spicyweb/craft-neo": "4.0.5",
     "verbb/super-table": "^3.0",
     "vlucas/phpdotenv": "^3.4.0"
   },

@@ -1,0 +1,17 @@
+- 'blockType:0601483c-a943-42a3-b1a5-e003b05618dc' # Question Block
+- 'blockType:5548ce5c-5ad4-494e-93be-8ff129618d20' # Text
+- 'blockType:dc1c3484-f028-4653-982b-a84e287d4c61' # Equation
+- 'blockType:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
+- 'blockType:59560b67-c194-46fc-9404-cb790a44800a' # Image
+- 'blockType:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Modal Block
+- 'blockTypeGroup:7ebe493b-5e03-48c8-8375-c9f9582da77e' # Containers
+- 'blockType:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
+- 'blockType:1ed0caa3-b91f-442b-b313-f3eb54a8a0dc' # Two Column Container
+- 'blockType:947400f5-3c2d-403a-b94e-68715e48a9c0' # Left Column
+- 'blockType:efbf1b30-4cb7-4361-9f45-016d119aec06' # Right Column
+- 'blockTypeGroup:513634e9-3389-4e41-b769-9433ac34e35e' # Widgets
+- 'blockType:3912a1a0-e71b-44b3-bcf4-976c0564975e' # Filter Tool
+- 'blockType:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+- 'blockType:5b8a79d6-e9d6-44d2-b986-36bf0bf74131' # Scatterplot Tool
+- 'blockType:87fc48a5-a399-4ce1-a7ca-2dadfd1e1445' # Camera Filter Tool
+- 'blockType:0d06751e-ecf9-4281-a754-8c818fb9353b' # Color Filter Tool Block
