@@ -1,0 +1,53 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: sourceSelector
+instructions: null
+name: 'Source Selector'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 6a5e3819-5e29-4a52-bff4-bedb5e0e1b05
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 297d2268-f298-40a1-bec3-a1c836a69e38 # Source Selector
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

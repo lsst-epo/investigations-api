@@ -1,32 +1,32 @@
 childBlocks: null
 conditions: null
-description: 'Configurable widget that lets users colorize grayscale images with a chose color filter and brightness controls.'
+description: ''
 enabled: true
 field: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
 fieldLayouts:
-  8a25b6a9-786c-42f3-87db-2d954a821e7a:
+  3e1457ad-5a37-438c-bc49-f395b7b82cd1:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
+            fieldUid: e17c94af-1953-42af-939c-e3ed84c62a95 # Source Selector
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 291f8bfa-50c4-4f89-bfc9-0a44f33d40fe
+            uid: 18b5c6dc-eddb-4aa9-9857-a2d97305259a
             userCondition: null
             warning: null
             width: 100
         name: Widget
-        uid: 865da031-ec5a-46c6-8455-18f2fd8e52d6
+        uid: 718a750c-8f89-48f2-aaf5-67507bed2734
         userCondition: null
 group: 6efbdc96-00f5-4e37-953b-d36344f6e1fb # Configured Widgets
 groupChildBlockTypes: true
-handle: colorFilterToolBlock
+handle: sourceSelectorBlock
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -36,5 +36,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Color Filter Tool Block'
+name: 'Source Selector Block'
 topLevel: true

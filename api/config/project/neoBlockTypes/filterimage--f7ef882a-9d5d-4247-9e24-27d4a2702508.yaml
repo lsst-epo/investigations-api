@@ -23,7 +23,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 3c999a34-b334-4792-bd8f-2c8cfb4100af # Filter
+            fieldUid: 3c999a34-b334-4792-bd8f-2c8cfb4100af # Band
             instructions: null
             label: null
             required: true
