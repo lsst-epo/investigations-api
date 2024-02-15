@@ -21,7 +21,8 @@ scope:
   - 'entrytypes.4f04d6b0-64ef-454b-b343-66181c08dda9:read' # Default
   - 'sections.28704998-935a-423b-a405-d4ad8b38efa2:read' # Widgets
   - 'entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read' # Color Filter Tool
-  - 'entrytypes.0e4edcac-f39e-4825-946b-7174494adb63:read'
+  - 'entrytypes.297d2268-f298-40a1-bec3-a1c836a69e38:read' # Source Selector
+  - 'volumes.7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e:read' # Datasets
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content
   - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
