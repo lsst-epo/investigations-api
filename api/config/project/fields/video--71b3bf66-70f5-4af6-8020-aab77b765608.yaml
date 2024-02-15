@@ -1,0 +1,16 @@
+columnSuffix: hvblzdju
+contentColumnType:
+  - 'cantoId:string'
+  - 'cantoAlbumId:string'
+  - 'cantoAssetData:json'
+  - 'cantoAlbumData:json'
+fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
+handle: video
+instructions: null
+name: Video
+searchable: false
+settings:
+  cantoAssetPickerType: singleImagePicker
+translationKeyFormat: null
+translationMethod: site
+type: lsst\cantodamassets\fields\CantoDamAsset
