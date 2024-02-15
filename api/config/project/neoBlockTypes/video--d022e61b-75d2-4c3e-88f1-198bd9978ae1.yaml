@@ -4,37 +4,41 @@ description: ''
 enabled: true
 field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  2ee13455-cb58-447e-8292-e473ef0b551c:
+  fc4ef7d1-7c04-460c-b2c3-8810bc20877e:
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dismissible: false
             elementCondition: null
-            style: tip
-            tip: 'This is for read-only displays that will show users their previously created colorized image. To add an editable Color Filter Tool, add an entry to a question. '
-            type: craft\fieldlayoutelements\Tip
-            uid: 05711b2f-b42a-4a01-ac94-021324a67be4
+            fieldUid: 71b3bf66-70f5-4af6-8020-aab77b765608 # Video
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a00ff25-4978-4a3b-8bd0-6cafc97db572
             userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
-            instructions: null
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
+            instructions: 'Caption that will override any text fields in Canto'
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 488cc422-a2e7-4019-b15b-118ed0b1bd77
+            uid: 1f268bcf-8fda-4433-ad13-cb5912c9238e
             userCondition: null
             warning: null
             width: 100
-        name: '1'
-        uid: 6db6e65b-cc3b-4c0d-9e26-7885db2976cb
+        name: Content
+        uid: c4454539-c458-4a11-acc8-bc2868d31db1
         userCondition: null
-group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+group: null
 groupChildBlockTypes: true
-handle: colorFilterToolBlock
+handle: video
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -44,5 +48,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Color Filter Tool Block'
+name: Video
 topLevel: true
