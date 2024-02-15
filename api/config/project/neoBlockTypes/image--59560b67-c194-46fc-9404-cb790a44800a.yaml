@@ -52,6 +52,7 @@ group: null
 groupChildBlockTypes: true
 handle: image
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

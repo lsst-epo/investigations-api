@@ -4,6 +4,7 @@ childBlocks:
   - equation
   - table
   - image
+  - video
   - referenceModalBlock
   - group
   - filterTool
@@ -19,6 +20,7 @@ group: 7ebe493b-5e03-48c8-8375-c9f9582da77e # Containers
 groupChildBlockTypes: true
 handle: colLeft
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 1
 maxChildBlocks: 0
