@@ -1,0 +1,20 @@
+columnSuffix: ncofkhjz
+contentColumnType: 'decimal(11,8)'
+fieldGroup: e1b23b33-c33f-4c74-9811-250c2cc2789a # Data
+handle: ra
+instructions: 'Right ascension, in degrees'
+name: 'Right Ascension'
+searchable: false
+settings:
+  decimals: 8
+  defaultValue: null
+  max: 360
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

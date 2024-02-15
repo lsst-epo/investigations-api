@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1b23b33-c33f-4c74-9811-250c2cc2789a # Data
+handle: alertSources
+instructions: 'Sources of an alert, will display as a clickable area for users to find in Source Selector widgets'
+name: 'Alert Sources'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_alertsources}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

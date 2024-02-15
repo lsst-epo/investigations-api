@@ -1,0 +1,49 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1b23b33-c33f-4c74-9811-250c2cc2789a # Data
+handle: dataset
+instructions: null
+name: Dataset
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - d185b0d4-672a-45bc-b178-4d292f4c7894
+              -
+                - operator
+                - in
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:fbfbf05d-c7e1-4f6c-a093-47065f8d5095' # Datasets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

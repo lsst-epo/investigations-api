@@ -1,0 +1,38 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
+handle: json
+instructions: null
+name: JSON
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - json
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

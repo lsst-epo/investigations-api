@@ -1,0 +1,20 @@
+columnSuffix: zzuqanfn
+contentColumnType: 'decimal(15,5)'
+fieldGroup: e1b23b33-c33f-4c74-9811-250c2cc2789a # Data
+handle: mjd
+instructions: null
+name: 'Modified Julian Date'
+searchable: false
+settings:
+  decimals: 5
+  defaultValue: null
+  max: null
+  min: null
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
