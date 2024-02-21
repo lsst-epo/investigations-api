@@ -11,6 +11,7 @@ childBlocks:
   - scatterplotTool
   - cameraFilterTool
   - colorFilterToolBlock
+  - supernovaDistanceDistribution
 conditions: null
 description: ''
 enabled: true
