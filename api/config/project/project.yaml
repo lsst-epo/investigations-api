@@ -1,4 +1,4 @@
-dateModified: 1708033699
+dateModified: 1708554891
 elementSources:
   craft\elements\Entry:
     -
@@ -193,6 +193,7 @@ meta:
     3173102a-6f80-4a4f-954b-1d3e151fb21a: 'Cell Content' # Cell Content
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     4941158b-702a-45b4-8da5-12ed4202efae: Name # Name
+    7033117c-c3b9-4794-9a6d-cbbbae2010af: 'Supernova Distance & Distribution' # Supernova Distance & Distribution
     8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
@@ -207,6 +208,7 @@ meta:
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
     a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
+    a81f2835-5fbe-4fa9-a636-eafeaee155c3: 'Bin Size' # Bin Size
     a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
     ad74ba83-53f4-4102-94e9-e9eea0d31171: 'Galactic longitude' # Galactic longitude
     ad6237ea-0d14-4e5b-880e-767316434bcd: isEnabled # isEnabled
