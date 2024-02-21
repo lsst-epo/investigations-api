@@ -1,0 +1,88 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  5356eb6d-927d-4e45-aecb-5a8c09f8bb0f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0fd14cd3-7b23-4230-adce-9cfa16050740 # Widget Instructions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9b740dd-dd8f-4057-bf69-e2bb93e0650b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4afde15-f983-4c30-b0d7-e0b56871e4de # Dataset
+            instructions: 'Supernovae from previous user interactions to show in widget'
+            label: 'User Supernovae'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13f3d27b-b03b-485e-99c6-be3f946f3ac9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a03e80f0-77ce-4b03-abf5-76a0deb264a9 # JSON
+            instructions: 'JSON array of supernovae for each histogram bin'
+            label: 'Histogram data'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5f8c77f-6f50-4790-ac02-31ad3f222f29
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: c489f84c-509c-4078-9b71-1e3493e17620 # Image Album
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92315654-a2af-4b87-82d5-743dfdddb35d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a81f2835-5fbe-4fa9-a636-eafeaee155c3 # Bin Size
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7823e640-d754-4d1d-945e-7a5d8ce35616
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: e77a6988-d8aa-4c49-be3f-51ace608f209
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: supernovaDistanceDistribution
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Supernova Distance & Distribution'
+topLevel: true
