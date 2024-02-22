@@ -48,8 +48,8 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: c489f84c-509c-4078-9b71-1e3493e17620 # Image Album
-            instructions: null
-            label: null
+            instructions: 'Images must have their bin start in the filename.'
+            label: 'Supernova Distribution Images'
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -62,7 +62,7 @@ fieldLayouts:
             fieldUid: a81f2835-5fbe-4fa9-a636-eafeaee155c3 # Bin Size
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 7823e640-d754-4d1d-945e-7a5d8ce35616
