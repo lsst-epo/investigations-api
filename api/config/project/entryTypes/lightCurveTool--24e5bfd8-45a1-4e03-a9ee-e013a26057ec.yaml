@@ -1,5 +1,5 @@
 fieldLayouts:
-  9e8d0324-0d13-49ae-a554-08d2b74185aa:
+  e86a8755-f86d-48b0-9f4f-787d41b33053:
     tabs:
       -
         elementCondition: null
@@ -27,7 +27,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bd2bae4a-803c-4218-97d1-5654c604686d
+            uid: 2663dfa8-c4ce-413b-b86b-bfa1f3477a22
             userCondition: null
             warning: null
             width: 100
@@ -39,7 +39,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 552ef0ce-b6b0-4e2a-bb77-513e13f57272
+            uid: c30b1ba2-8069-4629-8bc8-a18519945d31
             userCondition: null
             warning: null
             width: 100
@@ -51,75 +51,51 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cc45dfcd-e889-46fe-8ffb-d27de894632a
+            uid: facfe9fc-a5c1-4e50-a961-f067cf9474a6
             userCondition: null
             warning: null
-            width: 50
+            width: 100
+        name: Content
+        uid: 11aa6c30-e830-4439-8291-7d23c7c219e7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
             elementCondition: null
-            fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
-            instructions: 'Check to include the light curve scatterplot'
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8419c053-d101-476e-bdf4-84634fb53991
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\LightswitchFieldConditionRule
-                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
-                  uid: 883b118b-023a-4c20-956e-1717464edd26
-                  value: true
-              elementType: craft\elements\Entry
-              fieldContext: global
             fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 352316f2-ae0c-42e8-b5d6-329a277e6b8c
+            uid: 9321a2e1-0a2c-42da-a3d8-b14a86bf5ae6
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\LightswitchFieldConditionRule
-                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
-                  uid: f3cd8447-372b-4498-a9ca-bfc82a6e12e1
-                  value: true
-              elementType: craft\elements\Entry
-              fieldContext: global
+            elementCondition: null
             fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0e1e1d41-ac17-48fa-b435-8428acc2af44
+            uid: 8a46f79c-a6d3-45e0-9e2c-3aef24a91f0a
             userCondition: null
             warning: null
-            width: 50
-        name: Content
-        uid: 897c373a-7e95-45dd-bcb4-8b0d2d51eced
+            width: 100
+        name: 'Plot Configuration'
+        uid: 0ea412ea-00e0-4ce5-8aef-faa4c92bcc99
         userCondition: null
-handle: sourceSelector
+handle: lightCurveTool
 hasTitleField: true
-name: 'Source Selector'
+name: 'Light Curve Tool'
 section: 28704998-935a-423b-a405-d4ad8b38efa2 # Widgets
 showStatusField: true
 slugTranslationKeyFormat: null
-slugTranslationMethod: site
-sortOrder: 2
+slugTranslationMethod: none
+sortOrder: 3
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

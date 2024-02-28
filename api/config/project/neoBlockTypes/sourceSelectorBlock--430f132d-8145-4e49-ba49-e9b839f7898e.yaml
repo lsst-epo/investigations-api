@@ -14,7 +14,7 @@ fieldLayouts:
             fieldUid: e17c94af-1953-42af-939c-e3ed84c62a95 # Source Selector
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 18b5c6dc-eddb-4aa9-9857-a2d97305259a

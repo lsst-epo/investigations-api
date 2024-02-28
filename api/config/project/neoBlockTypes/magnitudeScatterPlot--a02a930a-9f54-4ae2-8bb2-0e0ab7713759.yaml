@@ -1,32 +1,32 @@
 childBlocks: null
 conditions: null
-description: 'Configurable widget that lets users colorize grayscale images with a chose color filter and brightness controls.'
+description: ''
 enabled: true
-field: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
 fieldLayouts:
-  8a25b6a9-786c-42f3-87db-2d954a821e7a:
+  a02dbc96-7e04-4fc7-bf73-ccc523ed3a62:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
+            fieldUid: 466246f6-753b-4198-8067-18acf1a7d4cb # Light Curve Tool
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 291f8bfa-50c4-4f89-bfc9-0a44f33d40fe
+            uid: 6fe1e356-d221-43d2-9039-efdae1729f70
             userCondition: null
             warning: null
             width: 100
-        name: Widget
-        uid: 865da031-ec5a-46c6-8455-18f2fd8e52d6
+        name: Content
+        uid: 729b9a44-aadb-492d-91e3-bb55e97959c6
         userCondition: null
-group: 6efbdc96-00f5-4e37-953b-d36344f6e1fb # Configured Widgets
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
 groupChildBlockTypes: true
-handle: colorFilterToolBlock
+handle: magnitudeScatterPlot
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -36,5 +36,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Color Filter Tool Block'
+name: 'Magnitude Scatter Plot'
 topLevel: true
