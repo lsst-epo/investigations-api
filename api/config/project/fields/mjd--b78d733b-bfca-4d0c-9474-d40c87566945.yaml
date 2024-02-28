@@ -12,7 +12,7 @@ settings:
   min: null
   prefix: null
   previewCurrency: null
-  previewFormat: decimal
+  previewFormat: none
   size: null
   suffix: null
 translationKeyFormat: null
