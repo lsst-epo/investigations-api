@@ -133,7 +133,6 @@ meta:
     17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
-    24e5bfd8-45a1-4e03-a9ee-e013a26057ec: 'Light Curve Tool' # Light Curve Tool
     25c0fbe7-5180-4842-bb9e-d530e9fb2042: Radius # Radius
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
@@ -163,12 +162,10 @@ meta:
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
-    528d82d4-91db-4ee9-9fa2-8d8c7c871c5e: 'Light Curve Block' # Light Curve Block
     693f669b-ba6e-4c91-adad-2543fcd62554: 'Galactic Latitude' # Galactic Latitude
     721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
-    907a99bf-dc51-40c8-8117-c9686eddea0d: 'Include Scatter Plot' # Include Scatter Plot
     919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
@@ -189,7 +186,6 @@ meta:
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
-    466246f6-753b-4198-8067-18acf1a7d4cb: 'Light Curve Tool' # Light Curve Tool
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
@@ -203,7 +199,6 @@ meta:
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     67592534-b8cb-4b2f-9826-d7c9300d9a2b: Widgets # Widgets
-    a02a930a-9f54-4ae2-8bb2-0e0ab7713759: 'Magnitude Scatter Plot' # Magnitude Scatter Plot
     a03e80f0-77ce-4b03-abf5-76a0deb264a9: JSON # JSON
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
