@@ -1,6 +1,6 @@
 allowPublicRegistration: true
 deactivateByDefault: false
-defaultGroup: ''
+defaultGroup: 461e1254-37f7-4aeb-81a1-3f08d2463d06 # Students
 photoSubpath: null
 photoVolumeUid: null
 requireEmailVerification: true
