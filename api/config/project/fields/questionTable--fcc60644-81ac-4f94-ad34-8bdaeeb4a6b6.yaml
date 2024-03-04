@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
+handle: questionTable
+instructions: null
+name: 'Question Table'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 1804289584
+  columns:
+    __assoc__:
+      -
+        - 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - c74bb176-8889-459f-a14a-b9d4601786a6 # Previous Question
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_questiontable}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

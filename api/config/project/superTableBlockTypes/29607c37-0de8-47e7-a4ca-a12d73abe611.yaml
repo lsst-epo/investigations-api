@@ -1,0 +1,76 @@
+changedFieldIndicator: 544358231
+field: a531c6b8-3ef6-480b-8840-babb586617bc # Options
+fieldLayouts:
+  6e5fb2a4-5b61-4705-9ec7-b17cfae7156e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6caa0b9c-4aa9-418b-847c-f6b8e3807cdd # Option Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73661c10-1db7-4d31-9098-458e80353054
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e818f50c-bd7d-48dd-9bd6-17d725e65533 # Option Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d3b0357-1719-4f9a-9537-1d94c6a3fe41
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 33f9c4d8-be4b-4ea4-9811-4ac702413588
+        userCondition: null
+fields:
+  6caa0b9c-4aa9-418b-847c-f6b8e3807cdd: # Option Label
+    columnSuffix: kveayhvd
+    contentColumnType: text
+    fieldGroup: null
+    handle: optionLabel
+    instructions: null
+    name: 'Option Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  e818f50c-bd7d-48dd-9bd6-17d725e65533: # Option Value
+    columnSuffix: beqqpyhy
+    contentColumnType: text
+    fieldGroup: null
+    handle: optionValue
+    instructions: null
+    name: 'Option Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

@@ -1,0 +1,112 @@
+field: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+fieldLayouts:
+  0bd639bb-fcdb-4685-abf9-754d9c8797a2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 210fad18-08a1-4042-821c-bf4a09c06ec6 # Question Type
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e45e48c-9671-49a9-b235-92eb1ab1679c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a531c6b8-3ef6-480b-8840-babb586617bc # Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaa4c297-c58f-4e31-a999-0095b680cb82
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cb6accbd-3e94-4bac-9ab4-8b7bbb5807db
+        userCondition: null
+fields:
+  210fad18-08a1-4042-821c-bf4a09c06ec6: # Question Type
+    columnSuffix: xfosopmy
+    contentColumnType: string(6)
+    fieldGroup: null
+    handle: questionType
+    instructions: null
+    name: 'Question Type'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Text
+            -
+              - value
+              - text
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Select
+            -
+              - value
+              - select
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  a531c6b8-3ef6-480b-8840-babb586617bc: # Options
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: options
+    instructions: 'Options for dropdown select questions'
+    name: Options
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1538452176
+      columns:
+        __assoc__:
+          -
+            - 6caa0b9c-4aa9-418b-847c-f6b8e3807cdd # Option Label
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - e818f50c-bd7d-48dd-9bd6-17d725e65533 # Option Value
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_47_options}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: question
+name: Question
+sortOrder: 2
