@@ -63,6 +63,17 @@ settings:
         -
           - default
           - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Table
+        -
+          - value
+          - tabular
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown
