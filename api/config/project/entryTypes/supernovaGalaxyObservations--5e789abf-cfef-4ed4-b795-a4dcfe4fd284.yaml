@@ -45,18 +45,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: f5a2bb9c-1491-4439-a169-d9b2891433a1 # Declination
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2df6dc1b-e93a-4118-a050-c628c5390253
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
             fieldUid: 0e914cfb-a2de-4721-b23b-3b1268529baf # Right Ascension
             instructions: null
             label: null
@@ -69,10 +57,22 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
+            fieldUid: f5a2bb9c-1491-4439-a169-d9b2891433a1 # Declination
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2df6dc1b-e93a-4118-a050-c628c5390253
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
             fieldUid: ad74ba83-53f4-4102-94e9-e9eea0d31171 # Galactic longitude
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 32cd02b9-680f-43bc-bcfa-cdeceb86c463
@@ -84,7 +84,7 @@ fieldLayouts:
             fieldUid: 693f669b-ba6e-4c91-adad-2543fcd62554 # Galactic Latitude
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 77aaa931-33c4-45e6-9783-420dd22903f4
@@ -96,7 +96,7 @@ fieldLayouts:
             fieldUid: 6dbf8441-fd70-4b44-a2f8-7b9ba10b20d9 # Distance
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 45c9e0b9-fc28-4dec-8bd6-f8b0b7bb835f
@@ -136,9 +136,9 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: c489f84c-509c-4078-9b71-1e3493e17620 # Image Album
-            instructions: null
+            instructions: 'Images must be included to be used in a Source Selector'
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: df335b0d-254e-41c4-aa02-bd147b6bf3c5

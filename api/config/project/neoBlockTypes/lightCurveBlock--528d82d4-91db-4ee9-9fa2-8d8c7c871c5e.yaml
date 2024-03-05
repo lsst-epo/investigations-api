@@ -1,32 +1,32 @@
 childBlocks: null
 conditions: null
-description: 'Configurable widget that lets users colorize grayscale images with a chose color filter and brightness controls.'
+description: ''
 enabled: true
 field: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
 fieldLayouts:
-  8a25b6a9-786c-42f3-87db-2d954a821e7a:
+  a20913f8-e4d3-4634-8ffd-0a13652003c7:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b9fc39fa-b5b7-4c0d-ab6d-b2f035451482 # Color Filter Tool
+            fieldUid: 466246f6-753b-4198-8067-18acf1a7d4cb # Light Curve Tool
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 291f8bfa-50c4-4f89-bfc9-0a44f33d40fe
+            uid: eb94c622-70a3-46e0-b962-05a28aceca95
             userCondition: null
             warning: null
             width: 100
-        name: Widget
-        uid: 865da031-ec5a-46c6-8455-18f2fd8e52d6
+        name: Content
+        uid: 53afdafe-8898-42f9-94f3-d892eeda5d82
         userCondition: null
 group: 6efbdc96-00f5-4e37-953b-d36344f6e1fb # Configured Widgets
 groupChildBlockTypes: true
-handle: colorFilterToolBlock
+handle: lightCurveBlock
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -36,5 +36,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Color Filter Tool Block'
+name: 'Light Curve Block'
 topLevel: true

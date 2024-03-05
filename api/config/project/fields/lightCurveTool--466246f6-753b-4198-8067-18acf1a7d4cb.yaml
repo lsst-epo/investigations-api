@@ -1,0 +1,53 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: lightCurveTool
+instructions: null
+name: 'Light Curve Tool'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 19948eb4-3899-42a0-997b-de2e4dce4ea5
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 24e5bfd8-45a1-4e03-a9ee-e013a26057ec # Light Curve Tool
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
