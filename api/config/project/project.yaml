@@ -1,4 +1,4 @@
-dateModified: 1709674561
+dateModified: 1709675539
 elementSources:
   craft\elements\Entry:
     -
@@ -277,10 +277,9 @@ plugins:
     settings:
       appId: $CANTO_APP_ID
       authEndpoint: $CANTO_AUTH_ENDPOINT
-      retrieveAssetMetadataEndpoint: $CANTO_ASSET_ENDPOINT
       secretKey: $CANTO_SECRET_KEY
-      tenantHostName: rubin.canto.com
-      webhookSecureToken: ''
+      tenantHostName: $CANTO_HOSTNAME
+      webhookSecureToken: $CANTO_WEBHOOK_TOKEN
   google-cloud:
     edition: standard
     enabled: true
