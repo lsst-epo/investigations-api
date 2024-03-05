@@ -26,5 +26,6 @@ scope:
   - 'volumes.7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e:read' # Datasets
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content
-  - 'usergroups.everyone:read'
+  - 'usergroups.d8be03ce-7aeb-4141-b40e-ec39ec1c796f:read' # Educators
+  - 'usergroups.461e1254-37f7-4aeb-81a1-3f08d2463d06:read' # Students
   - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
