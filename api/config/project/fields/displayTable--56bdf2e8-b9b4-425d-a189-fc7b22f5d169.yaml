@@ -7,7 +7,7 @@ name: 'Display Table'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 1112726131
+  changedFieldIndicator: 2042855894
   columns:
     __assoc__:
       -
@@ -17,8 +17,15 @@ settings:
             -
               - width
               - ''
-  contentTable: '{{%stc_displaytable_1}}'
-  fieldLayout: table
+      -
+        - 301c4afd-e88a-4847-a0ce-1b134b5c3741 # Previous Question
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_displaytable}}'
+  fieldLayout: row
   maxRows: null
   minRows: 1
   propagationKeyFormat: null

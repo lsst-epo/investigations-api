@@ -138,7 +138,7 @@ meta:
     42a4cddb-b253-4aeb-b097-2073b5707677: "Object Name" # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: "Object Caption" # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
-    48bc5283-dac6-4340-931a-6c01fa00bfb8: "Row Header" # Row Header
+    48bc5283-dac6-4340-931a-6c01fa00bfb8: Header # Header
     53df9537-d85e-4fd3-9e4c-b203594ada7c: "Reference Modal Block" # Reference Modal Block
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: "Reference Modal Entries" # Reference Modal Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: "Display Table" # Display Table
@@ -153,6 +153,7 @@ meta:
     210fad18-08a1-4042-821c-bf4a09c06ec6: "Question Type" # Question Type
     222de7cf-741d-4d1f-b274-acc85a3c454c: "Link To" # Link To
     297d2268-f298-40a1-bec3-a1c836a69e38: "Source Selector" # Source Selector
+    301c4afd-e88a-4847-a0ce-1b134b5c3741: "Previous Question" # Previous Question
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
     367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: "Color Filter Tool Block" # Color Filter Tool Block
     430f132d-8145-4e49-ba49-e9b839f7898e: "Source Selector Block" # Source Selector Block
@@ -167,6 +168,7 @@ meta:
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     1601c7a8-2437-4b8f-b2f2-116f4c043402: "Site Information" # Site Information
     2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: "Question Widgets Block" # Question Widgets Block
+    2922f7b5-8979-4fa5-8221-b442515b48c1: Equation # Equation
     3912a1a0-e71b-44b3-bcf4-976c0564975e: "Filter Tool" # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
@@ -189,7 +191,7 @@ meta:
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: "Question Block" # Question Block
     947400f5-3c2d-403a-b94e-68715e48a9c0: "Left Column" # Left Column
-    3173102a-6f80-4a4f-954b-1d3e151fb21a: "Cell Content" # Cell Content
+    3173102a-6f80-4a4f-954b-1d3e151fb21a: Text # Text
     04341069-ff31-4470-970a-8c7e82ec37eb: "Student Schema" # Student Schema
     4941158b-702a-45b4-8da5-12ed4202efae: Name # Name
     7033117c-c3b9-4794-9a6d-cbbbae2010af: "Supernova Distance & Distribution" # Supernova Distance & Distribution
