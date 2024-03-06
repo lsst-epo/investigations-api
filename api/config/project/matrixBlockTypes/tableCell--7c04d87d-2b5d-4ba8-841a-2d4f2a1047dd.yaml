@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Cell Content
+            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Text
             instructions: null
             label: null
             required: false
@@ -19,7 +19,19 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 48bc5283-dac6-4340-931a-6c01fa00bfb8 # Row Header
+            fieldUid: 2922f7b5-8979-4fa5-8221-b442515b48c1 # Equation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70b4323d-2958-4cf0-8689-63fda09a1102
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 48bc5283-dac6-4340-931a-6c01fa00bfb8 # Header
             instructions: null
             label: null
             required: false
@@ -33,13 +45,13 @@ fieldLayouts:
         uid: 1da41301-55e3-4b0e-8ea4-1640d39c0e1f
         userCondition: null
 fields:
-  48bc5283-dac6-4340-931a-6c01fa00bfb8: # Row Header
+  48bc5283-dac6-4340-931a-6c01fa00bfb8: # Header
     columnSuffix: hpuakkch
     contentColumnType: boolean
     fieldGroup: null
     handle: rowHeader
-    instructions: 'Enable if this cell labels is a header for it''s horizontal table row. Only applies to first cell in a row.'
-    name: 'Row Header'
+    instructions: 'Check if this cell is a header. This should only be used for the first cell in each row. The first row of a table is a header by default.'
+    name: Header
     searchable: false
     settings:
       default: false
@@ -48,13 +60,33 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Cell Content
+  2922f7b5-8979-4fa5-8221-b442515b48c1: # Equation
+    columnSuffix: avhnncix
+    contentColumnType: text
+    fieldGroup: null
+    handle: equation
+    instructions: 'LaTeX format input, reference the Temml documentation for help formatting: https://temml.org/docs/en/supported'
+    name: Equation
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Text
     columnSuffix: qmgrhddl
     contentColumnType: text
     fieldGroup: null
     handle: cellContent
     instructions: null
-    name: 'Cell Content'
+    name: Text
     searchable: false
     settings:
       byteLimit: null
