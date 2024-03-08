@@ -22,7 +22,7 @@ scope:
   - 'sections.28704998-935a-423b-a405-d4ad8b38efa2:read' # Widgets
   - 'entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read' # Color Filter Tool
   - 'entrytypes.297d2268-f298-40a1-bec3-a1c836a69e38:read' # Source Selector
-  - 'entrytypes.24e5bfd8-45a1-4e03-a9ee-e013a26057ec:read' # Light Curve Tool
+  - 'entrytypes.24e5bfd8-45a1-4e03-a9ee-e013a26057ec:read'
   - 'volumes.7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e:read' # Datasets
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content

@@ -40,7 +40,7 @@ settings:
               -
                 - values
                 -
-                  - 24e5bfd8-45a1-4e03-a9ee-e013a26057ec # Light Curve Tool
+                  - 24e5bfd8-45a1-4e03-a9ee-e013a26057ec
   selectionLabel: null
   showSiteMenu: false
   sources:
