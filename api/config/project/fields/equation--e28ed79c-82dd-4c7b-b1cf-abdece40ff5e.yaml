@@ -1,0 +1,35 @@
+columnSuffix: nmmhsvza
+contentColumnType: string(21)
+fieldGroup: b0465285-e18b-4739-a3a5-cb0ec0571dd8 # Questions
+handle: equation
+instructions: null
+name: Equation
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Peak Absolute Magnitude'
+        -
+          - value
+          - peakAbsoluteMagnitude
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Supernova Distance'
+        -
+          - value
+          - supernovaDistance
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

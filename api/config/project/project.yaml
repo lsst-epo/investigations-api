@@ -1,18 +1,20 @@
-dateModified: 1709675539
+dateModified: 1709832077
 elementSources:
   craft\elements\Entry:
-    - defaultSort:
+    -
+      defaultSort:
         - structure
         - asc
       disabled: false
-      key: "section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47" # Investigations
+      key: 'section:1a93d10f-deca-4e6b-a3e8-9baae53e7c47' # Investigations
       tableAttributes:
         - postDate
         - author
         - link
         - parent
       type: native
-    - defaultSort:
+    -
+      defaultSort:
         - title
         - asc
       disabled: false
@@ -20,11 +22,12 @@ elementSources:
       tableAttributes:
         - link
       type: native
-    - defaultSort:
+    -
+      defaultSort:
         - postDate
         - desc
       disabled: true
-      key: "*"
+      key: '*'
       tableAttributes:
         - section
         - postDate
@@ -32,24 +35,29 @@ elementSources:
         - author
         - link
       type: native
-    - defaultSort:
+    -
+      defaultSort:
         - structure
         - asc
       disabled: true
-      key: "section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d" # Pages
+      key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
       tableAttributes:
         - postDate
         - expiryDate
         - author
         - link
       type: native
-    - heading: ""
+    -
+      heading: ''
       type: heading
-    - key: "section:9068dd8e-ad92-4925-ba1d-1fe180598462" # Questions
+    -
+      key: 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
       type: native
-    - key: "section:c2356ed1-1e49-4056-83c7-ed615a2694b1" # Reference Modals
+    -
+      key: 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
       type: native
-    - key: "section:28704998-935a-423b-a405-d4ad8b38efa2" # Widgets
+    -
+      key: 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
       type: native
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
@@ -60,7 +68,7 @@ email:
     host: $EMAIL_SMTP_HOST_NAME
     password: $EMAIL_SMTP_PASSWORD
     port: $EMAIL_SMTP_PORT
-    useAuthentication: "1"
+    useAuthentication: '1'
     username: $EMAIL_SMTP_USERNAME
   transportType: craft\mail\transportadapters\Smtp
 fs:
@@ -70,27 +78,27 @@ fs:
     settings:
       bucket: $GCS_BUCKET
       bucketSelectionMode: manual
-      expires: ""
-      keyFileContents: ""
+      expires: ''
+      keyFileContents: ''
       projectId: $GCP_PROJECT_ID
-      subfolder: ""
+      subfolder: ''
     type: craft\googlecloud\Fs
-    url: "@gcsBucketBaseURL"
+    url: '@gcsBucketBaseURL'
 meta:
   __names__:
-    0d06751e-ecf9-4281-a754-8c818fb9353b: "Color Filter Tool Block" # Color Filter Tool Block
-    0d8d46b3-e717-4fd2-8c61-01c0b966f630: "Filter Color Options" # Filter Color Options
+    0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
+    0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0d335b99-111b-4f79-ab51-e890179b337c: Heading # Heading
     00e7fda5-a5ff-4422-81e4-60b0b85db34f: Color # Color
-    0e914cfb-a2de-4721-b23b-3b1268529baf: "Right Ascension" # Right Ascension
-    0ec5fc47-5e4f-4591-a76e-745ef7078387: "Source Type" # Source Type
-    0edce3a2-c596-4238-9dde-212c83d5a65f: "Menu Content" # Menu Content
-    0fd14cd3-7b23-4230-adce-9cfa16050740: "Widget Instructions" # Widget Instructions
-    1a35bfab-6a39-4c03-b273-2d5e3151c335: "Rubin Telescope Education and Public Outreach" # Rubin Telescope Education and Public Outreach
+    0e914cfb-a2de-4721-b23b-3b1268529baf: 'Right Ascension' # Right Ascension
+    0ec5fc47-5e4f-4591-a76e-745ef7078387: 'Source Type' # Source Type
+    0edce3a2-c596-4238-9dde-212c83d5a65f: 'Menu Content' # Menu Content
+    0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
+    1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
-    1a365d49-310d-41cf-afd2-3acd4cff3660: "Investigation Section Break (Child Entry)" # Investigation Section Break (Child Entry)
+    1a365d49-310d-41cf-afd2-3acd4cff3660: 'Investigation Section Break (Child Entry)' # Investigation Section Break (Child Entry)
     1ec99d28-14f6-45ec-a158-e01bed027ce7: Filter # Filter
-    1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: "Two Column Container" # Two Column Container
+    1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
@@ -98,78 +106,78 @@ meta:
     4e9ea915-78e8-4b28-b44e-fe2af60c77f8: Image # Image
     4e1884f2-7cc9-40d8-8426-f66da625d8cc: Assets # Assets
     4f04d6b0-64ef-454b-b343-66181c08dda9: Default # Default
-    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: "Scatterplot Tool" # Scatterplot Tool
+    5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
-    5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: "Default Value" # Default Value
+    5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: 'Default Value' # Default Value
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
-    5e789abf-cfef-4ed4-b795-a4dcfe4fd284: "Supernova & Galaxy Observations" # Supernova & Galaxy Observations
-    6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: "Filter Color Options" # Filter Color Options
-    6caa0b9c-4aa9-418b-847c-f6b8e3807cdd: "Option Label" # Option Label
+    5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
+    6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
+    6caa0b9c-4aa9-418b-847c-f6b8e3807cdd: 'Option Label' # Option Label
     6dbf8441-fd70-4b44-a2f8-7b9ba10b20d9: Distance # Distance
     6e046cd9-797f-4e30-9959-143cfa694b2f: Question # Question
-    6efbdc96-00f5-4e37-953b-d36344f6e1fb: "Configured Widgets" # Configured Widgets
+    6efbdc96-00f5-4e37-953b-d36344f6e1fb: 'Configured Widgets' # Configured Widgets
     6f0c128e-9978-41c2-b982-dcdf3933b0e2: Homepage # Homepage
     7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e: Datasets # Datasets
     7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
-    7bd60210-4767-46b3-b735-61a1499b90b7: "Redirect Page" # Redirect Page
-    7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: "Table Cell" # Table Cell
+    7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
+    7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
-    8af07cbd-3ce8-4e4d-818f-261515be5ac7: "Y-axis Minimum" # Y-axis Minimum
-    8b781860-2b8c-4100-969a-2f13c5272420: "Table Cells" # Table Cells
+    8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
+    8b781860-2b8c-4100-969a-2f13c5272420: 'Table Cells' # Table Cells
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
-    9b29c2f8-e229-419f-b6fa-48f5307ebf34: "Question Entries" # Question Entries
+    9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
-    10bfe164-c055-47a5-9acf-414d5c53b74a: "X-axis Maximum" # X-axis Maximum
+    10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
     010dc3f6-c369-4937-adc7-1948204aaf97: Group # Group
-    11f12958-c08d-4f26-9466-1a8ba7011b34: "Camera Filter Tool" # Camera Filter Tool
-    17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: "Graph Bars" # Graph Bars
+    11f12958-c08d-4f26-9466-1a8ba7011b34: 'Camera Filter Tool' # Camera Filter Tool
+    17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     25c0fbe7-5180-4842-bb9e-d530e9fb2042: Radius # Radius
-    25eb3834-cb4a-46d7-823a-a135a16b9677: "Save Point" # Save Point
+    25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
     28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
-    29f139cc-2d9b-4e10-afce-1e6a70105e2b: "Multi-part Blocks" # Multi-part Blocks
-    34ce437a-0ab5-47b3-8894-ff749aee20e9: "Option Value" # Option Value
-    40c867bb-c75a-4d5f-8d69-e7facae1c15b: "Homepage Content Blocks" # Homepage Content Blocks
-    42a4cddb-b253-4aeb-b097-2073b5707677: "Object Name" # Object Name
-    42e7cc8d-a889-4715-a93e-d6d897644070: "Object Caption" # Object Caption
+    29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
+    34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
+    40c867bb-c75a-4d5f-8d69-e7facae1c15b: 'Homepage Content Blocks' # Homepage Content Blocks
+    42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
+    42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     48bc5283-dac6-4340-931a-6c01fa00bfb8: Header # Header
-    53df9537-d85e-4fd3-9e4c-b203594ada7c: "Reference Modal Block" # Reference Modal Block
-    55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: "Reference Modal Entries" # Reference Modal Entries
-    56bdf2e8-b9b4-425d-a189-fc7b22f5d169: "Display Table" # Display Table
-    61e0fe59-d439-429c-b783-2d71fe4c5d44: "Y-axis Maximum" # Y-axis Maximum
+    53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Modal Block' # Reference Modal Block
+    55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Modal Entries' # Reference Modal Entries
+    56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
+    61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     69cb131c-4118-487d-84be-d370e75627bd: Text # Text
     71b3bf66-70f5-4af6-8020-aab77b765608: Video # Video
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
-    87fc48a5-a399-4ce1-a7ca-2dadfd1e1445: "Camera Filter Tool" # Camera Filter Tool
-    90aa9610-a9c9-4531-95f8-d0068046ae25: "Sort Options" # Sort Options
-    131ceffb-300f-415d-8cd5-a932d7529287: "Read Only" # Read Only
-    210fad18-08a1-4042-821c-bf4a09c06ec6: "Question Type" # Question Type
-    222de7cf-741d-4d1f-b274-acc85a3c454c: "Link To" # Link To
-    297d2268-f298-40a1-bec3-a1c836a69e38: "Source Selector" # Source Selector
-    301c4afd-e88a-4847-a0ce-1b134b5c3741: "Previous Question" # Previous Question
+    87fc48a5-a399-4ce1-a7ca-2dadfd1e1445: 'Camera Filter Tool' # Camera Filter Tool
+    90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options' # Sort Options
+    131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only' # Read Only
+    210fad18-08a1-4042-821c-bf4a09c06ec6: 'Question Type' # Question Type
+    222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
+    297d2268-f298-40a1-bec3-a1c836a69e38: 'Source Selector' # Source Selector
+    301c4afd-e88a-4847-a0ce-1b134b5c3741: 'Previous Question' # Previous Question
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
-    367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: "Color Filter Tool Block" # Color Filter Tool Block
-    430f132d-8145-4e49-ba49-e9b839f7898e: "Source Selector Block" # Source Selector Block
+    367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: 'Color Filter Tool Block' # Color Filter Tool Block
+    430f132d-8145-4e49-ba49-e9b839f7898e: 'Source Selector Block' # Source Selector Block
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
-    0481b024-bc6f-4104-bc1c-802615313aaa: "Page Type" # Page Type
-    485a4230-6aac-41b7-8524-da6232e226ae: "Filter Tool" # Filter Tool
-    693f669b-ba6e-4c91-adad-2543fcd62554: "Galactic Latitude" # Galactic Latitude
-    721d7a12-d399-4504-bbeb-0fa6d88d72b7: "Color Filter Tool Block" # Color Filter Tool Block
-    839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: "Table Row" # Table Row
-    852df24b-f90e-486b-a371-b47ca241a84e: "Y-axis Label" # Y-axis Label
-    919ed98f-d33e-4fae-adc0-2253a155246f: "Question Text" # Question Text
+    0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
+    485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
+    693f669b-ba6e-4c91-adad-2543fcd62554: 'Galactic Latitude' # Galactic Latitude
+    721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
+    839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
+    852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
+    919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
-    1601c7a8-2437-4b8f-b2f2-116f4c043402: "Site Information" # Site Information
-    2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: "Question Widgets Block" # Question Widgets Block
+    1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
     2922f7b5-8979-4fa5-8221-b442515b48c1: Equation # Equation
-    3912a1a0-e71b-44b3-bcf4-976c0564975e: "Filter Tool" # Filter Tool
+    3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
     5599d188-862e-4717-b206-6aadd975c937: Common # Common
@@ -178,27 +186,27 @@ meta:
     9748bbea-73ac-46cc-90b1-e6b8a6da31cd: Image # Image
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
     17499e5e-0bba-4aa4-8c78-56cdbe8422e0: Header # Header
-    24907dba-daa7-4266-a917-8e6a8b7ad726: "Filter Tool Actions" # Filter Tool Actions
-    31815ced-cfa3-4ed2-a002-5705a2c6be4b: "X-axis Minimum" # X-axis Minimum
-    048379b3-5d56-46a2-bfe2-9690b4b57151: "Investigation Entries" # Investigation Entries
+    24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
+    31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
+    048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
-    109801b3-a2ef-425d-ab7f-f816ea7dd13b: "Static Cell" # Static Cell
+    109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Static Cell' # Static Cell
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
-    0601483c-a943-42a3-b1a5-e003b05618dc: "Question Block" # Question Block
-    947400f5-3c2d-403a-b94e-68715e48a9c0: "Left Column" # Left Column
+    0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
+    947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     3173102a-6f80-4a4f-954b-1d3e151fb21a: Text # Text
-    04341069-ff31-4470-970a-8c7e82ec37eb: "Student Schema" # Student Schema
+    04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     4941158b-702a-45b4-8da5-12ed4202efae: Name # Name
-    7033117c-c3b9-4794-9a6d-cbbbae2010af: "Supernova Distance & Distribution" # Supernova Distance & Distribution
+    7033117c-c3b9-4794-9a6d-cbbbae2010af: 'Supernova Distance & Distribution' # Supernova Distance & Distribution
     8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
-    9679727f-de58-43ae-9674-13827bb1e0b3: "Image Group" # Image Group
+    9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
-    65934563-c9b7-45d5-99e6-cc013e22b668: "Investigation Step (Child Entry)" # Investigation Step (Child Entry)
+    65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     67592534-b8cb-4b2f-9826-d7c9300d9a2b: Widgets # Widgets
     a03e80f0-77ce-4b03-abf5-76a0deb264a9: JSON # JSON
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
@@ -206,75 +214,76 @@ meta:
     a4afde15-f983-4c30-b0d7-e0b56871e4de: Dataset # Dataset
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
-    a46e7379-7773-4ce4-9c59-434567870f0c: "Content Blocks" # Content Blocks
-    a47f94c7-0a32-43be-863a-fa9d6636fff2: "Bar Graph Tool" # Bar Graph Tool
-    a72ca793-6ee2-4a6f-b47e-06a35cf61e06: "Scatterplot Items" # Scatterplot Items
-    a81f2835-5fbe-4fa9-a636-eafeaee155c3: "Bin Size" # Bin Size
+    a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
+    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
+    a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Scatterplot Items' # Scatterplot Items
+    a81f2835-5fbe-4fa9-a636-eafeaee155c3: 'Bin Size' # Bin Size
     a531c6b8-3ef6-480b-8840-babb586617bc: Options # Options
-    a966d509-84b0-43ab-9a5b-42590a5fb537: "Answer Type" # Answer Type
-    ad74ba83-53f4-4102-94e9-e9eea0d31171: "Galactic longitude" # Galactic longitude
+    a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
+    ad74ba83-53f4-4102-94e9-e9eea0d31171: 'Galactic longitude' # Galactic longitude
     ad6237ea-0d14-4e5b-880e-767316434bcd: isEnabled # isEnabled
-    adeb2ea1-9022-44c5-9f71-3d06d06c24c8: "Default Value" # Default Value
-    aee57b4f-2623-44fc-af2b-c670f6e1babe: "Site information" # Site information
+    adeb2ea1-9022-44c5-9f71-3d06d06c24c8: 'Default Value' # Default Value
+    aee57b4f-2623-44fc-af2b-c670f6e1babe: 'Site information' # Site information
     af7d475a-5acc-4523-9acf-257ac909e7ec: Source # Source
     af9748aa-9a7c-49c2-bf48-d1417664104b: Text # Text
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
-    b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: "Color Filter Tool" # Color Filter Tool
-    b23a622a-4c70-4e4d-be4a-3b2fbc739d19: "Y" # Y
-    b78d733b-bfca-4d0c-9474-d40c87566945: "Modified Julian Date" # Modified Julian Date
-    ba6494d9-36e8-40ee-9284-c56783357043: "Interaction Group" # Interaction Group
+    b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: 'Color Filter Tool' # Color Filter Tool
+    b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
+    b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
+    ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
-    be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: "Group Name" # Group Name
+    be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bf080076-0029-4fb7-9562-4da97d31c0b4: LaTeX # LaTeX
-    bfaa63c2-dd2c-42c8-b68e-79d0180d5146: "Investigation (Parent Entry)" # Investigation (Parent Entry)
-    c1c8acb5-0649-4dca-a7c8-1d03e98097cf: "Help URL" # Help URL
+    bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
+    c1c8acb5-0649-4dca-a7c8-1d03e98097cf: 'Help URL' # Help URL
     c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
-    c74bb176-8889-459f-a14a-b9d4601786a6: "Previous Question" # Previous Question
-    c489f84c-509c-4078-9b71-1e3493e17620: "Image Album" # Image Album
-    c2356ed1-1e49-4056-83c7-ed615a2694b1: "Reference Modals" # Reference Modals
-    c49579aa-2d5c-4b05-a9f0-153bb0830d8e: "Object Caption" # Object Caption
+    c74bb176-8889-459f-a14a-b9d4601786a6: 'Previous Question' # Previous Question
+    c489f84c-509c-4078-9b71-1e3493e17620: 'Image Album' # Image Album
+    c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Modals' # Reference Modals
+    c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
-    cccddcb9-181f-4575-b6cd-62031c3d6d94: "Available Filters" # Available Filters
-    cd658691-87e7-43c3-a378-6078f21b9f6c: "Reference Content Blocks" # Reference Content Blocks
-    cec04a25-43ba-4f4c-81bd-b71f48731b5a: "Public Schema" # Public Schema
-    d0f08c4c-40d1-444d-9a32-b1264d617636: "Pre-selected Color" # Pre-selected Color
+    cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
+    cd658691-87e7-43c3-a378-6078f21b9f6c: 'Reference Content Blocks' # Reference Content Blocks
+    cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
+    d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d022e61b-75d2-4c3e-88f1-198bd9978ae1: Video # Video
-    d05be14c-5b5b-446d-968c-ad6af1ef322c: "Group Name" # Group Name
-    d2e48b83-d161-48b9-b0a9-5c21914b5931: "Color Filter Tool" # Color Filter Tool
+    d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
+    d2e48b83-d161-48b9-b0a9-5c21914b5931: 'Color Filter Tool' # Color Filter Tool
     d7a365f9-7f5d-46db-bc94-818f821cb447: Image # Image
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5: Min # Min
-    d9df041c-3556-450e-94e1-f37369daf5f3: "X-axis Label" # X-axis Label
-    d18f36fd-9d74-4ba6-b860-25958b1d9182: "Alert Sources" # Alert Sources
+    d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
+    d18f36fd-9d74-4ba6-b860-25958b1d9182: 'Alert Sources' # Alert Sources
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
-    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: "RTE Caption" # RTE Caption
-    dd362aa4-c24c-4d2f-a867-d0baceacd50d: "Object Name" # Object Name
-    dfab6165-acc6-4a81-9d4a-50c69d1c1045: "Color Filter Tool Objects" # Color Filter Tool Objects
-    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: "Answer Options" # Answer Options
+    dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
+    dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
+    dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
+    dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     e1b23b33-c33f-4c74-9811-250c2cc2789a: Data # Data
-    e7b953ca-6424-4d14-bc2c-393d3f8410a4: "Question Text" # Question Text
-    e17c94af-1953-42af-939c-e3ed84c62a95: "Source Selector" # Source Selector
+    e7b953ca-6424-4d14-bc2c-393d3f8410a4: 'Question Text' # Question Text
+    e17c94af-1953-42af-939c-e3ed84c62a95: 'Source Selector' # Source Selector
+    e28ed79c-82dd-4c7b-b1cf-abdece40ff5e: Equation # Equation
     e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
-    e818f50c-bd7d-48dd-9bd6-17d725e65533: "Option Value" # Option Value
-    e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: "Educator Schema" # Educator Schema
-    e5142c27-2288-47b7-bfad-14cd6b3a6653: "Display Name" # Display Name
-    efbf1b30-4cb7-4361-9f45-016d119aec06: "Right Column" # Right Column
-    f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32: "Investigation Grid" # Investigation Grid
+    e818f50c-bd7d-48dd-9bd6-17d725e65533: 'Option Value' # Option Value
+    e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
+    e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
+    efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
+    f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32: 'Investigation Grid' # Investigation Grid
     f5a2bb9c-1491-4439-a169-d9b2891433a1: Declination # Declination
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
-    f8a590d0-db30-4e06-9d6d-6cfd7613147e: "Hide Title" # Hide Title
+    f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
     f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: X # X
-    f8832ac4-1064-4c31-9390-109641d13d12: "Question Parts" # Question Parts
+    f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
     fbfbf05d-c7e1-4f6c-a093-47065f8d5095: Datasets # Datasets
     fc7f5dc8-43b1-487c-8302-07abecd2429a: Equation # Equation
-    fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6: "Question Table" # Question Table
+    fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6: 'Question Table' # Question Table
     fcfc14fd-28c8-4445-9f56-7c0fe24c0acf: Table # Table
-    ff6964ee-dc07-4a6c-a911-14f43c581d0f: "Option Label" # Option Label
+    ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:
   _canto-dam-assets:
     edition: standard
@@ -289,19 +298,19 @@ plugins:
   google-cloud:
     edition: standard
     enabled: true
-    schemaVersion: "2.0"
+    schemaVersion: '2.0'
   graphql-authentication:
     edition: standard
     enabled: true
     licenseKey: 1LUWSV7IB0M97MEVDIIFS559
     schemaVersion: 1.3.0
     settings:
-      accountCooldown: "Too many log in attempts; please try again shortly"
-      accountDeleted: "Successfully deleted account"
-      accountLocked: "Sorry, your account is currently locked"
-      activationEmailSent: "You will receive an email if it matches an account in our system"
+      accountCooldown: 'Too many log in attempts; please try again shortly'
+      accountDeleted: 'Successfully deleted account'
+      accountLocked: 'Sorry, your account is currently locked'
+      activationEmailSent: 'You will receive an email if it matches an account in our system'
       allowMagicAuthentication: null
-      allowRegistration: "1"
+      allowRegistration: '1'
       allowTwoFactorAuthentication: false
       allowedFacebookDomains: null
       allowedGoogleDomains: null
@@ -313,571 +322,832 @@ plugins:
       appleServiceId: null
       appleServiceSecret: null
       assetMutations: null
-      assetNotFound: "We couldn't find any matching assets"
+      assetNotFound: 'We couldn''t find any matching assets'
       assetQueries: null
-      emailNotInScope: "No email in scope"
+      emailNotInScope: 'No email in scope'
       entryMutations: null
-      entryNotFound: "We couldn't find any matching entries"
+      entryNotFound: 'We couldn''t find any matching entries'
       entryQueries: null
       facebookAppId: $FACEBOOK_APP_ID
       facebookAppSecret: $FACEBOOK_APP_SECRET
-      facebookEmailMismatch: "Email address doesn't match allowed Facebook domains"
+      facebookEmailMismatch: 'Email address doesn''t match allowed Facebook domains'
       facebookRedirectUrl: $FACEBOOK_APP_REDIRECT_URL
       fieldRestrictions:
         __assoc__:
-          - - schema-1
-            - __assoc__:
-                - - answerOptions
+          -
+            - schema-1
+            -
+              __assoc__:
+                -
+                  - answerOptions
                   - queryMutate
-                - - answerType
+                -
+                  - answerType
                   - queryMutate
-                - - availableFilters
+                -
+                  - availableFilters
                   - queryMutate
-                - - caption
+                -
+                  - caption
                   - queryMutate
-                - - colorFilterTool
+                -
+                  - colorFilterTool
                   - queryMutate
-                - - colorFilterToolObjects
+                -
+                  - colorFilterToolObjects
                   - queryMutate
-                - - contentBlocks
+                -
+                  - contentBlocks
                   - queryMutate
-                - - colorToolDefaultValue
+                -
+                  - colorToolDefaultValue
                   - queryMutate
-                - - description
+                -
+                  - description
                   - queryMutate
-                - - siteDescription
+                -
+                  - siteDescription
                   - queryMutate
-                - - displayName
+                -
+                  - displayName
                   - queryMutate
-                - - displayTable
+                -
+                  - displayTable
                   - queryMutate
-                - - filter
+                -
+                  - filter
                   - queryMutate
-                - - filterColorOptions
+                -
+                  - filterColorOptions
                   - queryMutate
-                - - filterToolActions
+                -
+                  - filterToolActions
                   - queryMutate
-                - - filtersImages
+                -
+                  - filtersImages
                   - queryMutate
-                - - graphBars
+                -
+                  - graphBars
                   - queryMutate
-                - - groupName
+                -
+                  - groupName
                   - queryMutate
-                - - contentHeading
+                -
+                  - contentHeading
                   - queryMutate
-                - - helpUrl
+                -
+                  - helpUrl
                   - queryMutate
-                - - hideTitle
+                -
+                  - hideTitle
                   - queryMutate
-                - - homepageContentBlocks
+                -
+                  - homepageContentBlocks
                   - queryMutate
-                - - image
+                -
+                  - image
                   - queryMutate
-                - - images
+                -
+                  - images
                   - queryMutate
-                - - investigationEntries
+                -
+                  - investigationEntries
                   - queryMutate
-                - - latex
+                -
+                  - latex
                   - queryMutate
-                - - layout
+                -
+                  - layout
                   - queryMutate
-                - - linkTo
+                -
+                  - linkTo
                   - queryMutate
-                - - colorToolMax
+                -
+                  - colorToolMax
                   - queryMutate
-                - - colorToolMin
+                -
+                  - colorToolMin
                   - queryMutate
-                - - multiPartBlocks
+                -
+                  - multiPartBlocks
                   - queryMutate
-                - - objectCaption
+                -
+                  - objectCaption
                   - queryMutate
-                - - objectName
+                -
+                  - objectName
                   - queryMutate
-                - - objects
+                -
+                  - objects
                   - queryMutate
-                - - pageType
+                -
+                  - pageType
                   - queryMutate
-                - - preSelectedColor
+                -
+                  - preSelectedColor
                   - queryMutate
-                - - questionEntries
+                -
+                  - questionEntries
                   - queryMutate
-                - - questionText
+                -
+                  - questionText
                   - queryMutate
-                - - questionWidgetsBlock
+                -
+                  - questionWidgetsBlock
                   - queryMutate
-                - - captionRichText
+                -
+                  - captionRichText
                   - queryMutate
-                - - readOnly
+                -
+                  - readOnly
                   - queryMutate
-                - - referenceContentBlocks
+                -
+                  - referenceContentBlocks
                   - queryMutate
-                - - referenceModalEntries
+                -
+                  - referenceModalEntries
                   - queryMutate
-                - - hasSavePoint
+                -
+                  - hasSavePoint
                   - queryMutate
-                - - scatterplotItems
+                -
+                  - scatterplotItems
                   - queryMutate
-                - - text
+                -
+                  - text
                   - queryMutate
-                - - siteTitle
+                -
+                  - siteTitle
                   - queryMutate
-                - - widgetInstructions
+                -
+                  - widgetInstructions
                   - queryMutate
-                - - xAxisLabel
+                -
+                  - xAxisLabel
                   - queryMutate
-                - - xAxisMax
+                -
+                  - xAxisMax
                   - queryMutate
-                - - xAxisMin
+                -
+                  - xAxisMin
                   - queryMutate
-                - - yAxisLabel
+                -
+                  - yAxisLabel
                   - queryMutate
-                - - yAxisMax
+                -
+                  - yAxisMax
                   - queryMutate
-                - - yAxisMin
+                -
+                  - yAxisMin
                   - queryMutate
-                - - isActive
+                -
+                  - isActive
                   - queryMutate
-                - - isEnabled
+                -
+                  - isEnabled
                   - queryMutate
-          - - "schema-Educator Schema"
-            - __assoc__:
-                - - answerOptions
+          -
+            - 'schema-Educator Schema'
+            -
+              __assoc__:
+                -
+                  - answerOptions
                   - queryMutate
-                - - answerType
+                -
+                  - answerType
                   - queryMutate
-                - - availableFilters
+                -
+                  - availableFilters
                   - queryMutate
-                - - caption
+                -
+                  - caption
                   - queryMutate
-                - - colorFilterTool
+                -
+                  - colorFilterTool
                   - queryMutate
-                - - colorFilterToolObjects
+                -
+                  - colorFilterToolObjects
                   - queryMutate
-                - - contentBlocks
+                -
+                  - contentBlocks
                   - queryMutate
-                - - colorToolDefaultValue
+                -
+                  - colorToolDefaultValue
                   - queryMutate
-                - - description
+                -
+                  - description
                   - queryMutate
-                - - siteDescription
+                -
+                  - siteDescription
                   - queryMutate
-                - - displayName
+                -
+                  - displayName
                   - queryMutate
-                - - displayTable
+                -
+                  - displayTable
                   - queryMutate
-                - - filter
+                -
+                  - filter
                   - queryMutate
-                - - filterColorOptions
+                -
+                  - filterColorOptions
                   - queryMutate
-                - - filterToolActions
+                -
+                  - filterToolActions
                   - queryMutate
-                - - filtersImages
+                -
+                  - filtersImages
                   - queryMutate
-                - - graphBars
+                -
+                  - graphBars
                   - queryMutate
-                - - groupName
+                -
+                  - groupName
                   - queryMutate
-                - - contentHeading
+                -
+                  - contentHeading
                   - queryMutate
-                - - helpUrl
+                -
+                  - helpUrl
                   - queryMutate
-                - - hideTitle
+                -
+                  - hideTitle
                   - queryMutate
-                - - homepageContentBlocks
+                -
+                  - homepageContentBlocks
                   - queryMutate
-                - - image
+                -
+                  - image
                   - queryMutate
-                - - images
+                -
+                  - images
                   - queryMutate
-                - - investigationEntries
+                -
+                  - investigationEntries
                   - queryMutate
-                - - latex
+                -
+                  - latex
                   - queryMutate
-                - - layout
+                -
+                  - layout
                   - queryMutate
-                - - linkTo
+                -
+                  - linkTo
                   - queryMutate
-                - - colorToolMax
+                -
+                  - colorToolMax
                   - queryMutate
-                - - colorToolMin
+                -
+                  - colorToolMin
                   - queryMutate
-                - - multiPartBlocks
+                -
+                  - multiPartBlocks
                   - queryMutate
-                - - objectCaption
+                -
+                  - objectCaption
                   - queryMutate
-                - - objectName
+                -
+                  - objectName
                   - queryMutate
-                - - objects
+                -
+                  - objects
                   - queryMutate
-                - - pageType
+                -
+                  - pageType
                   - queryMutate
-                - - preSelectedColor
+                -
+                  - preSelectedColor
                   - queryMutate
-                - - questionEntries
+                -
+                  - questionEntries
                   - queryMutate
-                - - questionText
+                -
+                  - questionText
                   - queryMutate
-                - - questionWidgetsBlock
+                -
+                  - questionWidgetsBlock
                   - queryMutate
-                - - captionRichText
+                -
+                  - captionRichText
                   - queryMutate
-                - - readOnly
+                -
+                  - readOnly
                   - queryMutate
-                - - referenceContentBlocks
+                -
+                  - referenceContentBlocks
                   - queryMutate
-                - - referenceModalEntries
+                -
+                  - referenceModalEntries
                   - queryMutate
-                - - hasSavePoint
+                -
+                  - hasSavePoint
                   - queryMutate
-                - - scatterplotItems
+                -
+                  - scatterplotItems
                   - queryMutate
-                - - text
+                -
+                  - text
                   - queryMutate
-                - - siteTitle
+                -
+                  - siteTitle
                   - queryMutate
-                - - widgetInstructions
+                -
+                  - widgetInstructions
                   - queryMutate
-                - - xAxisLabel
+                -
+                  - xAxisLabel
                   - queryMutate
-                - - xAxisMax
+                -
+                  - xAxisMax
                   - queryMutate
-                - - xAxisMin
+                -
+                  - xAxisMin
                   - queryMutate
-                - - yAxisLabel
+                -
+                  - yAxisLabel
                   - queryMutate
-                - - yAxisMax
+                -
+                  - yAxisMax
                   - queryMutate
-                - - yAxisMin
+                -
+                  - yAxisMin
                   - queryMutate
-                - - isActive
+                -
+                  - isActive
                   - queryMutate
-                - - isEnabled
+                -
+                  - isEnabled
                   - queryMutate
-          - - "schema-Public Schema"
-            - __assoc__:
-                - - answerOptions
+          -
+            - 'schema-Public Schema'
+            -
+              __assoc__:
+                -
+                  - answerOptions
                   - queryMutate
-                - - answerType
+                -
+                  - answerType
                   - queryMutate
-                - - availableFilters
+                -
+                  - availableFilters
                   - queryMutate
-                - - caption
+                -
+                  - caption
                   - queryMutate
-                - - colorFilterTool
+                -
+                  - colorFilterTool
                   - queryMutate
-                - - colorFilterToolObjects
+                -
+                  - colorFilterToolObjects
                   - queryMutate
-                - - contentBlocks
+                -
+                  - contentBlocks
                   - queryMutate
-                - - colorToolDefaultValue
+                -
+                  - colorToolDefaultValue
                   - queryMutate
-                - - description
+                -
+                  - description
                   - queryMutate
-                - - siteDescription
+                -
+                  - siteDescription
                   - queryMutate
-                - - displayName
+                -
+                  - displayName
                   - queryMutate
-                - - displayTable
+                -
+                  - displayTable
                   - queryMutate
-                - - filter
+                -
+                  - filter
                   - queryMutate
-                - - filterColorOptions
+                -
+                  - filterColorOptions
                   - queryMutate
-                - - filterToolActions
+                -
+                  - filterToolActions
                   - queryMutate
-                - - filtersImages
+                -
+                  - filtersImages
                   - queryMutate
-                - - graphBars
+                -
+                  - graphBars
                   - queryMutate
-                - - groupName
+                -
+                  - groupName
                   - queryMutate
-                - - contentHeading
+                -
+                  - contentHeading
                   - queryMutate
-                - - helpUrl
+                -
+                  - helpUrl
                   - queryMutate
-                - - hideTitle
+                -
+                  - hideTitle
                   - queryMutate
-                - - homepageContentBlocks
+                -
+                  - homepageContentBlocks
                   - queryMutate
-                - - image
+                -
+                  - image
                   - queryMutate
-                - - images
+                -
+                  - images
                   - queryMutate
-                - - investigationEntries
+                -
+                  - investigationEntries
                   - queryMutate
-                - - latex
+                -
+                  - latex
                   - queryMutate
-                - - layout
+                -
+                  - layout
                   - queryMutate
-                - - linkTo
+                -
+                  - linkTo
                   - queryMutate
-                - - colorToolMax
+                -
+                  - colorToolMax
                   - queryMutate
-                - - colorToolMin
+                -
+                  - colorToolMin
                   - queryMutate
-                - - multiPartBlocks
+                -
+                  - multiPartBlocks
                   - queryMutate
-                - - objectCaption
+                -
+                  - objectCaption
                   - queryMutate
-                - - objectName
+                -
+                  - objectName
                   - queryMutate
-                - - objects
+                -
+                  - objects
                   - queryMutate
-                - - pageType
+                -
+                  - pageType
                   - queryMutate
-                - - preSelectedColor
+                -
+                  - preSelectedColor
                   - queryMutate
-                - - questionEntries
+                -
+                  - questionEntries
                   - queryMutate
-                - - questionText
+                -
+                  - questionText
                   - queryMutate
-                - - questionWidgetsBlock
+                -
+                  - questionWidgetsBlock
                   - queryMutate
-                - - captionRichText
+                -
+                  - captionRichText
                   - queryMutate
-                - - readOnly
+                -
+                  - readOnly
                   - queryMutate
-                - - referenceContentBlocks
+                -
+                  - referenceContentBlocks
                   - queryMutate
-                - - referenceModalEntries
+                -
+                  - referenceModalEntries
                   - queryMutate
-                - - hasSavePoint
+                -
+                  - hasSavePoint
                   - queryMutate
-                - - scatterplotItems
+                -
+                  - scatterplotItems
                   - queryMutate
-                - - text
+                -
+                  - text
                   - queryMutate
-                - - siteTitle
+                -
+                  - siteTitle
                   - queryMutate
-                - - widgetInstructions
+                -
+                  - widgetInstructions
                   - queryMutate
-                - - xAxisLabel
+                -
+                  - xAxisLabel
                   - queryMutate
-                - - xAxisMax
+                -
+                  - xAxisMax
                   - queryMutate
-                - - xAxisMin
+                -
+                  - xAxisMin
                   - queryMutate
-                - - yAxisLabel
+                -
+                  - yAxisLabel
                   - queryMutate
-                - - yAxisMax
+                -
+                  - yAxisMax
                   - queryMutate
-                - - yAxisMin
+                -
+                  - yAxisMin
                   - queryMutate
-                - - isActive
+                -
+                  - isActive
                   - queryMutate
-                - - isEnabled
+                -
+                  - isEnabled
                   - queryMutate
-          - - "schema-Student Schema"
-            - __assoc__:
-                - - answerOptions
+          -
+            - 'schema-Student Schema'
+            -
+              __assoc__:
+                -
+                  - answerOptions
                   - queryMutate
-                - - answerType
+                -
+                  - answerType
                   - queryMutate
-                - - availableFilters
+                -
+                  - availableFilters
                   - queryMutate
-                - - caption
+                -
+                  - caption
                   - queryMutate
-                - - colorFilterTool
+                -
+                  - colorFilterTool
                   - queryMutate
-                - - colorFilterToolObjects
+                -
+                  - colorFilterToolObjects
                   - queryMutate
-                - - contentBlocks
+                -
+                  - contentBlocks
                   - queryMutate
-                - - colorToolDefaultValue
+                -
+                  - colorToolDefaultValue
                   - queryMutate
-                - - description
+                -
+                  - description
                   - queryMutate
-                - - siteDescription
+                -
+                  - siteDescription
                   - queryMutate
-                - - displayName
+                -
+                  - displayName
                   - queryMutate
-                - - displayTable
+                -
+                  - displayTable
                   - queryMutate
-                - - filter
+                -
+                  - filter
                   - queryMutate
-                - - filterColorOptions
+                -
+                  - filterColorOptions
                   - queryMutate
-                - - filterToolActions
+                -
+                  - filterToolActions
                   - queryMutate
-                - - filtersImages
+                -
+                  - filtersImages
                   - queryMutate
-                - - graphBars
+                -
+                  - graphBars
                   - queryMutate
-                - - groupName
+                -
+                  - groupName
                   - queryMutate
-                - - contentHeading
+                -
+                  - contentHeading
                   - queryMutate
-                - - helpUrl
+                -
+                  - helpUrl
                   - queryMutate
-                - - hideTitle
+                -
+                  - hideTitle
                   - queryMutate
-                - - homepageContentBlocks
+                -
+                  - homepageContentBlocks
                   - queryMutate
-                - - image
+                -
+                  - image
                   - queryMutate
-                - - images
+                -
+                  - images
                   - queryMutate
-                - - investigationEntries
+                -
+                  - investigationEntries
                   - queryMutate
-                - - latex
+                -
+                  - latex
                   - queryMutate
-                - - layout
+                -
+                  - layout
                   - queryMutate
-                - - linkTo
+                -
+                  - linkTo
                   - queryMutate
-                - - colorToolMax
+                -
+                  - colorToolMax
                   - queryMutate
-                - - colorToolMin
+                -
+                  - colorToolMin
                   - queryMutate
-                - - multiPartBlocks
+                -
+                  - multiPartBlocks
                   - queryMutate
-                - - objectCaption
+                -
+                  - objectCaption
                   - queryMutate
-                - - objectName
+                -
+                  - objectName
                   - queryMutate
-                - - objects
+                -
+                  - objects
                   - queryMutate
-                - - pageType
+                -
+                  - pageType
                   - queryMutate
-                - - preSelectedColor
+                -
+                  - preSelectedColor
                   - queryMutate
-                - - questionEntries
+                -
+                  - questionEntries
                   - queryMutate
-                - - questionText
+                -
+                  - questionText
                   - queryMutate
-                - - questionWidgetsBlock
+                -
+                  - questionWidgetsBlock
                   - queryMutate
-                - - captionRichText
+                -
+                  - captionRichText
                   - queryMutate
-                - - readOnly
+                -
+                  - readOnly
                   - queryMutate
-                - - referenceContentBlocks
+                -
+                  - referenceContentBlocks
                   - queryMutate
-                - - referenceModalEntries
+                -
+                  - referenceModalEntries
                   - queryMutate
-                - - hasSavePoint
+                -
+                  - hasSavePoint
                   - queryMutate
-                - - scatterplotItems
+                -
+                  - scatterplotItems
                   - queryMutate
-                - - text
+                -
+                  - text
                   - queryMutate
-                - - siteTitle
+                -
+                  - siteTitle
                   - queryMutate
-                - - widgetInstructions
+                -
+                  - widgetInstructions
                   - queryMutate
-                - - xAxisLabel
+                -
+                  - xAxisLabel
                   - queryMutate
-                - - xAxisMax
+                -
+                  - xAxisMax
                   - queryMutate
-                - - xAxisMin
+                -
+                  - xAxisMin
                   - queryMutate
-                - - yAxisLabel
+                -
+                  - yAxisLabel
                   - queryMutate
-                - - yAxisMax
+                -
+                  - yAxisMax
                   - queryMutate
-                - - yAxisMin
+                -
+                  - yAxisMin
                   - queryMutate
-                - - isActive
+                -
+                  - isActive
                   - queryMutate
-                - - isEnabled
+                -
+                  - isEnabled
                   - queryMutate
-      forbiddenField: "User doesn't have permission to access requested field(s)"
-      forbiddenMutation: "User doesn't have permission to perform this mutation"
+      forbiddenField: 'User doesn''t have permission to access requested field(s)'
+      forbiddenMutation: 'User doesn''t have permission to perform this mutation'
       googleClientId: $GOOGLE_APP_ID
-      googleEmailMismatch: "Email address doesn't match allowed Google domains"
-      googleTokenIdInvalid: "Invalid Google Token ID"
+      googleEmailMismatch: 'Email address doesn''t match allowed Google domains'
+      googleTokenIdInvalid: 'Invalid Google Token ID'
       granularSchemas:
         __assoc__:
-          - - group-36
-            - __assoc__:
-                - - schemaName
-                  - ""
-                - - allowRegistration
-                  - ""
-                - - siteId
-                  - ""
-          - - group-38
-            - __assoc__:
-                - - schemaName
-                  - "Educator Schema"
-                - - allowRegistration
-                  - "1"
-                - - siteId
-                  - ""
-                - - entryQueries
-                  - __assoc__:
-                      - - investigations
-                        - ""
-                      - - pages
-                        - ""
-                      - - questions
-                        - ""
-                      - - referenceModals
-                        - ""
-                      - - widgets
-                        - ""
-          - - group-37
-            - __assoc__:
-                - - schemaName
-                  - "Student Schema"
-                - - allowRegistration
-                  - "1"
-                - - siteId
-                  - ""
-                - - entryQueries
-                  - __assoc__:
-                      - - investigations
-                        - ""
-                      - - pages
-                        - ""
-                      - - questions
-                        - ""
-                      - - referenceModals
-                        - ""
-                      - - widgets
-                        - ""
-      invalidEmailAddress: "Invalid email address"
-      invalidHeader: "Invalid Authorization Header"
-      invalidJwtSecretKey: "Invalid JWT Secret Key"
-      invalidLogin: "We couldn't log you in with the provided details"
-      invalidMagicCode: "Invalid magic code"
-      invalidOauthToken: "Invalid OAuth Token"
-      invalidPasswordMatch: "Passwords do not match"
-      invalidPasswordUpdate: "We couldn't update the password with the provided details"
-      invalidRefreshToken: "Invalid Refresh Token"
-      invalidRequest: "Cannot validate request"
-      invalidSchema: "No schema has been set for this user group"
-      invalidUserUpdate: "We couldn't update the user with the provided details"
-      jwtExpiration: "30 minutes"
-      jwtRefreshExpiration: "3 months"
+          -
+            - group-36
+            -
+              __assoc__:
+                -
+                  - schemaName
+                  - ''
+                -
+                  - allowRegistration
+                  - ''
+                -
+                  - siteId
+                  - ''
+          -
+            - group-38
+            -
+              __assoc__:
+                -
+                  - schemaName
+                  - 'Educator Schema'
+                -
+                  - allowRegistration
+                  - '1'
+                -
+                  - siteId
+                  - ''
+                -
+                  - entryQueries
+                  -
+                    __assoc__:
+                      -
+                        - investigations
+                        - ''
+                      -
+                        - pages
+                        - ''
+                      -
+                        - questions
+                        - ''
+                      -
+                        - referenceModals
+                        - ''
+                      -
+                        - widgets
+                        - ''
+          -
+            - group-37
+            -
+              __assoc__:
+                -
+                  - schemaName
+                  - 'Student Schema'
+                -
+                  - allowRegistration
+                  - '1'
+                -
+                  - siteId
+                  - ''
+                -
+                  - entryQueries
+                  -
+                    __assoc__:
+                      -
+                        - investigations
+                        - ''
+                      -
+                        - pages
+                        - ''
+                      -
+                        - questions
+                        - ''
+                      -
+                        - referenceModals
+                        - ''
+                      -
+                        - widgets
+                        - ''
+      invalidEmailAddress: 'Invalid email address'
+      invalidHeader: 'Invalid Authorization Header'
+      invalidJwtSecretKey: 'Invalid JWT Secret Key'
+      invalidLogin: 'We couldn''t log you in with the provided details'
+      invalidMagicCode: 'Invalid magic code'
+      invalidOauthToken: 'Invalid OAuth Token'
+      invalidPasswordMatch: 'Passwords do not match'
+      invalidPasswordUpdate: 'We couldn''t update the password with the provided details'
+      invalidRefreshToken: 'Invalid Refresh Token'
+      invalidRequest: 'Cannot validate request'
+      invalidSchema: 'No schema has been set for this user group'
+      invalidUserUpdate: 'We couldn''t update the user with the provided details'
+      jwtExpiration: '30 minutes'
+      jwtRefreshExpiration: '3 months'
       jwtSecretKey: 2t1eBkWF2HIzBSbP7LS9v0PZtdHvYkdB
-      magicLinkSent: "You will receive an email if it matches an account in our system"
+      magicLinkSent: 'You will receive an email if it matches an account in our system'
       microsoftAppId: null
       microsoftAppSecret: null
-      microsoftEmailMismatch: "Email address doesn't match allowed Microsoft domains"
+      microsoftEmailMismatch: 'Email address doesn''t match allowed Microsoft domains'
       microsoftRedirectUrl: null
-      passwordResetRequired: "Password reset required; please check your email"
-      passwordResetSent: "You will receive an email if it matches an account in our system"
-      passwordSaved: "Successfully saved password"
-      passwordUpdated: "Successfully updated password"
+      passwordResetRequired: 'Password reset required; please check your email'
+      passwordResetSent: 'You will receive an email if it matches an account in our system'
+      passwordSaved: 'Successfully saved password'
+      passwordUpdated: 'Successfully updated password'
       permissionType: multiple
       sameSitePolicy: strict
       schemaId: null
-      schemaName: "Public Schema"
+      schemaName: 'Public Schema'
       siteId: null
       skipActivatedCheck: null
-      skipSocialActivation: "1"
-      tokenNotFound: "We couldn't find any matching tokens"
+      skipSocialActivation: '1'
+      tokenNotFound: 'We couldn''t find any matching tokens'
       twitterApiKey: null
       twitterApiKeySecret: null
-      twitterEmailMismatch: "Email address doesn't match allowed Twitter domains"
+      twitterEmailMismatch: 'Email address doesn''t match allowed Twitter domains'
       twitterRedirectUrl: null
-      userActivated: "Successfully activated user"
-      userGroup: "4"
-      userHasPassword: "User not password-less"
-      userNotActivated: "Please activate your account"
-      userNotFound: "We couldn't find any matching users"
-      volumeNotFound: "We couldn't find any matching volumes"
+      userActivated: 'Successfully activated user'
+      userGroup: '4'
+      userHasPassword: 'User not password-less'
+      userNotActivated: 'Please activate your account'
+      userNotFound: 'We couldn''t find any matching users'
+      volumeNotFound: 'We couldn''t find any matching volumes'
   neo:
     edition: standard
     enabled: true
@@ -890,20 +1160,27 @@ plugins:
     settings:
       activeSections:
         __assoc__:
-          - - datasets
-            - "1"
-          - - homepage
-            - "1"
-          - - investigations
-            - "1"
-          - - pages
-            - "1"
-          - - questions
-            - "1"
-          - - referenceModals
-            - "1"
-          - - widgets
-            - "1"
+          -
+            - datasets
+            - '1'
+          -
+            - homepage
+            - '1'
+          -
+            - investigations
+            - '1'
+          -
+            - pages
+            - '1'
+          -
+            - questions
+            - '1'
+          -
+            - referenceModals
+            - '1'
+          -
+            - widgets
+            - '1'
       nextApiBaseUrl: $NEXT_API_BASE_URL
       nextSecretToken: $NEXT_SECRET_TOKEN
   redactor:
@@ -921,7 +1198,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: "Rubin EPO Craft Project"
+  name: 'Rubin EPO Craft Project'
   retryDuration: null
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles

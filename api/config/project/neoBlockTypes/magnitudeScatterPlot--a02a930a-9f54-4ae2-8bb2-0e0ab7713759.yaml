@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 466246f6-753b-4198-8067-18acf1a7d4cb # Light Curve Tool
+            fieldUid: 466246f6-753b-4198-8067-18acf1a7d4cb
             instructions: null
             label: null
             required: true

@@ -57,7 +57,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
+            fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d
             instructions: 'Check to include the light curve scatterplot'
             label: null
             required: false
@@ -73,7 +73,7 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\LightswitchFieldConditionRule
-                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
+                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d
                   uid: 883b118b-023a-4c20-956e-1717464edd26
                   value: true
               elementType: craft\elements\Entry
@@ -94,7 +94,7 @@ fieldLayouts:
               conditionRules:
                 -
                   class: craft\fields\conditions\LightswitchFieldConditionRule
-                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
+                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d
                   uid: f3cd8447-372b-4498-a9ca-bfc82a6e12e1
                   value: true
               elementType: craft\elements\Entry

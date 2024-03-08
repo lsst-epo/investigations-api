@@ -182,6 +182,29 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: 8ad6bd95-c291-45b9-9fac-4edd4beee636
+                  values:
+                    - calculator
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: e28ed79c-82dd-4c7b-b1cf-abdece40ff5e # Equation
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ddb4a35-2e78-4110-97e9-d1baf7af4260
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 38c902fa-7739-496e-a506-0b98d6d480d0
         userCondition: null
