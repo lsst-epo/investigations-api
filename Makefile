@@ -18,8 +18,11 @@ db-list:
 	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -c "SELECT (pg_stat_file('base/'||oid ||'/PG_VERSION')).modification, datname FROM pg_database;"
 
 cloud-db-list:
-	curl https://us-central1-edc-prod-eef0.cloudfunctions.net/sql-helper/databases\?action\=list\&project\=investigations
+	curl https://us-central1-edc-prod-eef0.cloudfunctions.net/sql-helper/databases\?project\=investigations
 
 # Requires argument `dbname` to specify the name of the DB to be exported, usage: `make cloud-db-export dbname=prod_db`
 cloud-db-export:
-	curl https://us-central1-edc-prod-eef0.cloudfunctions.net/sql-helper/databases\?action\=export\&database\=$(dbname)\&project\=investigations
+	curl --header "Content-Type: application/json" \
+		 --request POST \
+		 --data '{"project":"investigations"}' \
+		 https://us-central1-edc-prod-eef0.cloudfunctions.net/sql-helper/databases\?action\=export\&database\=$(dbname)
