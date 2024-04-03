@@ -23,10 +23,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'Supernova Distance'
+          - 'Distance (Mly)'
         -
           - value
-          - supernovaDistance
+          - distanceMly
         -
           - default
           - ''
