@@ -30,7 +30,7 @@ fieldLayouts:
             uid: ceea3c75-7352-4c94-a085-f6dd38c10db3
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
@@ -40,6 +40,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8146cf33-eb0d-46b8-b073-4c100fd3297f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 048379b3-5d56-46a2-bfe2-9690b4b57151 # Investigation Entries
+            instructions: null
+            label: Investigation
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ee1b6ce-088f-4a00-985c-63ff50d36be1
             userCondition: null
             warning: null
             width: 50
