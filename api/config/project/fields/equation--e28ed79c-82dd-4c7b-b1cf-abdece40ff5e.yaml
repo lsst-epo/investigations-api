@@ -23,10 +23,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'Distance (Mly)'
+          - 'Distance Modulus'
         -
           - value
-          - distanceMly
+          - distanceModulus
         -
           - default
           - ''
