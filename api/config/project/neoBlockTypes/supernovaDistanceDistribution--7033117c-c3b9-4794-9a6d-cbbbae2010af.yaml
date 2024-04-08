@@ -23,16 +23,16 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: a4afde15-f983-4c30-b0d7-e0b56871e4de # Dataset
-            instructions: 'Supernovae from previous user interactions to show in widget'
-            label: 'User Supernovae'
+            fieldUid: 9b29c2f8-e229-419f-b6fa-48f5307ebf34 # Question Entries
+            instructions: 'Supernovae to show from a previous question'
+            label: 'Supernovae from questions'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 13f3d27b-b03b-485e-99c6-be3f946f3ac9
+            uid: 917bf381-9e66-4e21-8fe2-be762f088866
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: a03e80f0-77ce-4b03-abf5-76a0deb264a9 # JSON
