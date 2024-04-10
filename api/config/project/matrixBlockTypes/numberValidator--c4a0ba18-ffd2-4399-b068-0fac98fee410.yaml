@@ -1,0 +1,170 @@
+field: 37af5dda-9a0b-458a-b48c-1bd31b9170af # Validation
+fieldLayouts:
+  b10605af-da55-4985-9ce9-e7cb98b9fff7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 628c22b8-f7a4-49f7-a37f-f6e6313da1b4 # Operator
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9065507-2666-4629-9baa-6c71c355a691
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 20ce6c99-37f5-4f50-91fa-587e9f7ef466 # Comparison
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bedab14a-0a7d-4323-95bb-01f53947be2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0517da83-7ef9-4577-8da4-ec5c25cfe591 # Message
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a1567c9-90b8-48b4-a5eb-83b54061c415
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e17329dc-dbe1-4061-b922-5b8ad6020f18
+        userCondition: null
+fields:
+  20ce6c99-37f5-4f50-91fa-587e9f7ef466: # Comparison
+    columnSuffix: hnffujxe
+    contentColumnType: text
+    fieldGroup: null
+    handle: comparison
+    instructions: null
+    name: Comparison
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  0517da83-7ef9-4577-8da4-ec5c25cfe591: # Message
+    columnSuffix: qffjrmsi
+    contentColumnType: text
+    fieldGroup: null
+    handle: message
+    instructions: null
+    name: Message
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  628c22b8-f7a4-49f7-a37f-f6e6313da1b4: # Operator
+    columnSuffix: yfymoldn
+    contentColumnType: string(18)
+    fieldGroup: null
+    handle: operator
+    instructions: null
+    name: Operator
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'greater than'
+            -
+              - value
+              - greaterThan
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'greater than or equal'
+            -
+              - value
+              - greaterThanOrEqual
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'less than'
+            -
+              - value
+              - lessThan
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'less than or equal'
+            -
+              - value
+              - lessThanOrEqual
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - equals
+            -
+              - value
+              - equals
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'not equal'
+            -
+              - value
+              - notEqual
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: numberValidator
+name: 'Number Validator'
+sortOrder: 1

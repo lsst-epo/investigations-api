@@ -23,28 +23,6 @@ settings:
       __assoc__:
         -
           - label
-          - Select
-        -
-          - value
-          - select
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Widget
-        -
-          - value
-          - widget
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
           - Textarea
         -
           - value
@@ -56,10 +34,43 @@ settings:
       __assoc__:
         -
           - label
+          - Select
+        -
+          - value
+          - select
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Number
+        -
+          - value
+          - number
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
           - Multi-part
         -
           - value
           - multiPart
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Widget
+        -
+          - value
+          - widget
         -
           - default
           - ''

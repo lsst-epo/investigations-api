@@ -217,6 +217,98 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: b0369af6-cbb4-4ac0-8301-401d8a0ec2cf
+                  values:
+                    - number
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 79f2f742-966c-42df-9d04-8492d456325c # Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e972137e-acc9-48fe-a897-06639c0cc354
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: 210b86ab-5066-4414-9848-ac87a33a6232
+                  values:
+                    - number
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: d5901e55-99c9-441a-937e-05a065d6e60b # Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08139682-17dd-426c-af3b-dd9d171a63ac
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: 56af986b-38fc-4fb6-9c5f-c147b11902c3
+                  values:
+                    - number
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 24f2e959-23a9-4f1a-8394-0849fb85b85b # Precision
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5eb2e698-b5d8-4dad-b93e-f1415fa657f2
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
+                  uid: fa7553ab-5c70-4b93-a086-ef38824696cc
+                  values:
+                    - number
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 37af5dda-9a0b-458a-b48c-1bd31b9170af # Validation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c8613d1-5b87-49c5-9916-5223625962ec
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 38c902fa-7739-496e-a506-0b98d6d480d0
         userCondition: null
