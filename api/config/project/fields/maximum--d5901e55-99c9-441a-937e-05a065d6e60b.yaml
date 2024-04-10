@@ -1,0 +1,20 @@
+columnSuffix: vcifkykz
+contentColumnType: integer(10)
+fieldGroup: e1b23b33-c33f-4c74-9811-250c2cc2789a # Data
+handle: maximum
+instructions: null
+name: Maximum
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
