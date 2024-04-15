@@ -12,6 +12,36 @@ This project was created with Docker version 20.10.5.
 
 ## Set up and run the project locally
 
+#### Make scripts
+
+---
+To list your local DBs:
+
+`make db-list`
+
+---
+To list the databases sitting around in the `prod` environment:
+
+`make cloud-db-list`
+
+---
+To export a `prod` database to the `gs://release_db_sql_files/investigations/` bucket:
+
+`make cloud-db-export dbname=prod_db`
+
+* The argument `dbname` is required and should be one of the databases listed from `make cloud-db-list`
+* Once you download the DB dump file, move it to the `./db/` folder
+---
+To recreate a local DB from a dump file located within `./db/`:
+
+`make local-db dbname=my_new_local_db dbfile=prod.sql`
+
+* The argument `dbname` is required and will be the name of the newly created database
+* The argument `dbfile` is required and should be the name of the DB file to recreate, this file _must_ be in the `./db/` folder
+---
+#### Deprecated workflow
+
+0. Uncomment the `COPY` line in `./db/Dockerfile`
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Clone this repository
 3. Add a .env file (based on .env.sample) and provide values appropriate to your local dev environment

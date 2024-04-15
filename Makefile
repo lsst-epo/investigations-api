@@ -8,10 +8,11 @@ clean:
 clean-images:
 	docker images prune
 
-# Requires argument `dbname` to specify the name of the new DB, usage: `make local-db dbname=my_db`
+# Requires argument `dbname` to specify the name of the new DB, usage: `make local-db dbname=my_db dbfile=mydb.sql`
+# Requires argument `dbfile` to specify the name of the DB dump file to recreate, usage: `make local-db dbname=my_db dbfile=mydb.sql`
 local-db:
 	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -c "create database $(dbname);"
-	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -d $(dbname) -f inv_mar.sql
+	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -d $(dbname) -f $(dbfile)
 	echo "\n\n\n\nDon't forget to update your docker-compose-local-db.yaml with the DB name: $(dbname)"
 
 db-list:

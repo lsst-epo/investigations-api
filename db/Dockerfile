@@ -1,3 +1,4 @@
 FROM postgres:13-alpine
 
-COPY db.sql /docker-entrypoint-initdb.d/db.sql
+# Commented out so that the Makefile DB scripts can do their thing
+# COPY db.sql /docker-entrypoint-initdb.d/db.sql
