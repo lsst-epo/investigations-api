@@ -1,4 +1,4 @@
-dateModified: 1713199789
+dateModified: 1713460581
 elementSources:
   craft\elements\Entry:
     -
@@ -101,11 +101,13 @@ meta:
     1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
+    4b8139b2-36be-4510-aaeb-fa8579fb3273: 'Header Row' # Header Row
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
     4e9ea915-78e8-4b28-b44e-fe2af60c77f8: Image # Image
     4e1884f2-7cc9-40d8-8426-f66da625d8cc: Assets # Assets
     4f04d6b0-64ef-454b-b343-66181c08dda9: Default # Default
+    5a7221ec-779f-4433-b5b7-732d6b0babd5: 'Row Header' # Row Header
     5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
@@ -123,12 +125,15 @@ meta:
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
+    7fd2ba5e-d840-47df-8c79-a5fd54ff5aae: Text # Text
     8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
-    8b781860-2b8c-4100-969a-2f13c5272420: 'Table Cells' # Table Cells
+    8b781860-2b8c-4100-969a-2f13c5272420: 'Table Row' # Table Row
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
     9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
+    9c099f02-5f47-4c2f-bf83-574a21fae092: Equation # Equation
+    9d3bd0d7-b293-4e2f-9c24-0554733df011: Text # Text
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
     010dc3f6-c369-4937-adc7-1948204aaf97: Group # Group
@@ -149,10 +154,11 @@ meta:
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
-    48bc5283-dac6-4340-931a-6c01fa00bfb8: Header # Header
+    53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
     53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Modal Block' # Reference Modal Block
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Modal Entries' # Reference Modal Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
+    58dc56f1-d17a-424b-9aac-650a83f6b919: 'Table Cell' # Table Cell
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     69cb131c-4118-487d-84be-d370e75627bd: Text # Text
     71b3bf66-70f5-4af6-8020-aab77b765608: Video # Video
@@ -168,12 +174,14 @@ meta:
     301c4afd-e88a-4847-a0ce-1b134b5c3741: 'Previous Question' # Previous Question
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
     367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: 'Color Filter Tool Block' # Color Filter Tool Block
+    418ea0f0-379d-4ee5-8dab-f82b6a62c191: Header # Header
     430f132d-8145-4e49-ba49-e9b839f7898e: 'Source Selector Block' # Source Selector Block
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
     0517da83-7ef9-4577-8da4-ec5c25cfe591: Message # Message
     628c22b8-f7a4-49f7-a37f-f6e6313da1b4: Operator # Operator
+    635c41e4-29a8-42de-965b-e30c5beb0685: Text # Text
     693f669b-ba6e-4c91-adad-2543fcd62554: 'Galactic Latitude' # Galactic Latitude
     721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
@@ -191,7 +199,6 @@ meta:
     9068dd8e-ad92-4925-ba1d-1fe180598462: Questions # Questions
     9748bbea-73ac-46cc-90b1-e6b8a6da31cd: Image # Image
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
-    17499e5e-0bba-4aa4-8c78-56cdbe8422e0: Header # Header
     24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
@@ -199,7 +206,7 @@ meta:
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
-    109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Static Cell' # Static Cell
+    109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Table Cell' # Table Cell
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
@@ -209,6 +216,7 @@ meta:
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     4941158b-702a-45b4-8da5-12ed4202efae: Name # Name
     7033117c-c3b9-4794-9a6d-cbbbae2010af: 'Supernova Distance & Distribution' # Supernova Distance & Distribution
+    7880478d-205c-4689-82fe-f4b69acd39e0: Equation # Equation
     8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
@@ -284,6 +292,7 @@ meta:
     f5a2bb9c-1491-4439-a169-d9b2891433a1: Declination # Declination
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    f633c7c8-51d2-4e26-93a0-630d539e83f7: 'Table Header' # Table Header
     f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: X # X
     f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage

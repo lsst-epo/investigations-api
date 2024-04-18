@@ -1,4 +1,4 @@
-changedFieldIndicator: 1920557402
+changedFieldIndicator: 246424054
 field: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
 fieldLayouts:
   5286515a-8954-4555-b8a8-da61ee01b204:
@@ -77,10 +77,10 @@ fields:
                   -
                     - values
                     -
-                      - tabular
-                      - number
                       - text
                       - textarea
+                      - number
+                      - tabular
                   -
                     - fieldUid
                     - a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type

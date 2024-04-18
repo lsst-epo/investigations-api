@@ -1,4 +1,4 @@
-field: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+field: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Row
 fieldLayouts:
   42907a15-1f1c-467d-b5f6-ab6726fe55c0:
     tabs:
@@ -29,18 +29,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 17499e5e-0bba-4aa4-8c78-56cdbe8422e0 # Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9645a5ea-9466-4a83-ba68-5670e72a1757
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: b4b66028-d2a4-4aae-944d-5499d9f90674
         userCondition: null
@@ -65,21 +53,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  17499e5e-0bba-4aa4-8c78-56cdbe8422e0: # Header
-    columnSuffix: qmhrjxcz
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: header
-    instructions: 'Check if this cell is a header. This should only be used for the first cell in each row. The first row of a table is a header by default.'
-    name: Header
-    searchable: false
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
   fc7f5dc8-43b1-487c-8302-07abecd2429a: # Equation
     columnSuffix: lhtlrftk
     contentColumnType: text
@@ -101,5 +74,5 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
 handle: static
-name: 'Static Cell'
+name: 'Table Cell'
 sortOrder: 1
