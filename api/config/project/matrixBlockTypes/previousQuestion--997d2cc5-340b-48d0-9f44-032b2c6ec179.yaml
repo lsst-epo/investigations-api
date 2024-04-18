@@ -1,0 +1,86 @@
+field: 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
+fieldLayouts:
+  df58f88f-d5c6-42ee-9caa-c4b38a2b8568:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6f2f6107-ea5d-44cd-9e5d-9372061e7c38 # Question
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27fa64e2-3cf5-4d08-9541-ac15e88485cc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ce17ee68-46d5-4229-9c00-af0d10d7aad8
+        userCondition: null
+fields:
+  6f2f6107-ea5d-44cd-9e5d-9372061e7c38: # Question
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: question
+    instructions: null
+    name: Question
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+          -
+            - conditionRules
+            -
+              -
+                __assoc__:
+                  -
+                    - class
+                    - craft\fields\conditions\OptionsFieldConditionRule
+                  -
+                    - uid
+                    - c46907a3-3a54-47c2-aa5f-baf331e8440f
+                  -
+                    - operator
+                    - in
+                  -
+                    - values
+                    -
+                      - text
+                      - textarea
+                      - number
+                      - tabular
+                  -
+                    - fieldUid
+                    - a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: previousQuestion
+name: 'Previous Question'
+sortOrder: 3
