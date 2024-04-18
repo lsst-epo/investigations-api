@@ -1,4 +1,4 @@
-changedFieldIndicator: 246424054
+changedFieldIndicator: 1875156105
 field: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
 fieldLayouts:
   5286515a-8954-4555-b8a8-da61ee01b204:
@@ -18,82 +18,10 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 301c4afd-e88a-4847-a0ce-1b134b5c3741 # Previous Question
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7139bea6-eea9-432e-a98b-1765cbb9c1fd
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 442d40cd-3fe9-44e3-a862-a0245cd4be94
         userCondition: null
 fields:
-  301c4afd-e88a-4847-a0ce-1b134b5c3741: # Previous Question
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: previousQuestion
-    instructions: 'Picking a previous question will display it''s table contents as read-only cells, using the table header from the current table.'
-    name: 'Previous Question'
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      branchLimit: null
-      localizeRelations: false
-      maintainHierarchy: false
-      maxRelations: null
-      minRelations: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Entry
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\entries\EntryCondition
-          -
-            - conditionRules
-            -
-              -
-                __assoc__:
-                  -
-                    - class
-                    - craft\fields\conditions\OptionsFieldConditionRule
-                  -
-                    - uid
-                    - 4f97a8ea-88d5-4a8d-87d4-ecfcf0380ea1
-                  -
-                    - operator
-                    - in
-                  -
-                    - values
-                    -
-                      - text
-                      - textarea
-                      - number
-                      - tabular
-                  -
-                    - fieldUid
-                    - a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
-      selectionLabel: null
-      showSiteMenu: false
-      sources:
-        - 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Entries
   839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: # Table Row
     columnSuffix: null
     contentColumnType: string

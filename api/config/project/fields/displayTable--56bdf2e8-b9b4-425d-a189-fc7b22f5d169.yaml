@@ -7,18 +7,11 @@ name: 'Display Table'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 503386703
+  changedFieldIndicator: 123055138
   columns:
     __assoc__:
       -
         - 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-      -
-        - 301c4afd-e88a-4847-a0ce-1b134b5c3741 # Previous Question
         -
           __assoc__:
             -
