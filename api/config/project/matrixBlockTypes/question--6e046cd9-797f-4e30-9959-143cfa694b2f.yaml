@@ -1,4 +1,4 @@
-field: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+field: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Row
 fieldLayouts:
   0bd639bb-fcdb-4685-abf9-754d9c8797a2:
     tabs:
@@ -79,7 +79,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1538452176
+      changedFieldIndicator: 1612934111
       columns:
         __assoc__:
           -
@@ -96,7 +96,7 @@ fields:
                 -
                   - width
                   - ''
-      contentTable: '{{%stc_47_options}}'
+      contentTable: '{{%stc_46_options}}'
       fieldLayout: table
       maxRows: null
       minRows: null

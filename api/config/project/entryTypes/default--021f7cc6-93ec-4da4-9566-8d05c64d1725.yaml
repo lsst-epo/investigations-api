@@ -87,6 +87,29 @@ fieldLayouts:
                   class: craft\fields\conditions\OptionsFieldConditionRule
                   fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
                   operator: in
+                  uid: da81fa90-d974-4492-8f82-9c0de48e98ce
+                  values:
+                    - tabular
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f633c7c8-51d2-4e26-93a0-630d539e83f7 # Table Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9eff673f-2982-4c92-95a6-deeb46a6071f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
+                  operator: in
                   uid: ee8840a7-939c-4dae-915e-e1bd9a10d2c8
                   values:
                     - tabular
@@ -94,7 +117,7 @@ fieldLayouts:
               fieldContext: global
             fieldUid: fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6 # Question Table
             instructions: null
-            label: null
+            label: 'Table Rows'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

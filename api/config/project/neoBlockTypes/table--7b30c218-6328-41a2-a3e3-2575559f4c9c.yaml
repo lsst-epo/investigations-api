@@ -23,9 +23,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
+            fieldUid: f633c7c8-51d2-4e26-93a0-630d539e83f7 # Table Header
             instructions: null
             label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b6d344f-27f4-40c7-a6bf-f8a7f1b3b26c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table
+            instructions: null
+            label: 'Table Rows'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
