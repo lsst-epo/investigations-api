@@ -10,7 +10,7 @@ fieldLayouts:
             fieldUid: 34ce437a-0ab5-47b3-8894-ff749aee20e9 # Option Value
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 43220c27-dd17-458d-bb19-4039551c908f
@@ -38,27 +38,27 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: optionValue
-    instructions: null
+    instructions: 'Unique key for system to use, not visible to users.'
     name: 'Option Value'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: true
       columnType: null
       initialRows: 4
       multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
   ff6964ee-dc07-4a6c-a911-14f43c581d0f: # Option Label
     columnSuffix: zkreover
     contentColumnType: text
     fieldGroup: null
     handle: optionLabel
-    instructions: null
+    instructions: 'Display text visible to users'
     name: 'Option Label'
     searchable: false
     settings:
