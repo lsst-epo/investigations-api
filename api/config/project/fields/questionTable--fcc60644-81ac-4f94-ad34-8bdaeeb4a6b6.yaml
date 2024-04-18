@@ -7,11 +7,11 @@ name: 'Question Table'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 1804289584
+  changedFieldIndicator: 185232517
   columns:
     __assoc__:
       -
-        - 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+        - 8b781860-2b8c-4100-969a-2f13c5272420 # Table Row
         -
           __assoc__:
             -

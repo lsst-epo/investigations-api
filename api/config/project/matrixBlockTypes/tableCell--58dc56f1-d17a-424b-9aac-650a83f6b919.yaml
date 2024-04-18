@@ -1,40 +1,60 @@
-field: 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
+field: 4b8139b2-36be-4510-aaeb-fa8579fb3273 # Header Row
 fieldLayouts:
-  6d9a76d1-1454-4990-8380-446c742eb0f1:
+  e2423fa9-7b5f-48b5-a7a1-7416cf69df3c:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Text
+            fieldUid: 9d3bd0d7-b293-4e2f-9c24-0554733df011 # Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0cd5d24d-8896-4163-9f37-bd22f73b6fd1
+            uid: b5bd9a91-28c5-453a-9306-dd218153997d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 2922f7b5-8979-4fa5-8221-b442515b48c1 # Equation
+            fieldUid: 53d80ba5-55f6-452a-b07e-22263269cbc8 # Equation
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 70b4323d-2958-4cf0-8689-63fda09a1102
+            uid: 16faccd3-082c-438e-b65b-f9249fed85ea
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 1da41301-55e3-4b0e-8ea4-1640d39c0e1f
+        uid: a7d59e64-77d8-4b65-bf7c-fe546722b821
         userCondition: null
 fields:
-  2922f7b5-8979-4fa5-8221-b442515b48c1: # Equation
-    columnSuffix: avhnncix
+  9d3bd0d7-b293-4e2f-9c24-0554733df011: # Text
+    columnSuffix: nebguipm
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  53d80ba5-55f6-452a-b07e-22263269cbc8: # Equation
+    columnSuffix: kobhqtyk
     contentColumnType: text
     fieldGroup: null
     handle: equation
@@ -52,26 +72,6 @@ fields:
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
-  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Text
-    columnSuffix: qmgrhddl
-    contentColumnType: text
-    fieldGroup: null
-    handle: cellContent
-    instructions: null
-    name: Text
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: site
     type: craft\fields\PlainText
 handle: tableCell
 name: 'Table Cell'

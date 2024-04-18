@@ -1,44 +1,44 @@
 field: 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
 fieldLayouts:
-  6d9a76d1-1454-4990-8380-446c742eb0f1:
+  571dd5c9-3e02-467e-8105-1af7ae0d02bc:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 3173102a-6f80-4a4f-954b-1d3e151fb21a # Text
+            fieldUid: 635c41e4-29a8-42de-965b-e30c5beb0685 # Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0cd5d24d-8896-4163-9f37-bd22f73b6fd1
+            uid: 98120f84-d291-4b55-a77b-45490f1beb42
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 2922f7b5-8979-4fa5-8221-b442515b48c1 # Equation
+            fieldUid: 9c099f02-5f47-4c2f-bf83-574a21fae092 # Equation
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 70b4323d-2958-4cf0-8689-63fda09a1102
+            uid: ee4e3d39-c6b7-4966-82c2-087428531ec4
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 1da41301-55e3-4b0e-8ea4-1640d39c0e1f
+        uid: 61a20ed7-0640-4792-9270-46e04f5c614a
         userCondition: null
 fields:
-  2922f7b5-8979-4fa5-8221-b442515b48c1: # Equation
-    columnSuffix: avhnncix
+  9c099f02-5f47-4c2f-bf83-574a21fae092: # Equation
+    columnSuffix: ysrwuqji
     contentColumnType: text
     fieldGroup: null
     handle: equation
-    instructions: 'LaTeX format input, reference the Temml documentation for help formatting: https://temml.org/docs/en/supported'
+    instructions: null
     name: Equation
     searchable: false
     settings:
@@ -53,11 +53,11 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  3173102a-6f80-4a4f-954b-1d3e151fb21a: # Text
-    columnSuffix: qmgrhddl
+  635c41e4-29a8-42de-965b-e30c5beb0685: # Text
+    columnSuffix: bdhqzilz
     contentColumnType: text
     fieldGroup: null
-    handle: cellContent
+    handle: text
     instructions: null
     name: Text
     searchable: false
@@ -73,6 +73,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-handle: tableCell
-name: 'Table Cell'
-sortOrder: 1
+handle: rowHeader
+name: 'Row Header'
+sortOrder: 2

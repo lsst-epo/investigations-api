@@ -1,37 +1,30 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
-handle: displayTable
-instructions: 'Tables that contain static content for reference'
-name: 'Display Table'
+handle: tableHeader
+instructions: null
+name: 'Table Header'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 503386703
+  changedFieldIndicator: 1790871278
   columns:
     __assoc__:
       -
-        - 839bfa4f-5a09-4b32-b1eb-e0fef7b7beda # Table Row
+        - 4b8139b2-36be-4510-aaeb-fa8579fb3273 # Header Row
         -
           __assoc__:
             -
               - width
               - ''
-      -
-        - 301c4afd-e88a-4847-a0ce-1b134b5c3741 # Previous Question
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-  contentTable: '{{%stc_displaytable}}'
-  fieldLayout: row
+  contentTable: '{{%stc_tableheader}}'
+  fieldLayout: table
   maxRows: null
-  minRows: 1
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: null
-  staticField: null
+  staticField: true
 translationKeyFormat: null
 translationMethod: none
 type: verbb\supertable\fields\SuperTableField

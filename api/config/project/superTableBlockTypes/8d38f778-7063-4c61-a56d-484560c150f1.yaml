@@ -1,4 +1,4 @@
-changedFieldIndicator: 1064191068
+changedFieldIndicator: 901812163
 field: fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6 # Question Table
 fieldLayouts:
   23b36afb-80c5-40ea-b3bd-8ff3e6f89cc3:
@@ -8,7 +8,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Cells
+            fieldUid: 8b781860-2b8c-4100-969a-2f13c5272420 # Table Row
             instructions: null
             label: null
             required: false
@@ -34,13 +34,13 @@ fieldLayouts:
         uid: c303c206-12f9-48cc-b96a-dace930eae6e
         userCondition: null
 fields:
-  8b781860-2b8c-4100-969a-2f13c5272420: # Table Cells
+  8b781860-2b8c-4100-969a-2f13c5272420: # Table Row
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: tableCell
     instructions: 'Enter either text or a question in each cell.'
-    name: 'Table Cells'
+    name: 'Table Row'
     searchable: false
     settings:
       contentTable: '{{%matrixcontent_tablecell}}'
