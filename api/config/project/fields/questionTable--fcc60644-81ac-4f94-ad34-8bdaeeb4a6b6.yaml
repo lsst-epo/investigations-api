@@ -7,7 +7,7 @@ name: 'Question Table'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 185232517
+  changedFieldIndicator: 1583081771
   columns:
     __assoc__:
       -
@@ -17,21 +17,14 @@ settings:
             -
               - width
               - ''
-      -
-        - c74bb176-8889-459f-a14a-b9d4601786a6 # Previous Question
-        -
-          __assoc__:
-            -
-              - width
-              - ''
   contentTable: '{{%stc_questiontable}}'
   fieldLayout: row
-  maxRows: null
+  maxRows: 1
   minRows: 1
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: null
-  staticField: null
+  staticField: true
 translationKeyFormat: null
 translationMethod: none
 type: verbb\supertable\fields\SuperTableField

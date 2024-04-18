@@ -1,4 +1,4 @@
-changedFieldIndicator: 901812163
+changedFieldIndicator: 1251074599
 field: fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6 # Question Table
 fieldLayouts:
   23b36afb-80c5-40ea-b3bd-8ff3e6f89cc3:
@@ -15,18 +15,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9bfbc7a7-059e-4859-98a2-e5055bb92313
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: c74bb176-8889-459f-a14a-b9d4601786a6 # Previous Question
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 96be2d25-c680-4d95-84e7-71395f23147c
             userCondition: null
             warning: null
             width: 100
@@ -51,60 +39,3 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
-  c74bb176-8889-459f-a14a-b9d4601786a6: # Previous Question
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: previousQuestion
-    instructions: 'Picking a previous question will display it''s table contents as read-only cells, using the table header from the current table.'
-    name: 'Previous Question'
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      branchLimit: null
-      localizeRelations: false
-      maintainHierarchy: false
-      maxRelations: 1
-      minRelations: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Entry
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\entries\EntryCondition
-          -
-            - conditionRules
-            -
-              -
-                __assoc__:
-                  -
-                    - class
-                    - craft\fields\conditions\OptionsFieldConditionRule
-                  -
-                    - uid
-                    - eefb340f-7442-4191-8ae3-18c776107c55
-                  -
-                    - operator
-                    - in
-                  -
-                    - values
-                    -
-                      - tabular
-                  -
-                    - fieldUid
-                    - a966d509-84b0-43ab-9a5b-42590a5fb537 # Answer Type
-      selectionLabel: null
-      showSiteMenu: false
-      sources:
-        - 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Entries
