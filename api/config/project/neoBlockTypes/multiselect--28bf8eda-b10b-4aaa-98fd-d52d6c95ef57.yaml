@@ -28,6 +28,7 @@ group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
 groupChildBlockTypes: true
 handle: multiselect
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
