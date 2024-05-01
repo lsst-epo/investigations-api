@@ -1,0 +1,76 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 29f139cc-2d9b-4e10-afce-1e6a70105e2b # Multi-part Blocks
+fieldLayouts:
+  77f115c4-fc3f-450a-bb25-d8ae9b21156d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 79f2f742-966c-42df-9d04-8492d456325c # Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 913b56d1-f54f-4653-a2ee-4a27dbdedc86
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d5901e55-99c9-441a-937e-05a065d6e60b # Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2cf5c734-bb6d-4bee-8be8-108003a6ba38
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 24f2e959-23a9-4f1a-8394-0849fb85b85b # Precision
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0040cc39-dc78-416a-a4cf-1c3869541a7c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 37af5dda-9a0b-458a-b48c-1bd31b9170af # Validation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 211b847d-d633-471a-b9c1-a666eba3574b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 949e6fc8-fb0e-4e78-a30d-d757018628a1
+        userCondition: null
+group: f8832ac4-1064-4c31-9390-109641d13d12 # Question Parts
+groupChildBlockTypes: true
+handle: number
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Number
+topLevel: true
