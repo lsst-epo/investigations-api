@@ -1,26 +1,20 @@
-# Craft CMS Starter Project
-
-## Generating a New Project from this Repo
-
-If you are viewing this README on Github you will see a green button above with the text "Use this template". Click that button to create a brand new repository for your new project. This README, along with the files/folders, will be copied over to the new repo and can be used as instructions on how to get up-and-going fairly quickly.
-
-# Craft headless CMS Backend/API
-
-Headless Craft headless CMS backend intended to be used with the Rubin EPO [next-template](https://github.com/lsst-epo/next-template/).
-
-This project was created with Docker version 20.10.5.
+# Formal Education Investigations Craft CMS
 
 ## Set up and run the project locally
 
 #### Make scripts
 
 ---
-To list your local DBs:
+To list the local databases for this project, first bring up the postgres container if it's not already up:
+
+`docker-compose -f docker-compose-local-db.yml up --build postgres`
+
+Then, list your local databases:
 
 `make db-list`
 
 ---
-To list the databases sitting around in the `prod` environment:
+To list the databases sitting around in the `prod` environment so that you can know which `dbname` to supply in `make cloud-db-export dbname=(which db you want to export)`:
 
 `make cloud-db-list`
 
@@ -30,15 +24,27 @@ To export a `prod` database to the `gs://release_db_sql_files/investigations/` b
 `make cloud-db-export dbname=prod_db`
 
 * The argument `dbname` is required and should be one of the databases listed from `make cloud-db-list`
+* You will need to go into the `prod` GCP project in the Google Cloud Storage resource to find the DB dump file
 * Once you download the DB dump file, move it to the `./db/` folder
 ---
-To recreate a local DB from a dump file located within `./db/`:
+To provision a new local database, first bring up the postgres container if it's not already up:
+
+`docker-compose -f docker-compose-local-db.yml up --build postgres`
+
+Ensure that the dump file is located within `./db/`, then run:
 
 `make local-db dbname=my_new_local_db dbfile=prod.sql`
 
 * The argument `dbname` is required and will be the name of the newly created database
 * The argument `dbfile` is required and should be the name of the DB file to recreate, this file _must_ be in the `./db/` folder
 ---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
 #### Deprecated workflow
 
 0. Uncomment the `COPY` line in `./db/Dockerfile`
@@ -77,29 +83,6 @@ These and other most used docker commands for bringing containers up/down are al
 5. When you need to do composer stuff: `docker run -v ${PWD}/api:/app composer <blah>`
 6. After ssh-ing into a live GAE instance, by way of the GCP console interface, you can ssh into a running container: `docker exec -ti gaeapp sh`
 7. When working locally, in order to ensure the latest docker `craft-base-image` is used: `docker pull us-central1-docker.pkg.dev/skyviewer/public-images/craft-base-image`
-
-#### Local Database notes
-
-If you completed the above steps you may have noticed some SQL commands in the log output.
-
-This is because by default the DB snapshot bundled with this repo in /db will execute upon bringing up the docker-compose file.
-
-#### How to create a dump of your local DB
-
-1. Containers need to be running, we're going to ssh into the postgres one:
-  * `docker container ls`
-  * `docker exec -it <POSTGRES_CONTAINER_ID> /bin/sh`
-2. Create the dump file within the container:
-  * `pg_dump -U craft <CRAFT_DATABASE_NAME> >> whatever_name_you_want.sql`
-3. Retrieve & save the dump file to your local:
-  * Open a new terminal window
-  * `docker cp <POSTGRES_CONTAINER_ID>:/path/to/whatever_name_you_want.sql /local/path/to/whatever_name_you_want.sql`
-
-
-
-
-
-
 
 
 
