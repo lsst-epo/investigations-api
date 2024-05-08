@@ -22,7 +22,7 @@ fieldLayouts:
             fieldUid: 4941158b-702a-45b4-8da5-12ed4202efae # Name
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 62113937-c37c-45b7-9a7e-eb13a42f43dc
@@ -162,7 +162,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: true
       columnType: null
       initialRows: 4
       multiline: false
