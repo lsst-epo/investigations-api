@@ -1,0 +1,125 @@
+fieldLayouts:
+  962a0a18-5282-40d8-9eba-b8fb9008e1dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5bcd1d44-c308-47b7-ba88-c4bb2dbbbcb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5142c27-2288-47b7-bfad-14cd6b3a6653 # Display Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5f4569c-27ec-44ca-af16-9c8cdb3f7c55
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 13dd5fe8-32a0-4465-bab8-485a779b6b76
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a74b7bc8-5a98-4652-965d-454edee1855c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 10bfe164-c055-47a5-9acf-414d5c53b74a # X-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4aa8b46e-72ac-437c-be47-91f031311916
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2197f7d9-f8d7-4184-9f38-effd7fca1b95
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ccec9bbd-982d-4dd2-9ef6-24951f4e5882
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: a4afde15-f983-4c30-b0d7-e0b56871e4de # Dataset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89c42aa5-29ce-492f-81a6-0c4472442516
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Plot configuration'
+        uid: 72815c60-76d2-486f-ae1f-c801459b50d2
+        userCondition: null
+handle: isochronePlot
+hasTitleField: true
+name: 'Isochrone Plot'
+section: 28704998-935a-423b-a405-d4ad8b38efa2 # Widgets
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 4
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

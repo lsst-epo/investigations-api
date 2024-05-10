@@ -1,0 +1,125 @@
+fieldLayouts:
+  9c749c09-dc9b-4400-b028-c53dbfd8f64b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 72eb3e06-5d7e-462f-b648-5454c075916b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a03e80f0-77ce-4b03-abf5-76a0deb264a9 # JSON
+            instructions: null
+            label: 'Isochrone library'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7f45b71-596b-418c-96ab-8ea12cde350f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Plot points
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 646de984-dc05-4497-bedb-4e48b9b087ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c679769b-900f-48a0-8dcb-eb97398e599b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89a063cb-fb78-4776-935e-0c678b1f30ef
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 10bfe164-c055-47a5-9acf-414d5c53b74a # X-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c22f60f8-1c6a-49a2-9f62-b677d0967210
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef6ebd4f-d25c-40a8-bfdb-b67f3eb4dd57
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7789d34-afc7-4abd-9282-49a408132e09
+            userCondition: null
+            warning: null
+            width: 25
+        name: 'Plot configuration'
+        uid: 6b26cbd0-e576-4da5-9e80-d135266da20e
+        userCondition: null
+handle: starCluster
+hasTitleField: true
+name: 'Star cluster'
+section: fbfbf05d-c7e1-4f6c-a093-47065f8d5095 # Datasets
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

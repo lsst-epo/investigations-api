@@ -71,7 +71,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Scatterplot Items
+            fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Plot points
             instructions: null
             label: null
             required: false
