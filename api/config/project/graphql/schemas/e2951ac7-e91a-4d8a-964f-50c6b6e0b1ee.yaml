@@ -6,6 +6,7 @@ scope:
   - 'sites.356c97b0-54e5-44bb-901e-9d92a314134f:read' # FR
   - 'sections.fbfbf05d-c7e1-4f6c-a093-47065f8d5095:read' # Datasets
   - 'entrytypes.5e789abf-cfef-4ed4-b795-a4dcfe4fd284:read' # Supernova & Galaxy Observations
+  - 'entrytypes.4e2c0e7e-a681-4ec0-914d-0de81a1183f4:read' # Star cluster
   - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
   - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
   - 'sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read' # Investigations
@@ -23,6 +24,7 @@ scope:
   - 'entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read' # Color Filter Tool
   - 'entrytypes.297d2268-f298-40a1-bec3-a1c836a69e38:read' # Source Selector
   - 'entrytypes.24e5bfd8-45a1-4e03-a9ee-e013a26057ec:read'
+  - 'entrytypes.6942a0c3-4eea-4597-a0ce-f8325e5bb06f:read' # Isochrone Plot
   - 'volumes.7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e:read' # Datasets
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content
