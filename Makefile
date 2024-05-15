@@ -11,12 +11,12 @@ clean-images:
 # Requires argument `dbname` to specify the name of the new DB, usage: `make local-db dbname=my_db dbfile=mydb.sql`
 # Requires argument `dbfile` to specify the name of the DB dump file to recreate, usage: `make local-db dbname=my_db dbfile=mydb.sql`
 local-db:
-	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -c "create database $(dbname);"
-	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -d $(dbname) -f $(dbfile)
+	cd db && docker exec --workdir / investigations-api_postgres_1 psql -U craft -d postgres -c "create database $(dbname);"
+	cd db && docker exec --workdir / investigations-api_postgres_1 psql -U craft -d $(dbname) -f $(dbfile)
 	echo "\n\n\n\nDon't forget to update your docker-compose-local-db.yaml with the DB name: $(dbname)"
 
 db-list:
-	cd db && docker exec --workdir / investigations-api-postgres-1 psql -U craft -c "SELECT (pg_stat_file('base/'||oid ||'/PG_VERSION')).modification, datname FROM pg_database;"
+	cd db && docker exec --workdir / investigations-api_postgres_1 psql -U craft -d postgres -c "SELECT (pg_stat_file('base/'||oid ||'/PG_VERSION')).modification, datname FROM pg_database;"
 
 cloud-db-list:
 	curl https://us-central1-edc-prod-eef0.cloudfunctions.net/sql-helper/databases\?project\=investigations

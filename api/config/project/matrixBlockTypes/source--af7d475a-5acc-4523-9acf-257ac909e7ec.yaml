@@ -132,22 +132,22 @@ fields:
     type: craft\fields\Dropdown
   25c0fbe7-5180-4842-bb9e-d530e9fb2042: # Radius
     columnSuffix: ccyxspge
-    contentColumnType: integer(10)
+    contentColumnType: smallint(3)
     fieldGroup: null
     handle: radius
-    instructions: 'Radius of the circle around the source after it is selected'
+    instructions: 'Radius of the circle around the source after it is selected, measured in percent of the image width'
     name: Radius
     searchable: false
     settings:
       decimals: 0
-      defaultValue: 20
-      max: null
+      defaultValue: 5
+      max: 100
       min: 0
       prefix: null
       previewCurrency: null
       previewFormat: decimal
       size: null
-      suffix: null
+      suffix: '%'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
@@ -173,43 +173,43 @@ fields:
     type: craft\fields\PlainText
   b23a622a-4c70-4e4d-be4a-3b2fbc739d19: # Y
     columnSuffix: cdbznkuo
-    contentColumnType: integer(10)
+    contentColumnType: smallint(3)
     fieldGroup: null
     handle: yCoord
-    instructions: 'Y position, in pixels, of this source on its alert image measured from the upper left corner'
+    instructions: 'Y position, in percent, of this source on its alert image measured from the upper left corner'
     name: 'Y'
     searchable: false
     settings:
       decimals: 0
       defaultValue: null
-      max: null
-      min: null
+      max: 100
+      min: 0
       prefix: null
       previewCurrency: null
       previewFormat: none
       size: null
-      suffix: null
+      suffix: '%'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
   f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: # X
     columnSuffix: exfsorqh
-    contentColumnType: integer(10)
+    contentColumnType: smallint(3)
     fieldGroup: null
     handle: xCoord
-    instructions: 'X position, in pixels, of this source on its alert image measured from the upper left corner'
+    instructions: 'X position, in percent, of this source on its alert image measured from the upper left corner'
     name: X
     searchable: false
     settings:
       decimals: 0
       defaultValue: null
-      max: null
-      min: null
+      max: 100
+      min: 0
       prefix: null
       previewCurrency: null
       previewFormat: none
       size: null
-      suffix: null
+      suffix: '%'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
