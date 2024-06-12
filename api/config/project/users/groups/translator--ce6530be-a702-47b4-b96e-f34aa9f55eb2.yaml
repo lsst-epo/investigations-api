@@ -2,6 +2,7 @@ description: 'For translators of content to work in their target language.'
 handle: translator
 name: Translator
 permissions:
+  - accesscp
   - accessplugin-_canto-dam-assets
   - 'editglobalset:0edce3a2-c596-4238-9dde-212c83d5a65f' # Menu Content
   - 'editglobalset:aee57b4f-2623-44fc-af2b-c670f6e1babe' # Site information
