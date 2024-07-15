@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4244addc5933360fc69287c0e6ac120",
+    "content-hash": "8091e27688e7701df97f4c853cc9d420",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2630,16 +2630,16 @@
         },
         {
             "name": "lsst-epo/canto-dam-assets",
-            "version": "4.1.0",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lsst-epo/canto-dam-assets.git",
-                "reference": "37d03858f193378f8731a801e62fce75a0fc109a"
+                "reference": "d8d790c3f732731f57d7f3c138bb79c7583ee739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/37d03858f193378f8731a801e62fce75a0fc109a",
-                "reference": "37d03858f193378f8731a801e62fce75a0fc109a",
+                "url": "https://api.github.com/repos/lsst-epo/canto-dam-assets/zipball/d8d790c3f732731f57d7f3c138bb79c7583ee739",
+                "reference": "d8d790c3f732731f57d7f3c138bb79c7583ee739",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +2692,7 @@
                 "issues": "https://github.com/lsst-epo/canto-dam-assets/issues",
                 "source": "https://github.com/lsst-epo/canto-dam-assets/"
             },
-            "time": "2024-02-25T06:02:11+00:00"
+            "time": "2024-07-15T18:37:13+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -2851,11 +2851,11 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "4.0.10",
+            "version": "4.0.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/4ff8dfabd51663fcb081f092eeeba1ed2ed88a50",
-                "reference": "4ff8dfabd51663fcb081f092eeeba1ed2ed88a50",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/7eefbafeb07df455daecf7c16961fd5a47e55d29",
+                "reference": "7eefbafeb07df455daecf7c16961fd5a47e55d29",
                 "shasum": ""
             },
             "require": {
@@ -2886,7 +2886,7 @@
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v4/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues"
             },
-            "time": "2024-03-02T05:06:52+00:00"
+            "time": "2024-06-13T03:40:36+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -6924,5 +6924,5 @@
     "platform-overrides": {
         "php": "8.1.10"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.6.0"
 }
