@@ -1,0 +1,16 @@
+columnSuffix: drrlzeqt
+contentColumnType:
+  - 'cantoId:string'
+  - 'cantoAlbumId:string'
+  - 'cantoAssetData:json'
+  - 'cantoAlbumData:json'
+fieldGroup: 4e1884f2-7cc9-40d8-8426-f66da625d8cc # Assets
+handle: mobileImage
+instructions: 'Alternate image for smaller devices'
+name: 'Mobile Image'
+searchable: false
+settings:
+  cantoAssetPickerType: singleImagePicker
+translationKeyFormat: null
+translationMethod: site
+type: lsst\cantodamassets\fields\CantoDamAsset

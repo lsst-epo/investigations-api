@@ -20,6 +20,30 @@ fieldLayouts:
             uid: daf6ca48-a51c-408b-a898-381be6c31f30
             userCondition: null
             warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 0ffc4438-45ee-4f8b-8f58-a3c157c6794f # Mobile Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1731ad58-05fb-46c8-b95b-eaad0f647d3d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f5474a8-83ec-4ca4-b431-33fe672203ae
+            userCondition: null
+            warning: null
             width: 100
           -
             elementCondition: null
@@ -30,18 +54,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 2e979c28-bafa-4fef-8d5a-91a8c15d8e0e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3f5474a8-83ec-4ca4-b431-33fe672203ae
             userCondition: null
             warning: null
             width: 100

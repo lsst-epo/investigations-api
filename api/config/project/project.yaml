@@ -1,4 +1,4 @@
-dateModified: 1720479517
+dateModified: 1721414690
 elementSources:
   craft\elements\Entry:
     -
@@ -94,6 +94,7 @@ meta:
     0ec5fc47-5e4f-4591-a76e-745ef7078387: 'Source Type' # Source Type
     0edce3a2-c596-4238-9dde-212c83d5a65f: 'Menu Content' # Menu Content
     0fd14cd3-7b23-4230-adce-9cfa16050740: 'Widget Instructions' # Widget Instructions
+    0ffc4438-45ee-4f8b-8f58-a3c157c6794f: 'Mobile Image' # Mobile Image
     1a35bfab-6a39-4c03-b273-2d5e3151c335: 'Rubin Telescope Education and Public Outreach' # Rubin Telescope Education and Public Outreach
     1a93d10f-deca-4e6b-a3e8-9baae53e7c47: Investigations # Investigations
     1a365d49-310d-41cf-afd2-3acd4cff3660: 'Investigation Section Break (Child Entry)' # Investigation Section Break (Child Entry)
