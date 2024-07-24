@@ -1,4 +1,4 @@
-dateModified: 1720479517
+dateModified: 1721862436
 elementSources:
   craft\elements\Entry:
     -
@@ -1209,7 +1209,7 @@ plugins:
             - widgets
             - '1'
       nextApiBaseUrl: $NEXT_API_BASE_URL
-      nextSecretToken: $NEXT_SECRET_TOKEN
+      nextSecretToken: $NEXT_REVALIDATE_SECRET_TOKEN
   redactor:
     edition: standard
     enabled: true
@@ -1225,7 +1225,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: 'Rubin EPO Craft Project'
+  name: 'Formal Education Investigations'
   retryDuration: null
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
