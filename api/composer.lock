@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8091e27688e7701df97f4c853cc9d420",
+    "content-hash": "90725a209bf74ea0097e8d122278ad76",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -83,60 +83,6 @@
                 "math"
             ],
             "time": "2023-01-15T23:15:59+00:00"
-        },
-        {
-            "name": "castiron/next-builds",
-            "version": "1.0.0",
-            "dist": {
-                "type": "path",
-                "url": "plugins/nextbuilds",
-                "reference": "05af459d596c3df41ede47e32412ff3c5f274dc5"
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Next Builds",
-                "handle": "next-builds",
-                "developer": "Cast Iron Coding",
-                "developerUrl": "https://castironcoding.com/",
-                "documentationUrl": "???",
-                "changelogUrl": "???",
-                "components": {
-                    "request": "castiron\\nextbuilds\\services\\Request"
-                },
-                "class": "castiron\\nextbuilds\\NextBuilds"
-            },
-            "autoload": {
-                "psr-4": {
-                    "castiron\\nextbuilds\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cast Iron Coding",
-                    "homepage": "https://castironcoding.com/"
-                }
-            ],
-            "description": "Start Next.js page builds from Craft.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "next builds"
-            ],
-            "support": {
-                "docs": "???",
-                "issues": "???"
-            },
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "cebe/markdown",
@@ -2693,6 +2639,67 @@
                 "source": "https://github.com/lsst-epo/canto-dam-assets/"
             },
             "time": "2024-07-15T18:37:13+00:00"
+        },
+        {
+            "name": "lsst-epo/craft-next-js-builds",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lsst-epo/craft-next-js-builds.git",
+                "reference": "71eab167d3c4ca3cde648129c14680ac7fefa43e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lsst-epo/craft-next-js-builds/zipball/71eab167d3c4ca3cde648129c14680ac7fefa43e",
+                "reference": "71eab167d3c4ca3cde648129c14680ac7fefa43e",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Craft Next.js Builds",
+                "handle": "next-builds",
+                "documentationUrl": "???",
+                "changelogUrl": "???",
+                "components": {
+                    "request": "lsst\\nextbuilds\\services\\Request"
+                },
+                "class": "lsst\\nextbuilds\\NextBuilds"
+            },
+            "autoload": {
+                "psr-4": {
+                    "lsst\\nextbuilds\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "LSST EPO",
+                    "homepage": "https://github.com/lsst-epo"
+                },
+                {
+                    "name": "Cast Iron Coding",
+                    "homepage": "https://castironcoding.com/"
+                }
+            ],
+            "description": "Invoke Next.js page builds from Craft.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "next builds"
+            ],
+            "support": {
+                "docs": "???",
+                "issues": "???",
+                "source": "https://github.com/lsst-epo/craft-next-js-builds/tree/1.2.2"
+            },
+            "time": "2024-07-24T22:49:10+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -6924,5 +6931,5 @@
     "platform-overrides": {
         "php": "8.1.10"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.1.0"
 }
