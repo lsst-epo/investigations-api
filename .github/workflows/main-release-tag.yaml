@@ -36,5 +36,7 @@ jobs:
     - name: Deploy to App Engine
       run: |
         gcloud app deploy app.yaml \
-          --version=${{ env.version_name }} \
-          --promote
+        --quiet \
+        --image-url=gcr.io/${{ secrets.SV_PROJ_NAME }}/investigations-api:${{ github.sha }} \
+        --promote \
+        --project=${{ secrets.SV_PROJ_NAME }}
