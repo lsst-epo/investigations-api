@@ -21,8 +21,17 @@ jobs:
       uses: google-github-actions/setup-gcloud@v0
       with:
         service_account_key: ${{ secrets.DEV_SA_KEY }}
-        project_id: skyviewer
+        project_id: secrets.SV_PROJ_NAME
         export_default_credentials: true
+
+    - name: Build Container Image
+      run: docker build -t "gcr.io/${{ secrets.SV_PROJ_NAME }}/investigations-api:${{ github.sha }}"
+
+    - name: Configure Docker Auth
+      run: gcloud --quiet auth configure-docker
+
+    - name: Push Container Image to GCR
+      run: docker push gcr.io/${{ secrets.SV_PROJ_NAME }}/investigations-api:${{ github.sha }}
     
     - name: Get app.yaml
       run: gcloud secrets versions access latest --secret=investigations-api-appyaml > app.yaml
