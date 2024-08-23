@@ -4,7 +4,7 @@
 - 'blockType:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
 - 'blockType:59560b67-c194-46fc-9404-cb790a44800a' # Image
 - 'blockType:d022e61b-75d2-4c3e-88f1-198bd9978ae1' # Video
-- 'blockType:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Block
+- 'blockType:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Modal Block
 - 'blockTypeGroup:7ebe493b-5e03-48c8-8375-c9f9582da77e' # Containers
 - 'blockType:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
 - 'blockType:1ed0caa3-b91f-442b-b313-f3eb54a8a0dc' # Two Column Container
