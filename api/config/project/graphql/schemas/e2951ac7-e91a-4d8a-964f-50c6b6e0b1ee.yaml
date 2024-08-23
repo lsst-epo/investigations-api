@@ -18,7 +18,7 @@ scope:
   - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
   - 'sections.9068dd8e-ad92-4925-ba1d-1fe180598462:read' # Questions
   - 'entrytypes.021f7cc6-93ec-4da4-9566-8d05c64d1725:read' # Default
-  - 'sections.c2356ed1-1e49-4056-83c7-ed615a2694b1:read' # Reference Content
+  - 'sections.c2356ed1-1e49-4056-83c7-ed615a2694b1:read' # Reference Modals
   - 'entrytypes.4f04d6b0-64ef-454b-b343-66181c08dda9:read' # Default
   - 'sections.28704998-935a-423b-a405-d4ad8b38efa2:read' # Widgets
   - 'entrytypes.d2e48b83-d161-48b9-b0a9-5c21914b5931:read' # Color Filter Tool
