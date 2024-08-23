@@ -26,7 +26,7 @@ fieldLayouts:
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: referenceBlock
+handle: referenceModalBlock
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -36,5 +36,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Reference Block'
+name: 'Reference Modal Block'
 topLevel: true
