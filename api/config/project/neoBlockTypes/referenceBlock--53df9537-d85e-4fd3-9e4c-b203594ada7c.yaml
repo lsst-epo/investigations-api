@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91 # Reference Modal Entries
+            fieldUid: 55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91 # Reference Entries
             instructions: null
             label: null
             required: false
@@ -26,7 +26,7 @@ fieldLayouts:
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: referenceModalBlock
+handle: referenceBlock
 icon: null
 iconFilename: ''
 ignorePermissions: true
@@ -36,5 +36,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Reference Modal Block'
+name: 'Reference Block'
 topLevel: true

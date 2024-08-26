@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: referenceModals
-name: 'Reference Modals'
+handle: referenceContent
+name: 'Reference Content'
 previewTargets:
   -
     __assoc__:
