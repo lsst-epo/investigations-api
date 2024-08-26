@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
-handle: referenceModalEntries
+handle: referenceEntries
 instructions: null
-name: 'Reference Modal Entries'
+name: 'Reference Entries'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,21 +12,10 @@ settings:
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Entry
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\entries\EntryCondition
   selectionLabel: null
   showSiteMenu: false
   sources:
-    - 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+    - 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Content
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
