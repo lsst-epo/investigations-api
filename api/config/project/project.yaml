@@ -1,4 +1,4 @@
-dateModified: 1721863548
+dateModified: 1724709578
 elementSources:
   craft\elements\Entry:
     -
@@ -54,7 +54,7 @@ elementSources:
       key: 'section:9068dd8e-ad92-4925-ba1d-1fe180598462' # Questions
       type: native
     -
-      key: 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Modals
+      key: 'section:c2356ed1-1e49-4056-83c7-ed615a2694b1' # Reference Content
       type: native
     -
       key: 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
@@ -159,8 +159,8 @@ meta:
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
-    53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Modal Block' # Reference Modal Block
-    55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Modal Entries' # Reference Modal Entries
+    53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Block' # Reference Block
+    55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Entries' # Reference Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
     58dc56f1-d17a-424b-9aac-650a83f6b919: 'Table Cell' # Table Cell
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
@@ -265,7 +265,7 @@ meta:
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
     c489f84c-509c-4078-9b71-1e3493e17620: 'Image Album' # Image Album
-    c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Modals' # Reference Modals
+    c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Content' # Reference Content
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
