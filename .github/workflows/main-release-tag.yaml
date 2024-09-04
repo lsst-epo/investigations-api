@@ -50,4 +50,5 @@ jobs:
         --quiet \
         --image-url=gcr.io/edc-prod-eef0/investigations-api:${{ github.sha }} \
         --promote \
+        --version=${{ env.version_name }} \
         --project=edc-prod-eef0
