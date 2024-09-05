@@ -43,6 +43,10 @@ return [
             ],
             'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
         ],
+        'queue' => [
+            'class' => craft\queue\Queue::class,
+            'ttr' => App::env('QUEUE_TTR'),
+        ],
     ],
     'bootstrap' => ['investigations'],
     //'bootstrap' => ['my-module'],
