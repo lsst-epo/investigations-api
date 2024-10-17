@@ -54,9 +54,9 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            gcr.io/skyviewer/rubinobs-api,enable=${{ steps.deploy-info.outputs.environment_name == 'dev' }}
-            gcr.io/edc-int-6c5e/rubinobs-api,enable=${{ steps.deploy-info.outputs.environment_name == 'int' }}
-            gcr.io/edc-prod-eef0/rubinobs-api,enable=${{ steps.deploy-info.outputs.environment_name == 'prod' }}
+            gcr.io/skyviewer/investigations-api-k8s,enable=${{ steps.deploy-info.outputs.environment_name == 'dev' }}
+            gcr.io/edc-int-6c5e/investigations-api-k8s,enable=${{ steps.deploy-info.outputs.environment_name == 'int' }}
+            gcr.io/edc-prod-eef0/investigations-api-k8s,enable=${{ steps.deploy-info.outputs.environment_name == 'prod' }}
           flavor: |
             latest=${{ github.event_name == 'push'}}
           # generate Docker tags based on the following events/attributes
