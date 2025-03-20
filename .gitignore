@@ -8,3 +8,4 @@ app.yaml
 docker-compose-local-db.yml
 google-app-credentials.json
 .idea
+db/*.sql
