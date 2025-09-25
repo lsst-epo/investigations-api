@@ -1,4 +1,4 @@
-dateModified: 1724709578
+dateModified: 1758818869
 elementSources:
   craft\elements\Entry:
     -
@@ -366,6 +366,9 @@ plugins:
             -
               __assoc__:
                 -
+                  - alertSources
+                  - queryMutate
+                -
                   - answerOptions
                   - queryMutate
                 -
@@ -373,6 +376,12 @@ plugins:
                   - queryMutate
                 -
                   - availableFilters
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - binSize
                   - queryMutate
                 -
                   - caption
@@ -385,6 +394,12 @@ plugins:
                   - queryMutate
                 -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - dataset
+                  - queryMutate
+                -
+                  - dec
                   - queryMutate
                 -
                   - colorToolDefaultValue
@@ -402,7 +417,10 @@ plugins:
                   - displayTable
                   - queryMutate
                 -
-                  - filter
+                  - distance
+                  - queryMutate
+                -
+                  - equation
                   - queryMutate
                 -
                   - filterColorOptions
@@ -412,6 +430,12 @@ plugins:
                   - queryMutate
                 -
                   - filtersImages
+                  - queryMutate
+                -
+                  - galacticLatitude
+                  - queryMutate
+                -
+                  - galacticLongitude
                   - queryMutate
                 -
                   - graphBars
@@ -435,10 +459,19 @@ plugins:
                   - image
                   - queryMutate
                 -
+                  - imageAlbum
+                  - queryMutate
+                -
                   - images
                   - queryMutate
                 -
+                  - includeScatterPlot
+                  - queryMutate
+                -
                   - investigationEntries
+                  - queryMutate
+                -
+                  - json
                   - queryMutate
                 -
                   - latex
@@ -447,13 +480,25 @@ plugins:
                   - layout
                   - queryMutate
                 -
+                  - lightCurveTool
+                  - queryMutate
+                -
                   - linkTo
                   - queryMutate
                 -
                   - colorToolMax
                   - queryMutate
                 -
+                  - maximum
+                  - queryMutate
+                -
                   - colorToolMin
+                  - queryMutate
+                -
+                  - minimum
+                  - queryMutate
+                -
+                  - mjd
                   - queryMutate
                 -
                   - multiPartBlocks
@@ -471,10 +516,19 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - plotPoints
+                  - queryMutate
+                -
                   - preSelectedColor
                   - queryMutate
                 -
+                  - precision
+                  - queryMutate
+                -
                   - questionEntries
+                  - queryMutate
+                -
+                  - questionTable
                   - queryMutate
                 -
                   - questionText
@@ -492,19 +546,31 @@ plugins:
                   - referenceContentBlocks
                   - queryMutate
                 -
-                  - referenceModalEntries
+                  - referenceEntries
+                  - queryMutate
+                -
+                  - ra
                   - queryMutate
                 -
                   - hasSavePoint
                   - queryMutate
                 -
-                  - scatterplotItems
+                  - sourceSelector
+                  - queryMutate
+                -
+                  - tableHeader
                   - queryMutate
                 -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - validation
+                  - queryMutate
+                -
+                  - video
                   - queryMutate
                 -
                   - widgetInstructions
@@ -538,6 +604,9 @@ plugins:
             -
               __assoc__:
                 -
+                  - alertSources
+                  - queryMutate
+                -
                   - answerOptions
                   - queryMutate
                 -
@@ -545,6 +614,12 @@ plugins:
                   - queryMutate
                 -
                   - availableFilters
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - binSize
                   - queryMutate
                 -
                   - caption
@@ -557,6 +632,12 @@ plugins:
                   - queryMutate
                 -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - dataset
+                  - queryMutate
+                -
+                  - dec
                   - queryMutate
                 -
                   - colorToolDefaultValue
@@ -574,7 +655,10 @@ plugins:
                   - displayTable
                   - queryMutate
                 -
-                  - filter
+                  - distance
+                  - queryMutate
+                -
+                  - equation
                   - queryMutate
                 -
                   - filterColorOptions
@@ -584,6 +668,12 @@ plugins:
                   - queryMutate
                 -
                   - filtersImages
+                  - queryMutate
+                -
+                  - galacticLatitude
+                  - queryMutate
+                -
+                  - galacticLongitude
                   - queryMutate
                 -
                   - graphBars
@@ -607,10 +697,19 @@ plugins:
                   - image
                   - queryMutate
                 -
+                  - imageAlbum
+                  - queryMutate
+                -
                   - images
                   - queryMutate
                 -
+                  - includeScatterPlot
+                  - queryMutate
+                -
                   - investigationEntries
+                  - queryMutate
+                -
+                  - json
                   - queryMutate
                 -
                   - latex
@@ -619,13 +718,25 @@ plugins:
                   - layout
                   - queryMutate
                 -
+                  - lightCurveTool
+                  - queryMutate
+                -
                   - linkTo
                   - queryMutate
                 -
                   - colorToolMax
                   - queryMutate
                 -
+                  - maximum
+                  - queryMutate
+                -
                   - colorToolMin
+                  - queryMutate
+                -
+                  - minimum
+                  - queryMutate
+                -
+                  - mjd
                   - queryMutate
                 -
                   - multiPartBlocks
@@ -643,10 +754,19 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - plotPoints
+                  - queryMutate
+                -
                   - preSelectedColor
                   - queryMutate
                 -
+                  - precision
+                  - queryMutate
+                -
                   - questionEntries
+                  - queryMutate
+                -
+                  - questionTable
                   - queryMutate
                 -
                   - questionText
@@ -664,19 +784,31 @@ plugins:
                   - referenceContentBlocks
                   - queryMutate
                 -
-                  - referenceModalEntries
+                  - referenceEntries
+                  - queryMutate
+                -
+                  - ra
                   - queryMutate
                 -
                   - hasSavePoint
                   - queryMutate
                 -
-                  - scatterplotItems
+                  - sourceSelector
+                  - queryMutate
+                -
+                  - tableHeader
                   - queryMutate
                 -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - validation
+                  - queryMutate
+                -
+                  - video
                   - queryMutate
                 -
                   - widgetInstructions
@@ -710,6 +842,9 @@ plugins:
             -
               __assoc__:
                 -
+                  - alertSources
+                  - queryMutate
+                -
                   - answerOptions
                   - queryMutate
                 -
@@ -717,6 +852,12 @@ plugins:
                   - queryMutate
                 -
                   - availableFilters
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - binSize
                   - queryMutate
                 -
                   - caption
@@ -729,6 +870,12 @@ plugins:
                   - queryMutate
                 -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - dataset
+                  - queryMutate
+                -
+                  - dec
                   - queryMutate
                 -
                   - colorToolDefaultValue
@@ -746,7 +893,10 @@ plugins:
                   - displayTable
                   - queryMutate
                 -
-                  - filter
+                  - distance
+                  - queryMutate
+                -
+                  - equation
                   - queryMutate
                 -
                   - filterColorOptions
@@ -756,6 +906,12 @@ plugins:
                   - queryMutate
                 -
                   - filtersImages
+                  - queryMutate
+                -
+                  - galacticLatitude
+                  - queryMutate
+                -
+                  - galacticLongitude
                   - queryMutate
                 -
                   - graphBars
@@ -779,10 +935,19 @@ plugins:
                   - image
                   - queryMutate
                 -
+                  - imageAlbum
+                  - queryMutate
+                -
                   - images
                   - queryMutate
                 -
+                  - includeScatterPlot
+                  - queryMutate
+                -
                   - investigationEntries
+                  - queryMutate
+                -
+                  - json
                   - queryMutate
                 -
                   - latex
@@ -791,13 +956,25 @@ plugins:
                   - layout
                   - queryMutate
                 -
+                  - lightCurveTool
+                  - queryMutate
+                -
                   - linkTo
                   - queryMutate
                 -
                   - colorToolMax
                   - queryMutate
                 -
+                  - maximum
+                  - queryMutate
+                -
                   - colorToolMin
+                  - queryMutate
+                -
+                  - minimum
+                  - queryMutate
+                -
+                  - mjd
                   - queryMutate
                 -
                   - multiPartBlocks
@@ -815,10 +992,19 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - plotPoints
+                  - queryMutate
+                -
                   - preSelectedColor
                   - queryMutate
                 -
+                  - precision
+                  - queryMutate
+                -
                   - questionEntries
+                  - queryMutate
+                -
+                  - questionTable
                   - queryMutate
                 -
                   - questionText
@@ -836,19 +1022,31 @@ plugins:
                   - referenceContentBlocks
                   - queryMutate
                 -
-                  - referenceModalEntries
+                  - referenceEntries
+                  - queryMutate
+                -
+                  - ra
                   - queryMutate
                 -
                   - hasSavePoint
                   - queryMutate
                 -
-                  - scatterplotItems
+                  - sourceSelector
+                  - queryMutate
+                -
+                  - tableHeader
                   - queryMutate
                 -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - validation
+                  - queryMutate
+                -
+                  - video
                   - queryMutate
                 -
                   - widgetInstructions
@@ -882,6 +1080,9 @@ plugins:
             -
               __assoc__:
                 -
+                  - alertSources
+                  - queryMutate
+                -
                   - answerOptions
                   - queryMutate
                 -
@@ -889,6 +1090,12 @@ plugins:
                   - queryMutate
                 -
                   - availableFilters
+                  - queryMutate
+                -
+                  - filter
+                  - queryMutate
+                -
+                  - binSize
                   - queryMutate
                 -
                   - caption
@@ -901,6 +1108,12 @@ plugins:
                   - queryMutate
                 -
                   - contentBlocks
+                  - queryMutate
+                -
+                  - dataset
+                  - queryMutate
+                -
+                  - dec
                   - queryMutate
                 -
                   - colorToolDefaultValue
@@ -918,7 +1131,10 @@ plugins:
                   - displayTable
                   - queryMutate
                 -
-                  - filter
+                  - distance
+                  - queryMutate
+                -
+                  - equation
                   - queryMutate
                 -
                   - filterColorOptions
@@ -928,6 +1144,12 @@ plugins:
                   - queryMutate
                 -
                   - filtersImages
+                  - queryMutate
+                -
+                  - galacticLatitude
+                  - queryMutate
+                -
+                  - galacticLongitude
                   - queryMutate
                 -
                   - graphBars
@@ -951,10 +1173,19 @@ plugins:
                   - image
                   - queryMutate
                 -
+                  - imageAlbum
+                  - queryMutate
+                -
                   - images
                   - queryMutate
                 -
+                  - includeScatterPlot
+                  - queryMutate
+                -
                   - investigationEntries
+                  - queryMutate
+                -
+                  - json
                   - queryMutate
                 -
                   - latex
@@ -963,13 +1194,25 @@ plugins:
                   - layout
                   - queryMutate
                 -
+                  - lightCurveTool
+                  - queryMutate
+                -
                   - linkTo
                   - queryMutate
                 -
                   - colorToolMax
                   - queryMutate
                 -
+                  - maximum
+                  - queryMutate
+                -
                   - colorToolMin
+                  - queryMutate
+                -
+                  - minimum
+                  - queryMutate
+                -
+                  - mjd
                   - queryMutate
                 -
                   - multiPartBlocks
@@ -987,10 +1230,19 @@ plugins:
                   - pageType
                   - queryMutate
                 -
+                  - plotPoints
+                  - queryMutate
+                -
                   - preSelectedColor
                   - queryMutate
                 -
+                  - precision
+                  - queryMutate
+                -
                   - questionEntries
+                  - queryMutate
+                -
+                  - questionTable
                   - queryMutate
                 -
                   - questionText
@@ -1008,19 +1260,31 @@ plugins:
                   - referenceContentBlocks
                   - queryMutate
                 -
-                  - referenceModalEntries
+                  - referenceEntries
+                  - queryMutate
+                -
+                  - ra
                   - queryMutate
                 -
                   - hasSavePoint
                   - queryMutate
                 -
-                  - scatterplotItems
+                  - sourceSelector
+                  - queryMutate
+                -
+                  - tableHeader
                   - queryMutate
                 -
                   - text
                   - queryMutate
                 -
                   - siteTitle
+                  - queryMutate
+                -
+                  - validation
+                  - queryMutate
+                -
+                  - video
                   - queryMutate
                 -
                   - widgetInstructions
@@ -1087,6 +1351,9 @@ plugins:
                   -
                     __assoc__:
                       -
+                        - datasets
+                        - ''
+                      -
                         - investigations
                         - ''
                       -
@@ -1096,10 +1363,17 @@ plugins:
                         - questions
                         - ''
                       -
-                        - referenceModals
+                        - referenceContent
                         - ''
                       -
                         - widgets
+                        - ''
+                -
+                  - assetQueries
+                  -
+                    __assoc__:
+                      -
+                        - datasets
                         - ''
           -
             - group-37
@@ -1119,6 +1393,9 @@ plugins:
                   -
                     __assoc__:
                       -
+                        - datasets
+                        - ''
+                      -
                         - investigations
                         - ''
                       -
@@ -1128,11 +1405,31 @@ plugins:
                         - questions
                         - ''
                       -
-                        - referenceModals
+                        - referenceContent
                         - ''
                       -
                         - widgets
                         - ''
+                -
+                  - assetQueries
+                  -
+                    __assoc__:
+                      -
+                        - datasets
+                        - ''
+          -
+            - group-39
+            -
+              __assoc__:
+                -
+                  - schemaName
+                  - ''
+                -
+                  - allowRegistration
+                  - ''
+                -
+                  - siteId
+                  - ''
       invalidEmailAddress: 'Invalid email address'
       invalidHeader: 'Invalid Authorization Header'
       invalidJwtSecretKey: 'Invalid JWT Secret Key'
@@ -1145,7 +1442,7 @@ plugins:
       invalidRequest: 'Cannot validate request'
       invalidSchema: 'No schema has been set for this user group'
       invalidUserUpdate: 'We couldn''t update the user with the provided details'
-      jwtExpiration: '30 minutes'
+      jwtExpiration: '15 minutes'
       jwtRefreshExpiration: '3 months'
       jwtSecretKey: 2t1eBkWF2HIzBSbP7LS9v0PZtdHvYkdB
       magicLinkSent: 'You will receive an email if it matches an account in our system'
@@ -1227,5 +1524,5 @@ system:
   live: true
   name: 'Formal Education Investigations'
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 4.15.0.0
   timeZone: America/Los_Angeles
