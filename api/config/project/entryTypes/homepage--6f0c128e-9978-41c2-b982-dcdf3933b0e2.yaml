@@ -45,6 +45,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
+            instructions: null
+            label: 'Hero Text'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 075c1dea-b332-4f7e-b476-a272887cc096
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 40c867bb-c75a-4d5f-8d69-e7facae1c15b # Homepage Content Blocks
             instructions: null
             label: null
