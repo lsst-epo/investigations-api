@@ -38,7 +38,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: optionValue
-    instructions: 'Unique key for system to use, not visible to users.'
+    instructions: 'Unique key for system to use, not visible to users. DO NOT TRANSLATE THIS FIELD!'
     name: 'Option Value'
     searchable: false
     settings:
