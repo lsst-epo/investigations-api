@@ -1,4 +1,4 @@
-dateModified: 1759179307
+dateModified: 1771459612
 elementSources:
   craft\elements\Entry:
     -
@@ -117,6 +117,7 @@ meta:
     5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
     6bd2c008-ff4d-45c9-9cd6-5a8a2c61f8e6: Question # Question
+    6c962924-3a8a-4330-8938-b2ad19bde173: 'Orbital Sim' # Orbital Sim
     6caa0b9c-4aa9-418b-847c-f6b8e3807cdd: 'Option Label' # Option Label
     6dbf8441-fd70-4b44-a2f8-7b9ba10b20d9: Distance # Distance
     6e046cd9-797f-4e30-9959-143cfa694b2f: Question # Question
@@ -138,6 +139,7 @@ meta:
     9c099f02-5f47-4c2f-bf83-574a21fae092: Equation # Equation
     9d3bd0d7-b293-4e2f-9c24-0554733df011: Text # Text
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
+    9fce61e0-541a-40c2-bd17-ccb67b80c5b8: 'Potential Orbits' # Potential Orbits
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
     010dc3f6-c369-4937-adc7-1948204aaf97: Group # Group
     11f12958-c08d-4f26-9466-1a8ba7011b34: 'Camera Filter Tool' # Camera Filter Tool
@@ -212,6 +214,7 @@ meta:
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
+    93303e05-d1b0-4e4f-9cd1-94ddf876bd00: 'Allow Orbit Rotation' # Allow Orbit Rotation
     109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Table Cell' # Table Cell
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
     466246f6-753b-4198-8067-18acf1a7d4cb: 'Light Curve Tool' # Light Curve Tool
@@ -251,7 +254,9 @@ meta:
     af9748aa-9a7c-49c2-bf48-d1417664104b: Text # Text
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
+    b1b21687-d796-444a-99a7-0cf763924887: 'Show Details Table' # Show Details Table
     b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: 'Color Filter Tool' # Color Filter Tool
+    b11a5912-37c0-43fa-8d9c-a21d0b946aa6: 'Orbital Sim Tool' # Orbital Sim Tool
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
     b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
@@ -264,6 +269,7 @@ meta:
     c4a0ba18-ffd2-4399-b068-0fac98fee410: 'Number Validator' # Number Validator
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
+    c47ebc20-8f68-40dc-9a17-156270d389ea: 'Add Time Controls ' # Add Time Controls 
     c489f84c-509c-4078-9b71-1e3493e17620: 'Image Album' # Image Album
     c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Content' # Reference Content
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
