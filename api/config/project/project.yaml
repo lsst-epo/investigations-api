@@ -1,4 +1,4 @@
-dateModified: 1771459612
+dateModified: 1771883995
 elementSources:
   craft\elements\Entry:
     -
@@ -116,6 +116,7 @@ meta:
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
+    6b994d17-ead0-4be3-a186-3b543518f902: Orbital # Orbital
     6bd2c008-ff4d-45c9-9cd6-5a8a2c61f8e6: Question # Question
     6c962924-3a8a-4330-8938-b2ad19bde173: 'Orbital Sim' # Orbital Sim
     6caa0b9c-4aa9-418b-847c-f6b8e3807cdd: 'Option Label' # Option Label
@@ -217,6 +218,7 @@ meta:
     93303e05-d1b0-4e4f-9cd1-94ddf876bd00: 'Allow Orbit Rotation' # Allow Orbit Rotation
     109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Table Cell' # Table Cell
     220292c8-0330-4dd4-aa84-f0eeec38fa4e: Text # Text
+    223398db-b3af-4a6c-b2ce-a5f8d707d90f: 'Orbital Sim Orbits' # Orbital Sim Orbits
     466246f6-753b-4198-8067-18acf1a7d4cb: 'Light Curve Tool' # Light Curve Tool
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
@@ -263,6 +265,7 @@ meta:
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bf080076-0029-4fb7-9562-4da97d31c0b4: LaTeX # LaTeX
+    bf8e5e1c-32ad-476f-b9fd-13bbc793c127: 'Orbital Datasets' # Orbital Datasets
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
     c1c8acb5-0649-4dca-a7c8-1d03e98097cf: 'Help URL' # Help URL
     c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
@@ -306,6 +309,7 @@ meta:
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32: 'Investigation Grid' # Investigation Grid
     f5a2bb9c-1491-4439-a169-d9b2891433a1: Declination # Declination
+    f5c1748c-ed4d-4945-b2ca-0c4750c1bdf9: 'Orbital Sim Data' # Orbital Sim Data
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
     f633c7c8-51d2-4e26-93a0-630d539e83f7: 'Table Header' # Table Header
