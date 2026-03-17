@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  a2039eb1-c803-48da-9dcb-a3464bed8192:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d42a99ba-072d-4a58-9140-42c3068a7cc7 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3e30c13-c436-4e13-ae25-aa7c0b505764
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        uid: a0a7622d-2a29-497c-90d0-129a29bfc43d
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: link
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Link
+topLevel: true

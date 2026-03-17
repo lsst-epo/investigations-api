@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: df8afd02-7d4c-48ba-a195-801deb77ba4d # Callouts
+handle: callout
+instructions: null
+name: Callout
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: true
+  sources:
+    - 'custom:b1751492-b534-47ec-8947-d3c770cf34e7'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

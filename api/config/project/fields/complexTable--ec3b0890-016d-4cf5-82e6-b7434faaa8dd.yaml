@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: complexTable
+instructions: null
+name: 'Complex Table'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 1580168878
+  contentTable: '{{%stc_complextable}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

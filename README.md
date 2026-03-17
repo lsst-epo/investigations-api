@@ -25,6 +25,8 @@ Headless Craft CMS backend for the Formal Education Investigations website.
 5. When you need to do composer operations: `docker run -v ${PWD}/api:/app composer <require/remove> <package>`
 7. When working locally, in order to ensure the latest docker `craft-base-image` is used: `docker pull us-central1-docker.pkg.dev/skyviewer/public-images/craft-base-image`
 
+(Optional) If you need to test google cloud integrations, obtain the credentials and do: `docker cp google-app-credentials.json investigations-api-craft-1:/var/www/html/google-app-credentials.json`
+
 
 
 

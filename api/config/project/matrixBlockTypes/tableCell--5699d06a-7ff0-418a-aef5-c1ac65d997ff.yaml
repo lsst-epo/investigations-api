@@ -1,0 +1,316 @@
+field: e7468177-b56b-4fbc-8ca0-af8c830cabef # Table Row
+fieldLayouts:
+  99d0b36a-d74c-45ae-bcf5-e50aec8c44ee:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a21669e6-f3bf-468a-b817-59c7345dd1c7 # Cell Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e3aa643-a1c9-42c4-8b8a-e50b2ccf0812
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 54ba9f24-e0a0-4b44-9fce-d96dc94d32d8 # Flexible Cell Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f938f5f-1e87-4743-9e25-5b34104cc6be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cb6492c7-6cdf-453c-8df5-245121df0be4 # Cell Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 650a833f-74b5-4a5d-bb83-3ecc9c08f263
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: acbeab84-efd2-4650-a701-48e1ba6e4a6e # Cell Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00f55f50-b25b-44ad-9740-80ae6d554768
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cdd0ead4-41ad-4cc7-9cbc-7332a525f6b1
+        userCondition: null
+fields:
+  54ba9f24-e0a0-4b44-9fce-d96dc94d32d8: # Flexible Cell Width
+    columnSuffix: stakgprw
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: hasFlexibleCellWidth
+    instructions: 'If set to ON, cell width will expand to fit its content.'
+    name: 'Flexible Cell Width'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  a21669e6-f3bf-468a-b817-59c7345dd1c7: # Cell Width
+    columnSuffix: eonxhekw
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: cellWidth
+    instructions: null
+    name: 'Cell Width'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: 1
+      max: null
+      min: 1
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: 1
+      suffix: cell(s)
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  acbeab84-efd2-4650-a701-48e1ba6e4a6e: # Cell Content
+    columnSuffix: brcdcefa
+    contentColumnType: text
+    fieldGroup: null
+    handle: cellContent
+    instructions: null
+    name: 'Cell Content'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: false
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  cb6492c7-6cdf-453c-8df5-245121df0be4: # Cell Background
+    columnSuffix: jrzvrnca
+    contentColumnType: string
+    fieldGroup: null
+    handle: cellBackground
+    instructions: null
+    name: 'Cell Background'
+    searchable: false
+    settings:
+      columnType: string
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - '#8CA6CD'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Dark Turquoise'
+            -
+              - value
+              - '#00BABC '
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Gray
+            -
+              - value
+              - '#DCE0E3'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - '#8ACE8C'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Blue'
+            -
+              - value
+              - '#C7D4F4'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Green'
+            -
+              - value
+              - '#D7E6CF'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Orange'
+            -
+              - value
+              - '#FFEDD9'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Turquoise'
+            -
+              - value
+              - '#B1F2EF'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - '#FAB363'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Pale Orange'
+            -
+              - value
+              - '#FFF8F0'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Pink
+            -
+              - value
+              - '#FF8489'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Purple
+            -
+              - value
+              - '#B597C7'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - '#F17070'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Turquoise
+            -
+              - value
+              - '#99E3E4'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - '#FDDA78'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: tableCell
+name: 'Table Cell'
+sortOrder: 1
