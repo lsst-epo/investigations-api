@@ -4,6 +4,8 @@
 - 'blockType:7b30c218-6328-41a2-a3e3-2575559f4c9c' # Table
 - 'blockType:59560b67-c194-46fc-9404-cb790a44800a' # Image
 - 'blockType:d022e61b-75d2-4c3e-88f1-198bd9978ae1' # Video
+- 'blockType:2afbeada-a48c-4590-b787-bef189299acc' # Assessment Video
+- 'blockType:7e3faadd-83b4-45cf-9a32-3dfe342e23b8' # Link
 - 'blockType:53df9537-d85e-4fd3-9e4c-b203594ada7c' # Reference Block
 - 'blockTypeGroup:7ebe493b-5e03-48c8-8375-c9f9582da77e' # Containers
 - 'blockType:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
@@ -18,3 +20,9 @@
 - 'blockType:0d06751e-ecf9-4281-a754-8c818fb9353b' # Color Filter Tool Block
 - 'blockType:a02a930a-9f54-4ae2-8bb2-0e0ab7713759'
 - 'blockType:7033117c-c3b9-4794-9a6d-cbbbae2010af' # Supernova Distance & Distribution
+- 'blockType:44fd0fea-2657-448a-a657-d4a5a56a869c' # Callout
+- 'blockType:fc47db46-2db2-45d0-b284-4b09ba030408' # Download List
+- 'blockType:91678889-ce27-4495-a436-abf31e2d17e6' # Simple Table
+- 'blockType:ea329674-292b-4e75-ad2d-d2596a4ec77a' # Complex Table
+- 'blockType:002018ff-41ee-4347-88a0-c2c63efee1b2' # CTA Grid
+- 'blockType:325b9f09-b0da-44b6-9cd7-885d7a29e53c' # CTA

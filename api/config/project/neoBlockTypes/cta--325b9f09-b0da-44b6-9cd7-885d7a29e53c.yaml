@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  50fd1c17-a92a-4499-becc-ae02734368a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 769784ef-f338-43bf-9395-2666b5ddc083 # Content Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5ef9bd4-fda7-441c-b621-4cb3d10ace9d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d42a99ba-072d-4a58-9140-42c3068a7cc7 # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b80c70c7-2dec-4777-9742-dbee60d8ca48
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3fb07877-624c-45c0-9b43-78061fca40ac
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: cta
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: CTA
+topLevel: false

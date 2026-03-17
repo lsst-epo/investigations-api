@@ -1,0 +1,101 @@
+columnSuffix: aqwlupag
+contentColumnType: string
+fieldGroup: df8afd02-7d4c-48ba-a195-801deb77ba4d # Callouts
+handle: backgroundColor
+instructions: 'Defines the background color of the block.'
+name: 'Background Color'
+searchable: true
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light Gray'
+        -
+          - value
+          - neutral10
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Dark Gray'
+        -
+          - value
+          - neutral15
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Black
+        -
+          - value
+          - color-background-page-invert
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light Turquoise'
+        -
+          - value
+          - turquoise10
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Turquoise
+        -
+          - value
+          - turquoise50
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light Blue'
+        -
+          - value
+          - blue10
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - orange20
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - transparent
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

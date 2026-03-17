@@ -1,0 +1,38 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: hero
+instructions: 'The hero image for this page.'
+name: Hero
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:e16860ef-2ca8-4263-8a18-7cfcce7238c1' # Heroes
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:e16860ef-2ca8-4263-8a18-7cfcce7238c1' # Heroes
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

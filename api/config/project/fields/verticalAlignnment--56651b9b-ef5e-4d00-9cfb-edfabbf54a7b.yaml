@@ -1,0 +1,35 @@
+columnSuffix: pbdukgtp
+contentColumnType: string(6)
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: verticalAlignnment
+instructions: 'Set the vertical alignment for cell content.'
+name: 'Vertical Alignnment'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Top
+        -
+          - value
+          - top
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Middle
+        -
+          - value
+          - middle
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

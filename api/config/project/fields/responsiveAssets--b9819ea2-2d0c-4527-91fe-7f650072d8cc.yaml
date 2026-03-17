@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: responsiveAssets
+instructions: null
+name: 'Responsive Assets'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_responsiveassets}}'
+  maxBlocks: 2
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,95 @@
+field: 2a8bd63b-0e77-4572-9682-8a08958b5981 # Assets List
+fieldLayouts:
+  e750f289-5a45-45db-bcb2-f9a45d7600d0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3e9ad357-be6a-4732-b068-33ca298d87db # Link text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3927dec7-ddc3-48a1-93bb-11e0dc3802d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a8b83777-fb23-44a6-85f2-f368b644bb87 # Asset
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 320ba689-c2b8-4edc-b4e8-ef48d9103376
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8fbfd1aa-9868-464e-ad20-bdc5c99a2247
+        userCondition: null
+fields:
+  3e9ad357-be6a-4732-b068-33ca298d87db: # Link text
+    columnSuffix: fvmiixmu
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: null
+    name: 'Link text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  a8b83777-fb23-44a6-85f2-f368b644bb87: # Asset
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: assetSingle
+    instructions: null
+    name: Asset
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      defaultUploadLocationSubpath: null
+      localizeRelations: true
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: item
+name: Item
+sortOrder: 1

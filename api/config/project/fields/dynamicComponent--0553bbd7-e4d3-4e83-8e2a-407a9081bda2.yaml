@@ -1,0 +1,156 @@
+columnSuffix: vwpneifz
+contentColumnType: string
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: dynamicComponent
+instructions: 'For dynamic pages and blocks.'
+name: 'Dynamic Component'
+searchable: true
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'All News'
+        -
+          - value
+          - news
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'News Posts'
+        -
+          - value
+          - newsPosts
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Press Releases'
+        -
+          - value
+          - pressReleases
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Staff Profiles'
+        -
+          - value
+          - staffProfiles
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Slideshows
+        -
+          - value
+          - slideshows
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Events
+        -
+          - value
+          - events
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Job Posts'
+        -
+          - value
+          - jobs
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Related Content'
+        -
+          - value
+          - relatedContent
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Search
+        -
+          - value
+          - search
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Alert Stream'
+        -
+          - value
+          - alertStream
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Telescope Status'
+        -
+          - value
+          - telescopeStatus
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Glossary Terms'
+        -
+          - value
+          - glossaryTerms
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown

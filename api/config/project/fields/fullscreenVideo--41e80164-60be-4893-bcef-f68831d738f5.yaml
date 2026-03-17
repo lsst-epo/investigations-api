@@ -1,0 +1,14 @@
+columnSuffix: kcjcnmck
+contentColumnType: boolean
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: fullscreenVideo
+instructions: 'Enabling this will display the video above all other content, at the top of the page, until either the video ends or it is excited. The video will then not display again.'
+name: 'Fullscreen Video'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,19 @@
+columnSuffix: ypuplcml
+contentColumnType: text
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: plainText
+instructions: null
+name: 'Plain Text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: Text
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

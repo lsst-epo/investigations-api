@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  c1cfdc23-d227-45ec-b55b-9104e0a96403:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f70bdbd4-bd5d-41d9-bbb1-3cd65d6bd6d6 # Sites
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 574434ce-5700-4059-9c06-bb7566d638b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2297d098-675f-4def-bd51-0ce739720cdc # Simple Table
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29f4b9ca-eba8-4d26-abea-9f26747cd77a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6ec61ffd-5010-4656-bf95-3e570b66e26e
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: simpleTable
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Simple Table'
+topLevel: true

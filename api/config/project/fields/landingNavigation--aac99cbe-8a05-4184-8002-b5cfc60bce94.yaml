@@ -1,20 +1,16 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
-handle: contentBlocks
+fieldGroup: 5dc7dc5c-2390-4eb4-9714-818aa35f5772 # Investigations
+handle: landingNavigation
 instructions: null
-name: 'Content Blocks'
+name: 'Landing Navigation'
 searchable: true
 settings:
+  contentTable: '{{%matrixcontent_landingnavigation}}'
   maxBlocks: null
-  maxLevels: null
-  maxTopBlocks: null
   minBlocks: null
-  minLevels: null
-  minTopBlocks: null
-  newBlockButtonLabel: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site
-type: benf\neo\Field
+type: craft\fields\Matrix

@@ -2,7 +2,7 @@ columnSuffix: gnysmpyf
 contentColumnType: text
 fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
 handle: description
-instructions: null
+instructions: "Good descriptions play a crucial role in search engine rankings and are among the first things people see in a search or link preview.\r\n\r\nWrite a unique description related to the page’s content between 120-160 characters, use active language, and include a call to action where possible (e.g. “Explore...“, “Read about…“, “Learn…“)."
 name: Description
 searchable: false
 settings:
