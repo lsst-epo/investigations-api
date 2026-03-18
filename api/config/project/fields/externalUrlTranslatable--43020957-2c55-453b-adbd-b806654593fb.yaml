@@ -1,0 +1,14 @@
+columnSuffix: zctclbnh
+contentColumnType: string(255)
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: externalUrlTranslatable
+instructions: null
+name: 'External Url (Translatable)'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

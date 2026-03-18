@@ -1,0 +1,34 @@
+columnSuffix: lxilalnj
+contentColumnType: text
+fieldGroup: 074f7db9-8ff3-4016-ad34-bfe9c31d5543 # Pages
+handle: sites
+instructions: 'What sites should this content block be visible in?'
+name: Sites
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - English
+        -
+          - value
+          - en-US
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Español
+        -
+          - value
+          - es
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

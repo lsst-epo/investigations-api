@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  42e12aa7-6a3e-4573-be82-d0b38d2bdee2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d3c2bf6e-aeb1-4a97-a3e7-33455ff2b88a # Callout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e616e92a-cdd0-46bc-98dd-6a733a89bcf3
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        uid: 2ecb935c-3c76-4a16-bcfe-c08b5a036694
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: callout
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Callout
+topLevel: true

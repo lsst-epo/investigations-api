@@ -1,0 +1,20 @@
+columnSuffix: ovzbpacb
+contentColumnType: smallint(3)
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: focalPointX
+instructions: null
+name: 'Focal Point X'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 50
+  max: 100
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: '%'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

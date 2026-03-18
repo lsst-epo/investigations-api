@@ -1,4 +1,4 @@
-dateModified: 1771883995
+dateModified: 1773764370
 elementSources:
   craft\elements\Entry:
     -
@@ -39,7 +39,7 @@ elementSources:
       defaultSort:
         - structure
         - asc
-      disabled: true
+      disabled: false
       key: 'section:8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d' # Pages
       tableAttributes:
         - postDate
@@ -59,6 +59,28 @@ elementSources:
     -
       key: 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
       type: native
+    -
+      heading: ''
+      type: heading
+    -
+      key: 'section:fbfbf05d-c7e1-4f6c-a093-47065f8d5095' # Datasets
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - postDate
+        - desc
+      key: 'custom:b1751492-b534-47ec-8947-d3c770cf34e7'
+      label: Callouts
+      tableAttributes:
+        - author
+        - expiryDate
+        - link
+        - postDate
+      type: custom
 email:
   fromEmail: $EMAIL_FROM_ADDRESS
   fromName: $EMAIL_SENDER_NAME
@@ -72,6 +94,18 @@ email:
     username: $EMAIL_SMTP_USERNAME
   transportType: craft\mail\transportadapters\Smtp
 fs:
+  contentImages:
+    hasUrls: true
+    name: 'Content Images'
+    settings:
+      bucket: $GCS_BUCKET
+      bucketSelectionMode: manual
+      expires: ''
+      keyFileContents: ''
+      projectId: $GCP_PROJECT_ID
+      subfolder: ''
+    type: craft\googlecloud\Fs
+    url: '@assetsContentBaseURL'
   gcs:
     hasUrls: true
     name: GCS
@@ -84,6 +118,18 @@ fs:
       subfolder: ''
     type: craft\googlecloud\Fs
     url: '@gcsBucketBaseURL'
+  heroes:
+    hasUrls: true
+    name: Heroes
+    settings:
+      bucket: $GCS_BUCKET
+      bucketSelectionMode: manual
+      expires: ''
+      keyFileContents: ''
+      projectId: $GCP_PROJECT_ID
+      subfolder: ''
+    type: craft\googlecloud\Fs
+    url: '@assetsHeroesBaseURL'
 meta:
   __names__:
     0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
@@ -99,8 +145,12 @@ meta:
     1a365d49-310d-41cf-afd2-3acd4cff3660: 'Investigation Section Break (Child Entry)' # Investigation Section Break (Child Entry)
     1ec99d28-14f6-45ec-a158-e01bed027ce7: Filter # Filter
     1ed0caa3-b91f-442b-b313-f3eb54a8a0dc: 'Two Column Container' # Two Column Container
+    2a8bd63b-0e77-4572-9682-8a08958b5981: 'Assets List' # Assets List
+    2afbeada-a48c-4590-b787-bef189299acc: 'Assessment Video' # Assessment Video
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
+    2f10ca0a-d810-4715-aa5f-78e3b347ce59: 'Focal Point X' # Focal Point X
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
+    3e9ad357-be6a-4732-b068-33ca298d87db: 'Link text' # Link text
     4b8139b2-36be-4510-aaeb-fa8579fb3273: 'Header Row' # Header Row
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
@@ -111,10 +161,12 @@ meta:
     5a7221ec-779f-4433-b5b7-732d6b0babd5: 'Row Header' # Row Header
     5b8a79d6-e9d6-44d2-b986-36bf0bf74131: 'Scatterplot Tool' # Scatterplot Tool
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
+    5ba1ef40-9a18-42fc-8ed2-163173338bd2: 'Row Content' # Row Content
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
     5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: 'Default Value' # Default Value
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
+    5ff77a15-20cf-4445-bbbd-4ecc41fa3be2: 'Video Type' # Video Type
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
     6b994d17-ead0-4be3-a186-3b543518f902: Orbital # Orbital
     6bd2c008-ff4d-45c9-9cd6-5a8a2c61f8e6: Question # Question
@@ -128,17 +180,21 @@ meta:
     7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e: Datasets # Datasets
     7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
+    7bf2ccf1-2aa1-4cf0-a991-25cb2bfe6bff: Link # Link
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
+    7e3faadd-83b4-45cf-9a32-3dfe342e23b8: Link # Link
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
     7fd2ba5e-d840-47df-8c79-a5fd54ff5aae: Text # Text
     8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
     8b781860-2b8c-4100-969a-2f13c5272420: 'Table Row' # Table Row
     8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d: Pages # Pages
+    8e636a74-b351-457d-b412-d8dfc9b98c4a: Asset # Asset
     8ef976e7-022d-4d12-97f7-5648dbca66b5: Bar # Bar
     8f49c843-6aaa-49bf-ac19-21a9800c4760: Editors # Editors
     9b29c2f8-e229-419f-b6fa-48f5307ebf34: 'Question Entries' # Question Entries
     9c099f02-5f47-4c2f-bf83-574a21fae092: Equation # Equation
     9d3bd0d7-b293-4e2f-9c24-0554733df011: Text # Text
+    9ef2456c-1f93-4951-abad-bb38d9e1e152: Hero # Hero
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     9fce61e0-541a-40c2-bd17-ccb67b80c5b8: 'Potential Orbits' # Potential Orbits
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
@@ -158,26 +214,34 @@ meta:
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     37af5dda-9a0b-458a-b48c-1bd31b9170af: Validation # Validation
     40c867bb-c75a-4d5f-8d69-e7facae1c15b: 'Homepage Content Blocks' # Homepage Content Blocks
+    41e80164-60be-4893-bcef-f68831d738f5: 'Fullscreen Video' # Fullscreen Video
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
+    44fd0fea-2657-448a-a657-d4a5a56a869c: Callout # Callout
     53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
     53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Block' # Reference Block
+    54ba9f24-e0a0-4b44-9fce-d96dc94d32d8: 'Flexible Cell Width' # Flexible Cell Width
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Entries' # Reference Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
     58dc56f1-d17a-424b-9aac-650a83f6b919: 'Table Cell' # Table Cell
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
+    69b9ee9d-95c5-46a4-a1df-61f6c44a26ad: 'Show Sibling Nav' # Show Sibling Nav
     69cb131c-4118-487d-84be-d370e75627bd: Text # Text
     71b3bf66-70f5-4af6-8020-aab77b765608: Video # Video
+    74a879e6-ccb0-40d1-81b8-1906678d0219: 'Row Title' # Row Title
     074f7db9-8ff3-4016-ad34-bfe9c31d5543: Pages # Pages
     77f02908-0342-4917-9d14-38f769d15c39: Pages # Pages
     79f2f742-966c-42df-9d04-8492d456325c: Minimum # Minimum
     87fc48a5-a399-4ce1-a7ca-2dadfd1e1445: 'Camera Filter Tool' # Camera Filter Tool
     90aa9610-a9c9-4531-95f8-d0068046ae25: 'Sort Options' # Sort Options
+    97b1eac4-24b1-43ea-8973-96df51f3285a: Orientation # Orientation
     131ceffb-300f-415d-8cd5-a932d7529287: 'Read Only' # Read Only
     210fad18-08a1-4042-821c-bf4a09c06ec6: 'Question Type' # Question Type
     222de7cf-741d-4d1f-b274-acc85a3c454c: 'Link To' # Link To
+    245ba5b2-e81f-46c5-83fc-9821fca74630: 'Overlap Hero' # Overlap Hero
     297d2268-f298-40a1-bec3-a1c836a69e38: 'Source Selector' # Source Selector
+    325b9f09-b0da-44b6-9cd7-885d7a29e53c: CTA # CTA
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
     367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: 'Color Filter Tool Block' # Color Filter Tool Block
     418ea0f0-379d-4ee5-8dab-f82b6a62c191: Header # Header
@@ -186,34 +250,44 @@ meta:
     0481b024-bc6f-4104-bc1c-802615313aaa: 'Page Type' # Page Type
     485a4230-6aac-41b7-8524-da6232e226ae: 'Filter Tool' # Filter Tool
     0517da83-7ef9-4577-8da4-ec5c25cfe591: Message # Message
+    0553bbd7-e4d3-4e83-8e2a-407a9081bda2: 'Dynamic Component' # Dynamic Component
     628c22b8-f7a4-49f7-a37f-f6e6313da1b4: Operator # Operator
     635c41e4-29a8-42de-965b-e30c5beb0685: Text # Text
     693f669b-ba6e-4c91-adad-2543fcd62554: 'Galactic Latitude' # Galactic Latitude
     721d7a12-d399-4504-bbeb-0fa6d88d72b7: 'Color Filter Tool Block' # Color Filter Tool Block
     839bfa4f-5a09-4b32-b1eb-e0fef7b7beda: 'Table Row' # Table Row
     852df24b-f90e-486b-a371-b47ca241a84e: 'Y-axis Label' # Y-axis Label
+    0858f6fa-7030-4326-943d-7242b6db3feb: Row # Row
     907a99bf-dc51-40c8-8117-c9686eddea0d: 'Include Scatter Plot' # Include Scatter Plot
     919ed98f-d33e-4fae-adc0-2253a155246f: 'Question Text' # Question Text
     986be506-1a98-4a56-9a16-1e2270071a95: isActive # isActive
     997d2cc5-340b-48d0-9f44-032b2c6ec179: 'Previous Question' # Previous Question
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    002018ff-41ee-4347-88a0-c2c63efee1b2: 'CTA Grid' # CTA Grid
+    2297d098-675f-4def-bd51-0ce739720cdc: 'Simple Table' # Simple Table
     2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
     2922f7b5-8979-4fa5-8221-b442515b48c1: Equation # Equation
     3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
     5599d188-862e-4717-b206-6aadd975c937: Common # Common
+    5699d06a-7ff0-418a-aef5-c1ac65d997ff: 'Table Cell' # Table Cell
     6942a0c3-4eea-4597-a0ce-f8325e5bb06f: 'Isochrone Plot' # Isochrone Plot
     7543dced-6f4a-4963-80fe-ad215807e7ec: Objects # Objects
+    8411ec2f-d089-4dbd-b1b1-5ab1f3bd1418: 'Nav Item' # Nav Item
     9068dd8e-ad92-4925-ba1d-1fe180598462: Questions # Questions
     9748bbea-73ac-46cc-90b1-e6b8a6da31cd: Image # Image
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
+    23193ee2-e0a6-4405-8e0a-1ec6c93efe59: 'Sub Hero Text' # Sub Hero Text
     24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
+    56651b9b-ef5e-4d00-9cfb-edfabbf54a7b: 'Vertical Alignnment' # Vertical Alignnment
+    58870c93-0dd4-4657-89de-c08e599a2421: 'Full Width' # Full Width
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
+    73806f44-9699-46ca-b559-9dbcc55dffa1: 'Show Page in the Header Navigation' # Show Page in the Header Navigation
     075467b0-0dee-453c-9df0-0de6d2443cf8: Homepage # Homepage
     93303e05-d1b0-4e4f-9cd1-94ddf876bd00: 'Allow Orbit Rotation' # Allow Orbit Rotation
     109801b3-a2ef-425d-ab7f-f816ea7dd13b: 'Table Cell' # Table Cell
@@ -224,21 +298,27 @@ meta:
     547128fa-4529-4483-9968-66425996b69f: EN # EN
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
     756208ab-5aac-4a28-bce2-5b3d9b5e7563: Number # Number
+    769784ef-f338-43bf-9395-2666b5ddc083: 'Content Image' # Content Image
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     3173102a-6f80-4a4f-954b-1d3e151fb21a: Text # Text
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
     4941158b-702a-45b4-8da5-12ed4202efae: Name # Name
+    6694183d-625d-46bd-b4a2-37d4344aca57: 'External URL' # External URL
     7033117c-c3b9-4794-9a6d-cbbbae2010af: 'Supernova Distance & Distribution' # Supernova Distance & Distribution
     7880478d-205c-4689-82fe-f4b69acd39e0: Equation # Equation
     8365851b-c952-499c-84dc-c9e054b83e84: Select # Select
     9679727f-de58-43ae-9674-13827bb1e0b3: 'Image Group' # Image Group
     28704998-935a-423b-a405-d4ad8b38efa2: Widgets # Widgets
+    40894702-ab34-453f-b181-2e8cf9e1be68: 'Plain Text' # Plain Text
+    43020957-2c55-453b-adbd-b806654593fb: 'External Url (Translatable)' # External Url (Translatable)
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     67592534-b8cb-4b2f-9826-d7c9300d9a2b: Widgets # Widgets
+    91678889-ce27-4495-a436-abf31e2d17e6: 'Simple Table' # Simple Table
     a03e80f0-77ce-4b03-abf5-76a0deb264a9: JSON # JSON
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
     a4afde15-f983-4c30-b0d7-e0b56871e4de: Dataset # Dataset
+    a8b83777-fb23-44a6-85f2-f368b644bb87: Asset # Asset
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
@@ -248,6 +328,9 @@ meta:
     a193e003-8cfa-4530-8d20-6d61a7deaf5e: 'Isochrone Plot' # Isochrone Plot
     a531c6b8-3ef6-480b-8840-babb586617bc: Options # Options
     a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
+    a21669e6-f3bf-468a-b817-59c7345dd1c7: 'Cell Width' # Cell Width
+    aac99cbe-8a05-4184-8002-b5cfc60bce94: 'Landing Navigation' # Landing Navigation
+    acbeab84-efd2-4650-a701-48e1ba6e4a6e: 'Cell Content' # Cell Content
     ad74ba83-53f4-4102-94e9-e9eea0d31171: 'Galactic longitude' # Galactic longitude
     ad6237ea-0d14-4e5b-880e-767316434bcd: isEnabled # isEnabled
     adeb2ea1-9022-44c5-9f71-3d06d06c24c8: 'Default Value' # Default Value
@@ -261,41 +344,53 @@ meta:
     b11a5912-37c0-43fa-8d9c-a21d0b946aa6: 'Orbital Sim Tool' # Orbital Sim Tool
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
     b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
+    b9819ea2-2d0c-4527-91fe-7f650072d8cc: 'Responsive Assets' # Responsive Assets
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
+    bd852c1a-87ab-46e1-b084-83fdcdd30b20: 'Focal Point Y' # Focal Point Y
     be5b1aeb-8cbb-4460-a87d-d1ebe0a4fbf8: 'Group Name' # Group Name
     bf080076-0029-4fb7-9562-4da97d31c0b4: LaTeX # LaTeX
     bf8e5e1c-32ad-476f-b9fd-13bbc793c127: 'Orbital Datasets' # Orbital Datasets
     bfaa63c2-dd2c-42c8-b68e-79d0180d5146: 'Investigation (Parent Entry)' # Investigation (Parent Entry)
+    c0faab33-ca5a-46ba-9631-94a314cb3879: 'Background Color' # Background Color
     c1c8acb5-0649-4dca-a7c8-1d03e98097cf: 'Help URL' # Help URL
     c1d3dd5f-2677-4a76-8db8-9a2b4db13536: Min # Min
     c4a0ba18-ffd2-4399-b068-0fac98fee410: 'Number Validator' # Number Validator
+    c5aab8e2-1748-43cd-97ec-3164090edd1a: 'Content Images' # Content Images
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
     c47ebc20-8f68-40dc-9a17-156270d389ea: 'Add Time Controls ' # Add Time Controls 
+    c84c5968-312a-455c-9b05-110670d8031f: 'Investigation Landing Page' # Investigation Landing Page
     c489f84c-509c-4078-9b71-1e3493e17620: 'Image Album' # Image Album
     c2356ed1-1e49-4056-83c7-ed615a2694b1: 'Reference Content' # Reference Content
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
+    cb6492c7-6cdf-453c-8df5-245121df0be4: 'Cell Background' # Cell Background
     cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
+    cd4d2a22-a194-459c-8f21-1782152c6dbf: Asset # Asset
     cd658691-87e7-43c3-a378-6078f21b9f6c: 'Reference Content Blocks' # Reference Content Blocks
+    cdfec8ed-8291-4800-85e6-1186435bffcc: Item # Item
     ce6530be-a702-47b4-b96e-f34aa9f55eb2: Translator # Translator
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d022e61b-75d2-4c3e-88f1-198bd9978ae1: Video # Video
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
     d2e48b83-d161-48b9-b0a9-5c21914b5931: 'Color Filter Tool' # Color Filter Tool
+    d3c2bf6e-aeb1-4a97-a3e7-33455ff2b88a: Callout # Callout
     d7a365f9-7f5d-46db-bc94-818f821cb447: Image # Image
     d8be03ce-7aeb-4141-b40e-ec39ec1c796f: Educators # Educators
     d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5: Min # Min
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     d18f36fd-9d74-4ba6-b860-25958b1d9182: 'Alert Sources' # Alert Sources
+    d42a99ba-072d-4a58-9140-42c3068a7cc7: Link # Link
+    d4538f51-c82e-45f5-8ca3-4f2487eef3b9: 'Row Color' # Row Color
     d5901e55-99c9-441a-937e-05a065d6e60b: Maximum # Maximum
     d6180a2a-48c9-42ce-a80f-8721282a126d: 'Previous Question' # Previous Question
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
+    df8afd02-7d4c-48ba-a195-801deb77ba4d: Callouts # Callouts
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     e1b23b33-c33f-4c74-9811-250c2cc2789a: Data # Data
@@ -305,21 +400,30 @@ meta:
     e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
     e818f50c-bd7d-48dd-9bd6-17d725e65533: 'Option Value' # Option Value
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
+    e4026dc6-49de-4267-9d3f-56ec9404750f: Header # Header
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
+    e16860ef-2ca8-4263-8a18-7cfcce7238c1: Heroes # Heroes
+    e7468177-b56b-4fbc-8ca0-af8c830cabef: 'Table Row' # Table Row
+    ea329674-292b-4e75-ad2d-d2596a4ec77a: 'Complex Table' # Complex Table
+    ec3b0890-016d-4cf5-82e6-b7434faaa8dd: 'Complex Table' # Complex Table
     efbf1b30-4cb7-4361-9f45-016d119aec06: 'Right Column' # Right Column
     f4b5a1d9-424f-4bc1-a2ea-37b302b8dc32: 'Investigation Grid' # Investigation Grid
     f5a2bb9c-1491-4439-a169-d9b2891433a1: Declination # Declination
     f5c1748c-ed4d-4945-b2ca-0c4750c1bdf9: 'Orbital Sim Data' # Orbital Sim Data
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    f70bdbd4-bd5d-41d9-bbb1-3cd65d6bd6d6: Sites # Sites
     f633c7c8-51d2-4e26-93a0-630d539e83f7: 'Table Header' # Table Header
     f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: X # X
     f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
+    fbb118b8-17f9-4ee4-8777-a330d2c3d75a: 'Featured Image' # Featured Image
     fbfbf05d-c7e1-4f6c-a093-47065f8d5095: Datasets # Datasets
     fc7f5dc8-43b1-487c-8302-07abecd2429a: Equation # Equation
+    fc47db46-2db2-45d0-b284-4b09ba030408: 'Download List' # Download List
     fcc60644-81ac-4f94-ad34-8bdaeeb4a6b6: 'Question Table' # Question Table
     fcfc14fd-28c8-4445-9f56-7c0fe24c0acf: Table # Table
+    fd4ecb97-cf1b-46b4-8e4c-d17153d67d0c: 'Educator Pages' # Educator Pages
     ff6964ee-dc07-4a6c-a911-14f43c581d0f: 'Option Label' # Option Label
 plugins:
   _canto-dam-assets:

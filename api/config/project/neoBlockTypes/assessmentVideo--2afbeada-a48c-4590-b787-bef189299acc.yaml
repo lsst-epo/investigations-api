@@ -1,0 +1,164 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  cf280a90-c091-4247-9b94-dafe8ce86097:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5ff77a15-20cf-4445-bbbd-4ecc41fa3be2 # Video Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59dcd22b-131d-4cd6-9c83-2060375374ae
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentLightswitchFieldConditionRule
+                  fieldUid: 5ff77a15-20cf-4445-bbbd-4ecc41fa3be2 # Video Type
+                  uid: d7db29e9-7ed6-4a8d-b9c7-b962b352d7d7
+                  value: false
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 43020957-2c55-453b-adbd-b806654593fb # External Url (Translatable)
+            instructions: null
+            label: 'Video URL'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d1bba2c-8914-4367-b6e8-0f1b0d6835ac
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 5ff77a15-20cf-4445-bbbd-4ecc41fa3be2 # Video Type
+                  uid: 0209e210-4273-4613-962c-a4719d1a7c3d
+                  value: true
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: b9819ea2-2d0c-4527-91fe-7f650072d8cc # Responsive Assets
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58faa429-ffc1-4823-a7d1-db9466cc8278
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bad8a706-ea60-4282-b1da-3c9ee5f2111a # Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6db97ff-0774-4366-9731-d447ab423aba
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f7e49e6-6c5e-4f6a-895f-6af04eceb094
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\TextFieldConditionRule
+                  fieldUid: 43020957-2c55-453b-adbd-b806654593fb # External Url (Translatable)
+                  operator: empty
+                  uid: a15520d9-2fc7-4036-90ce-c69b2311050e
+                  value: ''
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 41e80164-60be-4893-bcef-f68831d738f5 # Fullscreen Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 178aef9a-8513-46ae-9a79-a26ec8315c29
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 41e80164-60be-4893-bcef-f68831d738f5 # Fullscreen Video
+                  uid: 7f698a5b-5110-4c71-be5e-8977a4b4e1fe
+                  value: false
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 58870c93-0dd4-4657-89de-c08e599a2421 # Full Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2a0330d-5d3a-4c66-9a23-5f87918fea6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 41e80164-60be-4893-bcef-f68831d738f5 # Fullscreen Video
+                  uid: e5950936-4ff3-429d-887a-3b3bee319a21
+                  value: false
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: c0faab33-ca5a-46ba-9631-94a314cb3879 # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2260b9b-5da5-42e2-ab3f-2cfb0157cce0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: ee695f46-8c91-4843-896a-6fffe99c2147
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: assessmentVideo
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Assessment Video'
+topLevel: true

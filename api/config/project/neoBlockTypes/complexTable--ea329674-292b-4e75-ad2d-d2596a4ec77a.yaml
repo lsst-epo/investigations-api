@@ -1,0 +1,76 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  25b00c5a-a09b-4b0e-93fe-54b586c84743:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 40894702-ab34-453f-b181-2e8cf9e1be68 # Plain Text
+            instructions: null
+            label: 'Table Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6801890-434d-43d5-b535-092fbbc12362
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: f70bdbd4-bd5d-41d9-bbb1-3cd65d6bd6d6 # Sites
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4520b800-d276-4c77-a261-e0c1a13d7523
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 56651b9b-ef5e-4d00-9cfb-edfabbf54a7b # Vertical Alignnment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab88a54e-db74-4fdd-825f-681b6baa0d7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec3b0890-016d-4cf5-82e6-b7434faaa8dd # Complex Table
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 771bebb6-f14e-4d8f-ac4d-a45ecc6b2a91
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 58f1a74d-9255-4f82-bc60-3e2f77c0e12a
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: complexTable
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Complex Table'
+topLevel: true
