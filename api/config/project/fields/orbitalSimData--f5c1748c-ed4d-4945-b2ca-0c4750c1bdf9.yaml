@@ -12,6 +12,35 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 204ed9f9-7287-4daa-974f-505bb7e43377
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 223398db-b3af-4a6c-b2ce-a5f8d707d90f # Orbital Sim Orbits
   selectionLabel: null
   showSiteMenu: false
   sources:
