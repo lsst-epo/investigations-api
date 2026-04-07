@@ -9,3 +9,4 @@ docker-compose-local-db.yml
 google-app-credentials.json
 .idea
 db/*.sql
+api/gcs-local-dev.json
