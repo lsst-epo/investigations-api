@@ -12,6 +12,7 @@ settings:
   minBlocks: 1
   minLevels: null
   minTopBlocks: null
+  newBlockButtonLabel: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
