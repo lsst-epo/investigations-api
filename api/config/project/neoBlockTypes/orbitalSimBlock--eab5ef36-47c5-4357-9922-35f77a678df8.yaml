@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2599f40c-bfbc-4db6-bf56-cb9f48ad01bf # Question Widgets Block
+fieldLayouts:
+  ec9a15e3-6dcb-4539-9e4b-4d763db0c4a7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b11a5912-37c0-43fa-8d9c-a21d0b946aa6 # Orbital Sim Tool
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b57567f-ae58-4a85-a9b6-1ee0fa010383
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 236af17c-15a7-46b5-8f90-2446525877fb
+        userCondition: null
+group: 6efbdc96-00f5-4e37-953b-d36344f6e1fb # Configured Widgets
+groupChildBlockTypes: true
+handle: orbitalSimBlock
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Orbital Sim Block'
+topLevel: true
