@@ -26,28 +26,33 @@ return [
         'investigations' => Module::class,
     ],
     'components' => [
-        'cache' => [
-            'class' => yii\caching\MemCache::class,
-            'useMemcached' => App::env('ENABLE_MEMCACHED') ?: false,
-            'defaultDuration' => 86400,
-            'servers' => [
-                [
-                    'host' => App::env('MEMCACHED_IP'),
-                    'persistent' => true,
-                    'port' => App::env('MEMCACHED_PORT') ?: '11211',
-                    'retryInterval' => 15,
-                    'status' => true,
-                    'timeout' => 15,
-                    'weight' => 1,
-                ],
-            ],
-            'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => App::env('REDIS_HOST') ?: 'localhost',
+            'port' => App::env('REDIS_PORT') ?: 6379,
+            'password' => App::env('REDIS_PASSWORD') ?: null,
+            'database' => App::env('REDIS_CRAFT_DB') ?: 0,
+            'useSSL' => App::env('REDIS_USE_SSL'),
+            'contextOptions' => [
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ]
+            ]
         ],
+        'cache' => static function() {
+            $config = [
+                'class' => yii\redis\Cache::class,
+                'keyPrefix' => Craft::$app->id,
+                'defaultDuration' => Craft::$app->config->general->cacheDuration,
+            ];
+
+            return Craft::createObject($config);
+        },
         'queue' => [
             'class' => craft\queue\Queue::class,
             'ttr' => App::env('QUEUE_TTR'),
         ],
     ],
     'bootstrap' => ['investigations'],
-    //'bootstrap' => ['my-module'],
 ];
