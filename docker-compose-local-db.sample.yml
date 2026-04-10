@@ -2,8 +2,10 @@
 version: '2.2'
 
 services:
-  cache:
-    image: memcached
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
   craft:
     build: ./
     depends_on:
@@ -25,9 +27,6 @@ services:
       PRIMARY_SITE_URL: http://localhost:8080
       WEB_BASE_URL: http://localhost:3000
       ALIAS_PREVIEW_URL_FORMAT: http://localhost:3000/api/preview?site={site}&uri={uri}
-      ENABLE_MEMCACHED: "true"
-      MEMCACHED_IP: cache
-      MEMCACHED_PORT: 11211
       PORT: 8080
       NEXT_API_BASE_URL: gateway.docker.internal:3000/api
       NEXT_SECRET_TOKEN: <NEXT_SECRET_TOKEN>
@@ -54,6 +53,8 @@ services:
       EMAIL_SMTP_USERNAME: <EMAIL_SMTP_USERNAME>
       EMAIL_SMTP_PASSWORD: <EMAIL_SMTP_PASSWORD>
       CONTACT_FORM_NOTIFY_EMAIL: <CONTACT_FORM_NOTIFY_EMAIL>
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
     ports:
       - "8080:8080"
     depends_on:

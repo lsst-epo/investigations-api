@@ -9,7 +9,8 @@
     "sebastianlenz/linkfield": "^2.1.4",
     "spicyweb/craft-neo": "4.4.7",
     "verbb/super-table": "^3.0",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^3.4.0",
+    "yiisoft/yii2-redis": "~2.1.0"
   },
   "repositories": [
     {
