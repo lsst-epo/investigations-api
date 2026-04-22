@@ -1,0 +1,59 @@
+fieldLayouts:
+  28de6078-1b26-47e9-a583-f800e169718b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bfa621f3-5fb9-4016-b1cc-14e8d2b7a20f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a03e80f0-77ce-4b03-abf5-76a0deb264a9 # JSON
+            instructions: null
+            label: 'Table Data'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9cfeab1-8ab3-4866-87f7-127103495fd1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d4d83f55-84d2-4fd5-ab39-f58e26d7ba20
+        userCondition: null
+handle: sortableTableData
+hasTitleField: true
+name: 'Sortable Table Data'
+section: fbfbf05d-c7e1-4f6c-a093-47065f8d5095 # Datasets
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 4
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
