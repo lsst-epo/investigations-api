@@ -1,0 +1,53 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: sortableTableWidget
+instructions: null
+name: 'Sortable Table Widget'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - 0c0f0933-1650-4d1f-825f-25977170a10e
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 16d66db4-47e3-4e22-a040-357377f43cb0 # Sortable Table
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:28704998-935a-423b-a405-d4ad8b38efa2' # Widgets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
