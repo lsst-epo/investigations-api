@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  9694880b-e0d9-4918-b4ec-c7c59ce6ac29:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 16f93737-90e2-4533-8417-be6eacbe389b # Sortable Table Widget
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3034c9f1-fb00-490b-bedd-ac33458d6433
+            userCondition: null
+            warning: null
+            width: 100
+        name: Widget
+        uid: 457de095-445e-4ab7-9242-e048cc6c8df6
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: sortableTable
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Sortable Table Block'
+topLevel: true
