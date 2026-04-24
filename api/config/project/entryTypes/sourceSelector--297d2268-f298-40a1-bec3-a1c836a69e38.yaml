@@ -109,6 +109,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            elementCondition: null
+            fieldUid: 26b2b31f-6c46-4223-9050-e66a7445c9ec # Has Moving Source
+            instructions: 'Enable if the data set contains a moving source'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 343e4269-9d32-49bc-b8ca-d9d6ebc0689e
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: 897c373a-7e95-45dd-bcb4-8b0d2d51eced
         userCondition: null
