@@ -1,4 +1,4 @@
-dateModified: 1776890676
+dateModified: 1776990583
 elementSources:
   craft\elements\Entry:
     -
@@ -211,6 +211,7 @@ meta:
     24f2e959-23a9-4f1a-8394-0849fb85b85b: Precision # Precision
     25c0fbe7-5180-4842-bb9e-d530e9fb2042: Radius # Radius
     25eb3834-cb4a-46d7-823a-a135a16b9677: 'Save Point' # Save Point
+    26b2b31f-6c46-4223-9050-e66a7445c9ec: 'Has Moving Source' # Has Moving Source
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
     28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
     29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
