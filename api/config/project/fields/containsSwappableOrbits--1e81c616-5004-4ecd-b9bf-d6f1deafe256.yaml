@@ -1,0 +1,14 @@
+columnSuffix: sxdxdhxf
+contentColumnType: boolean
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: containsSwappableOrbits
+instructions: 'Is the dataset intended to be displayed in the left panel and clickable to change the visible orbits? When this is enabled it will override the other settings and rotation won''t be enabled, time controls will disappear, and the object details won''t show.'
+name: 'Contains Swappable Orbits'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
