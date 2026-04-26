@@ -33,6 +33,27 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 1e81c616-5004-4ecd-b9bf-d6f1deafe256 # Contains Swappable Orbits
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f308e8d-a973-4a14-bed9-dc1d96b6f7ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 1e81c616-5004-4ecd-b9bf-d6f1deafe256 # Contains Swappable Orbits
+                  uid: 70e7ebf6-0b1d-4424-b7bd-eaa97fb182e7
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 93303e05-d1b0-4e4f-9cd1-94ddf876bd00 # Allow Orbit Rotation
             instructions: null
             label: null
@@ -44,7 +65,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 1e81c616-5004-4ecd-b9bf-d6f1deafe256 # Contains Swappable Orbits
+                  uid: cb1af8d4-0114-4b36-9a37-193d1d023cbb
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: c47ebc20-8f68-40dc-9a17-156270d389ea # Add Time Controls 
             instructions: null
             label: null
@@ -56,7 +86,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 1e81c616-5004-4ecd-b9bf-d6f1deafe256 # Contains Swappable Orbits
+                  uid: 4f254b31-c733-46f3-95ec-e53c0c275a29
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: b1b21687-d796-444a-99a7-0cf763924887 # Show Details Table
             instructions: null
             label: null
