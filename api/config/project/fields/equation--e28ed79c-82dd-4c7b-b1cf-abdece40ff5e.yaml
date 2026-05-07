@@ -30,6 +30,17 @@ settings:
         -
           - default
           - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Asteroid Size'
+        -
+          - value
+          - asteroidSize
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown
