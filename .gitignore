@@ -10,3 +10,4 @@ google-app-credentials.json
 .idea
 db/*.sql
 api/gcs-local-dev.json
+api/plugins
