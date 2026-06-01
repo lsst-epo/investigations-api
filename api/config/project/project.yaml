@@ -1,4 +1,4 @@
-dateModified: 1778710650
+dateModified: 1780344141
 elementSources:
   craft\elements\Entry:
     -
@@ -229,6 +229,7 @@ meta:
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Entries' # Reference Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
     58dc56f1-d17a-424b-9aac-650a83f6b919: 'Table Cell' # Table Cell
+    060c8271-04e4-43af-9385-a7869562d048: 'Default Zoom' # Default Zoom
     61e0fe59-d439-429c-b783-2d71fe4c5d44: 'Y-axis Maximum' # Y-axis Maximum
     69b9ee9d-95c5-46a4-a1df-61f6c44a26ad: 'Show Sibling Nav' # Show Sibling Nav
     69cb131c-4118-487d-84be-d370e75627bd: Text # Text
