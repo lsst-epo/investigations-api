@@ -33,6 +33,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 060c8271-04e4-43af-9385-a7869562d048 # Default Zoom
+            instructions: 'Set this value to the desired starting zoom level for this Orbital Sim.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7ff31023-3e4c-42fd-ab6e-bb376aab9388
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 1e81c616-5004-4ecd-b9bf-d6f1deafe256 # Contains Swappable Orbits
             instructions: null
             label: null

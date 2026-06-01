@@ -1,0 +1,20 @@
+columnSuffix: pebbcvyy
+contentColumnType: 'decimal(12,2)'
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: defaultZoom
+instructions: 'Set this value to the desired starting zoom level for this widget.'
+name: 'Default Zoom'
+searchable: false
+settings:
+  decimals: 2
+  defaultValue: 0.5
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
