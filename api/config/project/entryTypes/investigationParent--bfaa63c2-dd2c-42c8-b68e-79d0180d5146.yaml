@@ -12,6 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -56,6 +57,24 @@ fieldLayouts:
             width: 100
         name: Content
         uid: 0ed72b51-65ac-4bd9-964e-939ccf54eeff
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b13f4459-60b8-4556-8f68-38f7bcf4f5cb # Assessments
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 637a52b1-6681-4aff-8a64-7a3db2c4f6fa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Assessments
+        uid: 32cf716f-eae5-4588-9da5-8947c2a13781
         userCondition: null
 handle: investigationParent
 hasTitleField: true
