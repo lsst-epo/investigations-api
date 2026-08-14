@@ -1,4 +1,4 @@
-dateModified: 1786744509
+dateModified: 1786745520
 elementSources:
   craft\elements\Entry:
     -
@@ -350,6 +350,7 @@ meta:
     b1df086c-d924-4729-bb80-d74b0c8a0be4: Investigation # Investigation
     b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: 'Color Filter Tool' # Color Filter Tool
     b11a5912-37c0-43fa-8d9c-a21d0b946aa6: 'Orbital Sim Tool' # Orbital Sim Tool
+    b13f4459-60b8-4556-8f68-38f7bcf4f5cb: Assessments # Assessments
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
     b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
     b9819ea2-2d0c-4527-91fe-7f650072d8cc: 'Responsive Assets' # Responsive Assets
@@ -1317,6 +1318,9 @@ plugins:
       activeSections:
         __assoc__:
           -
+            - assessments
+            - '1'
+          -
             - datasets
             - '1'
           -
@@ -1332,7 +1336,7 @@ plugins:
             - questions
             - '1'
           -
-            - referenceModals
+            - referenceContent
             - '1'
           -
             - widgets
