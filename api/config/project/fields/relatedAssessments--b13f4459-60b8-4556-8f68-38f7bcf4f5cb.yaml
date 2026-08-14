@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5dc7dc5c-2390-4eb4-9714-818aa35f5772 # Investigations
+handle: relatedAssessments
+instructions: null
+name: Assessments
+searchable: true
+settings:
+  selectionLabel: null
+  singleField: b1df086c-d924-4729-bb80-d74b0c8a0be4 # Investigation
+  source:
+    __assoc__:
+      -
+        - value
+        - f8b60baf-40d3-4cc6-9384-eecd53594755 # Assessments
+      -
+        - type
+        - section
+translationKeyFormat: null
+translationMethod: none
+type: verbb\manytomany\fields\ManyToManyField
