@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b94fe5b839749340a07a97e1d4d8623",
+    "content-hash": "8fc34f3791bd73a2eb55a2c20c57ab5b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -7537,6 +7537,66 @@
             "time": "2026-05-18T23:58:03+00:00"
         },
         {
+            "name": "verbb/many-to-many",
+            "version": "3.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/many-to-many/zipball/2f60cb213cb5d056cb82a52039707f4eb416ee4e",
+                "reference": "2f60cb213cb5d056cb82a52039707f4eb416ee4e",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "verbb/base": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Many to Many",
+                "handle": "manytomany",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/many-to-many/craft-4/CHANGELOG.md",
+                "class": "verbb\\manytomany\\ManyToMany"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\manytomany\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                },
+                {
+                    "name": "Page 8",
+                    "homepage": "http://page-8.com/"
+                },
+                {
+                    "name": "Oberon Amsterdam",
+                    "homepage": "https://www.oberon.nl"
+                }
+            ],
+            "description": "A field type to manage relationships from both sides.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "entries",
+                "fieldtype"
+            ],
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/many-to-many/issues?state=open",
+                "source": "https://github.com/verbb/many-to-many",
+                "docs": "https://github.com/verbb/many-to-many",
+                "rss": "https://github.com/verbb/many-to-many/commits/v2.atom"
+            },
+            "time": "2024-09-07T10:24:11+00:00"
+        },
+        {
             "name": "verbb/super-table",
             "version": "3.0.16",
             "dist": {
@@ -9267,13 +9327,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.1.10"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.9.0"
 }

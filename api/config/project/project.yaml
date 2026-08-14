@@ -1,4 +1,4 @@
-dateModified: 1786739997
+dateModified: 1786744509
 elementSources:
   craft\elements\Entry:
     -
@@ -1300,6 +1300,10 @@ plugins:
       userNotActivated: 'Please activate your account'
       userNotFound: 'We couldn''t find any matching users'
       volumeNotFound: 'We couldn''t find any matching volumes'
+  manytomany:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.1
   neo:
     edition: standard
     enabled: true
