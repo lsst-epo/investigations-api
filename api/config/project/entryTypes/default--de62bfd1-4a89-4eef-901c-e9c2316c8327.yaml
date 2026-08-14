@@ -1,5 +1,5 @@
 fieldLayouts:
-  4a700090-db2f-4939-bba5-25774f989aca:
+  53332d38-60a2-483c-86d3-191a85ff9a0d:
     tabs:
       -
         elementCondition: null
@@ -27,63 +27,45 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d0fcdb2a-17db-4d73-85a3-7f234d9b21e7
+            uid: 64867fe1-a340-4ee2-9866-c3fdc4b54530
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             elementCondition: null
-            fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
+            fieldUid: b1df086c-d924-4729-bb80-d74b0c8a0be4 # Investigation
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8505d8d9-cd65-4f4a-9305-147e1653a264
+            uid: c8c4c105-3316-44eb-b2c4-c387d4a9e831
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             elementCondition: null
-            fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
-            instructions: 'Credits to be displayed in the investigation menu'
-            label: Acknowledgements
+            fieldUid: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+            instructions: null
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4eed660e-5ef1-4664-a283-9988b8d53e7a
+            uid: e5a2be0a-a926-4177-b26b-864c25631fa1
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 0ed72b51-65ac-4bd9-964e-939ccf54eeff
+        uid: 2f4701f4-9006-4f40-ade3-4cfccf86ad04
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: b13f4459-60b8-4556-8f68-38f7bcf4f5cb # Assessments
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 637a52b1-6681-4aff-8a64-7a3db2c4f6fa
-            userCondition: null
-            warning: null
-            width: 100
-        name: Assessments
-        uid: 32cf716f-eae5-4588-9da5-8947c2a13781
-        userCondition: null
-handle: investigationParent
+handle: default
 hasTitleField: true
-name: 'Investigation (Parent Entry)'
-section: 1a93d10f-deca-4e6b-a3e8-9baae53e7c47 # Investigations
+name: Default
+section: f8b60baf-40d3-4cc6-9384-eecd53594755 # Assessments
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 2
+sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
