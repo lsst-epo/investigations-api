@@ -1,4 +1,4 @@
-dateModified: 1780344141
+dateModified: 1786739997
 elementSources:
   craft\elements\Entry:
     -
@@ -347,6 +347,7 @@ meta:
     b0af5e39-02aa-4d2b-97c8-3ef5ac7982fa: X-value # X-value
     b0465285-e18b-4739-a3a5-cb0ec0571dd8: Questions # Questions
     b1b21687-d796-444a-99a7-0cf763924887: 'Show Details Table' # Show Details Table
+    b1df086c-d924-4729-bb80-d74b0c8a0be4: Investigation # Investigation
     b9fc39fa-b5b7-4c0d-ab6d-b2f035451482: 'Color Filter Tool' # Color Filter Tool
     b11a5912-37c0-43fa-8d9c-a21d0b946aa6: 'Orbital Sim Tool' # Orbital Sim Tool
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
@@ -397,6 +398,7 @@ meta:
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
+    de62bfd1-4a89-4eef-901c-e9c2316c8327: Default # Default
     df8afd02-7d4c-48ba-a195-801deb77ba4d: Callouts # Callouts
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
@@ -420,6 +422,7 @@ meta:
     f5c1748c-ed4d-4945-b2ca-0c4750c1bdf9: 'Orbital Sim Data' # Orbital Sim Data
     f7ef882a-9d5d-4247-9e24-27d4a2702508: FilterImage # FilterImage
     f8a590d0-db30-4e06-9d6d-6cfd7613147e: 'Hide Title' # Hide Title
+    f8b60baf-40d3-4cc6-9384-eecd53594755: Assessments # Assessments
     f70bdbd4-bd5d-41d9-bbb1-3cd65d6bd6d6: Sites # Sites
     f633c7c8-51d2-4e26-93a0-630d539e83f7: 'Table Header' # Table Header
     f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: X # X

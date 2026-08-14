@@ -4,9 +4,13 @@ scope:
   - 'sites.547128fa-4529-4483-9968-66425996b69f:read' # EN
   - 'sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read' # ES
   - 'sites.356c97b0-54e5-44bb-901e-9d92a314134f:read' # FR
+  - 'sections.f8b60baf-40d3-4cc6-9384-eecd53594755:read' # Assessments
+  - 'entrytypes.de62bfd1-4a89-4eef-901c-e9c2316c8327:read' # Default
   - 'sections.fbfbf05d-c7e1-4f6c-a093-47065f8d5095:read' # Datasets
   - 'entrytypes.5e789abf-cfef-4ed4-b795-a4dcfe4fd284:read' # Supernova & Galaxy Observations
   - 'entrytypes.4e2c0e7e-a681-4ec0-914d-0de81a1183f4:read' # Star cluster
+  - 'entrytypes.223398db-b3af-4a6c-b2ce-a5f8d707d90f:read' # Orbital Sim Orbits
+  - 'entrytypes.75b9158d-af71-42ce-8daa-5a026215d2a9:read' # Sortable Table Data
   - 'sections.075467b0-0dee-453c-9df0-0de6d2443cf8:read' # Homepage
   - 'entrytypes.6f0c128e-9978-41c2-b982-dcdf3933b0e2:read' # Homepage
   - 'sections.1a93d10f-deca-4e6b-a3e8-9baae53e7c47:read' # Investigations
@@ -14,8 +18,10 @@ scope:
   - 'entrytypes.bfaa63c2-dd2c-42c8-b68e-79d0180d5146:read' # Investigation (Parent Entry)
   - 'entrytypes.1a365d49-310d-41cf-afd2-3acd4cff3660:read' # Investigation Section Break (Child Entry)
   - 'sections.8dc1c6cb-eb37-4ad7-b9c8-7d0891fcd42d:read' # Pages
-  - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
   - 'entrytypes.77f02908-0342-4917-9d14-38f769d15c39:read' # Pages
+  - 'entrytypes.7bd60210-4767-46b3-b735-61a1499b90b7:read' # Redirect Page
+  - 'entrytypes.fd4ecb97-cf1b-46b4-8e4c-d17153d67d0c:read' # Educator Pages
+  - 'entrytypes.c84c5968-312a-455c-9b05-110670d8031f:read' # Investigation Landing Page
   - 'sections.9068dd8e-ad92-4925-ba1d-1fe180598462:read' # Questions
   - 'entrytypes.021f7cc6-93ec-4da4-9566-8d05c64d1725:read' # Default
   - 'sections.c2356ed1-1e49-4056-83c7-ed615a2694b1:read' # Reference Content
@@ -25,7 +31,11 @@ scope:
   - 'entrytypes.297d2268-f298-40a1-bec3-a1c836a69e38:read' # Source Selector
   - 'entrytypes.24e5bfd8-45a1-4e03-a9ee-e013a26057ec:read' # Light Curve Tool
   - 'entrytypes.6942a0c3-4eea-4597-a0ce-f8325e5bb06f:read' # Isochrone Plot
+  - 'entrytypes.16d66db4-47e3-4e22-a040-357377f43cb0:read' # Sortable Table
+  - 'entrytypes.6c962924-3a8a-4330-8938-b2ad19bde173:read' # Orbital Sim
   - 'volumes.7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e:read' # Datasets
+  - 'volumes.e16860ef-2ca8-4263-8a18-7cfcce7238c1:read' # Heroes
+  - 'volumes.c5aab8e2-1748-43cd-97ec-3164090edd1a:read' # Content Images
   - 'globalsets.aee57b4f-2623-44fc-af2b-c670f6e1babe:read' # Site information
   - 'globalsets.0edce3a2-c596-4238-9dde-212c83d5a65f:read' # Menu Content
   - 'categorygroups.90aa9610-a9c9-4531-95f8-d0068046ae25:read' # Sort Options
