@@ -124,7 +124,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: a03e80f0-77ce-4b03-abf5-76a0deb264a9 # JSON
-            instructions: 'Alerts dataset'
+            instructions: "The \"id\" field for each alert must match its corresponding image's file name in the Canto album, minus the file extension.\r\nExample: an image named \"2003_QZ30_0.jpg\" gets an ID of \"2003_QZ30_0\"."
             label: Alerts
             required: true
             tip: null
