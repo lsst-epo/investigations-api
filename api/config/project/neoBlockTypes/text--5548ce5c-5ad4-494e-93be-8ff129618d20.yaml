@@ -21,8 +21,26 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Tab 1'
+        name: Content
         uid: 86e5c25c-9fa9-41f6-83d7-60cedf48abab
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c0faab33-ca5a-46ba-9631-94a314cb3879 # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: faa6958d-56f1-4424-9ed1-5a5832f75290
+            userCondition: null
+            warning: null
+            width: 100
+        name: Style
+        uid: c16347e2-b5b5-432d-82fb-59474a93b8af
         userCondition: null
 group: null
 groupChildBlockTypes: true
