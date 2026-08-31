@@ -13,11 +13,23 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c22e4947-7fbb-488a-994f-246c31e27b95 # Image
             instructions: null
-            label: null
-            required: true
+            label: 'Canto Asset'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: daf6ca48-a51c-408b-a898-381be6c31f30
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 769784ef-f338-43bf-9395-2666b5ddc083 # Content Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5bcb666b-7d12-4b73-99c8-6111190f207a
             userCondition: null
             warning: null
             width: 100

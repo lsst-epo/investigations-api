@@ -1,4 +1,4 @@
-dateModified: 1786745520
+dateModified: 1788216724
 elementSources:
   craft\elements\Entry:
     -
@@ -290,7 +290,7 @@ meta:
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
-    56651b9b-ef5e-4d00-9cfb-edfabbf54a7b: 'Vertical Alignnment' # Vertical Alignnment
+    56651b9b-ef5e-4d00-9cfb-edfabbf54a7b: 'Vertical Alignment' # Vertical Alignment
     58870c93-0dd4-4657-89de-c08e599a2421: 'Full Width' # Full Width
     59560b67-c194-46fc-9404-cb790a44800a: Image # Image
     069834df-b9cb-47d6-9ff4-756fde01e084: Item # Item
