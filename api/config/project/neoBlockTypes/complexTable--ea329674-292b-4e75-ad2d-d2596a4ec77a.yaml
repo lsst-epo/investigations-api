@@ -35,7 +35,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 56651b9b-ef5e-4d00-9cfb-edfabbf54a7b # Vertical Alignnment
+            fieldUid: 56651b9b-ef5e-4d00-9cfb-edfabbf54a7b # Vertical Alignment
             instructions: null
             label: null
             required: false
