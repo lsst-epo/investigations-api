@@ -7,7 +7,16 @@ name: 'Complex Table'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 1580168878
+  changedFieldIndicator: 1858920766
+  columns:
+    __assoc__:
+      -
+        - e7468177-b56b-4fbc-8ca0-af8c830cabef # Table Row
+        -
+          __assoc__:
+            -
+              - width
+              - ''
   contentTable: '{{%stc_complextable}}'
   fieldLayout: row
   maxRows: null
