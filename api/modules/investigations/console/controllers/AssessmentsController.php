@@ -7,6 +7,7 @@ use craft\base\ElementInterface;
 use craft\base\FieldInterface;
 use craft\console\Controller;
 use craft\elements\Asset;
+use craft\elements\db\ElementQuery;
 use craft\elements\Entry;
 use craft\errors\InvalidElementException;
 use craft\fields\BaseRelationField;
@@ -408,10 +409,20 @@ class AssessmentsController extends Controller
             if ($investigation) {
                 $localized->setFieldValue('investigationEntry', [$investigation->id]);
             }
-            $localized->setFieldValue(
-                'contentBlocks',
-                $this->buildBlocks($siteData['contentBlocks'], 'contentBlocks', $localized)
-            );
+
+            $blocks = $this->buildBlocksForSite($localized, $siteData['contentBlocks'], 'contentBlocks');
+
+            if ($blocks === null) {
+                $this->warnings[] = sprintf(
+                    'Locale %s for "%s": propagated blocks do not line up with the source, so the '
+                    . 'blocks were left alone rather than overwriting the %s content.',
+                    $site->handle,
+                    $slug,
+                    $primary->handle
+                );
+            } else {
+                $localized->setFieldValue('contentBlocks', $blocks);
+            }
 
             if (!Craft::$app->getElements()->saveElement($localized)) {
                 $this->warnings[] = sprintf(
@@ -466,6 +477,228 @@ class AssessmentsController extends Controller
         }
 
         return $out;
+    }
+
+    // =========================================================================
+    // Block building, non-primary sites
+    // =========================================================================
+
+    /**
+     * Builds a payload that updates the blocks already propagated into $owner's
+     * site, rather than creating new ones.
+     *
+     * contentBlocks is propagationMethod: all, so its blocks are shared elements -
+     * one block ID with a content row per site. Submitting a fresh newN set on the
+     * Spanish pass makes Neo replace the whole structure and seed every site from
+     * the saving site's values, which is how English ends up holding Spanish text.
+     * Reusing the existing IDs lets Neo write per-site content only where a field
+     * is genuinely translatable.
+     *
+     * Returns null when the propagated structure doesn't line up with the source,
+     * which is the caller's cue to leave the locale alone rather than overwrite
+     * good English content on a guess.
+     */
+    private function buildBlocksForSite(ElementInterface $owner, array $sourceBlocks, string $fieldHandle): ?array
+    {
+        $field = $this->findField($owner, $fieldHandle);
+        if (!$field instanceof \benf\neo\Field) {
+            return null;
+        }
+
+        $existing = $this->existingBlocks($owner, $fieldHandle);
+        if (count($existing) !== count($sourceBlocks)) {
+            return null;
+        }
+
+        $byHandle = [];
+        foreach ($field->getBlockTypes() as $bt) {
+            $byHandle[$bt->handle] = $bt;
+        }
+
+        $sortOrder = [];
+        $blocks = [];
+
+        foreach (array_values($existing) as $i => $block) {
+            $handle = $block->getType()->handle;
+            if (($sourceBlocks[$i]['type'] ?? null) !== $handle) {
+                return null;
+            }
+
+            $sortOrder[] = $block->id;
+            $blocks[$block->id] = [
+                'type' => $handle,
+                'enabled' => $block->enabled,
+                'level' => $block->level,
+                'fields' => $this->mapFieldsForSite(
+                    $block,
+                    $sourceBlocks[$i]['fields'] ?? [],
+                    $byHandle[$handle]?->getFieldLayout()?->getCustomFields() ?? []
+                ),
+            ];
+        }
+
+        // Neo only honours existing block IDs in the delta format - given a plain
+        // array it rewrites every key to newN. Matrix and Super Table both accept
+        // the plain keyed form.
+        return ['sortOrder' => $sortOrder, 'blocks' => $blocks];
+    }
+
+    /**
+     * mapFields() for a non-primary site.
+     *
+     * Containers always recurse, whatever their own translation method, because
+     * their translatable descendants still need writing. Leaf fields are included
+     * only when they're translatable - anything else shares one value with English,
+     * so writing it here would overwrite that.
+     *
+     * @param FieldInterface[] $targetFields
+     */
+    private function mapFieldsForSite(ElementInterface $owner, array $source, array $targetFields): array
+    {
+        $byHandle = [];
+        foreach ($targetFields as $f) {
+            $byHandle[$f->handle] = $f;
+        }
+
+        $out = [];
+
+        foreach ($source as $handle => $value) {
+            $targetHandle = self::FIELD_RENAMES[$handle] ?? $handle;
+            $target = $byHandle[$targetHandle] ?? null;
+
+            if ($target === null) {
+                // Already counted on the primary pass; don't double-report it.
+                continue;
+            }
+
+            if ($target instanceof Matrix) {
+                $nested = $this->buildMatrixForSite($owner, $target, $value);
+                if ($nested !== null) {
+                    $out[$targetHandle] = $nested;
+                }
+                continue;
+            }
+
+            if ($target instanceof \verbb\supertable\fields\SuperTableField) {
+                $nested = $this->buildSuperTableForSite($owner, $target, $value);
+                if ($nested !== null) {
+                    $out[$targetHandle] = $nested;
+                }
+                continue;
+            }
+
+            if (!$target->getIsTranslatable($owner)) {
+                continue;
+            }
+
+            if (isset(self::VALUE_MAPS[$targetHandle])
+                && (is_string($value) || $value === null)
+                && array_key_exists((string)$value, self::VALUE_MAPS[$targetHandle])) {
+                $value = self::VALUE_MAPS[$targetHandle][(string)$value];
+            }
+
+            $out[$targetHandle] = $this->mapValue($target, $value);
+        }
+
+        return $out;
+    }
+
+    private function buildMatrixForSite(ElementInterface $owner, Matrix $field, mixed $value): ?array
+    {
+        if (!is_array($value)) {
+            return null;
+        }
+
+        $existing = $this->existingBlocks($owner, $field->handle);
+        if (count($existing) !== count($value)) {
+            return null;
+        }
+
+        $byHandle = [];
+        foreach ($field->getBlockTypes() as $bt) {
+            $byHandle[$bt->handle] = $bt;
+        }
+
+        $value = array_values($value);
+        $out = [];
+
+        foreach (array_values($existing) as $i => $block) {
+            $handle = $block->getType()->handle;
+            if (($value[$i]['type'] ?? null) !== $handle) {
+                return null;
+            }
+
+            // Every existing block has to stay in the payload - the keys double as
+            // the sort order, so an omitted block is a deleted block.
+            $out[$block->id] = [
+                'type' => $handle,
+                'enabled' => $block->enabled,
+                'fields' => $this->mapFieldsForSite(
+                    $block,
+                    $value[$i]['fields'] ?? [],
+                    $byHandle[$handle]?->getFieldLayout()?->getCustomFields() ?? []
+                ),
+            ];
+        }
+
+        return $out;
+    }
+
+    private function buildSuperTableForSite(
+        ElementInterface $owner,
+        \verbb\supertable\fields\SuperTableField $field,
+        mixed $value
+    ): ?array {
+        if (!is_array($value)) {
+            return null;
+        }
+
+        $blockTypes = $field->getBlockTypes();
+        if (empty($blockTypes)) {
+            return null;
+        }
+
+        $existing = $this->existingBlocks($owner, $field->handle);
+        if (count($existing) !== count($value)) {
+            return null;
+        }
+
+        $layoutFields = $blockTypes[0]->getFieldLayout()?->getCustomFields() ?? [];
+        $value = array_values($value);
+        $out = [];
+
+        foreach (array_values($existing) as $i => $block) {
+            $out[$block->id] = [
+                'type' => $blockTypes[0]->id,
+                'fields' => $this->mapFieldsForSite($block, $value[$i]['fields'] ?? [], $layoutFields),
+            ];
+        }
+
+        return $out;
+    }
+
+    /**
+     * The blocks already propagated into $element's site, in sort order.
+     *
+     * @return ElementInterface[]
+     */
+    private function existingBlocks(ElementInterface $element, string $handle): array
+    {
+        try {
+            $value = $element->getFieldValue($handle);
+        } catch (\Throwable) {
+            return [];
+        }
+
+        if ($value instanceof ElementQuery) {
+            return (clone $value)->status(null)->all();
+        }
+
+        if (is_iterable($value)) {
+            return is_array($value) ? $value : iterator_to_array($value);
+        }
+
+        return [];
     }
 
     /**
