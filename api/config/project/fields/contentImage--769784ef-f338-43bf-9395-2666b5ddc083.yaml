@@ -14,7 +14,7 @@ settings:
   branchLimit: null
   defaultUploadLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
   defaultUploadLocationSubpath: null
-  localizeRelations: false
+  localizeRelations: true
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
