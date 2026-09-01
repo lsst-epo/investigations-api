@@ -11,3 +11,5 @@ google-app-credentials.json
 db/*.sql
 api/gcs-local-dev.json
 api/plugins
+# Assessments migration bundle (staged for import, not source)
+api/storage/assessments-import/
