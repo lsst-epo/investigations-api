@@ -1,0 +1,9 @@
+baseUrl: '@webBaseUrl/pt'
+enabled: '1'
+handle: pt
+hasUrls: true
+language: pt
+name: PT
+primary: false
+siteGroup: 1a35bfab-6a39-4c03-b273-2d5e3151c335 # Rubin Telescope Education and Public Outreach
+sortOrder: 4

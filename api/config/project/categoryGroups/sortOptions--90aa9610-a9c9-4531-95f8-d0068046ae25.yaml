@@ -41,6 +41,10 @@ siteSettings:
     hasUrls: true
     template: null
     uriFormat: 'sort-options/{slug}'
+  0032cd50-9ee1-418e-b9f9-971e93f359ed: # PT
+    hasUrls: true
+    template: null
+    uriFormat: 'sort-options/{slug}'
   356c97b0-54e5-44bb-901e-9d92a314134f: # FR
     hasUrls: true
     template: null
