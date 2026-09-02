@@ -4,6 +4,7 @@ scope:
   - 'sites.547128fa-4529-4483-9968-66425996b69f:read' # EN
   - 'sites.2c2e1c6a-eb4d-44f1-9a43-8d79b326f354:read' # ES
   - 'sites.356c97b0-54e5-44bb-901e-9d92a314134f:read' # FR
+  - 'sites.0032cd50-9ee1-418e-b9f9-971e93f359ed:read' # PT
   - 'sections.fbfbf05d-c7e1-4f6c-a093-47065f8d5095:read' # Datasets
   - 'entrytypes.5e789abf-cfef-4ed4-b795-a4dcfe4fd284:read' # Supernova & Galaxy Observations
   - 'entrytypes.4e2c0e7e-a681-4ec0-914d-0de81a1183f4:read' # Star cluster
