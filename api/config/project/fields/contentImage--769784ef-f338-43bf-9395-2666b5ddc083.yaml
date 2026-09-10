@@ -20,7 +20,7 @@ settings:
   minRelations: null
   previewMode: full
   restrictFiles: true
-  restrictLocation: true
+  restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
   restrictedLocationSubpath: null
