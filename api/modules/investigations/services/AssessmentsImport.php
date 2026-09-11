@@ -30,6 +30,9 @@ class AssessmentsImport extends Component
     /** Section the assessments land in. */
     private const SECTION = 'assessments';
 
+    /** Entries field on Investigation Parent holding the hand-ordered assessments. */
+    private const RELATED_FIELD = 'relatedAssessments';
+
     /** Default volume the migrated binaries land in. */
     private const VOLUME = 'contentImages';
 
@@ -62,6 +65,15 @@ class AssessmentsImport extends Component
 
     /** @var array<int,int> sourceAssetId => targetAssetId */
     private array $assetMap = [];
+
+    /**
+     * Assessments this run placed under each investigation, in bundle order.
+     *
+     * Entries created by a dry run have no ID yet and are recorded as null.
+     *
+     * @var array<int,array<int|null>> investigation entry ID => assessment entry IDs
+     */
+    private array $assessmentsByInvestigation = [];
 
     /** @var string[] */
     private array $warnings = [];
@@ -362,6 +374,8 @@ class AssessmentsImport extends Component
             };
         }
 
+        $this->linkAssessments($investigations, $result);
+
         $result->droppedFields = $this->droppedFields;
         $result->notices = $this->notices;
         $result->warnings = $this->warnings;
@@ -439,6 +453,7 @@ class AssessmentsImport extends Component
                 );
                 return 'failed';
             }
+            $this->recordAssessment($investigation, $entry);
             return $isNew ? 'created' : 'updated';
         }
 
@@ -456,9 +471,126 @@ class AssessmentsImport extends Component
             return 'failed';
         }
 
+        $this->recordAssessment($investigation, $entry);
         $this->applyOtherSites($entry, $record, $slug, $investigation, $primary);
 
         return $isNew ? 'created' : 'updated';
+    }
+
+    // =========================================================================
+    // Ordered relations on the investigation
+    // =========================================================================
+
+    /**
+     * Queues an imported assessment for the investigation's ordered Entries field.
+     */
+    private function recordAssessment(?Entry $investigation, Entry $assessment): void
+    {
+        if ($investigation === null) {
+            return;
+        }
+
+        $this->assessmentsByInvestigation[$investigation->id][] = $assessment->id;
+    }
+
+    /**
+     * Writes the hand-ordered Entries field on every investigation this run touched.
+     *
+     * investigationEntry points from the assessment at its investigation, and the
+     * Many to Many field used to derive the other side from it. Now that editors
+     * order the relations by hand, the investigation side is its own field and
+     * nothing maintains it, so the import writes it here: relations already on the
+     * entry keep their order, and assessments not yet related are appended in
+     * bundle order.
+     *
+     * @param array<string,Entry> $investigations normalized title => investigation
+     */
+    private function linkAssessments(array $investigations, ImportResult $result): void
+    {
+        if (empty($this->assessmentsByInvestigation)) {
+            return;
+        }
+
+        $byId = [];
+        foreach ($investigations as $investigation) {
+            $byId[$investigation->id] = $investigation;
+        }
+
+        foreach ($this->assessmentsByInvestigation as $investigationId => $assessmentIds) {
+            $investigation = $byId[$investigationId] ?? null;
+            if (!$investigation) {
+                continue;
+            }
+
+            if (!$this->findField($investigation, self::RELATED_FIELD)) {
+                $this->warnings[] = sprintf(
+                    "No '%s' field on the Investigation Parent layout; \"%s\" was left alone.",
+                    self::RELATED_FIELD,
+                    $investigation->title
+                );
+                continue;
+            }
+
+            $existing = $this->existingRelations($investigation, self::RELATED_FIELD);
+
+            // A dry run has no IDs for the entries it would create; each is a relation.
+            $pending = count(array_filter($assessmentIds, fn($id) => $id === null));
+            $saved = array_values(array_unique(array_filter($assessmentIds)));
+
+            $ordered = array_merge($existing, array_values(array_diff($saved, $existing)));
+            $added = count($ordered) - count($existing) + $pending;
+
+            if ($added === 0) {
+                continue;
+            }
+
+            $result->relationsAdded += $added;
+            $result->investigationsLinked++;
+
+            if ($this->dryRun) {
+                continue;
+            }
+
+            $investigation->setFieldValue(self::RELATED_FIELD, $ordered);
+
+            if (!Craft::$app->getElements()->saveElement($investigation)) {
+                $this->warnings[] = sprintf(
+                    'Could not write %s on "%s": %s',
+                    self::RELATED_FIELD,
+                    $investigation->title,
+                    json_encode($investigation->getErrors())
+                );
+            }
+        }
+    }
+
+    /**
+     * The element IDs already related through $handle, in their stored order.
+     *
+     * Disabled targets count: they are dropped from the field otherwise.
+     *
+     * @return int[]
+     */
+    private function existingRelations(ElementInterface $element, string $handle): array
+    {
+        try {
+            $value = $element->getFieldValue($handle);
+        } catch (\Throwable) {
+            return [];
+        }
+
+        if ($value instanceof ElementQuery) {
+            return array_map('intval', (clone $value)->status(null)->limit(null)->ids());
+        }
+
+        $ids = [];
+        foreach (is_iterable($value) ? $value : [] as $related) {
+            if ($related instanceof ElementInterface && $related->id) {
+                $ids[] = (int)$related->id;
+            }
+        }
+
+        return $ids;
     }
 
     /**
@@ -1087,6 +1219,7 @@ class AssessmentsImport extends Component
         $this->onNotice = $onNotice;
         $this->authorId = null;
         $this->assetMap = [];
+        $this->assessmentsByInvestigation = [];
         $this->warnings = [];
         $this->droppedFields = [];
         $this->notices = [];

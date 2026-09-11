@@ -21,6 +21,12 @@ class ImportResult
     public int $updated = 0;
     public int $failed = 0;
 
+    /** Assessments appended to an investigation's ordered Assessments field. */
+    public int $relationsAdded = 0;
+
+    /** Investigations whose ordered Assessments field the run changed. */
+    public int $investigationsLinked = 0;
+
     /** @var array<string,int> source handle => count of dropped values with content */
     public array $droppedFields = [];
 
@@ -40,13 +46,24 @@ class ImportResult
 
     public function summary(): string
     {
-        return sprintf(
+        $summary = sprintf(
             '%s: %d created, %d updated, %d failed.',
             $this->dryRun ? 'Dry run' : 'Import',
             $this->created,
             $this->updated,
             $this->failed
         );
+
+        if ($this->relationsAdded > 0) {
+            $summary .= sprintf(
+                ' %s %d assessment(s) to the ordered field on %d investigation(s).',
+                $this->dryRun ? 'Would add' : 'Added',
+                $this->relationsAdded,
+                $this->investigationsLinked
+            );
+        }
+
+        return $summary;
     }
 
     public function toArray(): array
@@ -61,6 +78,8 @@ class ImportResult
             'created' => $this->created,
             'updated' => $this->updated,
             'failed' => $this->failed,
+            'relationsAdded' => $this->relationsAdded,
+            'investigationsLinked' => $this->investigationsLinked,
             'droppedFields' => $this->droppedFields,
             'summary' => $this->summary(),
             'notices' => $this->notices,
