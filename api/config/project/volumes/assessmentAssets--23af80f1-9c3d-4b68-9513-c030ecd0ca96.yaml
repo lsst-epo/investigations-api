@@ -1,0 +1,44 @@
+fieldLayouts:
+  afa6f62c-aa1c-41cc-a1d0-67e5cc9ac292:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 55ba0307-f7fb-4298-b136-e1193557648b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e46529bf-77dd-4af7-9c07-36bb679dd8fc
+        userCondition: null
+fs: assessmentAssetStorage
+handle: assessmentAssets
+name: 'Assessment Assets'
+sortOrder: 6
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''
