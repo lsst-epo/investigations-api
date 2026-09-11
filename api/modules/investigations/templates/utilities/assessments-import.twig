@@ -1,0 +1,116 @@
+{% import "_includes/forms" as forms %}
+
+{% set hasBundle = state.records > 0 %}
+{% set hasAssetIndex = state.assets > 0 %}
+{% set hasMap = state.map > 0 %}
+
+<div id="assessments-import">
+
+    <p class="light">
+        Imports an assessments bundle produced by <code>rubin-obs-api</code> into the
+        Assessments channel. Work through the steps in order — each one reports what it
+        did before you move on.
+    </p>
+
+    {# ---------------------------------------------------------------- Step 1 #}
+    <div class="ai-step" data-step="bundle">
+        <h2>1. Upload the bundle</h2>
+
+        <p>
+            Zip the bundle directory and upload it here. The zip should contain
+            <code>assessments.json</code> and an <code>assets/</code> directory.
+            Uploads are limited to {{ (maxUploadSize / 1024 / 1024)|round }}&nbsp;MB.
+        </p>
+
+        {% if hasBundle %}
+            <p class="ai-state">
+                <span data-icon="check"></span>
+                A bundle is already unpacked: {{ state.records }} record(s),
+                {{ state.assets }} asset(s) listed.
+            </p>
+        {% endif %}
+
+        <input type="file" name="bundle" accept=".zip,application/zip" class="ai-file">
+        <button type="button" class="btn submit" data-action="upload-bundle">Upload bundle</button>
+
+        <div class="ai-result" data-result="bundle"></div>
+    </div>
+
+    {# ---------------------------------------------------------------- Step 2 #}
+    <div class="ai-step" data-step="assets">
+        <h2>2. Upload the assets</h2>
+
+        <p>
+            Copies the bundle's files into a volume and records which asset each
+            source reference became. Whichever volume you pick is where these files
+            stay, so pick the one the imported content should point at.
+        </p>
+
+        {{ forms.selectField({
+            label: 'Volume',
+            id: 'ai-volume',
+            name: 'volume',
+            options: volumes,
+            instructions: 'Assets are written to this volume\'s root folder.',
+        }) }}
+
+        <p class="ai-fs light" data-fs></p>
+        <p class="ai-warning hidden" data-fs-warning></p>
+
+        {% if hasMap %}
+            <p class="ai-state">
+                <span data-icon="check"></span>
+                {{ state.map }} asset(s) already mapped.
+            </p>
+        {% endif %}
+
+        <button type="button" class="btn submit" data-action="upload-assets"
+                {% if not hasAssetIndex %}disabled{% endif %}>Upload assets</button>
+
+        <div class="ai-result" data-result="assets"></div>
+    </div>
+
+    {# ---------------------------------------------------------------- Step 3 #}
+    <div class="ai-step" data-step="dry-run">
+        <h2>3. Dry run</h2>
+
+        <p>
+            Validates every record without saving anything. Fix whatever it reports
+            before running the real import.
+        </p>
+
+        <button type="button" class="btn" data-action="dry-run"
+                {% if not hasBundle %}disabled{% endif %}>Run dry run</button>
+
+        <div class="ai-result" data-result="dry-run"></div>
+    </div>
+
+    {# ---------------------------------------------------------------- Step 4 #}
+    <div class="ai-step" data-step="import">
+        <h2>4. Import</h2>
+
+        <p>
+            Creates and updates entries in the Assessments channel. Records are matched
+            by slug, so running this again updates the entries it made last time rather
+            than duplicating them.
+        </p>
+
+        {{ forms.checkboxField({
+            label: 'Delete the bundle afterwards',
+            id: 'ai-cleanup',
+            name: 'cleanup',
+            checked: true,
+            instructions: 'Removes the unpacked bundle on success. The asset map is kept so a later re-import keeps its file relations.',
+        }) }}
+
+        <button type="button" class="btn submit" data-action="import" disabled>Run import</button>
+        <p class="light ai-gate">Run a dry run first.</p>
+
+        <div class="ai-result" data-result="import"></div>
+    </div>
+
+</div>
+
+{% js %}
+    window.InvestigationsAssessmentsImportVolumes = {{ volumes|json_encode|raw }};
+{% endjs %}
