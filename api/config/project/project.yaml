@@ -1,4 +1,4 @@
-dateModified: 1789422685
+dateModified: 1789422712
 elementSources:
   craft\elements\Entry:
     -
@@ -94,6 +94,18 @@ email:
     username: $EMAIL_SMTP_USERNAME
   transportType: craft\mail\transportadapters\Smtp
 fs:
+  assessmentAssetStorage:
+    hasUrls: true
+    name: 'Assessment Asset Storage'
+    settings:
+      bucket: $GCS_BUCKET
+      bucketSelectionMode: manual
+      expires: ''
+      keyFileContents: ''
+      projectId: $GCP_PROJECT_ID
+      subfolder: ''
+    type: craft\googlecloud\Fs
+    url: '@gcsBucketBaseURL'
   contentImages:
     hasUrls: true
     name: 'Content Images'
@@ -206,6 +218,7 @@ meta:
     17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
     20ce6c99-37f5-4f50-91fa-587e9f7ef466: Comparison # Comparison
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
+    23af80f1-9c3d-4b68-9513-c030ecd0ca96: 'Assessment Assets' # Assessment Assets
     23ca3082-ab51-4658-9872-cf7f31a9bd56: Images # Images
     24e5bfd8-45a1-4e03-a9ee-e013a26057ec: 'Light Curve Tool' # Light Curve Tool
     24f2e959-23a9-4f1a-8394-0849fb85b85b: Precision # Precision
