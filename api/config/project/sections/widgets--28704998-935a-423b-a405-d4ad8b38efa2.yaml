@@ -9,6 +9,11 @@ siteSettings:
     hasUrls: false
     template: null
     uriFormat: null
+  0032cd50-9ee1-418e-b9f9-971e93f359ed: # PT
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
   356c97b0-54e5-44bb-901e-9d92a314134f: # FR
     enabledByDefault: true
     hasUrls: false
