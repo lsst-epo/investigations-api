@@ -5,12 +5,14 @@ namespace modules\investigations\services;
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\FieldInterface;
+use craft\base\FsInterface;
 use craft\elements\Asset;
 use craft\elements\db\ElementQuery;
 use craft\elements\Entry;
 use craft\errors\InvalidElementException;
 use craft\fields\BaseRelationField;
 use craft\fields\Matrix;
+use craft\flysystem\base\FlysystemFs;
 use craft\helpers\FileHelper;
 use craft\helpers\StringHelper;
 use modules\investigations\models\AssetsResult;
@@ -34,7 +36,7 @@ class AssessmentsImport extends Component
     private const RELATED_FIELD = 'relatedAssessments';
 
     /** Default volume the migrated binaries land in. */
-    private const VOLUME = 'contentImages';
+    private const VOLUME = 'assessmentAssets';
 
     /** Source handle => target handle. */
     private const FIELD_RENAMES = [
@@ -152,6 +154,9 @@ class AssessmentsImport extends Component
 
     /**
      * Uploads the bundle's binaries into the target volume and writes asset-map.json.
+     *
+     * A file already in the volume's root folder with the same name and bytes is
+     * reused, or indexed if Craft has no asset for it, instead of uploaded again.
      */
     public function uploadAssets(
         ?string $dir = null,
@@ -190,81 +195,125 @@ class AssessmentsImport extends Component
         $this->notice(sprintf("Uploading into '%s' (%s).", $result->volumeName, $result->fsDescription));
 
         $folder = Craft::$app->getAssets()->getRootFolderByVolumeId($volume->id);
+        $fs = $volume->getFs();
         $priorMap = array_map('intval', $this->readJson($dir . '/' . self::BUNDLE_ASSET_MAP));
         $map = [];
         $done = 0;
+        $session = null;
 
-        foreach ($index as $item) {
-            $this->progress(++$done / $result->total, "Asset $done of {$result->total}");
+        try {
+            foreach ($index as $item) {
+                $this->progress(++$done / $result->total, "Asset $done of {$result->total}");
 
-            // Reuses the asset already recorded for this ref in asset-map.json.
-            $priorId = $priorMap[$item['assetRef']] ?? null;
-            if ($priorId) {
-                $prior = Asset::find()->id($priorId)->volumeId($volume->id)->status(null)->one();
-                if ($prior && $prior->filename === $item['filename']) {
-                    $map[$item['assetRef']] = $prior->id;
-                    $result->reused++;
+                // Reuses the asset already recorded for this ref in asset-map.json.
+                $priorId = $priorMap[$item['assetRef']] ?? null;
+                if ($priorId) {
+                    $prior = Asset::find()->id($priorId)->volumeId($volume->id)->status(null)->one();
+                    if ($prior && $prior->filename === $item['filename']) {
+                        $map[$item['assetRef']] = $prior->id;
+                        $result->reused++;
+                        continue;
+                    }
+                }
+
+                $path = $dir . '/' . $item['file'];
+                $uri = $folder->path . $item['filename'];
+
+                // Matches an unmapped ref to an indexed asset at its upload location by bytes.
+                $existing = Asset::find()
+                    ->volumeId($volume->id)
+                    ->folderId($folder->id)
+                    ->filename($item['filename'])
+                    ->status(null)
+                    ->one();
+
+                if ($existing) {
+                    if ($this->sameBytes($fs, $existing->getPath(), $path, $item['sha256'])) {
+                        $map[$item['assetRef']] = $existing->id;
+                        $result->reused++;
+                        continue;
+                    }
+
+                    $this->warnings[] = "{$item['filename']} already exists with different contents; uploading under a new name.";
+                } else {
+                    // Checks the volume for a file Craft has not indexed.
+                    try {
+                        $inVolume = $fs->fileExists($uri);
+                    } catch (\Throwable $e) {
+                        $this->warnings[] = "Could not check the volume for {$item['filename']}: {$e->getMessage()}";
+                        continue;
+                    }
+
+                    if ($inVolume) {
+                        if (!$this->sameBytes($fs, $uri, $path, $item['sha256'])) {
+                            $this->warnings[] = "{$item['filename']} already exists with different contents; uploading under a new name.";
+                        } elseif ($this->dryRun) {
+                            $map[$item['assetRef']] = 0;
+                            $result->indexed++;
+                            continue;
+                        } else {
+                            $session ??= Craft::$app->getAssetIndexer()->createIndexingSession([$volume]);
+                            $indexed = $this->indexVolumeFile($volume, $uri, $session->id, $item);
+                            if ($indexed) {
+                                $map[$item['assetRef']] = $indexed->id;
+                                $result->indexed++;
+                            }
+                            // Leaves a ref that failed to index unmapped rather than uploading a second copy.
+                            continue;
+                        }
+                    }
+                }
+
+                if (!is_file($path)) {
+                    $this->warnings[] = "Bundle file missing: {$item['file']}";
                     continue;
                 }
-            }
 
-            // Matches an unmapped ref to an existing asset by filename and bytes.
-            $existing = Asset::find()
-                ->volumeId($volume->id)
-                ->filename($item['filename'])
-                ->status(null)
-                ->one();
+                if ($this->dryRun) {
+                    $map[$item['assetRef']] = 0;
+                    $result->uploaded++;
+                    continue;
+                }
 
-            if ($existing && $this->sameBytes($existing, $item['sha256'])) {
-                $map[$item['assetRef']] = $existing->id;
-                $result->reused++;
-                continue;
-            }
+                // Copies the bundle file to a temp path; saving the asset consumes it.
+                $temp = Craft::$app->getPath()->getTempPath() . '/' . uniqid('assessment-', true)
+                    . '.' . pathinfo($item['filename'], PATHINFO_EXTENSION);
 
-            $path = $dir . '/' . $item['file'];
-            if (!is_file($path)) {
-                $this->warnings[] = "Bundle file missing: {$item['file']}";
-                continue;
-            }
+                if (!copy($path, $temp)) {
+                    $this->warnings[] = "Could not stage {$item['file']} for upload.";
+                    continue;
+                }
 
-            if ($this->dryRun) {
-                $map[$item['assetRef']] = 0;
+                $asset = new Asset();
+                $asset->tempFilePath = $temp;
+                $asset->setFilename($item['filename']);
+                $asset->newFolderId = $folder->id;
+                $asset->setVolumeId($volume->id);
+                $asset->avoidFilenameConflicts = true;
+                // Stores the bundle bytes as-is, so later runs can match them by checksum.
+                $asset->sanitizeOnUpload = false;
+                $asset->setScenario(Asset::SCENARIO_CREATE);
+                if (!empty($item['alt'])) {
+                    $asset->alt = $item['alt'];
+                }
+
+                if (!Craft::$app->getElements()->saveElement($asset)) {
+                    $this->warnings[] = sprintf(
+                        'Asset %s failed to save: %s',
+                        $item['filename'],
+                        implode('; ', $asset->getFirstErrors())
+                    );
+                    @unlink($temp);
+                    continue;
+                }
+
+                $map[$item['assetRef']] = $asset->id;
                 $result->uploaded++;
-                continue;
             }
-
-            // Copies the bundle file to a temp path; saving the asset consumes it.
-            $temp = Craft::$app->getPath()->getTempPath() . '/' . uniqid('assessment-', true)
-                . '.' . pathinfo($item['filename'], PATHINFO_EXTENSION);
-
-            if (!copy($path, $temp)) {
-                $this->warnings[] = "Could not stage {$item['file']} for upload.";
-                continue;
+        } finally {
+            if ($session !== null) {
+                Craft::$app->getAssetIndexer()->stopIndexingSession($session);
             }
-
-            $asset = new Asset();
-            $asset->tempFilePath = $temp;
-            $asset->setFilename($item['filename']);
-            $asset->newFolderId = $folder->id;
-            $asset->setVolumeId($volume->id);
-            $asset->avoidFilenameConflicts = true;
-            $asset->setScenario(Asset::SCENARIO_CREATE);
-            if (!empty($item['alt'])) {
-                $asset->alt = $item['alt'];
-            }
-
-            if (!Craft::$app->getElements()->saveElement($asset)) {
-                $this->warnings[] = sprintf(
-                    'Asset %s failed to save: %s',
-                    $item['filename'],
-                    implode('; ', $asset->getFirstErrors())
-                );
-                @unlink($temp);
-                continue;
-            }
-
-            $map[$item['assetRef']] = $asset->id;
-            $result->uploaded++;
         }
 
         // Merges this run's refs into the existing map.
@@ -1174,16 +1223,74 @@ class AssessmentsImport extends Component
         return false;
     }
 
-    private function sameBytes(Asset $asset, string $sha256): bool
+    /**
+     * Whether the file at $uri in the volume holds the same bytes as the bundle file.
+     *
+     * Compares the MD5 the filesystem reports (GCS keeps it in object metadata) and
+     * streams the file only when no checksum is available.
+     */
+    private function sameBytes(FsInterface $fs, string $uri, string $localPath, string $sha256): bool
     {
         try {
-            $local = $asset->getCopyOfFile();
-            $same = hash_file('sha256', $local) === $sha256;
-            @unlink($local);
-            return $same;
+            $checksum = is_file($localPath) ? $this->fsChecksum($fs, $uri) : null;
+            if ($checksum !== null) {
+                return hash_equals($checksum, md5_file($localPath));
+            }
+
+            $stream = $fs->getFileStream($uri);
+            $context = hash_init('sha256');
+            hash_update_stream($context, $stream);
+            fclose($stream);
+
+            return hash_equals($sha256, hash_final($context));
         } catch (\Throwable) {
             return false;
         }
+    }
+
+    /**
+     * The MD5 checksum the filesystem stores for $uri, or null when it has none.
+     */
+    private function fsChecksum(FsInterface $fs, string $uri): ?string
+    {
+        if (!$fs instanceof FlysystemFs) {
+            return null;
+        }
+
+        try {
+            // Craft keeps the Flysystem instance protected.
+            $filesystem = \Closure::bind(fn() => $this->filesystem(), $fs, FlysystemFs::class)();
+            return $filesystem->checksum($uri, ['checksum_algo' => 'md5']);
+        } catch (\Throwable) {
+            // Composite GCS objects carry no MD5.
+            return null;
+        }
+    }
+
+    /**
+     * Creates the asset for a file already in the volume, without uploading it.
+     */
+    private function indexVolumeFile($volume, string $uri, int $sessionId, array $item): ?Asset
+    {
+        try {
+            $asset = Craft::$app->getAssetIndexer()->indexFile($volume, $uri, $sessionId);
+        } catch (\Throwable $e) {
+            $this->warnings[] = sprintf('Could not index %s: %s', $uri, $e->getMessage());
+            return null;
+        }
+
+        // indexFile() logs a failed save instead of throwing.
+        if (!$asset->id) {
+            $this->warnings[] = "Could not index $uri.";
+            return null;
+        }
+
+        if (!empty($item['alt']) && !$asset->alt) {
+            $asset->alt = $item['alt'];
+            Craft::$app->getElements()->saveElement($asset);
+        }
+
+        return $asset;
     }
 
     private function bundleDir(?string $dir): string
