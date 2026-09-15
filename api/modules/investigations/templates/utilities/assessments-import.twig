@@ -43,7 +43,9 @@
         <p>
             Copies the bundle's files into a volume and records which asset each
             source reference became. Whichever volume you pick is where these files
-            stay, so pick the one the imported content should point at.
+            stay, so pick the one the imported content should point at. Files
+            already in the volume with the same name and contents are reused,
+            not uploaded again.
         </p>
 
         {{ forms.selectField({

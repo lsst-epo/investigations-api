@@ -181,7 +181,8 @@
         },
 
         progressHtml: function(data) {
-            var percent = Math.round((data.progress || 0) * 100);
+            // Craft reports job progress as a percentage, 0-100.
+            var percent = Math.min(100, Math.max(0, Math.round(data.progress || 0)));
 
             return '<div class="ai-progress"><div class="ai-progress-bar" style="width:' + percent + '%"></div></div>' +
                 '<p class="light">' + this.escape(data.progressLabel || 'Working…') + '</p>';
