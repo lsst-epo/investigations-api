@@ -20,6 +20,9 @@ class AssetsResult
     public int $uploaded = 0;
     public int $reused = 0;
 
+    /** Files already in the volume that were indexed instead of uploaded. */
+    public int $indexed = 0;
+
     /** Refs resolved to an asset ID. */
     public int $mapped = 0;
 
@@ -42,7 +45,12 @@ class AssetsResult
 
     public function summary(): string
     {
-        return sprintf('%d uploaded, %d already present.', $this->uploaded, $this->reused);
+        return sprintf(
+            '%d uploaded, %d already present, %d indexed from the volume.',
+            $this->uploaded,
+            $this->reused,
+            $this->indexed
+        );
     }
 
     public function toArray(): array
@@ -56,6 +64,7 @@ class AssetsResult
             'fsDescription' => $this->fsDescription,
             'uploaded' => $this->uploaded,
             'reused' => $this->reused,
+            'indexed' => $this->indexed,
             'mapped' => $this->mapped,
             'total' => $this->total,
             'summary' => $this->summary(),
