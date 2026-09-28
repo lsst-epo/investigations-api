@@ -98,9 +98,11 @@
             Craft.sendActionRequest('POST', 'investigations/assessments-import/upload-bundle', {data: data})
                 .then(function(response) {
                     var state = response.data.state;
+                    var warning = response.data.warning;
                     self.setPane('bundle',
                         '<p class="ai-ok">Unpacked ' + state.records + ' record(s), ' +
-                        state.assets + ' asset(s) listed.</p>');
+                        state.assets + ' asset(s) listed.</p>' +
+                        (warning ? '<p class="ai-warning">' + self.escape(warning) + '</p>' : ''));
                     self.enable('[data-action="upload-assets"]', state.assets > 0);
                     self.enable('[data-action="dry-run"]', state.records > 0);
                 })
