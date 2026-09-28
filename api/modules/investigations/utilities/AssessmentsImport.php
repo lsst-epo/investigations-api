@@ -5,6 +5,8 @@ namespace modules\investigations\utilities;
 use Craft;
 use craft\base\Utility;
 use craft\elements\User;
+use craft\helpers\App;
+use Google\Auth\CredentialsLoader;
 use modules\investigations\assetbundles\assessmentsimport\AssessmentsImportAsset;
 use modules\investigations\Module;
 
@@ -36,6 +38,9 @@ class AssessmentsImport extends Utility
 
         $service = Module::getInstance()->assessmentsImport;
 
+        // Another pod may have uploaded the bundle or run a step.
+        $service->syncBundle();
+
         return $view->renderTemplate('investigations/utilities/assessments-import.twig', [
             'state' => $service->bundleState(),
             'volumes' => static::volumeOptions(),
@@ -66,26 +71,39 @@ class AssessmentsImport extends Utility
     }
 
     /**
-     * Reports a Google Cloud volume whose credentials are missing, which would
+     * Reports a Google Cloud volume with no local credentials, which would
      * otherwise fail deep inside the upload with a bare DomainException.
+     *
+     * Checks only the sources that need no network call: the filesystem's key,
+     * GOOGLE_APPLICATION_CREDENTIALS and gcloud's application default
+     * credentials file. The GCP metadata server can still supply credentials
+     * when none of these exist.
      */
     private static function fsWarning($volume): ?string
     {
-        if (!($volume->getFs() instanceof \craft\googlecloud\Fs)) {
+        $fs = $volume->getFs();
+
+        if (!($fs instanceof \craft\googlecloud\Fs)) {
             return null;
         }
 
-        $credentials = getenv('GOOGLE_APPLICATION_CREDENTIALS') ?: '';
-
-        if ($credentials === '') {
-            return 'GOOGLE_APPLICATION_CREDENTIALS is not set, so this volume cannot be written to.';
+        if (!empty(App::parseEnv($fs->keyFileContents))) {
+            return null;
         }
 
-        if (!is_file($credentials)) {
-            return "GOOGLE_APPLICATION_CREDENTIALS points at a file that does not exist ($credentials).";
+        $credentials = getenv(CredentialsLoader::ENV_VAR) ?: '';
+
+        if ($credentials !== '') {
+            return is_file($credentials)
+                ? null
+                : "GOOGLE_APPLICATION_CREDENTIALS points at a file that does not exist ($credentials).";
         }
 
-        return null;
+        if (CredentialsLoader::fromWellKnownFile() !== null) {
+            return null;
+        }
+
+        return 'No local Google Cloud credentials found, so uploads to this volume will only work on GCP-hosted infrastructure.';
     }
 
     private static function maxUploadBytes(): int
