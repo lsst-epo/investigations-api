@@ -58,6 +58,17 @@ class AssessmentsImport extends Component
     public const BUNDLE_ASSET_INDEX = 'assets/index.json';
     public const BUNDLE_ASSET_MAP = 'asset-map.json';
 
+    /** Filesystem the default bundle is shared through, so a queue worker on any pod can read it. */
+    private const SHARED_FS = 'assessmentAssetStorage';
+
+    /** Folder in SHARED_FS holding the shared bundle. Craft's asset indexer skips folders starting with "_". */
+    private const SHARED_DIR = '_assessments-import/';
+
+    private const SHARED_ZIP = 'bundle.zip';
+
+    /** Identifies which bundle a directory holds, both locally and in SHARED_FS. */
+    private const BUNDLE_ID = 'bundle-id';
+
     private bool $dryRun = false;
 
     /** Username or email to credit as author. Falls back to the first admin. */
@@ -127,9 +138,16 @@ class AssessmentsImport extends Component
      *
      * The map is the only durable record of source ref => asset ID; rebuilding it
      * by hash cannot match images Craft rewrote on upload.
+     *
+     * Cleaning up the default directory also removes the shared copy, so other
+     * pods drop theirs on their next sync.
      */
     public function cleanupBundle(?string $dir = null): void
     {
+        if (!$dir) {
+            $this->deleteSharedBundle();
+        }
+
         $dir = $this->bundleDir($dir);
         if (!is_dir($dir)) {
             return;
@@ -146,6 +164,242 @@ class AssessmentsImport extends Component
                 FileHelper::unlink($item->getPathname());
             }
         }
+    }
+
+    /**
+     * Extracts a bundle zip into $dir, replacing everything the bundle supplies.
+     *
+     * @throws \RuntimeException if the zip cannot be read or holds an unsafe path.
+     */
+    public function unpackBundle(string $zipPath, ?string $dir = null): void
+    {
+        $dir = $this->bundleDir($dir);
+        $zip = new \ZipArchive();
+
+        if ($zip->open($zipPath) !== true) {
+            throw new \RuntimeException('That file could not be opened as a zip.');
+        }
+
+        // Reject traversal before writing anything.
+        for ($i = 0; $i < $zip->numFiles; $i++) {
+            $name = $zip->getNameIndex($i);
+
+            if ($name === false || str_starts_with($name, '/') || preg_match('{(^|/)\.\.(/|$)}', $name)) {
+                $zip->close();
+                throw new \RuntimeException("The zip contains an unsafe path: $name");
+            }
+        }
+
+        // A re-upload replaces the bundle, but asset-map.json is the only record
+        // of which source refs became which assets.
+        $this->cleanupBundle($dir);
+        FileHelper::createDirectory($dir);
+
+        if (!$zip->extractTo($dir)) {
+            $zip->close();
+            throw new \RuntimeException('The zip could not be extracted.');
+        }
+
+        $zip->close();
+
+        $this->flattenIfNested($dir);
+    }
+
+    /**
+     * Copies the bundle just unpacked into the default directory to shared
+     * storage, so a queue worker on another pod can fetch it.
+     *
+     * @return string|null A warning when the bundle could not be shared.
+     */
+    public function publishBundle(string $zipPath): ?string
+    {
+        $fs = $this->sharedFs();
+        if ($fs === null) {
+            return sprintf(
+                "Filesystem '%s' not found, so the bundle is only on this server. "
+                . 'Later steps will fail if another server runs them.',
+                self::SHARED_FS
+            );
+        }
+
+        $id = sha1_file($zipPath);
+
+        try {
+            $stream = fopen($zipPath, 'rb');
+            try {
+                $fs->writeFileFromStream(self::SHARED_DIR . self::SHARED_ZIP, $stream);
+            } finally {
+                if (is_resource($stream)) {
+                    fclose($stream);
+                }
+            }
+
+            // Written after the zip, so a pod that reads this ID finds this zip.
+            $fs->write(self::SHARED_DIR . self::BUNDLE_ID, $id);
+        } catch (\Throwable $e) {
+            return "The bundle could not be copied to shared storage ({$e->getMessage()}), so it is only on "
+                . 'this server. Later steps will fail if another server runs them.';
+        }
+
+        FileHelper::writeToFile($this->defaultBundleDir() . '/' . self::BUNDLE_ID, $id);
+
+        return null;
+    }
+
+    /**
+     * Brings the default bundle directory in line with shared storage, which
+     * any pod may have published to.
+     *
+     * Fetches the shared bundle when it differs from the local one, and merges
+     * the shared asset-map.json over the local map.
+     *
+     * @return string|null A warning when shared storage could not be read; the
+     * local directory is then left as it is.
+     */
+    public function syncBundle(): ?string
+    {
+        $fs = $this->sharedFs();
+        if ($fs === null) {
+            return null;
+        }
+
+        $dir = $this->defaultBundleDir();
+        $localIdPath = $dir . '/' . self::BUNDLE_ID;
+
+        try {
+            $remoteId = $fs->fileExists(self::SHARED_DIR . self::BUNDLE_ID)
+                ? trim($fs->read(self::SHARED_DIR . self::BUNDLE_ID))
+                : '';
+            $localId = is_file($localIdPath) ? trim(file_get_contents($localIdPath)) : '';
+
+            if ($remoteId === '') {
+                // Another pod cleaned up after a finished import. A bundle that
+                // was never shared has no local ID and is kept.
+                if ($localId !== '') {
+                    $this->cleanupBundle($dir);
+                }
+            } elseif ($remoteId !== $localId) {
+                $this->fetchSharedBundle($fs, $dir);
+                FileHelper::writeToFile($localIdPath, $remoteId);
+            }
+
+            if ($fs->fileExists(self::SHARED_DIR . self::BUNDLE_ASSET_MAP)) {
+                $shared = json_decode($fs->read(self::SHARED_DIR . self::BUNDLE_ASSET_MAP), true);
+                if (is_array($shared)) {
+                    $mapPath = $dir . '/' . self::BUNDLE_ASSET_MAP;
+                    $this->writeBundleJson($mapPath, $shared + $this->readJson($mapPath));
+                }
+            }
+        } catch (\Throwable $e) {
+            Craft::warning('Could not sync the assessments bundle: ' . $e->getMessage(), __METHOD__);
+
+            return "Could not sync the bundle from shared storage: {$e->getMessage()}";
+        }
+
+        return null;
+    }
+
+    private function fetchSharedBundle(FsInterface $fs, string $dir): void
+    {
+        $temp = Craft::$app->getPath()->getTempPath() . '/' . uniqid('assessments-bundle-', true) . '.zip';
+
+        $in = $fs->getFileStream(self::SHARED_DIR . self::SHARED_ZIP);
+        $out = fopen($temp, 'wb');
+
+        try {
+            stream_copy_to_stream($in, $out);
+        } finally {
+            fclose($out);
+            if (is_resource($in)) {
+                fclose($in);
+            }
+        }
+
+        try {
+            $this->unpackBundle($temp, $dir);
+        } finally {
+            @unlink($temp);
+        }
+    }
+
+    private function deleteSharedBundle(): void
+    {
+        $fs = $this->sharedFs();
+        if ($fs === null) {
+            return;
+        }
+
+        try {
+            // The ID goes first, so no pod pairs it with a missing zip.
+            foreach ([self::BUNDLE_ID, self::SHARED_ZIP] as $name) {
+                if ($fs->fileExists(self::SHARED_DIR . $name)) {
+                    $fs->deleteFile(self::SHARED_DIR . $name);
+                }
+            }
+        } catch (\Throwable $e) {
+            Craft::warning('Could not delete the shared assessments bundle: ' . $e->getMessage(), __METHOD__);
+        }
+    }
+
+    /**
+     * Copies the local asset-map.json to shared storage, where the import step
+     * reads it on whichever pod runs it.
+     */
+    private function publishAssetMap(string $mapPath): void
+    {
+        $fs = $this->sharedFs();
+        if ($fs === null) {
+            return;
+        }
+
+        try {
+            $fs->write(self::SHARED_DIR . self::BUNDLE_ASSET_MAP, file_get_contents($mapPath));
+        } catch (\Throwable $e) {
+            $this->warnings[] = "asset-map.json could not be copied to shared storage ({$e->getMessage()}). "
+                . 'The import will not see this run\'s assets unless this server runs it.';
+        }
+    }
+
+    /**
+     * The filesystem the default bundle is shared through, set to write
+     * private objects.
+     */
+    private function sharedFs(): ?FsInterface
+    {
+        $fs = Craft::$app->getFs()->getFilesystemByHandle(self::SHARED_FS);
+        if ($fs === null) {
+            return null;
+        }
+
+        // A filesystem with URLs writes public objects; the bundle should not be one.
+        $fs = clone $fs;
+        $fs->hasUrls = false;
+
+        return $fs;
+    }
+
+    /**
+     * Moves the bundle up a level when the zip wrapped it in a single directory.
+     */
+    private function flattenIfNested(string $dir): void
+    {
+        if (is_file($dir . '/' . self::BUNDLE_RECORDS)) {
+            return;
+        }
+
+        $entries = array_values(array_diff(scandir($dir) ?: [], ['.', '..', self::BUNDLE_ASSET_MAP]));
+
+        if (count($entries) !== 1 || !is_dir($dir . '/' . $entries[0])) {
+            return;
+        }
+
+        $nested = $dir . '/' . $entries[0];
+
+        foreach (array_diff(scandir($nested) ?: [], ['.', '..']) as $item) {
+            rename($nested . '/' . $item, $dir . '/' . $item);
+        }
+
+        FileHelper::removeDirectory($nested);
     }
 
     // =========================================================================
@@ -167,9 +421,15 @@ class AssessmentsImport extends Component
     ): AssetsResult {
         $this->reset($dryRun, null, $onProgress, $onNotice);
 
+        $shared = !$dir;
+        $syncWarning = $shared ? $this->syncBundle() : null;
+        if ($syncWarning !== null) {
+            $this->warnings[] = $syncWarning;
+        }
+
         $dir = $this->bundleDir($dir);
         if (!is_dir($dir)) {
-            return AssetsResult::failed("Bundle directory not found: $dir");
+            return AssetsResult::failed("Bundle directory not found: $dir" . ($syncWarning ? " ($syncWarning)" : ''));
         }
 
         $index = $this->readJson($dir . '/' . self::BUNDLE_ASSET_INDEX);
@@ -321,6 +581,10 @@ class AssessmentsImport extends Component
             $mapPath = $dir . '/' . self::BUNDLE_ASSET_MAP;
             $map += array_map('intval', $this->readJson($mapPath));
             $this->writeBundleJson($mapPath, $map);
+
+            if ($shared) {
+                $this->publishAssetMap($mapPath);
+            }
         }
 
         $result->mapped = count($map);
@@ -359,9 +623,14 @@ class AssessmentsImport extends Component
     ): ImportResult {
         $this->reset($dryRun, $author, $onProgress, $onNotice);
 
+        $syncWarning = !$dir ? $this->syncBundle() : null;
+        if ($syncWarning !== null) {
+            $this->warnings[] = $syncWarning;
+        }
+
         $dir = $this->bundleDir($dir);
         if (!is_dir($dir)) {
-            return ImportResult::failed("Bundle directory not found: $dir");
+            return ImportResult::failed("Bundle directory not found: $dir" . ($syncWarning ? " ($syncWarning)" : ''));
         }
 
         $records = $this->readJson($dir . '/' . self::BUNDLE_RECORDS);
