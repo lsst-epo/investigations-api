@@ -3,7 +3,6 @@
 namespace modules\investigations\controllers;
 
 use Craft;
-use craft\helpers\FileHelper;
 use craft\queue\Queue;
 use craft\web\Controller;
 use craft\web\UploadedFile;
@@ -11,8 +10,6 @@ use modules\investigations\jobs\ImportAssessments;
 use modules\investigations\jobs\JobResults;
 use modules\investigations\jobs\UploadAssessmentAssets;
 use modules\investigations\Module;
-use modules\investigations\services\AssessmentsImport;
-use yii\web\BadRequestHttpException;
 use yii\web\Response;
 
 /**
@@ -62,10 +59,9 @@ class AssessmentsImportController extends Controller
         }
 
         $service = Module::getInstance()->assessmentsImport;
-        $dir = $service->bundleState()['dir'];
 
         try {
-            $this->extract($file->tempName, $dir);
+            $service->unpackBundle($file->tempName);
         } catch (\Throwable $e) {
             return $this->asFailure($e->getMessage());
         }
@@ -79,7 +75,10 @@ class AssessmentsImportController extends Controller
             ));
         }
 
-        return $this->asJson(['success' => true, 'state' => $state]);
+        // The queue worker that runs the next steps may be on another pod.
+        $warning = $service->publishBundle($file->tempName);
+
+        return $this->asJson(['success' => true, 'state' => $state, 'warning' => $warning]);
     }
 
     public function actionUploadAssets(): Response
@@ -125,11 +124,15 @@ class AssessmentsImportController extends Controller
         $result = JobResults::fetch($resultKey);
 
         if ($result !== null) {
+            // The job may have run on another pod.
+            $service = Module::getInstance()->assessmentsImport;
+            $service->syncBundle();
+
             return $this->asJson([
                 'success' => true,
                 'status' => 'done',
                 'result' => $result,
-                'state' => Module::getInstance()->assessmentsImport->bundleState(),
+                'state' => $service->bundleState(),
             ]);
         }
 
@@ -157,66 +160,5 @@ class AssessmentsImportController extends Controller
             'progressLabel' => $info['progressLabel'] ?? null,
             'error' => $info['error'] ?? null,
         ]);
-    }
-
-    /**
-     * Extracts a zip into $dir, replacing everything the bundle supplies.
-     */
-    private function extract(string $zipPath, string $dir): void
-    {
-        $zip = new \ZipArchive();
-
-        if ($zip->open($zipPath) !== true) {
-            throw new BadRequestHttpException(Craft::t('app', 'That file could not be opened as a zip.'));
-        }
-
-        // Reject traversal before writing anything.
-        for ($i = 0; $i < $zip->numFiles; $i++) {
-            $name = $zip->getNameIndex($i);
-
-            if ($name === false || str_starts_with($name, '/') || preg_match('{(^|/)\.\.(/|$)}', $name)) {
-                $zip->close();
-                throw new BadRequestHttpException(Craft::t('app', 'The zip contains an unsafe path: {path}', ['path' => (string)$name]));
-            }
-        }
-
-        // A re-upload replaces the bundle, but asset-map.json is the only record
-        // of which source refs became which assets.
-        $service = Module::getInstance()->assessmentsImport;
-        $service->cleanupBundle($dir);
-        FileHelper::createDirectory($dir);
-
-        if (!$zip->extractTo($dir)) {
-            $zip->close();
-            throw new BadRequestHttpException(Craft::t('app', 'The zip could not be extracted.'));
-        }
-
-        $zip->close();
-
-        $this->flattenIfNested($dir);
-    }
-
-    /**
-     * Moves the bundle up a level when the zip wrapped it in a single directory.
-     */
-    private function flattenIfNested(string $dir): void
-    {
-        if (is_file($dir . '/' . AssessmentsImport::BUNDLE_RECORDS)) {
-            return;
-        }
-
-        $entries = array_values(array_diff(scandir($dir) ?: [], ['.', '..', AssessmentsImport::BUNDLE_ASSET_MAP]));
-
-        if (count($entries) !== 1 || !is_dir($dir . '/' . $entries[0])) {
-            return;
-        }
-
-        $nested = $dir . '/' . $entries[0];
-
-        foreach (array_diff(scandir($nested) ?: [], ['.', '..']) as $item) {
-            rename($nested . '/' . $item, $dir . '/' . $item);
-        }
-
-        FileHelper::removeDirectory($nested);
     }
 }
