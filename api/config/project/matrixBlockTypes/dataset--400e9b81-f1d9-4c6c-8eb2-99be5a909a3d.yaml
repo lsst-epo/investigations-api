@@ -1,0 +1,226 @@
+field: 0af2d30e-a573-4642-921d-5cfbfd97dc19 # Datasets
+fieldLayouts:
+  5dd69df4-88ac-4951-a2d4-d1e8fbe8239b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e5a78268-0a01-44fc-befd-a3d4ead03df2 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42aeb1e5-ac15-46e5-8b6b-c966be8e1f2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: faf7713a-5140-4c2c-bf6e-8f8fe5bbf43e # X-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f3897e6-b4fe-4e7d-add3-76e28014d5eb
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 52d8d1eb-e9e7-4fe3-9222-b9bbaf736ff0 # Y-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 847d499a-bc58-4e72-9528-07bcc8070f06
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 46dabfa4-cec9-42f3-bf6c-394c08d268ff # X-axis Min
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 793a0b03-fabb-4928-a456-6686b1bfd770
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2f806a9b-ac95-4740-a3db-3bfd367cab01 # Y-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19b399b5-fbe2-4bc5-9786-6959b4c2fdad
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: d39e8a9e-62b7-43c7-ba59-313bcf8022e3 # Data
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3cdc9f6-7532-4e6f-83cb-5a75aa6f242f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 84122ee6-bf90-46ff-9679-27411e984e01
+        userCondition: null
+fields:
+  2f806a9b-ac95-4740-a3db-3bfd367cab01: # Y-axis Maximum
+    columnSuffix: kbudpmzf
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: yAxisMax
+    instructions: null
+    name: 'Y-axis Maximum'
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  46dabfa4-cec9-42f3-bf6c-394c08d268ff: # X-axis Min
+    columnSuffix: knofdrgq
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: xAxisMin
+    instructions: null
+    name: 'X-axis Min'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  52d8d1eb-e9e7-4fe3-9222-b9bbaf736ff0: # Y-axis Label
+    columnSuffix: vwbrvycd
+    contentColumnType: text
+    fieldGroup: null
+    handle: yAxisLabel
+    instructions: null
+    name: 'Y-axis Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d39e8a9e-62b7-43c7-ba59-313bcf8022e3: # Data
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: data
+    instructions: null
+    name: Data
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e5a78268-0a01-44fc-befd-a3d4ead03df2: # Title
+    columnSuffix: yobdgdzj
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  faf7713a-5140-4c2c-bf6e-8f8fe5bbf43e: # X-axis Label
+    columnSuffix: qxocuscd
+    contentColumnType: text
+    fieldGroup: null
+    handle: xAxisLabel
+    instructions: null
+    name: 'X-axis Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dataset
+name: Dataset
+sortOrder: 1
