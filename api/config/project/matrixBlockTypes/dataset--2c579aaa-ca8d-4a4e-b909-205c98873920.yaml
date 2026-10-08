@@ -1,0 +1,279 @@
+field: 31fbc4c8-39c8-4581-9f41-875c99ea423b # Datasets
+fieldLayouts:
+  f9ec5918-39bf-49ce-b648-f0d84782aa62:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7b37d651-eb79-45da-acc2-e80f38574133 # X-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30846a18-0bb6-4b68-b09b-282827de1467
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 20bc5cf3-abe3-4d95-9b28-e5bc17d55720 # Y-axis Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66f02b91-e762-4ab6-983e-aa3fb39c0a92
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2eec97d5-2498-4c98-b6fa-6cfb82ea52ce # X-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de582114-c3db-4b14-9ccd-7fca0a6db660
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d # Y-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7a097ee-3062-404a-a3e9-40e3fc94bbad
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 551935f5-4dd1-4f5b-972a-c5b3cb25fb7c # Plot Points
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19564ca3-02c1-4e54-a7c5-f76af1ce3b83
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 00e493e1-05d4-43b3-a816-148fbb7d472b # Color Scheme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1226a652-6b91-46f7-a590-cba221ac2ac5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3420e815-630b-425f-b31c-7eac901c83d1 # Marker Shape
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 226eb6de-0fc5-4968-a798-b049e67fe975
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: b2dcab2e-ea17-4191-ad45-a6425d824885
+        userCondition: null
+fields:
+  00e493e1-05d4-43b3-a816-148fbb7d472b: # Color Scheme
+    columnSuffix: vcnpplep
+    contentColumnType: string(3)
+    fieldGroup: null
+    handle: colorScheme
+    instructions: null
+    name: 'Color Scheme'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - TBD
+            -
+              - value
+              - tbd
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  2eec97d5-2498-4c98-b6fa-6cfb82ea52ce: # X-axis Minimum
+    columnSuffix: prjxnhtf
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: xAxisMin
+    instructions: null
+    name: 'X-axis Minimum'
+    searchable: false
+    settings:
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  7b37d651-eb79-45da-acc2-e80f38574133: # X-axis Label
+    columnSuffix: ovxyzbtx
+    contentColumnType: text
+    fieldGroup: null
+    handle: xAxisLabel
+    instructions: null
+    name: 'X-axis Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  20bc5cf3-abe3-4d95-9b28-e5bc17d55720: # Y-axis Label
+    columnSuffix: voeghonq
+    contentColumnType: text
+    fieldGroup: null
+    handle: yAxisLabel
+    instructions: null
+    name: 'Y-axis Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  3420e815-630b-425f-b31c-7eac901c83d1: # Marker Shape
+    columnSuffix: vratibqh
+    contentColumnType: string(8)
+    fieldGroup: null
+    handle: markerShape
+    instructions: null
+    name: 'Marker Shape'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Dot
+            -
+              - value
+              - dot
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Triangle
+            -
+              - value
+              - triangle
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  551935f5-4dd1-4f5b-972a-c5b3cb25fb7c: # Plot Points
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: plotPoints
+    instructions: null
+    name: 'Plot Points'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - json
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e' # Datasets
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d: # Y-axis Maximum
+    columnSuffix: hinuifej
+    contentColumnType: text
+    fieldGroup: null
+    handle: yAxisMax
+    instructions: null
+    name: 'Y-axis Maximum'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dataset
+name: Dataset
+sortOrder: 1

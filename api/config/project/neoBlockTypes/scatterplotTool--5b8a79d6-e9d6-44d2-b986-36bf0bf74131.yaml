@@ -11,6 +11,29 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+            instructions: null
+            label: 'Widget Mode'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a38700cc-9b10-480f-8740-67eef0353331
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 05971557-fb04-4985-9f77-dbe2de8d30bc
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: c430001c-4bfc-4154-9e13-f5ada3b4a22d # Text
             instructions: null
             label: Title
@@ -22,7 +45,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: a8631407-f1b8-425e-b101-b19b91e15b1d
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: d9df041c-3556-450e-94e1-f37369daf5f3 # X-axis Label
             instructions: null
             label: null
@@ -34,7 +68,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 39b6888e-80c2-4c7a-9a1d-8dcec0a42daa
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: 852df24b-f90e-486b-a371-b47ca241a84e # Y-axis Label
             instructions: null
             label: null
@@ -46,7 +91,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 9c3e5693-6415-4061-a30d-6a87aa7109d9
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: 31815ced-cfa3-4ed2-a002-5705a2c6be4b # X-axis Minimum
             instructions: null
             label: null
@@ -58,7 +114,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 06500864-a96a-4997-b6ea-c53a6ad61ec5
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
             instructions: null
             label: null
@@ -70,7 +137,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 0daa9507-2441-4a92-80da-f0983ba4cb6b
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
             fieldUid: a72ca793-6ee2-4a6f-b47e-06a35cf61e06 # Plot points
             instructions: null
             label: null
@@ -78,6 +156,75 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f2842a95-4796-413c-8981-29ff8c64db44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: b44efd89-6980-4e4c-953f-b47554e71e63
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: d8836548-0241-427c-8773-5568687a5da0 # Color Scheme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47f8835c-3948-48da-8098-a642ec64297a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 20e38e8f-12fe-4904-bff2-57e767f7ad82
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: e304fd29-577f-4da8-97df-5497a0cb3196 # Marker Shape
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fba6cea-a08e-4e56-ba19-e593d0fd1b52
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: 93884a34-b8b2-4fe6-82b9-699e3b47bec9
+                  values:
+                    - multiple
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 31fbc4c8-39c8-4581-9f41-875c99ea423b # Datasets
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9d114ef-b7d4-481c-8e0e-b63bbcacfffa
             userCondition: null
             warning: null
             width: 100

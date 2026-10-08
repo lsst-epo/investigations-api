@@ -1,4 +1,4 @@
-dateModified: 1791327263
+dateModified: 1791482883
 elementSources:
   craft\elements\Entry:
     -
@@ -148,6 +148,7 @@ meta:
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0d335b99-111b-4f79-ab51-e890179b337c: Heading # Heading
     00e7fda5-a5ff-4422-81e4-60b0b85db34f: Color # Color
+    00e493e1-05d4-43b3-a816-148fbb7d472b: 'Color Scheme' # Color Scheme
     0e914cfb-a2de-4721-b23b-3b1268529baf: 'Right Ascension' # Right Ascension
     0ec5fc47-5e4f-4591-a76e-745ef7078387: 'Source Type' # Source Type
     0edce3a2-c596-4238-9dde-212c83d5a65f: 'Menu Content' # Menu Content
@@ -161,6 +162,8 @@ meta:
     2a8bd63b-0e77-4572-9682-8a08958b5981: 'Assets List' # Assets List
     2afbeada-a48c-4590-b787-bef189299acc: 'Assessment Video' # Assessment Video
     2c2e1c6a-eb4d-44f1-9a43-8d79b326f354: ES # ES
+    2c579aaa-ca8d-4a4e-b909-205c98873920: Dataset # Dataset
+    2eec97d5-2498-4c98-b6fa-6cfb82ea52ce: 'X-axis Minimum' # X-axis Minimum
     2f10ca0a-d810-4715-aa5f-78e3b347ce59: 'Focal Point X' # Focal Point X
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
     3e9ad357-be6a-4732-b068-33ca298d87db: 'Link text' # Link text
@@ -193,6 +196,7 @@ meta:
     6f2f6107-ea5d-44cd-9e5d-9372061e7c38: Question # Question
     7a4c811e-eb74-4c4b-ae64-134f2a4e2c3e: Datasets # Datasets
     7b30c218-6328-41a2-a3e3-2575559f4c9c: Table # Table
+    7b37d651-eb79-45da-acc2-e80f38574133: 'X-axis Label' # X-axis Label
     7bd60210-4767-46b3-b735-61a1499b90b7: 'Redirect Page' # Redirect Page
     7bf2ccf1-2aa1-4cf0-a991-25cb2bfe6bff: Link # Link
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
@@ -216,6 +220,7 @@ meta:
     16d66db4-47e3-4e22-a040-357377f43cb0: 'Sortable Table' # Sortable Table
     16f93737-90e2-4533-8417-be6eacbe389b: 'Sortable Table Widget' # Sortable Table Widget
     17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3: 'Graph Bars' # Graph Bars
+    20bc5cf3-abe3-4d95-9b28-e5bc17d55720: 'Y-axis Label' # Y-axis Label
     20ce6c99-37f5-4f50-91fa-587e9f7ef466: Comparison # Comparison
     021f7cc6-93ec-4da4-9566-8d05c64d1725: Default # Default
     23af80f1-9c3d-4b68-9513-c030ecd0ca96: 'Assessment Assets' # Assessment Assets
@@ -228,6 +233,7 @@ meta:
     27af84b2-9ccb-416c-ae38-872fdca1f5c0: Layout # Layout
     28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
     29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
+    31fbc4c8-39c8-4581-9f41-875c99ea423b: Datasets # Datasets
     0032cd50-9ee1-418e-b9f9-971e93f359ed: PT # PT
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     37af5dda-9a0b-458a-b48c-1bd31b9170af: Validation # Validation
@@ -240,6 +246,7 @@ meta:
     53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
     53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Block' # Reference Block
     54ba9f24-e0a0-4b44-9fce-d96dc94d32d8: 'Flexible Cell Width' # Flexible Cell Width
+    55b79945-9f3e-44f9-aca1-b0ca479ba00a: 'Scatter Plot Mode' # Scatter Plot Mode
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Entries' # Reference Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
     58dc56f1-d17a-424b-9aac-650a83f6b919: 'Table Cell' # Table Cell
@@ -288,6 +295,7 @@ meta:
     2297d098-675f-4def-bd51-0ce739720cdc: 'Simple Table' # Simple Table
     2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
     2922f7b5-8979-4fa5-8221-b442515b48c1: Equation # Equation
+    3420e815-630b-425f-b31c-7eac901c83d1: 'Marker Shape' # Marker Shape
     3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
@@ -317,6 +325,7 @@ meta:
     466246f6-753b-4198-8067-18acf1a7d4cb: 'Light Curve Tool' # Light Curve Tool
     513634e9-3389-4e41-b769-9433ac34e35e: Widgets # Widgets
     547128fa-4529-4483-9968-66425996b69f: EN # EN
+    551935f5-4dd1-4f5b-972a-c5b3cb25fb7c: 'Plot Points' # Plot Points
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
     756208ab-5aac-4a28-bce2-5b3d9b5e7563: Number # Number
     769784ef-f338-43bf-9395-2666b5ddc083: 'Content Image' # Content Image
@@ -409,7 +418,9 @@ meta:
     d4538f51-c82e-45f5-8ca3-4f2487eef3b9: 'Row Color' # Row Color
     d5901e55-99c9-441a-937e-05a065d6e60b: Maximum # Maximum
     d6180a2a-48c9-42ce-a80f-8721282a126d: 'Previous Question' # Previous Question
+    d8836548-0241-427c-8773-5568687a5da0: 'Color Scheme' # Color Scheme
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
+    dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d: 'Y-axis Maximum' # Y-axis Maximum
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
@@ -421,6 +432,7 @@ meta:
     e7b953ca-6424-4d14-bc2c-393d3f8410a4: 'Question Text' # Question Text
     e17c94af-1953-42af-939c-e3ed84c62a95: 'Source Selector' # Source Selector
     e28ed79c-82dd-4c7b-b1cf-abdece40ff5e: Equation # Equation
+    e304fd29-577f-4da8-97df-5497a0cb3196: 'Marker Shape' # Marker Shape
     e607ac8b-6df3-4e80-bffa-b59ee9728445: FiltersImages # FiltersImages
     e818f50c-bd7d-48dd-9bd6-17d725e65533: 'Option Value' # Option Value
     e2951ac7-e91a-4d8a-964f-50c6b6e0b1ee: 'Educator Schema' # Educator Schema
