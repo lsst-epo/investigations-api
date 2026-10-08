@@ -1,0 +1,107 @@
+field: 25548c53-93ad-43d8-b1b2-98ec35f624e1 # Views
+fieldLayouts:
+  7d93043f-5d1b-4557-becc-d70c5ca70e35:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 875069f8-1f49-45b5-9bce-ce23f304ed69 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 168e303e-c374-41e6-8394-8d8551c5b91b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: cefa8790-252d-48cb-9f10-9c403157a221 # Tab Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6fba964c-7b08-4cd5-be18-fc53ad7dc1eb
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e615528f-3c1e-4e7d-b2b0-3d6a07cd4824 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ee8748a-ad55-4aa0-81c5-f7e64fea5273
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9678b4ab-2053-4f0a-a65b-fc99b2330f44
+        userCondition: null
+fields:
+  875069f8-1f49-45b5-9bce-ce23f304ed69: # Title
+    columnSuffix: vvrglrzy
+    contentColumnType: text
+    fieldGroup: null
+    handle: viewTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cefa8790-252d-48cb-9f10-9c403157a221: # Tab Label
+    columnSuffix: hexjrpsg
+    contentColumnType: text
+    fieldGroup: null
+    handle: tabLabel
+    instructions: null
+    name: 'Tab Label'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e615528f-3c1e-4e7d-b2b0-3d6a07cd4824: # Image
+    columnSuffix: fxoclgqr
+    contentColumnType:
+      - 'cantoId:string'
+      - 'cantoAlbumId:string'
+      - 'cantoAssetData:json'
+      - 'cantoAlbumData:json'
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      cantoAssetPickerType: singleImagePicker
+    translationKeyFormat: null
+    translationMethod: none
+    type: lsst\cantodamassets\fields\CantoDamAsset
+handle: view
+name: View
+sortOrder: 1

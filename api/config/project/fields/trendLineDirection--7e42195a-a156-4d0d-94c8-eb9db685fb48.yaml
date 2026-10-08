@@ -1,0 +1,35 @@
+columnSuffix: dkpywcks
+contentColumnType: string(4)
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: trendLineDirection
+instructions: null
+name: 'Trend Line Direction'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Up
+        -
+          - value
+          - up
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Down
+        -
+          - value
+          - down
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
