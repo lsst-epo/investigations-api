@@ -1,0 +1,24 @@
+columnSuffix: fnetavci
+contentColumnType: string(3)
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: colorScheme
+instructions: null
+name: 'Color Scheme'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - TBD
+        -
+          - value
+          - tbd
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
