@@ -32,7 +32,19 @@ fieldLayouts:
             uid: 4b6d344f-27f4-40c7-a6bf-f8a7f1b3b26c
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: ea7454b2-a7c4-4882-b456-f3378ac2f50b # Table Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a911331d-d4ce-4b55-9a92-86d945b0e6db
+            userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
             fieldUid: 56bdf2e8-b9b4-425d-a189-fc7b22f5d169 # Display Table

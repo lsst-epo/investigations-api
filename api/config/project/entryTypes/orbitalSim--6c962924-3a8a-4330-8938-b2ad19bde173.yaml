@@ -98,6 +98,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            elementCondition: null
+            fieldUid: 3d1436c7-405b-4f39-9969-72d802bc684a # Show Details on Select
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dffe7d7a-a436-473a-a049-56bc0884e6d3
+            userCondition: null
+            warning: null
+            width: 100
+          -
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition
               conditionRules:
