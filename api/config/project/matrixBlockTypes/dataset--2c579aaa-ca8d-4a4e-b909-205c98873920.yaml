@@ -7,6 +7,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 05c88228-ab95-4d35-b01d-862621357c49 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba4e4782-a40f-4d08-8b20-ea5adfde96d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 7b37d651-eb79-45da-acc2-e80f38574133 # X-axis Label
             instructions: null
             label: null
@@ -43,13 +55,13 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d # Y-axis Maximum
+            fieldUid: b70445d4-f7f5-4b99-89a8-7e917ec064d4 # Y-axis Maximum
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d7a097ee-3062-404a-a3e9-40e3fc94bbad
+            uid: fc6c4653-10cb-4c7c-b5ec-b995750f09d3
             userCondition: null
             warning: null
             width: 50
@@ -139,6 +151,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
+  05c88228-ab95-4d35-b01d-862621357c49: # Title
+    columnSuffix: gnwmygnz
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   7b37d651-eb79-45da-acc2-e80f38574133: # X-axis Label
     columnSuffix: ovxyzbtx
     contentColumnType: text
@@ -254,26 +286,27 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d: # Y-axis Maximum
-    columnSuffix: hinuifej
-    contentColumnType: text
+  b70445d4-f7f5-4b99-89a8-7e917ec064d4: # Y-axis Maximum
+    columnSuffix: ncnilmda
+    contentColumnType: 'decimal(12,2)'
     fieldGroup: null
     handle: yAxisMax
     instructions: null
     name: 'Y-axis Maximum'
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
+      decimals: 2
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
+    type: craft\fields\Number
 handle: dataset
 name: Dataset
 sortOrder: 1

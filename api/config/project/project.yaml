@@ -1,4 +1,4 @@
-dateModified: 1791482883
+dateModified: 1791485770
 elementSources:
   craft\elements\Entry:
     -
@@ -144,6 +144,7 @@ fs:
     url: '@assetsHeroesBaseURL'
 meta:
   __names__:
+    0af2d30e-a573-4642-921d-5cfbfd97dc19: Datasets # Datasets
     0d06751e-ecf9-4281-a754-8c818fb9353b: 'Color Filter Tool Block' # Color Filter Tool Block
     0d8d46b3-e717-4fd2-8c61-01c0b966f630: 'Filter Color Options' # Filter Color Options
     0d335b99-111b-4f79-ab51-e890179b337c: Heading # Heading
@@ -165,6 +166,7 @@ meta:
     2c579aaa-ca8d-4a4e-b909-205c98873920: Dataset # Dataset
     2eec97d5-2498-4c98-b6fa-6cfb82ea52ce: 'X-axis Minimum' # X-axis Minimum
     2f10ca0a-d810-4715-aa5f-78e3b347ce59: 'Focal Point X' # Focal Point X
+    2f806a9b-ac95-4740-a3db-3bfd367cab01: 'Y-axis Maximum' # Y-axis Maximum
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
     3e9ad357-be6a-4732-b068-33ca298d87db: 'Link text' # Link text
     4b8139b2-36be-4510-aaeb-fa8579fb3273: 'Header Row' # Header Row
@@ -179,6 +181,7 @@ meta:
     05b71c40-b1ec-4b33-ac48-b9b0c7fc81b6: Description # Description
     5ba1ef40-9a18-42fc-8ed2-163173338bd2: 'Row Content' # Row Content
     5bfc1518-54f5-4b2a-86e8-02a16537b8cf: Y-value # Y-value
+    05c88228-ab95-4d35-b01d-862621357c49: Title # Title
     5d5bf9ad-cc81-4b24-a0c7-92606dc0fed5: 'Default Value' # Default Value
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
@@ -243,6 +246,8 @@ meta:
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     44fd0fea-2657-448a-a657-d4a5a56a869c: Callout # Callout
+    46dabfa4-cec9-42f3-bf6c-394c08d268ff: 'X-axis Min' # X-axis Min
+    52d8d1eb-e9e7-4fe3-9222-b9bbaf736ff0: 'Y-axis Label' # Y-axis Label
     53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
     53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Block' # Reference Block
     54ba9f24-e0a0-4b44-9fce-d96dc94d32d8: 'Flexible Cell Width' # Flexible Cell Width
@@ -271,6 +276,7 @@ meta:
     325b9f09-b0da-44b6-9cd7-885d7a29e53c: CTA # CTA
     356c97b0-54e5-44bb-901e-9d92a314134f: FR # FR
     367fe8fa-1963-4fe0-9e02-3c0866c0b5bb: 'Color Filter Tool Block' # Color Filter Tool Block
+    400e9b81-f1d9-4c6c-8eb2-99be5a909a3d: Dataset # Dataset
     418ea0f0-379d-4ee5-8dab-f82b6a62c191: Header # Header
     430f132d-8145-4e49-ba49-e9b839f7898e: 'Source Selector Block' # Source Selector Block
     461e1254-37f7-4aeb-81a1-3f08d2463d06: Students # Students
@@ -377,6 +383,7 @@ meta:
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
     b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
     b9819ea2-2d0c-4527-91fe-7f650072d8cc: 'Responsive Assets' # Responsive Assets
+    b70445d4-f7f5-4b99-89a8-7e917ec064d4: 'Y-axis Maximum' # Y-axis Maximum
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
     bad8a706-ea60-4282-b1da-3c9ee5f2111a: Caption # Caption
     bd852c1a-87ab-46e1-b084-83fdcdd30b20: 'Focal Point Y' # Focal Point Y
@@ -406,6 +413,7 @@ meta:
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d022e61b-75d2-4c3e-88f1-198bd9978ae1: Video # Video
+    d04f4f00-495d-4860-bbdd-c4a7c51e834a: Histogram # Histogram
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
     d2e48b83-d161-48b9-b0a9-5c21914b5931: 'Color Filter Tool' # Color Filter Tool
     d3c2bf6e-aeb1-4a97-a3e7-33455ff2b88a: Callout # Callout
@@ -414,13 +422,13 @@ meta:
     d8ed7ca8-514f-4a3e-8675-c5a6e8d6c4f5: Min # Min
     d9df041c-3556-450e-94e1-f37369daf5f3: 'X-axis Label' # X-axis Label
     d18f36fd-9d74-4ba6-b860-25958b1d9182: 'Alert Sources' # Alert Sources
+    d39e8a9e-62b7-43c7-ba59-313bcf8022e3: Data # Data
     d42a99ba-072d-4a58-9140-42c3068a7cc7: Link # Link
     d4538f51-c82e-45f5-8ca3-4f2487eef3b9: 'Row Color' # Row Color
     d5901e55-99c9-441a-937e-05a065d6e60b: Maximum # Maximum
     d6180a2a-48c9-42ce-a80f-8721282a126d: 'Previous Question' # Previous Question
     d8836548-0241-427c-8773-5568687a5da0: 'Color Scheme' # Color Scheme
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
-    dd0ff9ca-bd64-4b8e-8f1c-9d236356cb5d: 'Y-axis Maximum' # Y-axis Maximum
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
@@ -429,6 +437,7 @@ meta:
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
     e1b23b33-c33f-4c74-9811-250c2cc2789a: Data # Data
+    e5a78268-0a01-44fc-befd-a3d4ead03df2: Title # Title
     e7b953ca-6424-4d14-bc2c-393d3f8410a4: 'Question Text' # Question Text
     e17c94af-1953-42af-939c-e3ed84c62a95: 'Source Selector' # Source Selector
     e28ed79c-82dd-4c7b-b1cf-abdece40ff5e: Equation # Equation
@@ -455,6 +464,7 @@ meta:
     f7469ef4-1cc6-4236-9a47-b0a7cad50b6a: X # X
     f8832ac4-1064-4c31-9390-109641d13d12: 'Question Parts' # Question Parts
     f37616ca-49e9-4621-9cf1-aad81eef7f50: FilterImage # FilterImage
+    faf7713a-5140-4c2c-bf6e-8f8fe5bbf43e: 'X-axis Label' # X-axis Label
     fbb118b8-17f9-4ee4-8777-a330d2c3d75a: 'Featured Image' # Featured Image
     fbfbf05d-c7e1-4f6c-a093-47065f8d5095: Datasets # Datasets
     fc7f5dc8-43b1-487c-8302-07abecd2429a: Equation # Equation
