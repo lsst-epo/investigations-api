@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: a46e7379-7773-4ce4-9c59-434567870f0c # Content Blocks
+fieldLayouts:
+  875b256d-588b-4040-a2fb-0eb96350b2a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5d8399de-479d-4684-b061-ea87299837dd # Hubble Plot Tool
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64a6667b-c70d-4586-b33c-234c10257716
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b66d4f8c-d78d-4292-bfaa-fc6fa9b05ff2
+        userCondition: null
+group: 513634e9-3389-4e41-b769-9433ac34e35e # Widgets
+groupChildBlockTypes: true
+handle: hubblePlot
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Hubble Plot'
+topLevel: true
