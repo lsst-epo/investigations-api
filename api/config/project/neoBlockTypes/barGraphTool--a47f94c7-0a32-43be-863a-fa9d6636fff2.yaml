@@ -70,6 +70,26 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dismissible: true
+            elementCondition: null
+            style: tip
+            tip: 'Provide dataset assets for multiple histograms or manually create bars for a single graphs.'
+            type: craft\fieldlayoutelements\Tip
+            uid: c90820b0-eb25-4301-aea1-f2eaad0ede7d
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 0af2d30e-a573-4642-921d-5cfbfd97dc19 # Datasets
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ddaeeaa6-bdd8-4e00-99af-e7c4c1d6df41
+            userCondition: null
+            warning: null
+            width: 100
+          -
             elementCondition: null
             fieldUid: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3 # Graph Bars
             instructions: null
@@ -96,5 +116,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Bar Graph Tool'
+name: 'Bar Graph (Histogram) Tool'
 topLevel: true

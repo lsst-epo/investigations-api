@@ -1,4 +1,4 @@
-dateModified: 1791485770
+dateModified: 1791843910
 elementSources:
   craft\elements\Entry:
     -
@@ -358,7 +358,7 @@ meta:
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
-    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph Tool' # Bar Graph Tool
+    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph (Histogram) Tool' # Bar Graph (Histogram) Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Plot points' # Plot points
     a81f2835-5fbe-4fa9-a636-eafeaee155c3: 'Bin Size' # Bin Size
     a193e003-8cfa-4530-8d20-6d61a7deaf5e: 'Isochrone Plot' # Isochrone Plot
@@ -413,7 +413,6 @@ meta:
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d022e61b-75d2-4c3e-88f1-198bd9978ae1: Video # Video
-    d04f4f00-495d-4860-bbdd-c4a7c51e834a: Histogram # Histogram
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
     d2e48b83-d161-48b9-b0a9-5c21914b5931: 'Color Filter Tool' # Color Filter Tool
     d3c2bf6e-aeb1-4a97-a3e7-33455ff2b88a: Callout # Callout
