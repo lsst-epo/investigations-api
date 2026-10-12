@@ -1,4 +1,4 @@
-dateModified: 1791846788
+dateModified: 1791847923
 elementSources:
   craft\elements\Entry:
     -
@@ -209,6 +209,7 @@ meta:
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
     7e3faadd-83b4-45cf-9a32-3dfe342e23b8: Link # Link
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
+    7f850ed5-79a2-4ffc-979e-a054a37dbe0b: View # View
     7fd2ba5e-d840-47df-8c79-a5fd54ff5aae: Text # Text
     8af07cbd-3ce8-4e4d-818f-261515be5ac7: 'Y-axis Minimum' # Y-axis Minimum
     8b781860-2b8c-4100-969a-2f13c5272420: 'Table Row' # Table Row
@@ -246,6 +247,7 @@ meta:
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     37af5dda-9a0b-458a-b48c-1bd31b9170af: Validation # Validation
     40c867bb-c75a-4d5f-8d69-e7facae1c15b: 'Homepage Content Blocks' # Homepage Content Blocks
+    40dec710-ff43-4256-8715-ce39aee52308: 'Master Detail View' # Master Detail View
     41e80164-60be-4893-bcef-f68831d738f5: 'Fullscreen Video' # Fullscreen Video
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
@@ -321,6 +323,7 @@ meta:
     12542ae5-ac65-4cd8-bed8-12acd3c76abb: Max # Max
     23193ee2-e0a6-4405-8e0a-1ec6c93efe59: 'Sub Hero Text' # Sub Hero Text
     24907dba-daa7-4266-a917-8e6a8b7ad726: 'Filter Tool Actions' # Filter Tool Actions
+    25548c53-93ad-43d8-b1b2-98ec35f624e1: Views # Views
     31815ced-cfa3-4ed2-a002-5705a2c6be4b: 'X-axis Minimum' # X-axis Minimum
     048379b3-5d56-46a2-bfe2-9690b4b57151: 'Investigation Entries' # Investigation Entries
     54900b2d-b4ca-460f-a8e2-84db0ce759ac: Max # Max
@@ -341,6 +344,7 @@ meta:
     0601483c-a943-42a3-b1a5-e003b05618dc: 'Question Block' # Question Block
     756208ab-5aac-4a28-bce2-5b3d9b5e7563: Number # Number
     769784ef-f338-43bf-9395-2666b5ddc083: 'Content Image' # Content Image
+    875069f8-1f49-45b5-9bce-ce23f304ed69: Title # Title
     947400f5-3c2d-403a-b94e-68715e48a9c0: 'Left Column' # Left Column
     3173102a-6f80-4a4f-954b-1d3e151fb21a: Text # Text
     04341069-ff31-4470-970a-8c7e82ec37eb: 'Student Schema' # Student Schema
@@ -413,12 +417,14 @@ meta:
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     cb6492c7-6cdf-453c-8df5-245121df0be4: 'Cell Background' # Cell Background
+    ccab20e4-d589-4299-9a35-5327e6492187: Description # Description
     cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
     cd4d2a22-a194-459c-8f21-1782152c6dbf: Asset # Asset
     cd658691-87e7-43c3-a378-6078f21b9f6c: 'Reference Content Blocks' # Reference Content Blocks
     cdfec8ed-8291-4800-85e6-1186435bffcc: Item # Item
     ce6530be-a702-47b4-b96e-f34aa9f55eb2: Translator # Translator
     cec04a25-43ba-4f4c-81bd-b71f48731b5a: 'Public Schema' # Public Schema
+    cefa8790-252d-48cb-9f10-9c403157a221: 'Tab Label' # Tab Label
     d0f08c4c-40d1-444d-9a32-b1264d617636: 'Pre-selected Color' # Pre-selected Color
     d022e61b-75d2-4c3e-88f1-198bd9978ae1: Video # Video
     d05be14c-5b5b-446d-968c-ad6af1ef322c: 'Group Name' # Group Name
@@ -455,6 +461,7 @@ meta:
     e4026dc6-49de-4267-9d3f-56ec9404750f: Header # Header
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     e16860ef-2ca8-4263-8a18-7cfcce7238c1: Heroes # Heroes
+    e615528f-3c1e-4e7d-b2b0-3d6a07cd4824: Image # Image
     e7468177-b56b-4fbc-8ca0-af8c830cabef: 'Table Row' # Table Row
     ea329674-292b-4e75-ad2d-d2596a4ec77a: 'Complex Table' # Complex Table
     eab5ef36-47c5-4357-9922-35f77a678df8: 'Orbital Sim Block' # Orbital Sim Block
