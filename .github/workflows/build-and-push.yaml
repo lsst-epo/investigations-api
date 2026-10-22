@@ -107,7 +107,7 @@ jobs:
           cache-from: |
             type=gha
           build-args: |
-            BASE_TAG=k8s
+            BASE_TAG=latest
       -
         uses: imjasonh/setup-crane@v0.1
         if: ${{ github.event_name == 'pull_request' }}
