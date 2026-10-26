@@ -1,4 +1,4 @@
-dateModified: 1791924431
+dateModified: 1793058434
 elementSources:
   craft\elements\Entry:
     -
@@ -243,6 +243,7 @@ meta:
     28bf8eda-b10b-4aaa-98fd-d52d6c95ef57: Multiselect # Multiselect
     29f139cc-2d9b-4e10-afce-1e6a70105e2b: 'Multi-part Blocks' # Multi-part Blocks
     31fbc4c8-39c8-4581-9f41-875c99ea423b: Datasets # Datasets
+    31fcd5fe-d676-4e89-b56a-9bb769bf2765: Y-value # Y-value
     0032cd50-9ee1-418e-b9f9-971e93f359ed: PT # PT
     34ce437a-0ab5-47b3-8894-ff749aee20e9: 'Option Value' # Option Value
     37af5dda-9a0b-458a-b48c-1bd31b9170af: Validation # Validation
@@ -251,6 +252,7 @@ meta:
     41e80164-60be-4893-bcef-f68831d738f5: 'Fullscreen Video' # Fullscreen Video
     42a4cddb-b253-4aeb-b097-2073b5707677: 'Object Name' # Object Name
     42e7cc8d-a889-4715-a93e-d6d897644070: 'Object Caption' # Object Caption
+    42fb1f64-aea5-4799-bc43-5d65a1bdb2dd: Point # Point
     43cffcf1-c54b-45c3-b157-9bdefaa3ce36: Label # Label
     44fd0fea-2657-448a-a657-d4a5a56a869c: Callout # Callout
     46dabfa4-cec9-42f3-bf6c-394c08d268ff: 'X-axis Min' # X-axis Min
@@ -369,7 +371,7 @@ meta:
     a21a42b0-7211-4d77-9071-47a06960fef4: Widgets # Widgets
     a29b61fb-b1bb-4f5f-ba48-644fce72f810: Object # Object
     a46e7379-7773-4ce4-9c59-434567870f0c: 'Content Blocks' # Content Blocks
-    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Bar Graph (Histogram) Tool' # Bar Graph (Histogram) Tool
+    a47f94c7-0a32-43be-863a-fa9d6636fff2: 'Histogram Tool' # Histogram Tool
     a72ca793-6ee2-4a6f-b47e-06a35cf61e06: 'Plot points' # Plot points
     a81f2835-5fbe-4fa9-a636-eafeaee155c3: 'Bin Size' # Bin Size
     a193e003-8cfa-4530-8d20-6d61a7deaf5e: 'Isochrone Plot' # Isochrone Plot
@@ -377,6 +379,7 @@ meta:
     a966d509-84b0-43ab-9a5b-42590a5fb537: 'Answer Type' # Answer Type
     a21669e6-f3bf-468a-b817-59c7345dd1c7: 'Cell Width' # Cell Width
     aac99cbe-8a05-4184-8002-b5cfc60bce94: 'Landing Navigation' # Landing Navigation
+    ab72fa36-7d27-4d81-b890-6847d2fafda9: 'Histogram Points' # Histogram Points
     acbeab84-efd2-4650-a701-48e1ba6e4a6e: 'Cell Content' # Cell Content
     ad74ba83-53f4-4102-94e9-e9eea0d31171: 'Galactic longitude' # Galactic longitude
     ad6237ea-0d14-4e5b-880e-767316434bcd: isEnabled # isEnabled
@@ -417,7 +420,6 @@ meta:
     c49579aa-2d5c-4b05-a9f0-153bb0830d8e: 'Object Caption' # Object Caption
     c430001c-4bfc-4154-9e13-f5ada3b4a22d: Text # Text
     cb6492c7-6cdf-453c-8df5-245121df0be4: 'Cell Background' # Cell Background
-    ccab20e4-d589-4299-9a35-5327e6492187: Description # Description
     cccddcb9-181f-4575-b6cd-62031c3d6d94: 'Available Filters' # Available Filters
     cd4d2a22-a194-459c-8f21-1782152c6dbf: Asset # Asset
     cd658691-87e7-43c3-a378-6078f21b9f6c: 'Reference Content Blocks' # Reference Content Blocks
@@ -437,6 +439,8 @@ meta:
     d18f36fd-9d74-4ba6-b860-25958b1d9182: 'Alert Sources' # Alert Sources
     d39e8a9e-62b7-43c7-ba59-313bcf8022e3: Data # Data
     d42a99ba-072d-4a58-9140-42c3068a7cc7: Link # Link
+    d142b974-ee22-40a2-9c43-7210d1dae951: Label # Label
+    d2006f59-c941-4e06-95be-95d38beee431: 'Histogram Dataset' # Histogram Dataset
     d4538f51-c82e-45f5-8ca3-4f2487eef3b9: 'Row Color' # Row Color
     d5901e55-99c9-441a-937e-05a065d6e60b: Maximum # Maximum
     d6180a2a-48c9-42ce-a80f-8721282a126d: 'Previous Question' # Previous Question
@@ -446,6 +450,7 @@ meta:
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
     dd362aa4-c24c-4d2f-a867-d0baceacd50d: 'Object Name' # Object Name
     de62bfd1-4a89-4eef-901c-e9c2316c8327: Default # Default
+    df067eb4-facb-4158-8bea-2b115e58135c: X-value # X-value
     df8afd02-7d4c-48ba-a195-801deb77ba4d: Callouts # Callouts
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options

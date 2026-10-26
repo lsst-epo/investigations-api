@@ -121,6 +121,52 @@ fieldLayouts:
                   class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
                   fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
                   operator: in
+                  uid: b5a5924d-a969-44b8-b757-bf836c92dc29
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 10bfe164-c055-47a5-9acf-414d5c53b74a # X-axis Maximum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50cdf27d-bdcb-422d-8003-9a7f17dd4cf2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
+                  uid: ab0f93eb-1179-43a6-8290-fcae24917df2
+                  values:
+                    - single
+              elementType: benf\neo\elements\Block
+              fieldContext: global
+            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e9abdb0-11c9-449c-ac74-9bd06cf4df32
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: benf\neo\elements\conditions\BlockCondition
+              conditionRules:
+                -
+                  class: benf\neo\elements\conditions\fields\ParentOptionsFieldConditionRule
+                  fieldUid: 55b79945-9f3e-44f9-aca1-b0ca479ba00a # Scatter Plot Mode
+                  operator: in
                   uid: 06500864-a96a-4997-b6ea-c53a6ad61ec5
                   values:
                     - single
