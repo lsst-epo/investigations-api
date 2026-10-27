@@ -68,6 +68,48 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
+                  uid: 9c2cdb30-301e-4637-9d7a-18d10490a3b9
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 9d45bd95-1da4-414e-871b-7f94cae491b4 # Trend Line Label
+            instructions: 'Leave blank to omit the trend line.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7f51279-50d5-4e80-9e27-acd764eeec11
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 907a99bf-dc51-40c8-8117-c9686eddea0d # Include Scatter Plot
+                  uid: a6daf730-d062-4fa3-9a4f-3a80ca071d39
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 7e42195a-a156-4d0d-94c8-eb9db685fb48 # Trend Line Direction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ec43a7f-0d34-470b-b4c7-38f87094d8e6
+            userCondition: null
+            warning: null
+            width: 50
+          -
             elementCondition: null
             fieldUid: b1b21687-d796-444a-99a7-0cf763924887 # Show Details Table
             instructions: null

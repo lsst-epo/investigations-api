@@ -1,4 +1,4 @@
-dateModified: 1793121843
+dateModified: 1793138194
 elementSources:
   craft\elements\Entry:
     -
@@ -189,6 +189,7 @@ meta:
     5d8399de-479d-4684-b061-ea87299837dd: 'Hubble Plot Tool' # Hubble Plot Tool
     5dc7dc5c-2390-4eb4-9714-818aa35f5772: Investigations # Investigations
     5e789abf-cfef-4ed4-b795-a4dcfe4fd284: 'Supernova & Galaxy Observations' # Supernova & Galaxy Observations
+    5ea80c73-9a84-4668-a339-a8572161dfbf: 'Enable Zoom' # Enable Zoom
     5f056533-e53a-476a-9e3b-14e2aa364517: 'Orbital Sim Widget' # Orbital Sim Widget
     5ff77a15-20cf-4445-bbbd-4ecc41fa3be2: 'Video Type' # Video Type
     6b8e1421-5b57-4c4d-bd1f-de5a2cd186e2: 'Filter Color Options' # Filter Color Options
@@ -208,6 +209,7 @@ meta:
     7bf2ccf1-2aa1-4cf0-a991-25cb2bfe6bff: Link # Link
     7c04d87d-2b5d-4ba8-841a-2d4f2a1047dd: 'Table Cell' # Table Cell
     7e3faadd-83b4-45cf-9a32-3dfe342e23b8: Link # Link
+    7e42195a-a156-4d0d-94c8-eb9db685fb48: 'Trend Line Direction' # Trend Line Direction
     7ebe493b-5e03-48c8-8375-c9f9582da77e: Containers # Containers
     7f850ed5-79a2-4ffc-979e-a054a37dbe0b: View # View
     7fd2ba5e-d840-47df-8c79-a5fd54ff5aae: Text # Text
@@ -221,6 +223,7 @@ meta:
     9c099f02-5f47-4c2f-bf83-574a21fae092: Equation # Equation
     9c7ef975-de1b-4538-ab66-54d02b3bc079: 'Hubble Plot' # Hubble Plot
     9d3bd0d7-b293-4e2f-9c24-0554733df011: Text # Text
+    9d45bd95-1da4-414e-871b-7f94cae491b4: 'Trend Line Label' # Trend Line Label
     9ef2456c-1f93-4951-abad-bb38d9e1e152: Hero # Hero
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum

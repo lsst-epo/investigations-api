@@ -183,6 +183,42 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            elementCondition: null
+            fieldUid: 9d45bd95-1da4-414e-871b-7f94cae491b4 # Trend Line Label
+            instructions: 'Leave this field blank to omit the trend line.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2aa382f1-ab36-4296-8cb7-5c2d89d3890a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 7e42195a-a156-4d0d-94c8-eb9db685fb48 # Trend Line Direction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ffdbda9-0c10-4d28-af0f-9d2120977de8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5ea80c73-9a84-4668-a339-a8572161dfbf # Enable Zoom
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f90906d-9ace-4516-8bab-9be6a6ba04e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
             elementCondition:
               class: benf\neo\elements\conditions\BlockCondition
               conditionRules:
