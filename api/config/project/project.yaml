@@ -1,4 +1,4 @@
-dateModified: 1793138194
+dateModified: 1793144570
 elementSources:
   craft\elements\Entry:
     -
@@ -170,6 +170,7 @@ meta:
     2f806a9b-ac95-4740-a3db-3bfd367cab01: 'Y-axis Maximum' # Y-axis Maximum
     3c999a34-b334-4792-bd8f-2c8cfb4100af: Band # Band
     3d2f156c-e79c-44c4-bcc4-7963a5e70bac: 'Hubble Plot' # Hubble Plot
+    3d1436c7-405b-4f39-9969-72d802bc684a: 'Show Details on Select' # Show Details on Select
     3e9ad357-be6a-4732-b068-33ca298d87db: 'Link text' # Link text
     4b8139b2-36be-4510-aaeb-fa8579fb3273: 'Header Row' # Header Row
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
