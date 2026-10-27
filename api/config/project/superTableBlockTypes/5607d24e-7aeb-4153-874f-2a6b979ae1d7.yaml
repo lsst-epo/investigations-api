@@ -1,4 +1,4 @@
-changedFieldIndicator: 347477068
+changedFieldIndicator: 730510079
 field: ec3b0890-016d-4cf5-82e6-b7434faaa8dd # Complex Table
 fieldLayouts:
   8d30f158-471f-4cfc-8a06-3f02b7dbdcea:
@@ -26,12 +26,12 @@ fields:
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: tableRow
+    handle: complexTableRow
     instructions: null
     name: 'Table Row'
     searchable: false
     settings:
-      contentTable: '{{%matrixcontent_tablerow_1}}'
+      contentTable: '{{%matrixcontent_complextablerow}}'
       maxBlocks: null
       minBlocks: null
       propagationKeyFormat: null

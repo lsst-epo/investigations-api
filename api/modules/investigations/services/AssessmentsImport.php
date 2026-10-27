@@ -41,6 +41,7 @@ class AssessmentsImport extends Component
     /** Source handle => target handle. */
     private const FIELD_RENAMES = [
         'verticalAlignment' => 'verticalAlignnment',
+        'tableRow' => 'complexTableRow',
     ];
 
     /** Field handle => source option value => target option value. */
@@ -1093,7 +1094,7 @@ class AssessmentsImport extends Component
         $out = [];
 
         foreach ($source as $handle => $value) {
-            $targetHandle = self::FIELD_RENAMES[$handle] ?? $handle;
+            $targetHandle = $this->resolveTargetHandle($handle, $byHandle);
             $target = $byHandle[$targetHandle] ?? null;
 
             if ($target === null) {
@@ -1246,7 +1247,7 @@ class AssessmentsImport extends Component
         $out = [];
 
         foreach ($source as $handle => $value) {
-            $targetHandle = self::FIELD_RENAMES[$handle] ?? $handle;
+            $targetHandle = $this->resolveTargetHandle($handle, $byHandle);
             $target = $byHandle[$targetHandle] ?? null;
 
             if ($target === null) {
@@ -1266,6 +1267,18 @@ class AssessmentsImport extends Component
         }
 
         return $out;
+    }
+
+    /**
+     * Applies FIELD_RENAMES when the renamed handle exists in the target layout.
+     *
+     * @param array<string, FieldInterface> $byHandle
+     */
+    private function resolveTargetHandle(string $handle, array $byHandle): string
+    {
+        $renamed = self::FIELD_RENAMES[$handle] ?? null;
+
+        return $renamed !== null && isset($byHandle[$renamed]) ? $renamed : $handle;
     }
 
     private function mapValue(FieldInterface $field, mixed $value): mixed
