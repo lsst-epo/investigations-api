@@ -1,4 +1,4 @@
-dateModified: 1793229901
+dateModified: 1793231035
 elementSources:
   craft\elements\Entry:
     -
@@ -478,6 +478,7 @@ meta:
     e16860ef-2ca8-4263-8a18-7cfcce7238c1: Heroes # Heroes
     e615528f-3c1e-4e7d-b2b0-3d6a07cd4824: Image # Image
     e7468177-b56b-4fbc-8ca0-af8c830cabef: 'Table Row' # Table Row
+    ea7454b2-a7c4-4882-b456-f3378ac2f50b: 'Table Style' # Table Style
     ea329674-292b-4e75-ad2d-d2596a4ec77a: 'Complex Table' # Complex Table
     eab5ef36-47c5-4357-9922-35f77a678df8: 'Orbital Sim Block' # Orbital Sim Block
     ec3b0890-016d-4cf5-82e6-b7434faaa8dd: 'Complex Table' # Complex Table
