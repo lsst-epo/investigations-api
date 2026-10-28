@@ -10,8 +10,37 @@ settings:
   branchLimit: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              -
+                - class
+                - craft\elements\conditions\entries\TypeConditionRule
+              -
+                - uid
+                - d3f3b6c9-e768-40ce-ae18-6e0a983d0d42
+              -
+                - operator
+                - in
+              -
+                - values
+                -
+                  - 9c7ef975-de1b-4538-ab66-54d02b3bc079 # Hubble Plot
   selectionLabel: null
   showSiteMenu: false
   sources:

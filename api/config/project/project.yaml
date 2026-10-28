@@ -1,4 +1,4 @@
-dateModified: 1793144570
+dateModified: 1793214886
 elementSources:
   craft\elements\Entry:
     -
@@ -416,6 +416,7 @@ meta:
     c4a0ba18-ffd2-4399-b068-0fac98fee410: 'Number Validator' # Number Validator
     c5aab8e2-1748-43cd-97ec-3164090edd1a: 'Content Images' # Content Images
     c6d1924e-d9ec-4547-bb6d-bddb9b46b774: Description # Description
+    c7fda13a-8354-4260-a736-ca9b23fc3309: 'Hubble Plot Block' # Hubble Plot Block
     c22e4947-7fbb-488a-994f-246c31e27b95: Image # Image
     c47ebc20-8f68-40dc-9a17-156270d389ea: 'Add Time Controls ' # Add Time Controls 
     c84c5968-312a-455c-9b05-110670d8031f: 'Investigation Landing Page' # Investigation Landing Page
