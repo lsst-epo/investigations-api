@@ -1,4 +1,4 @@
-dateModified: 1793214886
+dateModified: 1793229901
 elementSources:
   craft\elements\Entry:
     -
@@ -225,6 +225,7 @@ meta:
     9c7ef975-de1b-4538-ab66-54d02b3bc079: 'Hubble Plot' # Hubble Plot
     9d3bd0d7-b293-4e2f-9c24-0554733df011: Text # Text
     9d45bd95-1da4-414e-871b-7f94cae491b4: 'Trend Line Label' # Trend Line Label
+    9dd02c7d-79bc-45e1-b37f-727d10d3e990: 'Is Editable' # Is Editable
     9ef2456c-1f93-4951-abad-bb38d9e1e152: Hero # Hero
     9fc49630-8ca5-4f95-be3e-cf1adc06e008: Images # Images
     10bfe164-c055-47a5-9acf-414d5c53b74a: 'X-axis Maximum' # X-axis Maximum
@@ -264,6 +265,7 @@ meta:
     53d80ba5-55f6-452a-b07e-22263269cbc8: Equation # Equation
     53df9537-d85e-4fd3-9e4c-b203594ada7c: 'Reference Block' # Reference Block
     54ba9f24-e0a0-4b44-9fce-d96dc94d32d8: 'Flexible Cell Width' # Flexible Cell Width
+    55b72800-6465-4282-ac19-4b155eb57782: 'Z-axis Value' # Z-axis Value
     55b79945-9f3e-44f9-aca1-b0ca479ba00a: 'Scatter Plot Mode' # Scatter Plot Mode
     55ef91b0-a2ba-4935-8d49-9e3e1d3dcc91: 'Reference Entries' # Reference Entries
     56bdf2e8-b9b4-425d-a189-fc7b22f5d169: 'Display Table' # Display Table
@@ -311,6 +313,7 @@ meta:
     997d2cc5-340b-48d0-9f44-032b2c6ec179: 'Previous Question' # Previous Question
     1323f40e-55e0-4e0d-a8d8-94f30957cf94: 'Sortable Table Block' # Sortable Table Block
     1601c7a8-2437-4b8f-b2f2-116f4c043402: 'Site Information' # Site Information
+    1863cf8e-e2d0-412c-84e1-d9a0ed723baa: 'Point Color' # Point Color
     002018ff-41ee-4347-88a0-c2c63efee1b2: 'CTA Grid' # CTA Grid
     2297d098-675f-4def-bd51-0ce739720cdc: 'Simple Table' # Simple Table
     2599f40c-bfbc-4db6-bf56-cb9f48ad01bf: 'Question Widgets Block' # Question Widgets Block
@@ -449,7 +452,8 @@ meta:
     d4538f51-c82e-45f5-8ca3-4f2487eef3b9: 'Row Color' # Row Color
     d5901e55-99c9-441a-937e-05a065d6e60b: Maximum # Maximum
     d6180a2a-48c9-42ce-a80f-8721282a126d: 'Previous Question' # Previous Question
-    d8836548-0241-427c-8773-5568687a5da0: 'Color Scheme' # Color Scheme
+    d8664bd7-03aa-40f4-9b66-9a53dcd0cc9f: 'Show Tabs' # Show Tabs
+    d8836548-0241-427c-8773-5568687a5da0: Color # Color
     dc1c3484-f028-4653-982b-a84e287d4c61: Equation # Equation
     dd3a1151-8de9-46f6-995f-c721fa29a07b: Option # Option
     dd4f7c39-ff32-47e4-b4eb-129bbf44b4a7: 'RTE Caption' # RTE Caption
@@ -459,6 +463,7 @@ meta:
     df8afd02-7d4c-48ba-a195-801deb77ba4d: Callouts # Callouts
     dfab6165-acc6-4a81-9d4a-50c69d1c1045: 'Color Filter Tool Objects' # Color Filter Tool Objects
     dffb5cde-7093-4b3c-b9f6-cfc6792ee7a1: 'Answer Options' # Answer Options
+    e1abca7c-6845-47f0-890a-78a292f05598: 'Show Slope Line' # Show Slope Line
     e1b23b33-c33f-4c74-9811-250c2cc2789a: Data # Data
     e5a78268-0a01-44fc-befd-a3d4ead03df2: Title # Title
     e7b953ca-6424-4d14-bc2c-393d3f8410a4: 'Question Text' # Question Text

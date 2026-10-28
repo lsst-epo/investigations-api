@@ -19,6 +19,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 1863cf8e-e2d0-412c-84e1-d9a0ed723baa # Point Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b302f382-9a6e-4559-b982-d99c928472b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 5d368cf9-f0a1-4097-8d89-fcf6b4e36e1b # Velocity
             instructions: null
             label: null
@@ -38,6 +50,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 808b418a-0644-4152-a1d2-0996caa03f2d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 55b72800-6465-4282-ac19-4b155eb57782 # Z-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf8acce0-8ecf-4c43-b4bc-12379794857f
             userCondition: null
             warning: null
             width: 50
@@ -87,6 +111,106 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
+  55b72800-6465-4282-ac19-4b155eb57782: # Z-axis Value
+    columnSuffix: izvaycov
+    contentColumnType: text
+    fieldGroup: null
+    handle: zAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'Z-axis Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1863cf8e-e2d0-412c-84e1-d9a0ed723baa: # Point Color
+    columnSuffix: idqdgxul
+    contentColumnType: string(6)
+    fieldGroup: null
+    handle: pointColor
+    instructions: null
+    name: 'Point Color'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - orange
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - green
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Purple
+            -
+              - value
+              - purple
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   64473719-4e52-4db0-938a-49b56f4fef68: # Galaxy Name
     columnSuffix: fymugqcx
     contentColumnType: text

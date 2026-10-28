@@ -254,7 +254,7 @@ fieldLayouts:
                     - single
               elementType: benf\neo\elements\Block
               fieldContext: global
-            fieldUid: d8836548-0241-427c-8773-5568687a5da0 # Color Scheme
+            fieldUid: d8836548-0241-427c-8773-5568687a5da0 # Color
             instructions: null
             label: null
             required: false
