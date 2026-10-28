@@ -1,4 +1,4 @@
-changedFieldIndicator: 347477068
+changedFieldIndicator: 2104091307
 field: ec3b0890-016d-4cf5-82e6-b7434faaa8dd # Complex Table
 fieldLayouts:
   8d30f158-471f-4cfc-8a06-3f02b7dbdcea:
@@ -8,7 +8,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e7468177-b56b-4fbc-8ca0-af8c830cabef # Table Row
+            fieldUid: e7468177-b56b-4fbc-8ca0-af8c830cabef # Complex Table Row
             instructions: null
             label: null
             required: false
@@ -22,16 +22,16 @@ fieldLayouts:
         uid: 06274f2d-ae5f-45c1-a49d-9354bad613b4
         userCondition: null
 fields:
-  e7468177-b56b-4fbc-8ca0-af8c830cabef: # Table Row
+  e7468177-b56b-4fbc-8ca0-af8c830cabef: # Complex Table Row
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: tableRow
+    handle: complexTableRow
     instructions: null
-    name: 'Table Row'
+    name: 'Complex Table Row'
     searchable: false
     settings:
-      contentTable: '{{%matrixcontent_tablerow_1}}'
+      contentTable: '{{%matrixcontent_complextablerow}}'
       maxBlocks: null
       minBlocks: null
       propagationKeyFormat: null
