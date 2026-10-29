@@ -55,6 +55,30 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
+            fieldUid: b395b9a6-a75c-432c-a719-39f38c6595bb # X-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e907bdf4-76ba-4e63-8dcc-f140e2ccd709
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 98227029-c29a-4303-a6c6-0e3168e3b031 # Y-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f999e7e-56d6-4ea5-936d-e0dae55d6b9d
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
             fieldUid: 55b72800-6465-4282-ac19-4b155eb57782 # Z-axis Value
             instructions: null
             label: null
@@ -64,7 +88,7 @@ fieldLayouts:
             uid: cf8acce0-8ecf-4c43-b4bc-12379794857f
             userCondition: null
             warning: null
-            width: 50
+            width: 25
         name: Content
         uid: 13ac0a19-fdf6-4d4d-bd93-edbafa9a8506
         userCondition: null
@@ -218,6 +242,46 @@ fields:
     handle: galaxyName
     instructions: null
     name: 'Galaxy Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  98227029-c29a-4303-a6c6-0e3168e3b031: # Y-axis Value
+    columnSuffix: ucpxtnhu
+    contentColumnType: text
+    fieldGroup: null
+    handle: yAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'Y-axis Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b395b9a6-a75c-432c-a719-39f38c6595bb: # X-axis Value
+    columnSuffix: wcwjmten
+    contentColumnType: text
+    fieldGroup: null
+    handle: xAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'X-axis Value'
     searchable: false
     settings:
       byteLimit: null

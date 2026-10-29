@@ -1,4 +1,4 @@
-dateModified: 1793295511
+dateModified: 1793310057
 elementSources:
   craft\elements\Entry:
     -
@@ -370,6 +370,7 @@ meta:
     65934563-c9b7-45d5-99e6-cc013e22b668: 'Investigation Step (Child Entry)' # Investigation Step (Child Entry)
     67592534-b8cb-4b2f-9826-d7c9300d9a2b: Widgets # Widgets
     91678889-ce27-4495-a436-abf31e2d17e6: 'Simple Table' # Simple Table
+    98227029-c29a-4303-a6c6-0e3168e3b031: 'Y-axis Value' # Y-axis Value
     a03e80f0-77ce-4b03-abf5-76a0deb264a9: JSON # JSON
     a1eeb085-4a92-48ba-92f5-65b9f5ebfc72: Text # Text
     a3f93249-e386-43c7-b2dd-5da2cda1eb03: Object # Object
@@ -404,6 +405,7 @@ meta:
     b13f4459-60b8-4556-8f68-38f7bcf4f5cb: Assessments # Assessments
     b23a622a-4c70-4e4d-be4a-3b2fbc739d19: 'Y' # Y
     b78d733b-bfca-4d0c-9474-d40c87566945: 'Modified Julian Date' # Modified Julian Date
+    b395b9a6-a75c-432c-a719-39f38c6595bb: 'X-axis Value' # X-axis Value
     b9819ea2-2d0c-4527-91fe-7f650072d8cc: 'Responsive Assets' # Responsive Assets
     b70445d4-f7f5-4b99-89a8-7e917ec064d4: 'Y-axis Maximum' # Y-axis Maximum
     ba6494d9-36e8-40ee-9284-c56783357043: 'Interaction Group' # Interaction Group
@@ -476,8 +478,8 @@ meta:
     e4026dc6-49de-4267-9d3f-56ec9404750f: Header # Header
     e5142c27-2288-47b7-bfad-14cd6b3a6653: 'Display Name' # Display Name
     e16860ef-2ca8-4263-8a18-7cfcce7238c1: Heroes # Heroes
-    e7468177-b56b-4fbc-8ca0-af8c830cabef: 'Complex Table Row' # Complex Table Row
     e615528f-3c1e-4e7d-b2b0-3d6a07cd4824: Image # Image
+    e7468177-b56b-4fbc-8ca0-af8c830cabef: 'Complex Table Row' # Complex Table Row
     ea7454b2-a7c4-4882-b456-f3378ac2f50b: 'Table Style' # Table Style
     ea329674-292b-4e75-ad2d-d2596a4ec77a: 'Complex Table' # Complex Table
     eab5ef36-47c5-4357-9922-35f77a678df8: 'Orbital Sim Block' # Orbital Sim Block
