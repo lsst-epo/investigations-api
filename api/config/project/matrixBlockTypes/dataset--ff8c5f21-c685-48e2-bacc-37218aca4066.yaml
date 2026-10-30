@@ -1,0 +1,300 @@
+field: 58fadcb1-b816-4101-b897-93ebdc5cb924 # Hubble Plot Datasets
+fieldLayouts:
+  c91519c5-39a7-4b81-b414-03e86253be6d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64473719-4e52-4db0-938a-49b56f4fef68 # Galaxy Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a9c04f9-821e-4a76-ad7e-2d8ffc3006f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1863cf8e-e2d0-412c-84e1-d9a0ed723baa # Point Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b302f382-9a6e-4559-b982-d99c928472b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d368cf9-f0a1-4097-8d89-fcf6b4e36e1b # Velocity
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f49af942-a9ca-49f4-9450-59d24f780fbe
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1c91e618-6cc6-4bc8-b321-4c596628615c # Distance
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 808b418a-0644-4152-a1d2-0996caa03f2d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b395b9a6-a75c-432c-a719-39f38c6595bb # X-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e907bdf4-76ba-4e63-8dcc-f140e2ccd709
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 98227029-c29a-4303-a6c6-0e3168e3b031 # Y-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f999e7e-56d6-4ea5-936d-e0dae55d6b9d
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 55b72800-6465-4282-ac19-4b155eb57782 # Z-axis Value
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf8acce0-8ecf-4c43-b4bc-12379794857f
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 13ac0a19-fdf6-4d4d-bd93-edbafa9a8506
+        userCondition: null
+fields:
+  1c91e618-6cc6-4bc8-b321-4c596628615c: # Distance
+    columnSuffix: pqymdghe
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: distance
+    instructions: null
+    name: Distance
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: Mpc
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  5d368cf9-f0a1-4097-8d89-fcf6b4e36e1b: # Velocity
+    columnSuffix: aohhvyfq
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: velocity
+    instructions: null
+    name: Velocity
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: km/s
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  55b72800-6465-4282-ac19-4b155eb57782: # Z-axis Value
+    columnSuffix: izvaycov
+    contentColumnType: text
+    fieldGroup: null
+    handle: zAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'Z-axis Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1863cf8e-e2d0-412c-84e1-d9a0ed723baa: # Point Color
+    columnSuffix: idqdgxul
+    contentColumnType: string(6)
+    fieldGroup: null
+    handle: pointColor
+    instructions: null
+    name: 'Point Color'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - orange
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - green
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Purple
+            -
+              - value
+              - purple
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  64473719-4e52-4db0-938a-49b56f4fef68: # Galaxy Name
+    columnSuffix: fymugqcx
+    contentColumnType: text
+    fieldGroup: null
+    handle: galaxyName
+    instructions: null
+    name: 'Galaxy Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  98227029-c29a-4303-a6c6-0e3168e3b031: # Y-axis Value
+    columnSuffix: ucpxtnhu
+    contentColumnType: text
+    fieldGroup: null
+    handle: yAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'Y-axis Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b395b9a6-a75c-432c-a719-39f38c6595bb: # X-axis Value
+    columnSuffix: wcwjmten
+    contentColumnType: text
+    fieldGroup: null
+    handle: xAxisValue
+    instructions: 'Relevant when the relational position widget is shown.'
+    name: 'X-axis Value'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: dataset
+name: Dataset
+sortOrder: 1

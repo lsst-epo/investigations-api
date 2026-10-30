@@ -50,7 +50,7 @@ permissions:
   - 'neo-createblocks:a193e003-8cfa-4530-8d20-6d61a7deaf5e' # Isochrone Plot
   - 'neo-createblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-createblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-createblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-createblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Histogram Tool
   - 'neo-createblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-createblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-createblocks:d022e61b-75d2-4c3e-88f1-198bd9978ae1' # Video
@@ -89,7 +89,7 @@ permissions:
   - 'neo-deleteblocks:a193e003-8cfa-4530-8d20-6d61a7deaf5e' # Isochrone Plot
   - 'neo-deleteblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-deleteblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-deleteblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-deleteblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Histogram Tool
   - 'neo-deleteblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-deleteblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-deleteblocks:d022e61b-75d2-4c3e-88f1-198bd9978ae1' # Video
@@ -128,7 +128,7 @@ permissions:
   - 'neo-editblocks:a193e003-8cfa-4530-8d20-6d61a7deaf5e' # Isochrone Plot
   - 'neo-editblocks:a1eeb085-4a92-48ba-92f5-65b9f5ebfc72' # Text
   - 'neo-editblocks:a3f93249-e386-43c7-b2dd-5da2cda1eb03' # Object
-  - 'neo-editblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Bar Graph Tool
+  - 'neo-editblocks:a47f94c7-0a32-43be-863a-fa9d6636fff2' # Histogram Tool
   - 'neo-editblocks:af9748aa-9a7c-49c2-bf48-d1417664104b' # Text
   - 'neo-editblocks:ba6494d9-36e8-40ee-9284-c56783357043' # Interaction Group
   - 'neo-editblocks:d022e61b-75d2-4c3e-88f1-198bd9978ae1' # Video
