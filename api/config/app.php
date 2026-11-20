@@ -19,11 +19,19 @@
 
 use craft\helpers\App;
 use modules\investigations\Module;
+use modules\userregistrationmodule\services\NotificationService;
+use modules\userregistrationmodule\UserRegistrationModule;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
         'investigations' => Module::class,
+        'user-registration-module' => [
+            'class' => UserRegistrationModule::class,
+            'components' => [
+                'notificationService' => NotificationService::class,
+            ],
+        ],
     ],
     'components' => [
         'redis' => [
@@ -54,5 +62,5 @@ return [
             'ttr' => App::env('QUEUE_TTR'),
         ],
     ],
-    'bootstrap' => ['investigations'],
+    'bootstrap' => ['investigations', 'user-registration-module'],
 ];

@@ -10,8 +10,14 @@
 
 namespace modules\userregistrationmodule;
 
+use craft\elements\User;
+use craft\controllers\GraphqlController;
 use craft\events\UserEvent;
+use craft\helpers\Queue;
+use craft\mail\Mailer;
+use craft\mail\Message;
 use craft\services\Users;
+use modules\userregistrationmodule\jobs\SendActivationEmail;
 use modules\userregistrationmodule\assetbundles\userregistrationmodule\UserRegistrationModuleAsset;
 use modules\userregistrationmodule\services\NotificationService;
 use modules\userregistrationmodule\services\NotificationService as NotificationServiceService;
@@ -25,6 +31,8 @@ use craft\web\View;
 use yii\base\Event;
 use yii\base\InvalidConfigException;
 use yii\base\Module;
+use yii\mail\BaseMailer;
+use yii\mail\MailEvent;
 
 /**
  * Craft plugins are very much like little applications in and of themselves. We’ve made
@@ -126,6 +134,15 @@ class UserRegistrationModule extends Module
             );
         }
 
+		// Defer GraphQL activation emails to a retryable queue job
+		Event::on(
+			Mailer::class,
+			BaseMailer::EVENT_BEFORE_SEND,
+			function (MailEvent $event) {
+				$this->queueActivationEmail($event);
+			}
+		);
+
 		// Send special notifications during some User events
 		Event::on(
 			Users::class,
@@ -190,6 +207,39 @@ class UserRegistrationModule extends Module
 
     // Protected Methods
     // =========================================================================
+
+	/**
+	 * Replaces a GraphQL request's activation email send with a queued job.
+	 *
+	 * @param MailEvent $event
+	 */
+	protected function queueActivationEmail(MailEvent $event): void
+	{
+		$message = $event->message;
+
+		if (
+			!$message instanceof Message ||
+			$message->key !== 'account_activation' ||
+			!Craft::$app->controller instanceof GraphqlController
+		) {
+			return;
+		}
+
+		$user = $message->variables['user'] ?? null;
+		$link = $message->variables['link'] ?? null;
+
+		if (!$user instanceof User || !$user->id || $link === null) {
+			return;
+		}
+
+		Queue::push(new SendActivationEmail([
+			'userId' => $user->id,
+			'link' => (string)$link,
+			'language' => $message->language,
+		]));
+
+		$event->isValid = false;
+	}
 
 	/**
 	 * @param array $groups
