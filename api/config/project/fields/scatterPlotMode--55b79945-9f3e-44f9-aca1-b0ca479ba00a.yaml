@@ -1,0 +1,35 @@
+columnSuffix: molbkpjz
+contentColumnType: string(8)
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: scatterPlotMode
+instructions: null
+name: 'Scatter Plot Mode'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Single Dataset'
+        -
+          - value
+          - single
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Multiple Datasets'
+        -
+          - value
+          - multiple
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

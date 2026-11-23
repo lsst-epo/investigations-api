@@ -1,0 +1,35 @@
+columnSuffix: xucppeox
+contentColumnType: string(5)
+fieldGroup: a21a42b0-7211-4d77-9071-47a06960fef4 # Widgets
+handle: tableStyle
+instructions: null
+name: 'Table Style'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Gray
+        -
+          - value
+          - gray
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - white
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

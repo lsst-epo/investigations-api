@@ -47,37 +47,13 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 8af07cbd-3ce8-4e4d-818f-261515be5ac7 # Y-axis Minimum
+            fieldUid: 0af2d30e-a573-4642-921d-5cfbfd97dc19 # Datasets
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f15f5e5d-1e86-47c4-9d52-067ac196264c
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 61e0fe59-d439-429c-b783-2d71fe4c5d44 # Y-axis Maximum
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 30c3bdca-a6d7-446d-820c-9bd9ff65cf97
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 17b9b8a2-978a-4cd8-a7da-f5b3d77e1ed3 # Graph Bars
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c65cd527-f57f-4f51-a78a-70d801cb7d2c
+            uid: ddaeeaa6-bdd8-4e00-99af-e7c4c1d6df41
             userCondition: null
             warning: null
             width: 100
@@ -96,5 +72,5 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Bar Graph Tool'
+name: 'Histogram Tool'
 topLevel: true
