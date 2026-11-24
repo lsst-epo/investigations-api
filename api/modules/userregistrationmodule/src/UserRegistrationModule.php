@@ -12,6 +12,7 @@ namespace modules\userregistrationmodule;
 
 use craft\controllers\GraphqlController;
 use craft\base\Element;
+use craft\elements\GlobalSet;
 use craft\elements\User;
 use craft\errors\InvalidFieldException;
 use craft\events\ModelEvent;
@@ -20,6 +21,7 @@ use craft\events\RegisterElementDefaultTableAttributesEvent;
 use craft\events\RegisterElementSourcesEvent;
 use craft\events\RegisterEmailMessagesEvent;
 use craft\events\UserEvent;
+use craft\events\UserGroupsAssignEvent;
 use craft\helpers\Queue;
 use craft\mail\Mailer;
 use craft\mail\Message;
@@ -74,6 +76,14 @@ class UserRegistrationModule extends Module
     private array $approvingUsers = [];
 
     public const AWAITING_APPROVAL_SOURCE = 'educators-awaiting-approval';
+    public const PREAPPROVAL_SET = 'educatorPreapprovals';
+    public const PREAPPROVAL_FIELD = 'preapprovedEducatorEmails';
+
+    /** Whether the module itself is approving, bypassing the field guard. */
+    private bool $systemApproval = false;
+
+    /** Whether the current approval should skip its approval email. */
+    private bool $deferApprovalEmail = false;
 
     // Public Methods
     // =========================================================================
@@ -221,6 +231,22 @@ class UserRegistrationModule extends Module
 			}
 		);
 
+		Event::on(
+			Users::class,
+			Users::EVENT_AFTER_ASSIGN_USER_TO_GROUPS,
+			function (UserGroupsAssignEvent $event) {
+				$this->approveIfPreapproved($event);
+			}
+		);
+
+		Event::on(
+			GlobalSet::class,
+			Element::EVENT_AFTER_SAVE,
+			function (ModelEvent $event) {
+				$this->approveListedEducators($event->sender);
+			}
+		);
+
 /**
  * Logging in Craft involves using one of the following methods:
  *
@@ -254,7 +280,8 @@ class UserRegistrationModule extends Module
 
 	/**
 	 * Replaces a GraphQL request's activation email send with a queued job.
-	 * Educators get a pending-review email instead of an activation link.
+	 * Unapproved educators get a pending-review email instead of an activation
+	 * link; approved educators get the approval email with the link.
 	 *
 	 * @param MailEvent $event
 	 */
@@ -277,7 +304,18 @@ class UserRegistrationModule extends Module
 			return;
 		}
 
-		if ($this->isEducator($user)) {
+		// The plugin's user object predates any approval made during registration
+		$current = Craft::$app->getUsers()->getUserById($user->id);
+
+		if ($current && $this->isEducator($current) && $this->isApproved($current)) {
+			$job = new SendSystemEmail([
+				'key' => 'educator_approved',
+				'userId' => $user->id,
+				'variables' => ['link' => (string)$link],
+				'language' => $message->language,
+				'requirePending' => true,
+			]);
+		} elseif ($current && $this->isEducator($current)) {
 			$job = new SendSystemEmail([
 				'key' => 'educator_pending',
 				'userId' => $user->id,
@@ -316,7 +354,7 @@ class UserRegistrationModule extends Module
 			return;
 		}
 
-		if ($this->isApproved($user)) {
+		if ($this->isApproved($user) && !$this->deferApprovalEmail) {
 			$this->approvingUsers[spl_object_id($user)] = true;
 		}
 	}
@@ -352,6 +390,121 @@ class UserRegistrationModule extends Module
 	}
 
 	/**
+	 * Approves an educator on the module's behalf.
+	 *
+	 * @param User $user
+	 * @param bool $sendEmail Whether to queue the approval email now
+	 * @return bool
+	 */
+	public function approveEducator(User $user, bool $sendEmail = true): bool
+	{
+		$this->systemApproval = true;
+		$this->deferApprovalEmail = !$sendEmail;
+
+		try {
+			$user->setFieldValue('educatorApproved', true);
+			return Craft::$app->getElements()->saveElement($user);
+		} finally {
+			$this->systemApproval = false;
+			$this->deferApprovalEmail = false;
+		}
+	}
+
+	/**
+	 * Approves a pending user newly added to the Educators group if their email
+	 * is on the pre-approval list.
+	 *
+	 * @param UserGroupsAssignEvent $event
+	 */
+	protected function approveIfPreapproved(UserGroupsAssignEvent $event): void
+	{
+		$group = Craft::$app->getUserGroups()->getGroupByHandle('educators');
+
+		if (!$group || !in_array($group->id, $event->newGroupIds)) {
+			return;
+		}
+
+		$user = Craft::$app->getUsers()->getUserById($event->userId);
+
+		if (
+			!$user ||
+			!$user->pending ||
+			!$this->hasApprovalField($user) ||
+			$this->isApproved($user) ||
+			!in_array(strtolower($user->email), $this->preapprovedEmails(), true)
+		) {
+			return;
+		}
+
+		// During GraphQL registration the activation email that follows carries the approval email
+		$sendEmail = !Craft::$app->controller instanceof GraphqlController;
+
+		if ($this->approveEducator($user, $sendEmail)) {
+			Craft::info("Pre-approved educator {$user->id} ({$user->email}) approved on joining Educators.", __METHOD__);
+		}
+	}
+
+	/**
+	 * Approves pending educators whose emails are on the saved pre-approval list.
+	 *
+	 * @param GlobalSet $set
+	 */
+	protected function approveListedEducators(GlobalSet $set): void
+	{
+		if ($set->handle !== self::PREAPPROVAL_SET || $set->propagating) {
+			return;
+		}
+
+		$emails = $this->parseEmails((string)$set->getFieldValue(self::PREAPPROVAL_FIELD));
+		$group = Craft::$app->getUserGroups()->getGroupByHandle('educators');
+
+		if (!$emails || !$group) {
+			return;
+		}
+
+		$approved = 0;
+
+		foreach (User::find()->groupId($group->id)->status(User::STATUS_PENDING)->all() as $user) {
+			if (
+				$this->hasApprovalField($user) &&
+				!$this->isApproved($user) &&
+				in_array(strtolower($user->email), $emails, true) &&
+				$this->approveEducator($user)
+			) {
+				$approved++;
+			}
+		}
+
+		Craft::info("Pre-approval list saved; approved {$approved} waiting educators.", __METHOD__);
+	}
+
+	/**
+	 * Emails on the pre-approval list, lowercased.
+	 *
+	 * @return string[]
+	 */
+	protected function preapprovedEmails(): array
+	{
+		$set = Craft::$app->getGlobals()->getSetByHandle(self::PREAPPROVAL_SET);
+
+		return $set ? $this->parseEmails((string)$set->getFieldValue(self::PREAPPROVAL_FIELD)) : [];
+	}
+
+	/**
+	 * Splits text on commas, semicolons and whitespace into unique, valid, lowercased emails.
+	 *
+	 * @param string $text
+	 * @return string[]
+	 */
+	protected function parseEmails(string $text): array
+	{
+		$tokens = preg_split('/[\s,;]+/', strtolower($text), -1, PREG_SPLIT_NO_EMPTY);
+		$emails = array_filter($tokens, fn($token) => filter_var($token, FILTER_VALIDATE_EMAIL) !== false);
+
+		return array_values(array_unique($emails));
+	}
+
+	/**
 	 * Adds a Users index source listing pending educators awaiting approval.
 	 *
 	 * @param RegisterElementSourcesEvent $event
@@ -384,7 +537,7 @@ class UserRegistrationModule extends Module
 	 */
 	protected function canApprove(): bool
 	{
-		if (Craft::$app->getRequest()->getIsConsoleRequest()) {
+		if ($this->systemApproval || Craft::$app->getRequest()->getIsConsoleRequest()) {
 			return true;
 		}
 

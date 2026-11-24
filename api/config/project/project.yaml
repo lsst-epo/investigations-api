@@ -1,4 +1,4 @@
-dateModified: 1795479532
+dateModified: 1795545442
 elementSources:
   craft\elements\Entry:
     -
@@ -172,6 +172,7 @@ meta:
     3d2f156c-e79c-44c4-bcc4-7963a5e70bac: 'Hubble Plot' # Hubble Plot
     3d1436c7-405b-4f39-9969-72d802bc684a: 'Show Details on Select' # Show Details on Select
     3e9ad357-be6a-4732-b068-33ca298d87db: 'Link text' # Link text
+    4b078937-7ef7-4666-be3c-76e7beacb6dc: 'Educator Pre-approvals' # Educator Pre-approvals
     4b8139b2-36be-4510-aaeb-fa8579fb3273: 'Header Row' # Header Row
     4d4bea1a-66b1-4042-b30d-b5525fa9481d: Y-value # Y-value
     4e2a01a5-ed3f-4652-9d31-4c064ff91cc1: Label # Label
@@ -321,6 +322,7 @@ meta:
     2922f7b5-8979-4fa5-8221-b442515b48c1: Equation # Equation
     3420e815-630b-425f-b31c-7eac901c83d1: 'Marker Shape' # Marker Shape
     3912a1a0-e71b-44b3-bcf4-976c0564975e: 'Filter Tool' # Filter Tool
+    4338d656-c42c-480c-9d24-403d00d9cea1: 'Pre-approved educator emails' # Pre-approved educator emails
     4994da56-0831-400d-b1d1-ade611fd5da1: Title # Title
     5548ce5c-5ad4-494e-93be-8ff129618d20: Text # Text
     5599d188-862e-4717-b206-6aadd975c937: Common # Common

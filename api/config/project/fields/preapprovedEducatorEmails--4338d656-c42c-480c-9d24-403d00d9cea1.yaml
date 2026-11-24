@@ -1,0 +1,19 @@
+columnSuffix: ofxixiev
+contentColumnType: text
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: preapprovedEducatorEmails
+instructions: 'Educators registering with one of these emails are approved automatically. Saving also approves listed educators who are waiting. Separate emails with commas or new lines.'
+name: 'Pre-approved educator emails'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 10
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
