@@ -24,6 +24,30 @@ tabs:
         userCondition: null
         warning: null
         width: 100
-    name: Approval
+      -
+        elementCondition: null
+        fieldUid: aa477f26-340d-435e-9794-ac0cef623b06 # Institution
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 5ae2b252-cc8c-4943-8f48-8a0bc972cefb
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 30bcd973-c8bd-4e3f-9812-b2f09515baaf # Grade Level
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 5e6e18a5-fc85-4798-8648-15928b3cfc7b
+        userCondition: null
+        warning: null
+        width: 100
+    name: Educator
     uid: 0d5d18a7-08a2-4a38-b593-f5290c6cc57e
     userCondition: null
