@@ -15,6 +15,9 @@ use craft\base\Element;
 use craft\elements\User;
 use craft\errors\InvalidFieldException;
 use craft\events\ModelEvent;
+use craft\events\RegisterElementActionsEvent;
+use craft\events\RegisterElementDefaultTableAttributesEvent;
+use craft\events\RegisterElementSourcesEvent;
 use craft\events\RegisterEmailMessagesEvent;
 use craft\events\UserEvent;
 use craft\helpers\Queue;
@@ -24,6 +27,7 @@ use craft\models\SystemMessage;
 use craft\services\SystemMessages;
 use craft\services\Users;
 use modules\userregistrationmodule\assetbundles\userregistrationmodule\UserRegistrationModuleAsset;
+use modules\userregistrationmodule\elements\actions\ApproveEducators;
 use modules\userregistrationmodule\jobs\SendSystemEmail;
 
 use Craft;
@@ -68,6 +72,8 @@ class UserRegistrationModule extends Module
 
     /** Object IDs of users whose save is switching on educator approval. */
     private array $approvingUsers = [];
+
+    public const AWAITING_APPROVAL_SOURCE = 'educators-awaiting-approval';
 
     // Public Methods
     // =========================================================================
@@ -184,6 +190,34 @@ class UserRegistrationModule extends Module
 			Element::EVENT_AFTER_SAVE,
 			function (ModelEvent $event) {
 				$this->sendApproval($event->sender);
+			}
+		);
+
+		Event::on(
+			User::class,
+			Element::EVENT_REGISTER_SOURCES,
+			function (RegisterElementSourcesEvent $event) {
+				$this->registerApprovalSource($event);
+			}
+		);
+
+		Event::on(
+			User::class,
+			Element::EVENT_REGISTER_DEFAULT_TABLE_ATTRIBUTES,
+			function (RegisterElementDefaultTableAttributesEvent $event) {
+				if ($event->source === self::AWAITING_APPROVAL_SOURCE) {
+					$event->tableAttributes = ['email', 'dateCreated'];
+				}
+			}
+		);
+
+		Event::on(
+			User::class,
+			Element::EVENT_REGISTER_ACTIONS,
+			function (RegisterElementActionsEvent $event) {
+				if ($this->canApprove()) {
+					$event->actions[] = ApproveEducators::class;
+				}
 			}
 		);
 
@@ -306,12 +340,41 @@ class UserRegistrationModule extends Module
 			return;
 		}
 
+		// Load the password hash so an educator with a password gets an activation link, not a set-password link
+		$userWithPassword = User::find()->id($user->id)->status(null)->addSelect(['users.password'])->one();
+
 		Queue::push(new SendSystemEmail([
 			'key' => 'educator_approved',
 			'userId' => $user->id,
-			'variables' => ['link' => Craft::$app->getUsers()->getActivationUrl($user)],
+			'variables' => ['link' => Craft::$app->getUsers()->getActivationUrl($userWithPassword)],
 			'requirePending' => true,
 		]));
+	}
+
+	/**
+	 * Adds a Users index source listing pending educators awaiting approval.
+	 *
+	 * @param RegisterElementSourcesEvent $event
+	 */
+	protected function registerApprovalSource(RegisterElementSourcesEvent $event): void
+	{
+		$group = Craft::$app->getUserGroups()->getGroupByHandle('educators');
+
+		if (!$group || !Craft::$app->getFields()->getFieldByHandle('educatorApproved')) {
+			return;
+		}
+
+		$event->sources[] = ['heading' => 'Approval'];
+		$event->sources[] = [
+			'key' => self::AWAITING_APPROVAL_SOURCE,
+			'label' => 'Awaiting approval',
+			'criteria' => [
+				'groupId' => $group->id,
+				'status' => User::STATUS_PENDING,
+				'educatorApproved' => false,
+			],
+			'defaultSort' => ['dateCreated', 'desc'],
+		];
 	}
 
 	/**
@@ -343,7 +406,7 @@ class UserRegistrationModule extends Module
 	 * @param User $user
 	 * @return bool
 	 */
-	protected function isApproved(User $user): bool
+	public function isApproved(User $user): bool
 	{
 		try {
 			return (bool)$user->getFieldValue('educatorApproved');
@@ -356,7 +419,7 @@ class UserRegistrationModule extends Module
 	 * @param User $user
 	 * @return bool
 	 */
-	protected function isEducator(User $user): bool
+	public function isEducator(User $user): bool
 	{
 		return $this->hasEducatorsGroup(Craft::$app->getUserGroups()->getGroupsByUserId($user->id));
 	}
