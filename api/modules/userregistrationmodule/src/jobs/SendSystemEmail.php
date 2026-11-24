@@ -9,26 +9,32 @@ use yii\base\Exception;
 use yii\queue\RetryableJobInterface;
 
 /**
- * Sends an account activation email, retrying on failure.
+ * Sends a system message email to a user, retrying on failure.
  */
-class SendActivationEmail extends BaseJob implements RetryableJobInterface
+class SendSystemEmail extends BaseJob implements RetryableJobInterface
 {
     public const MAX_ATTEMPTS = 5;
 
+    public ?string $key = null;
     public ?int $userId = null;
-    public ?string $link = null;
+    public array $variables = [];
     public ?string $language = null;
+
+    /** Skip sending if the user is no longer pending. */
+    public bool $requirePending = false;
 
     public function execute($queue): void
     {
         $user = Craft::$app->getUsers()->getUserById($this->userId);
 
-        if (!$user || !$user->pending) {
+        if (!$user || ($this->requirePending && !$user->pending)) {
             return;
         }
 
+        $variables = array_map(fn($value) => Template::raw((string)$value), $this->variables);
+
         $message = Craft::$app->getMailer()
-            ->composeFromKey('account_activation', ['link' => Template::raw($this->link)])
+            ->composeFromKey($this->key, $variables)
             ->setTo($user);
 
         if ($this->language) {
@@ -36,7 +42,7 @@ class SendActivationEmail extends BaseJob implements RetryableJobInterface
         }
 
         if (!$message->send()) {
-            throw new Exception("Failed to send activation email to user {$this->userId}.");
+            throw new Exception("Failed to send {$this->key} email to user {$this->userId}.");
         }
     }
 
@@ -52,6 +58,6 @@ class SendActivationEmail extends BaseJob implements RetryableJobInterface
 
     protected function defaultDescription(): ?string
     {
-        return Craft::t('app', 'Sending activation email');
+        return Craft::t('app', 'Sending {key} email', ['key' => $this->key]);
     }
 }

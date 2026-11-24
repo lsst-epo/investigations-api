@@ -1,0 +1,29 @@
+tabs:
+  -
+    elementCondition:
+      class: craft\elements\conditions\users\UserCondition
+      conditionRules:
+        -
+          class: craft\elements\conditions\users\GroupConditionRule
+          operator: in
+          uid: 79afc881-82ee-47b6-a4b5-80fe21c44009
+          values:
+            - d8be03ce-7aeb-4141-b40e-ec39ec1c796f # Educators
+      elementType: craft\elements\User
+      fieldContext: global
+    elements:
+      -
+        elementCondition: null
+        fieldUid: 99aa6a7d-bcff-4194-aa32-04442aba3a95 # Educator approved
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 2bc5465b-bcf4-42a8-807b-93728997dd07
+        userCondition: null
+        warning: null
+        width: 100
+    name: Approval
+    uid: 0d5d18a7-08a2-4a38-b593-f5290c6cc57e
+    userCondition: null

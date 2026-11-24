@@ -14,14 +14,7 @@
  */
 return [
     'modules' => [
-        'user-registration-module' => [
-            'class' => \modules\userregistrationmodule\UserRegistrationModule::class,
-            'components' => [
-                'notificationService' => [
-                    'class' => 'modules\userregistrationmodule\services\NotificationService',
-                ],
-            ],
-        ],
+        'user-registration-module' => \modules\userregistrationmodule\UserRegistrationModule::class,
     ],
     'bootstrap' => ['user-registration-module'],
 ];

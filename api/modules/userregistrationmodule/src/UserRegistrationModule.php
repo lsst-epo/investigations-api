@@ -10,17 +10,21 @@
 
 namespace modules\userregistrationmodule;
 
-use craft\elements\User;
 use craft\controllers\GraphqlController;
+use craft\base\Element;
+use craft\elements\User;
+use craft\errors\InvalidFieldException;
+use craft\events\ModelEvent;
+use craft\events\RegisterEmailMessagesEvent;
 use craft\events\UserEvent;
 use craft\helpers\Queue;
 use craft\mail\Mailer;
 use craft\mail\Message;
+use craft\models\SystemMessage;
+use craft\services\SystemMessages;
 use craft\services\Users;
-use modules\userregistrationmodule\jobs\SendActivationEmail;
 use modules\userregistrationmodule\assetbundles\userregistrationmodule\UserRegistrationModuleAsset;
-use modules\userregistrationmodule\services\NotificationService;
-use modules\userregistrationmodule\services\NotificationService as NotificationServiceService;
+use modules\userregistrationmodule\jobs\SendSystemEmail;
 
 use Craft;
 use craft\events\RegisterTemplateRootsEvent;
@@ -47,8 +51,7 @@ use yii\mail\MailEvent;
  * @author    Cast Iron Coding
  * @package   UserRegistrationModule
  * @since     1.0.0
- *
- * @property  NotificationServiceService $notificationService
+
  */
 class UserRegistrationModule extends Module
 {
@@ -62,6 +65,9 @@ class UserRegistrationModule extends Module
      * @var UserRegistrationModule
      */
     public static $instance;
+
+    /** Object IDs of users whose save is switching on educator approval. */
+    private array $approvingUsers = [];
 
     // Public Methods
     // =========================================================================
@@ -134,6 +140,14 @@ class UserRegistrationModule extends Module
             );
         }
 
+		Event::on(
+			SystemMessages::class,
+			SystemMessages::EVENT_REGISTER_MESSAGES,
+			function (RegisterEmailMessagesEvent $event) {
+				array_push($event->messages, ...$this->educatorMessages());
+			}
+		);
+
 		// Defer GraphQL activation emails to a retryable queue job
 		Event::on(
 			Mailer::class,
@@ -143,37 +157,33 @@ class UserRegistrationModule extends Module
 			}
 		);
 
-		// Send special notifications during some User events
 		Event::on(
 			Users::class,
-			Users::EVENT_AFTER_ACTIVATE_USER,
+			Users::EVENT_BEFORE_ACTIVATE_USER,
 			function (UserEvent $event) {
-				$user = $event->user;
-				$groups = Craft::$app->userGroups->getGroupsByUserId($user->getId());
-
-				if($this->hasEducatorsGroup($groups)) {
+				if (
+					$this->isEducator($event->user) &&
+					!Craft::$app->getRequest()->getIsConsoleRequest() &&
+					!$this->isApproved($event->user)
+				) {
 					$event->isValid = false;
-
-					$usersService = Craft::$app->getUsers();
-					$usersService->suspendUser($user);
-
-					$notificationService = new NotificationService();
-					$notificationService->sendEducatorSuspendNotification($user);
 				}
 			}
 		);
 
 		Event::on(
-			Users::class,
-			Users::EVENT_AFTER_UNSUSPEND_USER,
-			function (UserEvent $event) {
-				$user = $event->user;
-				$groups = Craft::$app->userGroups->getGroupsByUserId($user->id);
+			User::class,
+			Element::EVENT_BEFORE_SAVE,
+			function (ModelEvent $event) {
+				$this->guardApproval($event->sender);
+			}
+		);
 
-				if($this->hasEducatorsGroup($groups)) {
-					$notificationService = new NotificationService();
-					$notificationService->sendEducatorUnsuspendNotification($user);
-				}
+		Event::on(
+			User::class,
+			Element::EVENT_AFTER_SAVE,
+			function (ModelEvent $event) {
+				$this->sendApproval($event->sender);
 			}
 		);
 
@@ -210,6 +220,7 @@ class UserRegistrationModule extends Module
 
 	/**
 	 * Replaces a GraphQL request's activation email send with a queued job.
+	 * Educators get a pending-review email instead of an activation link.
 	 *
 	 * @param MailEvent $event
 	 */
@@ -232,13 +243,122 @@ class UserRegistrationModule extends Module
 			return;
 		}
 
-		Queue::push(new SendActivationEmail([
-			'userId' => $user->id,
-			'link' => (string)$link,
-			'language' => $message->language,
-		]));
+		if ($this->isEducator($user)) {
+			$job = new SendSystemEmail([
+				'key' => 'educator_pending',
+				'userId' => $user->id,
+				'language' => $message->language,
+				'requirePending' => true,
+			]);
+		} else {
+			$job = new SendSystemEmail([
+				'key' => 'account_activation',
+				'userId' => $user->id,
+				'variables' => ['link' => (string)$link],
+				'language' => $message->language,
+				'requirePending' => true,
+			]);
+		}
 
+		Queue::push($job);
 		$event->isValid = false;
+	}
+
+	/**
+	 * Reverts changes to the approval field unless made from the console or by
+	 * a user with the administrateUsers permission, and records approvals.
+	 *
+	 * @param User $user
+	 */
+	protected function guardApproval(User $user): void
+	{
+		if (!$this->hasApprovalField($user) || !$user->isFieldDirty('educatorApproved')) {
+			return;
+		}
+
+		if (!$this->canApprove()) {
+			$original = $user->id ? Craft::$app->getUsers()->getUserById($user->id) : null;
+			$user->setFieldValue('educatorApproved', $original ? $this->isApproved($original) : false);
+			return;
+		}
+
+		if ($this->isApproved($user)) {
+			$this->approvingUsers[spl_object_id($user)] = true;
+		}
+	}
+
+	/**
+	 * Emails a newly approved, still pending educator their activation link.
+	 *
+	 * @param User $user
+	 */
+	protected function sendApproval(User $user): void
+	{
+		$key = spl_object_id($user);
+
+		if (!isset($this->approvingUsers[$key])) {
+			return;
+		}
+
+		unset($this->approvingUsers[$key]);
+
+		if (!$user->pending || !$this->isEducator($user)) {
+			return;
+		}
+
+		Queue::push(new SendSystemEmail([
+			'key' => 'educator_approved',
+			'userId' => $user->id,
+			'variables' => ['link' => Craft::$app->getUsers()->getActivationUrl($user)],
+			'requirePending' => true,
+		]));
+	}
+
+	/**
+	 * Whether the current actor may change educator approval.
+	 *
+	 * @return bool
+	 */
+	protected function canApprove(): bool
+	{
+		if (Craft::$app->getRequest()->getIsConsoleRequest()) {
+			return true;
+		}
+
+		$actor = Craft::$app->getUser()->getIdentity();
+
+		return $actor !== null && $actor->can('administrateUsers');
+	}
+
+	/**
+	 * @param User $user
+	 * @return bool
+	 */
+	protected function hasApprovalField(User $user): bool
+	{
+		return $user->getFieldLayout()?->getFieldByHandle('educatorApproved') !== null;
+	}
+
+	/**
+	 * @param User $user
+	 * @return bool
+	 */
+	protected function isApproved(User $user): bool
+	{
+		try {
+			return (bool)$user->getFieldValue('educatorApproved');
+		} catch (InvalidFieldException) {
+			return false;
+		}
+	}
+
+	/**
+	 * @param User $user
+	 * @return bool
+	 */
+	protected function isEducator(User $user): bool
+	{
+		return $this->hasEducatorsGroup(Craft::$app->getUserGroups()->getGroupsByUserId($user->id));
 	}
 
 	/**
@@ -251,5 +371,34 @@ class UserRegistrationModule extends Module
 			if($group->handle == 'educators') return true;
 		}
 		return false;
+	}
+
+	/**
+	 * System messages for the educator approval workflow.
+	 *
+	 * @return SystemMessage[]
+	 */
+	protected function educatorMessages(): array
+	{
+		return [
+			new SystemMessage([
+				'key' => 'educator_pending',
+				'heading' => 'When an educator registers and is awaiting approval:',
+				'subject' => 'Your Educator registration is pending review',
+				'body' => "Hey {{user.friendlyName|e}},\n\n" .
+					"Thank you for registering as an Educator.\n\n" .
+					"Your account is pending review. You will be notified again when we've activated your account.",
+			]),
+			new SystemMessage([
+				'key' => 'educator_approved',
+				'heading' => 'When an admin approves an educator registration:',
+				'subject' => 'Your Educator registration has been approved',
+				'body' => "Hey {{user.friendlyName|e}},\n\n" .
+					"Thanks for your patience! Your Educator registration has been approved. " .
+					"To activate your account, click the following link:\n\n" .
+					"{{link}}\n\n" .
+					"If you were not expecting this email, just ignore it.",
+			]),
+		];
 	}
 }

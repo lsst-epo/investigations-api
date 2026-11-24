@@ -19,19 +19,13 @@
 
 use craft\helpers\App;
 use modules\investigations\Module;
-use modules\userregistrationmodule\services\NotificationService;
 use modules\userregistrationmodule\UserRegistrationModule;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
         'investigations' => Module::class,
-        'user-registration-module' => [
-            'class' => UserRegistrationModule::class,
-            'components' => [
-                'notificationService' => NotificationService::class,
-            ],
-        ],
+        'user-registration-module' => UserRegistrationModule::class,
     ],
     'components' => [
         'redis' => [

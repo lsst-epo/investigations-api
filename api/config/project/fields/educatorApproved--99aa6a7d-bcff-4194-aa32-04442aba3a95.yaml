@@ -1,0 +1,14 @@
+columnSuffix: krmrakfy
+contentColumnType: boolean
+fieldGroup: 5599d188-862e-4717-b206-6aadd975c937 # Common
+handle: educatorApproved
+instructions: 'Switch on and save to approve this educator. They will be emailed a link to activate their account.'
+name: 'Educator approved'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
